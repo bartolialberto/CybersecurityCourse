@@ -8,21 +8,27 @@
       
       
       
+        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/Labs/BURP/">
       
       
-      <link rel="icon" href="/CybersecurityCourse/assets/images/favicon.png">
+        <link rel="prev" href="../../HTTPS%20-%20AitM/AitM%20-%20HTTPS/">
+      
+      
+        <link rel="next" href="../Hacking%20Metasploitable/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.5">
     
     
       
-        <title>Cybersecurity Course - University of Trieste</title>
+        <title>BURP - Cybersecurity Course - University of Trieste</title>
       
     
     
-      <link rel="stylesheet" href="/CybersecurityCourse/assets/stylesheets/main.7a7fce14.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7a7fce14.min.css">
       
         
-        <link rel="stylesheet" href="/CybersecurityCourse/assets/stylesheets/palette.a0c5b2b5.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
       
       
 
@@ -38,7 +44,7 @@
       
     
     
-    <script>__md_scope=new URL("/CybersecurityCourse/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -62,6 +68,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#burp-in-a-nutshell" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -72,7 +83,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/CybersecurityCourse/." title="Cybersecurity Course - University of Trieste" class="md-header__button md-logo" aria-label="Cybersecurity Course - University of Trieste" data-md-component="logo">
+    <a href="../.." title="Cybersecurity Course - University of Trieste" class="md-header__button md-logo" aria-label="Cybersecurity Course - University of Trieste" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -91,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              BURP
             
           </span>
         </div>
@@ -156,7 +167,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="/CybersecurityCourse/." class="md-tabs__link">
+    <a href="../.." class="md-tabs__link">
       Home
     </a>
   </li>
@@ -171,7 +182,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/CybersecurityCourse/Authentication/Authentication%20-%20General/" class="md-tabs__link">
+      <a href="../../Authentication/Authentication%20-%20General/" class="md-tabs__link">
         Authentication
       </a>
     </li>
@@ -187,7 +198,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/CybersecurityCourse/HTTPS%20-%20AitM/AitM%20-%20HTTPS/" class="md-tabs__link">
+      <a href="../../HTTPS%20-%20AitM/AitM%20-%20HTTPS/" class="md-tabs__link">
         HTTPS   AitM
       </a>
     </li>
@@ -197,13 +208,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="/CybersecurityCourse/Labs/BURP/" class="md-tabs__link">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
         Labs
       </a>
     </li>
@@ -219,7 +232,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/CybersecurityCourse/Lateral%20Movement/Lateral%20movement%20-%20Credential%20dumping/" class="md-tabs__link">
+      <a href="../../Lateral%20Movement/Lateral%20movement%20-%20Credential%20dumping/" class="md-tabs__link">
         Lateral Movement
       </a>
     </li>
@@ -235,7 +248,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/CybersecurityCourse/Passwords%20and%20MFA/MFA/" class="md-tabs__link">
+      <a href="../../Passwords%20and%20MFA/MFA/" class="md-tabs__link">
         Passwords and MFA
       </a>
     </li>
@@ -251,7 +264,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/CybersecurityCourse/Techniques/ATTACK%20-%20MITRE/" class="md-tabs__link">
+      <a href="../../Techniques/ATTACK%20-%20MITRE/" class="md-tabs__link">
         Techniques
       </a>
     </li>
@@ -267,7 +280,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/CybersecurityCourse/Vulnerabilities/Exploit%20PoC/" class="md-tabs__link">
+      <a href="../../Vulnerabilities/Exploit%20PoC/" class="md-tabs__link">
         Vulnerabilities
       </a>
     </li>
@@ -295,7 +308,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/CybersecurityCourse/." title="Cybersecurity Course - University of Trieste" class="md-nav__button md-logo" aria-label="Cybersecurity Course - University of Trieste" data-md-component="logo">
+    <a href="../.." title="Cybersecurity Course - University of Trieste" class="md-nav__button md-logo" aria-label="Cybersecurity Course - University of Trieste" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -314,7 +327,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/CybersecurityCourse/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -356,7 +369,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/CybersecurityCourse/Authentication/Authentication%20-%20General/" class="md-nav__link">
+      <a href="../../Authentication/Authentication%20-%20General/" class="md-nav__link">
         Authentication   General
       </a>
     </li>
@@ -370,7 +383,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/CybersecurityCourse/Authentication/Authentication%20-%20Kerberos/" class="md-nav__link">
+      <a href="../../Authentication/Authentication%20-%20Kerberos/" class="md-nav__link">
         Authentication   Kerberos
       </a>
     </li>
@@ -384,7 +397,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/CybersecurityCourse/Authentication/Authentication%20-%20NTLM/" class="md-nav__link">
+      <a href="../../Authentication/Authentication%20-%20NTLM/" class="md-nav__link">
         Authentication   NTLM
       </a>
     </li>
@@ -433,7 +446,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/CybersecurityCourse/HTTPS%20-%20AitM/AitM%20-%20HTTPS/" class="md-nav__link">
+      <a href="../../HTTPS%20-%20AitM/AitM%20-%20HTTPS/" class="md-nav__link">
         AitM   HTTPS
       </a>
     </li>
@@ -453,14 +466,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
       
       
       
@@ -469,7 +484,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
           Labs
@@ -480,11 +495,82 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="/CybersecurityCourse/Labs/BURP/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          BURP
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         BURP
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#burp-in-a-nutshell" class="md-nav__link">
+    Burp in a nutshell
+  </a>
+  
+    <nav class="md-nav" aria-label="Burp in a nutshell">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#browsing-through-burp" class="md-nav__link">
+    Browsing through Burp
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basic-usage" class="md-nav__link">
+    Basic usage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-functionalities" class="md-nav__link">
+    Key functionalities
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#my-introductory-slides" class="md-nav__link">
+    My introductory slides
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -496,7 +582,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/CybersecurityCourse/Labs/Hacking%20Metasploitable/" class="md-nav__link">
+      <a href="../Hacking%20Metasploitable/" class="md-nav__link">
         Hacking Metasploitable
       </a>
     </li>
@@ -510,7 +596,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/CybersecurityCourse/Labs/MITRE%20ATTACK%20-%20Navigator/" class="md-nav__link">
+      <a href="../MITRE%20ATTACK%20-%20Navigator/" class="md-nav__link">
         MITRE ATTACK   Navigator
       </a>
     </li>
@@ -524,7 +610,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/CybersecurityCourse/Labs/OWASP%20Juice%20Shop/" class="md-nav__link">
+      <a href="../OWASP%20Juice%20Shop/" class="md-nav__link">
         OWASP Juice Shop
       </a>
     </li>
@@ -538,7 +624,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/CybersecurityCourse/Labs/TODO/" class="md-nav__link">
+      <a href="../TODO/" class="md-nav__link">
         TODO
       </a>
     </li>
@@ -552,7 +638,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/CybersecurityCourse/Labs/Virtual%20Machines/" class="md-nav__link">
+      <a href="../Virtual%20Machines/" class="md-nav__link">
         Virtual Machines
       </a>
     </li>
@@ -601,7 +687,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/CybersecurityCourse/Lateral%20Movement/Lateral%20movement%20-%20Credential%20dumping/" class="md-nav__link">
+      <a href="../../Lateral%20Movement/Lateral%20movement%20-%20Credential%20dumping/" class="md-nav__link">
         Lateral movement   Credential dumping
       </a>
     </li>
@@ -650,7 +736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/CybersecurityCourse/Passwords%20and%20MFA/MFA/" class="md-nav__link">
+      <a href="../../Passwords%20and%20MFA/MFA/" class="md-nav__link">
         MFA
       </a>
     </li>
@@ -664,7 +750,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/CybersecurityCourse/Passwords%20and%20MFA/Passwords/" class="md-nav__link">
+      <a href="../../Passwords%20and%20MFA/Passwords/" class="md-nav__link">
         Passwords
       </a>
     </li>
@@ -713,7 +799,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/CybersecurityCourse/Techniques/ATTACK%20-%20MITRE/" class="md-nav__link">
+      <a href="../../Techniques/ATTACK%20-%20MITRE/" class="md-nav__link">
         ATTACK   MITRE
       </a>
     </li>
@@ -727,7 +813,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/CybersecurityCourse/Techniques/DLL%20Hijacking/" class="md-nav__link">
+      <a href="../../Techniques/DLL%20Hijacking/" class="md-nav__link">
         DLL Hijacking
       </a>
     </li>
@@ -741,7 +827,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/CybersecurityCourse/Techniques/Discovery%20-%20Windows%20Domains/" class="md-nav__link">
+      <a href="../../Techniques/Discovery%20-%20Windows%20Domains/" class="md-nav__link">
         Discovery   Windows Domains
       </a>
     </li>
@@ -755,7 +841,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/CybersecurityCourse/Techniques/Enumeration%20-%20Web/" class="md-nav__link">
+      <a href="../../Techniques/Enumeration%20-%20Web/" class="md-nav__link">
         Enumeration   Web
       </a>
     </li>
@@ -769,7 +855,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/CybersecurityCourse/Techniques/PRELIMINARY%20WARNINGS/" class="md-nav__link">
+      <a href="../../Techniques/PRELIMINARY%20WARNINGS/" class="md-nav__link">
         PRELIMINARY WARNINGS
       </a>
     </li>
@@ -783,7 +869,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/CybersecurityCourse/Techniques/Privilege%20escalation%20-%20Linux/" class="md-nav__link">
+      <a href="../../Techniques/Privilege%20escalation%20-%20Linux/" class="md-nav__link">
         Privilege escalation   Linux
       </a>
     </li>
@@ -797,7 +883,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/CybersecurityCourse/Techniques/Shellcode/" class="md-nav__link">
+      <a href="../../Techniques/Shellcode/" class="md-nav__link">
         Shellcode
       </a>
     </li>
@@ -846,7 +932,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/CybersecurityCourse/Vulnerabilities/Exploit%20PoC/" class="md-nav__link">
+      <a href="../../Vulnerabilities/Exploit%20PoC/" class="md-nav__link">
         Exploit PoC
       </a>
     </li>
@@ -860,7 +946,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/CybersecurityCourse/Vulnerabilities/Memory%20corruption_/" class="md-nav__link">
+      <a href="../../Vulnerabilities/Memory%20corruption_/" class="md-nav__link">
         Memory corruption 
       </a>
     </li>
@@ -874,7 +960,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/CybersecurityCourse/Vulnerabilities/Reverse%20engineering/" class="md-nav__link">
+      <a href="../../Vulnerabilities/Reverse%20engineering/" class="md-nav__link">
         Reverse engineering
       </a>
     </li>
@@ -888,7 +974,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/CybersecurityCourse/Vulnerabilities/Vulnerability%20-%20Case%20studies/" class="md-nav__link">
+      <a href="../../Vulnerabilities/Vulnerability%20-%20Case%20studies/" class="md-nav__link">
         Vulnerability   Case studies
       </a>
     </li>
@@ -920,6 +1006,55 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#burp-in-a-nutshell" class="md-nav__link">
+    Burp in a nutshell
+  </a>
+  
+    <nav class="md-nav" aria-label="Burp in a nutshell">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#browsing-through-burp" class="md-nav__link">
+    Browsing through Burp
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basic-usage" class="md-nav__link">
+    Basic usage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-functionalities" class="md-nav__link">
+    Key functionalities
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#my-introductory-slides" class="md-nav__link">
+    My introductory slides
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -930,8 +1065,57 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  <h1>BURP</h1>
+
+<h2 id="burp-in-a-nutshell">Burp in a nutshell</h2>
+<p>Burp is a tool for <strong>web application security testing</strong>. It comes in three versions, one of them (“<a href="https://portswigger.net/burp/communitydownload">Community</a>”) is free. It is installed on the local desktop and <a href="https://portswigger.net/burp/documentation/desktop/getting-started">consists of</a> an <strong>HTTP proxy</strong> with a <strong>graphical interface</strong> for  analyzing and modifying traffic.</p>
+<h3 id="browsing-through-burp">Browsing through Burp</h3>
+<p>You can use the browser embedded in Burp (<strong>Proxy→Intercept→Open browser</strong>) or use an external browser. If using an external browser, then some <a href="https://portswigger.net/burp/documentation/desktop/getting-started/proxy-setup/browser">manual configuration steps</a> are needed on the device where Burp is installed:</p>
+<ol>
+<li>Web navigation has to pass through Burp proxy.</li>
+<li>A <strong>self-signed certificate for Burp</strong> has to be installed in the certificate store of the device where Burp has been installed in order to enable Burp to act as a certification authority. Upon connecting to an HTTPS website, the browser will connect to Burp, that Burp will generate a public-private keypair and a certificate for the public key just generated.</li>
+</ol>
+<h3 id="basic-usage">Basic usage</h3>
+<p>While browsing, Burp <strong>records</strong> all the HTTP traffic.</p>
+<p>Whenever you see an HTTP request in any section of the Burp interface, you can <strong>send</strong> that HTTP request to the web site again, by right clicking on the mouse. You can also select groups of requests and, in some sections of the interface, <strong>edit</strong> the HTTP request before sending it again.</p>
+<p>Burp <strong>constructs a map</strong> of the web site based on the recorded HTTP traffic (<strong>Target→Site map</strong>). Black items are those that have been actually requested while gray items are those that have been inferred from the observed traffic, e.g., links not yet clicked. The professional versions have functionalities for automatic spidering, i.e., for automatically visiting the entire web site and constructing the corresponding site map. </p>
+<p>When faced with an unknown application, the common workflow consists of:</p>
+<ol>
+<li>Interacting with the application in order to collect HTTP traffic and populate the site map.</li>
+<li>Analyze the traffic in search of potentially critical issues that deserve further analysis and investigation.</li>
+</ol>
+<p>Many videos and tutorials on Burp can be found on YouTube. They all assume some basic knowledge of web application security. A video that I think is quite good as an introductory resource is <a href="https://youtu.be/TTBi-G6p-os">Testing for IDOR Vulnerabilities with Burpsuite</a>.</p>
+<h3 id="key-functionalities">Key functionalities</h3>
+<ul>
+<li><strong>Proxy→Intercept</strong> can be toggled on or off. When off, you can browse normally. When on, each request is stopped by Burp and sent to the web site only upon clicking the Forward button, possible after modifying the request content.</li>
+<li><strong>Proxy→HTTP history</strong> keeps track of all the traffic passed through Burp, even while Intercept is off.</li>
+<li><strong>Proxy→Options</strong> allows specifying rules for defining:</li>
+<li>Which requests or responses are stalled for viewing and editing.<ul>
+<li>Example: stall only requests that contain parameters.</li>
+</ul>
+</li>
+<li>Which of a set of predefined modifications are to be applied to responses automatically.<ul>
+<li>Example: replace HTTPS links with HTTP links.</li>
+</ul>
+</li>
+<li>Match-Replace rules for modifying requests or responses automatically.<ul>
+<li>Example: modify the value of User-Agent headers in requests; strip the Strict-Transport-Security headers from responses.</li>
+</ul>
+</li>
+<li><strong>Inspector</strong> allows analyzing messages and items found in messages, e.g., for decoding content as well as for editing and applying the relevant encoding automatically.</li>
+<li><strong>Repeater</strong> allows modifying and sending selected HTTP requests repeatedly. An HTTP request is used as a template; modifications can be described by specifying a portion of the template to be modified at each iteration and the set of values to be used for that portion (e.g., a range of numerical integers, a set of predefined words and alike).</li>
+</ul>
+<h3 id="my-introductory-slides">My introductory slides</h3>
+<p>You can find them <a href="https://docs.google.com/presentation/d/1-aYBIhlpJ65BuIJnoujNlCLxERehW1oU/edit?usp=drive_link&amp;ouid=108514973197758311322&amp;rtpof=true&amp;sd=true">here</a></p>
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -942,6 +1126,42 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../HTTPS%20-%20AitM/AitM%20-%20HTTPS/" class="md-footer__link md-footer__link--prev" aria-label="Previous: AitM   HTTPS" rel="prev">
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                AitM   HTTPS
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../Hacking%20Metasploitable/" class="md-footer__link md-footer__link--next" aria-label="Next: Hacking Metasploitable" rel="next">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Hacking Metasploitable
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -980,10 +1200,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "/CybersecurityCourse/", "features": ["search.suggest", "search.highlight", "navigation.instant", "navigation.tracking", "navigation.footer", "navigation.tabs"], "search": "/CybersecurityCourse/assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "search.highlight", "navigation.instant", "navigation.tracking", "navigation.footer", "navigation.tabs"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/CybersecurityCourse/assets/javascripts/bundle.407015b8.min.js"></script>
+      <script src="../../assets/javascripts/bundle.407015b8.min.js"></script>
       
     
   </body>
