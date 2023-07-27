@@ -8,18 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/Labs/TODO/">
+        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/70%20-%20Authentication%20-%20NTLM%20Kerberos/Authentication%20-%20NTLM/">
       
       
-        <link rel="prev" href="../OWASP%20Juice%20Shop/">
+        <link rel="prev" href="../Authentication%20-%20Kerberos/">
       
+      
+        <link rel="next" href="../../80%20-%20Lateral%20Movement%20and%20AD%20Abuse/Lateral%20movement%20-%20Credential%20dumping/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.5">
     
     
       
-        <title>TODO - Cybersecurity Course - University of Trieste</title>
+        <title>Authentication NTLM - Cybersecurity Course - University of Trieste</title>
       
     
     
@@ -78,6 +80,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#ntlm" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -108,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              TODO
+              Authentication   NTLM
             
           </span>
         </div>
@@ -656,14 +663,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
       
       
       
@@ -672,7 +681,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_8">
           <span class="md-nav__icon md-icon"></span>
           70   Authentication   NTLM Kerberos
@@ -685,7 +694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../70%20-%20Authentication%20-%20NTLM%20Kerberos/Authentication%20-%20General/" class="md-nav__link">
+      <a href="../Authentication%20-%20General/" class="md-nav__link">
         Authentication   General
       </a>
     </li>
@@ -699,7 +708,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../70%20-%20Authentication%20-%20NTLM%20Kerberos/Authentication%20-%20Kerberos/" class="md-nav__link">
+      <a href="../Authentication%20-%20Kerberos/" class="md-nav__link">
         Authentication   Kerberos
       </a>
     </li>
@@ -711,11 +720,62 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../70%20-%20Authentication%20-%20NTLM%20Kerberos/Authentication%20-%20NTLM/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Authentication   NTLM
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Authentication   NTLM
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ntlm" class="md-nav__link">
+    NTLM
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ntlm-relay-coerced-authentication-in-outlook" class="md-nav__link">
+    NTLM Relay + Coerced authentication in Outlook
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ntlm-relay" class="md-nav__link">
+    NTLM Relay
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -873,16 +933,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
       
       
       
@@ -891,7 +949,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_11">
           <span class="md-nav__icon md-icon"></span>
           Labs
@@ -904,7 +962,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../BURP/" class="md-nav__link">
+      <a href="../../Labs/BURP/" class="md-nav__link">
         BURP
       </a>
     </li>
@@ -918,7 +976,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../MITRE_ATTACK_Navigator/" class="md-nav__link">
+      <a href="../../Labs/MITRE_ATTACK_Navigator/" class="md-nav__link">
         MITRE ATTACK Navigator
       </a>
     </li>
@@ -932,7 +990,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../OWASP%20Juice%20Shop/" class="md-nav__link">
+      <a href="../../Labs/OWASP%20Juice%20Shop/" class="md-nav__link">
         OWASP Juice Shop
       </a>
     </li>
@@ -944,19 +1002,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Labs/TODO/" class="md-nav__link">
         TODO
       </a>
-      
     </li>
   
 
@@ -986,6 +1036,35 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ntlm" class="md-nav__link">
+    NTLM
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ntlm-relay-coerced-authentication-in-outlook" class="md-nav__link">
+    NTLM Relay + Coerced authentication in Outlook
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ntlm-relay" class="md-nav__link">
+    NTLM Relay
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -999,18 +1078,23 @@
                   
 
 
-  <h1>TODO</h1>
+  <h1>Authentication   NTLM</h1>
 
+<h2 id="ntlm">NTLM</h2>
+<p><a href="https://csandker.io/2017/09/10/NTLMAuthenticationAWrapUp.html">NTLM Authentication: A Wrap Up</a> Excellent and concise summary, with detailed explanation of <strong>offline cracking</strong>, <strong>pass-the-hash</strong>, <strong>NTLM relay</strong>.</p>
+<h2 id="ntlm-relay-coerced-authentication-in-outlook">NTLM Relay + Coerced authentication in Outlook</h2>
 <ul>
-<li>Lista di corsi "pratici" <a href="../undefined">Courses - Practice - Cybersecurity Networking</a></li>
-<li>Lista di writeup interessanti (notebook writeup)</li>
-<li>Convertire esercitazioni MITM (web server, dns server) e altro</li>
-<li>Convertire i miei appunti Windows?</li>
-<li><a href="https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-clop">An overview of Clop operations</a></li>
-<li><a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-165a">LockBit CISA</a>  </li>
-<li>https://thedfirreport.com/2023/06/12/a-truly-graceful-wipe-out/</li>
-<li>Spiegar IOC e TTP</li>
-<li>Mettere un altro esempio di report in <a href="/Links%20and%20Examples/ATTACK%20-%20MITRE.md">ATTACK - MITRE</a></li>
+<li><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-outlook-zero-day-used-by-russian-hackers-since-april-2022/">Microsoft fixes Outlook zero-day used by Russian hackers since April 2022</a></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-23397">CVE-2023-23397</a></li>
+<li><a href="https://www.youtube.com/watch?v=8OtfW4uo75k">Nice video</a> describing how to obtain full domain compromise. It only takes a meeting invite and a user simply opening outlook to exploit this vulnerability. Some details not easy to understand; it requires a bit of knowledge of Active Directory Certificate Services.</li>
+<li><a href="https://www.akamai.com/blog/security-research/important-outlook-vulnerability-bypass-windows-api">From One Vulnerability to Another: Outlook Patch Analysis Reveals Important Flaw in Windows API</a> Akamai realized that the patch issued by Microsoft was incorrect and a further patch was needed. Very well written. <a href="https://bartoli-alberto.blogspot.com/2023/05/come-non-pensare-alla-penosa.html">My summary and explanation of this mistake</a> (Italian only).</li>
+</ul>
+<h2 id="ntlm-relay">NTLM Relay</h2>
+<p>There is a lot of material describing techniques and tools for executing NTLM Relay attacks. Such material may be hard to understand when the attack is used as part of a more complex chain, in particular, chains based on advanced Kerberos tricks and/or ACL paths in Active Directory. The links below are generally not based on such complex paths. Other relaying examples in the Advanced Kerberos part.</p>
+<ul>
+<li><a href="https://aas-s3curity.gitbook.io/cheatsheet/internalpentest/active-directory/exploitation/exploit-without-account/smb-relay">SMB Relay</a> This page deals with gaining code execution relaying NTLMv1/2 hashes in a very effective manner. Very basic.</li>
+<li><a href="https://www.trustedsec.com/blog/a-comprehensive-guide-on-relaying-anno-2022/">I’M BRINGING RELAYING BACK: A COMPREHENSIVE GUIDE ON RELAYING ANNO 2022</a></li>
+<li><a href="https://0xdeaddood.rocks/2023/02/28/relaying-everything-coercing-authentications-episode-1-mssql/">Relaying Everything: Coercing Authentications Episode 1 – MSSQL</a></li>
 </ul>
 
 

@@ -8,18 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/Labs/TODO/">
+        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/30%20-%20Basic%20Techniques/Shellcode/">
       
       
-        <link rel="prev" href="../OWASP%20Juice%20Shop/">
+        <link rel="prev" href="../Privilege%20escalation%20-%20Linux/">
       
+      
+        <link rel="next" href="../../40%20-%20AiTM%20HTTPS/Resources%20-%20AitM%20-%20HTTPS/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.5">
     
     
       
-        <title>TODO - Cybersecurity Course - University of Trieste</title>
+        <title>Shellcode - Cybersecurity Course - University of Trieste</title>
       
     
     
@@ -78,6 +80,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#shellcode" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -108,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              TODO
+              Shellcode
             
           </span>
         </div>
@@ -397,14 +404,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
       
       
       
@@ -413,7 +422,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           30   Basic Techniques
@@ -426,7 +435,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../30%20-%20Basic%20Techniques/Botnets/" class="md-nav__link">
+      <a href="../Botnets/" class="md-nav__link">
         Botnets
       </a>
     </li>
@@ -440,7 +449,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../30%20-%20Basic%20Techniques/DLL%20Hijacking/" class="md-nav__link">
+      <a href="../DLL%20Hijacking/" class="md-nav__link">
         DLL Hijacking
       </a>
     </li>
@@ -454,7 +463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../30%20-%20Basic%20Techniques/FIX%20-%20PRELIMINARY%20WARNINGS/" class="md-nav__link">
+      <a href="../FIX%20-%20PRELIMINARY%20WARNINGS/" class="md-nav__link">
         FIX
       </a>
     </li>
@@ -468,7 +477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../30%20-%20Basic%20Techniques/FIX%20Discovery%20-%20Windows%20Domains/" class="md-nav__link">
+      <a href="../FIX%20Discovery%20-%20Windows%20Domains/" class="md-nav__link">
         FIX position
       </a>
     </li>
@@ -482,7 +491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../30%20-%20Basic%20Techniques/Impact%20-%20Ransomware/" class="md-nav__link">
+      <a href="../Impact%20-%20Ransomware/" class="md-nav__link">
         Impact - Ransomware
       </a>
     </li>
@@ -496,7 +505,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../30%20-%20Basic%20Techniques/Persistence/" class="md-nav__link">
+      <a href="../Persistence/" class="md-nav__link">
         Persistence
       </a>
     </li>
@@ -510,7 +519,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../30%20-%20Basic%20Techniques/Privilege%20escalation%20-%20Linux/" class="md-nav__link">
+      <a href="../Privilege%20escalation%20-%20Linux/" class="md-nav__link">
         Privilege escalation   Linux
       </a>
     </li>
@@ -522,11 +531,52 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../30%20-%20Basic%20Techniques/Shellcode/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Shellcode
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Shellcode
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#evasion" class="md-nav__link">
+    Evasion
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -873,16 +923,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
       
       
       
@@ -891,7 +939,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_11">
           <span class="md-nav__icon md-icon"></span>
           Labs
@@ -904,7 +952,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../BURP/" class="md-nav__link">
+      <a href="../../Labs/BURP/" class="md-nav__link">
         BURP
       </a>
     </li>
@@ -918,7 +966,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../MITRE_ATTACK_Navigator/" class="md-nav__link">
+      <a href="../../Labs/MITRE_ATTACK_Navigator/" class="md-nav__link">
         MITRE ATTACK Navigator
       </a>
     </li>
@@ -932,7 +980,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../OWASP%20Juice%20Shop/" class="md-nav__link">
+      <a href="../../Labs/OWASP%20Juice%20Shop/" class="md-nav__link">
         OWASP Juice Shop
       </a>
     </li>
@@ -944,19 +992,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Labs/TODO/" class="md-nav__link">
         TODO
       </a>
-      
     </li>
   
 
@@ -985,6 +1025,23 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#evasion" class="md-nav__link">
+    Evasion
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -999,18 +1056,19 @@
                   
 
 
-  <h1>TODO</h1>
-
+<h1 id="shellcode">Shellcode</h1>
 <ul>
-<li>Lista di corsi "pratici" <a href="../undefined">Courses - Practice - Cybersecurity Networking</a></li>
-<li>Lista di writeup interessanti (notebook writeup)</li>
-<li>Convertire esercitazioni MITM (web server, dns server) e altro</li>
-<li>Convertire i miei appunti Windows?</li>
-<li><a href="https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-clop">An overview of Clop operations</a></li>
-<li><a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-165a">LockBit CISA</a>  </li>
-<li>https://thedfirreport.com/2023/06/12/a-truly-graceful-wipe-out/</li>
-<li>Spiegar IOC e TTP</li>
-<li>Mettere un altro esempio di report in <a href="/Links%20and%20Examples/ATTACK%20-%20MITRE.md">ATTACK - MITRE</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Shellcode">Wikipedia</a> has a nice description.</li>
+<li><a href="https://docs.metasploit.com/docs/using-metasploit/basics/how-to-use-msfvenom.html">msfvenom</a> is a tool (part of Metasploit) for <strong>writing shellcodes</strong> in a specified format, given an input program</li>
+<li><a href="https://research.nccgroup.com/2022/09/30/a-glimpse-into-the-shadowy-realm-of-a-chinese-apt-detailed-analysis-of-a-shadowpad-intrusion/">A glimpse into the shadowy realm of a Chinese APT: detailed analysis of a ShadowPad intrusion</a> describes the shellcode used in this campaign.</li>
+</ul>
+<h2 id="evasion">Evasion</h2>
+<ul>
+<li><a href="https://labs.nettitude.com/blog/shellcode-source-mutations/">Avoiding Detection with Shellcode Mutator</a> A tool that <strong>mutates</strong> exploit source code without affecting its functionality, changing its signature and making it harder to reliably detect as malicious.</li>
+<li><a href="https://www.kitploit.com/2023/06/killer-is-tool-created-to-evade-avs-and.html?m=1">Killer</a> - Is A Tool Created To Evade AVs And EDRs Or Security Tools</li>
+<li><a href="https://github.com/CMEPW/BypassAV/tree/main">List of techniques for bypassing AV and EDR</a>, with a nice graphic.</li>
+<li><a href="https://ethicalchaos.dev/2020/05/27/lets-create-an-edr-and-bypass-it-part-1/">Let's create an EDR and bypass it</a>.</li>
+<li><a href="https://redops.at/en/blog/meterpreter-vs-modern-edrs-in-2023">This post</a> describes experiments for <strong>injecting payloads with Meterpreter while bypassing EDR</strong> (Endpoint Detection and Response: the modern term for indicating an "Antivirus"). Section "Meterpreter Reference Dropper" contains an <strong>example of usage</strong> of msfvenom.</li>
 </ul>
 
 

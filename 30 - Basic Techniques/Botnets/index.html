@@ -8,18 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/Labs/TODO/">
+        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/30%20-%20Basic%20Techniques/Botnets/">
       
       
-        <link rel="prev" href="../OWASP%20Juice%20Shop/">
+        <link rel="prev" href="../../20%20-%20MITRE%20ATTACK/Intrusions_Case_Studies/">
       
+      
+        <link rel="next" href="../DLL%20Hijacking/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.5">
     
     
       
-        <title>TODO - Cybersecurity Course - University of Trieste</title>
+        <title>Botnets - Cybersecurity Course - University of Trieste</title>
       
     
     
@@ -78,6 +80,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#botnets" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -108,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              TODO
+              Botnets
             
           </span>
         </div>
@@ -397,14 +404,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
       
       
       
@@ -413,7 +422,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           30   Basic Techniques
@@ -424,11 +433,52 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../30%20-%20Basic%20Techniques/Botnets/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Botnets
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Botnets
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#clickjacking" class="md-nav__link">
+    Clickjacking
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -440,7 +490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../30%20-%20Basic%20Techniques/DLL%20Hijacking/" class="md-nav__link">
+      <a href="../DLL%20Hijacking/" class="md-nav__link">
         DLL Hijacking
       </a>
     </li>
@@ -454,7 +504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../30%20-%20Basic%20Techniques/FIX%20-%20PRELIMINARY%20WARNINGS/" class="md-nav__link">
+      <a href="../FIX%20-%20PRELIMINARY%20WARNINGS/" class="md-nav__link">
         FIX
       </a>
     </li>
@@ -468,7 +518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../30%20-%20Basic%20Techniques/FIX%20Discovery%20-%20Windows%20Domains/" class="md-nav__link">
+      <a href="../FIX%20Discovery%20-%20Windows%20Domains/" class="md-nav__link">
         FIX position
       </a>
     </li>
@@ -482,7 +532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../30%20-%20Basic%20Techniques/Impact%20-%20Ransomware/" class="md-nav__link">
+      <a href="../Impact%20-%20Ransomware/" class="md-nav__link">
         Impact - Ransomware
       </a>
     </li>
@@ -496,7 +546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../30%20-%20Basic%20Techniques/Persistence/" class="md-nav__link">
+      <a href="../Persistence/" class="md-nav__link">
         Persistence
       </a>
     </li>
@@ -510,7 +560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../30%20-%20Basic%20Techniques/Privilege%20escalation%20-%20Linux/" class="md-nav__link">
+      <a href="../Privilege%20escalation%20-%20Linux/" class="md-nav__link">
         Privilege escalation   Linux
       </a>
     </li>
@@ -524,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../30%20-%20Basic%20Techniques/Shellcode/" class="md-nav__link">
+      <a href="../Shellcode/" class="md-nav__link">
         Shellcode
       </a>
     </li>
@@ -873,16 +923,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
       
       
       
@@ -891,7 +939,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_11">
           <span class="md-nav__icon md-icon"></span>
           Labs
@@ -904,7 +952,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../BURP/" class="md-nav__link">
+      <a href="../../Labs/BURP/" class="md-nav__link">
         BURP
       </a>
     </li>
@@ -918,7 +966,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../MITRE_ATTACK_Navigator/" class="md-nav__link">
+      <a href="../../Labs/MITRE_ATTACK_Navigator/" class="md-nav__link">
         MITRE ATTACK Navigator
       </a>
     </li>
@@ -932,7 +980,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../OWASP%20Juice%20Shop/" class="md-nav__link">
+      <a href="../../Labs/OWASP%20Juice%20Shop/" class="md-nav__link">
         OWASP Juice Shop
       </a>
     </li>
@@ -944,19 +992,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Labs/TODO/" class="md-nav__link">
         TODO
       </a>
-      
     </li>
   
 
@@ -985,6 +1025,23 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#clickjacking" class="md-nav__link">
+    Clickjacking
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -999,18 +1056,24 @@
                   
 
 
-  <h1>TODO</h1>
-
+<h1 id="botnets">Botnets</h1>
 <ul>
-<li>Lista di corsi "pratici" <a href="../undefined">Courses - Practice - Cybersecurity Networking</a></li>
-<li>Lista di writeup interessanti (notebook writeup)</li>
-<li>Convertire esercitazioni MITM (web server, dns server) e altro</li>
-<li>Convertire i miei appunti Windows?</li>
-<li><a href="https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-clop">An overview of Clop operations</a></li>
-<li><a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-165a">LockBit CISA</a>  </li>
-<li>https://thedfirreport.com/2023/06/12/a-truly-graceful-wipe-out/</li>
-<li>Spiegar IOC e TTP</li>
-<li>Mettere un altro esempio di report in <a href="/Links%20and%20Examples/ATTACK%20-%20MITRE.md">ATTACK - MITRE</a></li>
+<li><a href="https://dl.acm.org/doi/10.1145/3594554">Keeping Up with the Emotets: Tracking a Multi-Infrastructure Botnet</a> Emotet is arguably one of the most notorious advanced persistent threats. Fantastic analysis.</li>
+<li><a href="https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/antonakakis">Understanding the Mirai Botnet</a> The Mirai botnet, composed primarily of embedded and IoT devices, took the Internet by storm in late 2016 when it overwhelmed several high-profile targets with massive distributed denial-of-service (DDoS) attacks. Still an active menace in 2023: 
+<a href="https://www.theregister.com/2023/05/02/cisa_exploited_flaws_oracle_apache/">Mirai botnet loves exploiting your unpatched TP-Link routers, CISA warns</a>.</li>
+<li><a href="https://sites.cs.ucsb.edu/~vigna/publications/2011_SPMagazine_torpig.pdf">Analysis of a Botnet Takeover</a>  A fascinating in-depth description of a botnet takeover: for 10 days, a group of researchers managed to take control of Torpig, one of the early large scale botnets. </li>
+<li><a href="https://krebsonsecurity.com/2022/11/top-zeus-botnet-suspect-tank-arrested-in-geneva/">Top Zeus Botnet Suspect “Tank” Arrested in Geneva</a> The "author note" at the end is quite interesting from an economic point of view: it makes it evident why ransomware is a much more attractive business model for criminals than bot rentals and alike.</li>
+<li><a href="https://thehackernews.com/2022/03/over-200000-microtik-routers-worldwide.html?m=1">Botnet of Thousands of MikroTik Routers Abused in Glupteba, TrickBot Campaigns</a> Just one of the many botnets still out there.</li>
+</ul>
+<h2 id="clickjacking">Clickjacking</h2>
+<p>A very lucrative usage of botnets is <em>clickjacking</em>, i.e., fraudulent clicks by bots on ads published by criminals. At 10 cents per click, it is easy to imagine the amount of money involved in this kind of frauds. Botnets specialized on this activity are thus particularly sophisticated.  </p>
+<ul>
+<li><a href="https://arstechnica.com/information-technology/2018/12/how-3ves-bgp-hijackers-eluded-the-internet-and-made-29m/">How 3ve’s BGP hijackers eluded the Internet—and made $29M</a> Perhaps the most sophisticated botnet ever developed.</li>
+<li><a href="https://services.google.com/fh/files/blogs/3ve_google_whiteops_whitepaper_final_nov_2018.pdf">The Hunt for 3ve&gt;
+Taking down a major ad fraud operation through industry collaboration</a> The full technical report. Have a look at the infohgraphic on one of the first pages to have an idea of its size.</li>
+<li><a href="https://faculty.cc.gatech.edu/~pearce/papers/zeroaccess_tr_2013.pdf">The ZeroAccess Auto-Clicking
+and Search-Hijacking Click Fraud Modules</a> An older yet very sophisticated and dangerous botnet specialized in clickjacking.</li>
+<li><a href="https://sherloc.unodc.org/cld/case-law-doc/cybercrimecrimetype/xxx/2013/operation_disruption_of_the_zeroaccess_botnet.html">Operation: Disruption of the ZeroAccess botnet</a> A short summary by the United Nations Office on Drugs and Crime summarizing the (partly) successful efforts for disrupting the ZeroAccess botnet.</li>
 </ul>
 
 

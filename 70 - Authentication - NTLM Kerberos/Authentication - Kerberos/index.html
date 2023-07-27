@@ -8,18 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/Labs/TODO/">
+        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/70%20-%20Authentication%20-%20NTLM%20Kerberos/Authentication%20-%20Kerberos/">
       
       
-        <link rel="prev" href="../OWASP%20Juice%20Shop/">
+        <link rel="prev" href="../Authentication%20-%20General/">
       
+      
+        <link rel="next" href="../Authentication%20-%20NTLM/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.5">
     
     
       
-        <title>TODO - Cybersecurity Course - University of Trieste</title>
+        <title>Authentication Kerberos - Cybersecurity Course - University of Trieste</title>
       
     
     
@@ -78,6 +80,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#protocol-specification" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -108,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              TODO
+              Authentication   Kerberos
             
           </span>
         </div>
@@ -656,14 +663,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
       
       
       
@@ -672,7 +681,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_8">
           <span class="md-nav__icon md-icon"></span>
           70   Authentication   NTLM Kerberos
@@ -685,7 +694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../70%20-%20Authentication%20-%20NTLM%20Kerberos/Authentication%20-%20General/" class="md-nav__link">
+      <a href="../Authentication%20-%20General/" class="md-nav__link">
         Authentication   General
       </a>
     </li>
@@ -697,11 +706,68 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../70%20-%20Authentication%20-%20NTLM%20Kerberos/Authentication%20-%20Kerberos/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Authentication   Kerberos
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Authentication   Kerberos
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#protocol-specification" class="md-nav__link">
+    Protocol specification
+  </a>
+  
+    <nav class="md-nav" aria-label="Protocol specification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#storing-long-term-secrets" class="md-nav__link">
+    Storing long term secrets
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kerberos-attacks" class="md-nav__link">
+    Kerberos attacks
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -713,7 +779,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../70%20-%20Authentication%20-%20NTLM%20Kerberos/Authentication%20-%20NTLM/" class="md-nav__link">
+      <a href="../Authentication%20-%20NTLM/" class="md-nav__link">
         Authentication   NTLM
       </a>
     </li>
@@ -873,16 +939,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
       
       
       
@@ -891,7 +955,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_11">
           <span class="md-nav__icon md-icon"></span>
           Labs
@@ -904,7 +968,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../BURP/" class="md-nav__link">
+      <a href="../../Labs/BURP/" class="md-nav__link">
         BURP
       </a>
     </li>
@@ -918,7 +982,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../MITRE_ATTACK_Navigator/" class="md-nav__link">
+      <a href="../../Labs/MITRE_ATTACK_Navigator/" class="md-nav__link">
         MITRE ATTACK Navigator
       </a>
     </li>
@@ -932,7 +996,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../OWASP%20Juice%20Shop/" class="md-nav__link">
+      <a href="../../Labs/OWASP%20Juice%20Shop/" class="md-nav__link">
         OWASP Juice Shop
       </a>
     </li>
@@ -944,19 +1008,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Labs/TODO/" class="md-nav__link">
         TODO
       </a>
-      
     </li>
   
 
@@ -986,6 +1042,41 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#protocol-specification" class="md-nav__link">
+    Protocol specification
+  </a>
+  
+    <nav class="md-nav" aria-label="Protocol specification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#storing-long-term-secrets" class="md-nav__link">
+    Storing long term secrets
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kerberos-attacks" class="md-nav__link">
+    Kerberos attacks
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -999,18 +1090,31 @@
                   
 
 
-  <h1>TODO</h1>
+  <h1>Authentication   Kerberos</h1>
 
+<h2 id="protocol-specification">Protocol specification</h2>
 <ul>
-<li>Lista di corsi "pratici" <a href="../undefined">Courses - Practice - Cybersecurity Networking</a></li>
-<li>Lista di writeup interessanti (notebook writeup)</li>
-<li>Convertire esercitazioni MITM (web server, dns server) e altro</li>
-<li>Convertire i miei appunti Windows?</li>
-<li><a href="https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-clop">An overview of Clop operations</a></li>
-<li><a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-165a">LockBit CISA</a>  </li>
-<li>https://thedfirreport.com/2023/06/12/a-truly-graceful-wipe-out/</li>
-<li>Spiegar IOC e TTP</li>
-<li>Mettere un altro esempio di report in <a href="/Links%20and%20Examples/ATTACK%20-%20MITRE.md">ATTACK - MITRE</a></li>
+<li><a href="https://learn.microsoft.com/en-us/windows/win32/secauthn/microsoft-kerberos?redirectedfrom=MSDN">Microsoft Kerberos</a> All (i.e., too many) details.</li>
+<li><a href="https://www.kerberos.org/software/tutorial.html#1.5.1">Kerberos tutorial</a> Very clear and compact. More focussed on the non-Windows version.</li>
+<li><a href="https://datatracker.ietf.org/doc/html/rfc4120">Kerberos v5 RFC</a>  All (i.e., too many) details.</li>
+<li><a href="https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-pac/c38cc307-f3e6-4ed4-8c81-dc550d96223c">Privilege Attribute Certificate (PAC)</a> Many complex details.</li>
+</ul>
+<h3 id="storing-long-term-secrets">Storing long term secrets</h3>
+<p>Where does a service store its password? There is no user typing that password at bootstrap.</p>
+<ul>
+<li><a href="https://web.mit.edu/kerberos/krb5-1.5/krb5-1.5.4/doc/krb5-install/The-Keytab-File.html">The Keytab File</a> Where service keys are stored in MIT Kerberos.</li>
+<li><a href="https://www.passcape.com/index.php?section=docsys&amp;cmd=details&amp;id=23">Windows LSA secrets</a> LSA secrets is a special protected storage for important data used by the Local Security Authority (LSA) in Windows. LSA is designed for managing a system's local security policy, auditing, authenticating, logging users on to the system, storing private data. Users' and system's sensitive data is stored in secrets. Access to all secret data is available to system only. </li>
+<li><a href="https://www.synacktiv.com/publications/windows-secrets-extraction-a-summary">WINDOWS SECRETS EXTRACTION: A SUMMARY</a> Post-exploitation in Windows environments often implies <strong>secrets collection</strong>. The collected secrets can be reused for lateral or vertical movement, making them high value assets. Most people already know the LSASS process, but other secrets such as LSA secrets and DPAPI ones could also allow privilege escalation or access to sensitive resources. This article will describe the different types of secrets that can be found within a Windows machine, and public tools that can be used to retrieve them. </li>
+</ul>
+<h2 id="kerberos-attacks">Kerberos attacks</h2>
+<ul>
+<li><a href="https://csandker.io/2017/09/12/KerberosAuthenticationAWrapUp.html">Kerberos Authentication: A Wrap Up</a> Very clear and concise summary of Kerberos, along with a detailed explanation of <strong>Kerberoasting</strong> and <strong>AS-REP-roasting</strong>.</li>
+<li><strong>Kerberoasting</strong>. Nice example in the collection below. Slightly more elaborated example in <a href="https://blog.harmj0y.net/redteaming/kerberoasting-revisited/">Kerberoasting revisited</a>.</li>
+<li><a href="https://www.blackhat.com/docs/us-14/materials/us-14-Duckwall-Abusing-Microsoft-Kerberos-Sorry-You-Guys-Don't-Get-It-wp.pdf">Abusing Kerberos</a> Relatively old but still highly relevant for:<ul>
+<li>Salting in Windows Kerberos vs Standard Kerberos</li>
+<li>Golden ticket and ticket validation</li>
+</ul>
+</li>
 </ul>
 
 

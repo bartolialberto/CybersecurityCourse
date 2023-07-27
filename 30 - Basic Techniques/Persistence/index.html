@@ -8,18 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/Labs/TODO/">
+        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/30%20-%20Basic%20Techniques/Persistence/">
       
       
-        <link rel="prev" href="../OWASP%20Juice%20Shop/">
+        <link rel="prev" href="../Impact%20-%20Ransomware/">
       
+      
+        <link rel="next" href="../Privilege%20escalation%20-%20Linux/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.5">
     
     
       
-        <title>TODO - Cybersecurity Course - University of Trieste</title>
+        <title>Persistence - Cybersecurity Course - University of Trieste</title>
       
     
     
@@ -78,6 +80,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#persistence" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -108,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              TODO
+              Persistence
             
           </span>
         </div>
@@ -397,14 +404,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
       
       
       
@@ -413,7 +422,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           30   Basic Techniques
@@ -426,7 +435,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../30%20-%20Basic%20Techniques/Botnets/" class="md-nav__link">
+      <a href="../Botnets/" class="md-nav__link">
         Botnets
       </a>
     </li>
@@ -440,7 +449,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../30%20-%20Basic%20Techniques/DLL%20Hijacking/" class="md-nav__link">
+      <a href="../DLL%20Hijacking/" class="md-nav__link">
         DLL Hijacking
       </a>
     </li>
@@ -454,7 +463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../30%20-%20Basic%20Techniques/FIX%20-%20PRELIMINARY%20WARNINGS/" class="md-nav__link">
+      <a href="../FIX%20-%20PRELIMINARY%20WARNINGS/" class="md-nav__link">
         FIX
       </a>
     </li>
@@ -468,7 +477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../30%20-%20Basic%20Techniques/FIX%20Discovery%20-%20Windows%20Domains/" class="md-nav__link">
+      <a href="../FIX%20Discovery%20-%20Windows%20Domains/" class="md-nav__link">
         FIX position
       </a>
     </li>
@@ -482,7 +491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../30%20-%20Basic%20Techniques/Impact%20-%20Ransomware/" class="md-nav__link">
+      <a href="../Impact%20-%20Ransomware/" class="md-nav__link">
         Impact - Ransomware
       </a>
     </li>
@@ -494,11 +503,66 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../30%20-%20Basic%20Techniques/Persistence/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Persistence
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Persistence
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cc" class="md-nav__link">
+    C&amp;C
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reverse-shells" class="md-nav__link">
+    Reverse shells
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#web-shells" class="md-nav__link">
+    Web shells
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -510,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../30%20-%20Basic%20Techniques/Privilege%20escalation%20-%20Linux/" class="md-nav__link">
+      <a href="../Privilege%20escalation%20-%20Linux/" class="md-nav__link">
         Privilege escalation   Linux
       </a>
     </li>
@@ -524,7 +588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../30%20-%20Basic%20Techniques/Shellcode/" class="md-nav__link">
+      <a href="../Shellcode/" class="md-nav__link">
         Shellcode
       </a>
     </li>
@@ -873,16 +937,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
       
       
       
@@ -891,7 +953,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_11">
           <span class="md-nav__icon md-icon"></span>
           Labs
@@ -904,7 +966,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../BURP/" class="md-nav__link">
+      <a href="../../Labs/BURP/" class="md-nav__link">
         BURP
       </a>
     </li>
@@ -918,7 +980,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../MITRE_ATTACK_Navigator/" class="md-nav__link">
+      <a href="../../Labs/MITRE_ATTACK_Navigator/" class="md-nav__link">
         MITRE ATTACK Navigator
       </a>
     </li>
@@ -932,7 +994,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../OWASP%20Juice%20Shop/" class="md-nav__link">
+      <a href="../../Labs/OWASP%20Juice%20Shop/" class="md-nav__link">
         OWASP Juice Shop
       </a>
     </li>
@@ -944,19 +1006,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Labs/TODO/" class="md-nav__link">
         TODO
       </a>
-      
     </li>
   
 
@@ -985,6 +1039,37 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cc" class="md-nav__link">
+    C&amp;C
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reverse-shells" class="md-nav__link">
+    Reverse shells
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#web-shells" class="md-nav__link">
+    Web shells
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -999,18 +1084,22 @@
                   
 
 
-  <h1>TODO</h1>
-
+<h1 id="persistence">Persistence</h1>
+<h2 id="cc">C&amp;C</h2>
 <ul>
-<li>Lista di corsi "pratici" <a href="../undefined">Courses - Practice - Cybersecurity Networking</a></li>
-<li>Lista di writeup interessanti (notebook writeup)</li>
-<li>Convertire esercitazioni MITM (web server, dns server) e altro</li>
-<li>Convertire i miei appunti Windows?</li>
-<li><a href="https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-clop">An overview of Clop operations</a></li>
-<li><a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-165a">LockBit CISA</a>  </li>
-<li>https://thedfirreport.com/2023/06/12/a-truly-graceful-wipe-out/</li>
-<li>Spiegar IOC e TTP</li>
-<li>Mettere un altro esempio di report in <a href="/Links%20and%20Examples/ATTACK%20-%20MITRE.md">ATTACK - MITRE</a></li>
+<li><a href="https://www.ncsc.gov.uk/report/joint-report-on-publicly-available-hacking-tools">Joint report on publicly available hacking tools</a> Research provided by the cyber security authorities of five nations: Australia, Canada, New Zealand, the UK and USA (the so called "five eyes"). It mentions <a href="https://attack.mitre.org/software/S0040/">HTRAN</a> "<em>a tool that proxies connections through intermediate hops and aids users in disguising their true geographical location</em>".  </li>
+<li>G<a href="https://github.com/HiwinCN/HTran">ithub sources</a></li>
+</ul>
+<h2 id="reverse-shells">Reverse shells</h2>
+<ul>
+<li><a href="https://highon.coffee/blog/reverse-shell-cheat-sheet/">Reverse Shell Cheat Sheet: PHP, Python, Powershell, Bash, NC (netcat), JSP, Java, Perl</a> collection of Windows and Linux reverse shells that use commonly installed programming languages. </li>
+</ul>
+<h2 id="web-shells">Web shells</h2>
+<ul>
+<li><a href="https://hacksland.net/build-a-simple-web-shell">Build A Simple Web shell (PHP)</a></li>
+<li>Breaking Down the China Chopper Web Shell <a href="https://www.mandiant.com/resources/blog/breaking-down-china-chopper-web-shell-part-i">Part I</a> and Part <a href="https://www.mandiant.com/resources/blog/breaking-down-the-china-chopper-web-shell-part-ii">II</a>. This web shell is one of those included in the <a href="https://www.ncsc.gov.uk/report/joint-report-on-publicly-available-hacking-tools">Joint report on publicly available hacking tools</a> mentioned above.</li>
+<li><a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-201a">Threat Actors Exploiting Citrix CVE-2023-3519
+to Implant Webshells</a> An alert by CISA to notify of the explolitation of a certain unauthenticated remote code execution (RCE) vulnerability to drop a webshell in critical infrastructer organizations.</li>
 </ul>
 
 

@@ -1,0 +1,1964 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/10%20-%20Hacking%20Lab/Lab%20-%20Hacking%20Metasploitable/">
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../Lab%20-%20Virtual%20Machines/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.5">
+    
+    
+      
+        <title>Lab Hacking Metasploitable - Cybersecurity Course - University of Trieste</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7a7fce14.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-7FK5GG9NWX"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-7FK5GG9NWX",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-7FK5GG9NWX",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="orange" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#preliminaries" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://bartoli.inginf.units.it" title="Cybersecurity Course - University of Trieste" class="md-header__button md-logo" aria-label="Cybersecurity Course - University of Trieste" data-md-component="logo">
+      
+  <img src="../../bernabeu small.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cybersecurity Course - University of Trieste
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Lab   Hacking Metasploitable
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://bartoli.inginf.units.it" title="Cybersecurity Course - University of Trieste" class="md-nav__button md-logo" aria-label="Cybersecurity Course - University of Trieste" data-md-component="logo">
+      
+  <img src="../../bernabeu small.png" alt="logo">
+
+    </a>
+    Cybersecurity Course - University of Trieste
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Course Topics
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          10   Hacking Lab
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          10   Hacking Lab
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Lab   Hacking Metasploitable
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Lab   Hacking Metasploitable
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#preliminaries" class="md-nav__link">
+    Preliminaries
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-of-the-required-software" class="md-nav__link">
+    Installation of the required software
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation of the required software">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metasploitable3" class="md-nav__link">
+    Metasploitable3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attack-tools" class="md-nav__link">
+    Attack tools
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#virtualbox-configuration" class="md-nav__link">
+    VirtualBox configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="VirtualBox configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#useful-links" class="md-nav__link">
+    Useful links:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observations" class="md-nav__link">
+    Observations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attack-preliminaries" class="md-nav__link">
+    Attack preliminaries
+  </a>
+  
+    <nav class="md-nav" aria-label="Attack preliminaries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metasploit" class="md-nav__link">
+    Metasploit
+  </a>
+  
+    <nav class="md-nav" aria-label="Metasploit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#meterpreter" class="md-nav__link">
+    Meterpreter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#very-brief-example" class="md-nav__link">
+    Very brief example
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useful-links_1" class="md-nav__link">
+    Useful links
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-execute-attacks" class="md-nav__link">
+    How to execute attacks
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attacking-metasploitable3" class="md-nav__link">
+    Attacking metasploitable3
+  </a>
+  
+    <nav class="md-nav" aria-label="Attacking metasploitable3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#preliminaries_1" class="md-nav__link">
+    Preliminaries
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enumeration" class="md-nav__link">
+    Enumeration
+  </a>
+  
+    <nav class="md-nav" aria-label="Enumeration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#preliminaries_2" class="md-nav__link">
+    Preliminaries
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suggestions" class="md-nav__link">
+    Suggestions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smb-exploitation-eternalblue" class="md-nav__link">
+    SMB Exploitation (EternalBlue)
+  </a>
+  
+    <nav class="md-nav" aria-label="SMB Exploitation (EternalBlue)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#suggestions_1" class="md-nav__link">
+    Suggestions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#online-password-guessing" class="md-nav__link">
+    Online password guessing
+  </a>
+  
+    <nav class="md-nav" aria-label="Online password guessing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ssh-password-guessing" class="md-nav__link">
+    SSH password guessing
+  </a>
+  
+    <nav class="md-nav" aria-label="SSH password guessing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#suggestions_2" class="md-nav__link">
+    Suggestions:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remark" class="md-nav__link">
+    Remark
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mysql-password-guessing" class="md-nav__link">
+    MySQL password guessing
+  </a>
+  
+    <nav class="md-nav" aria-label="MySQL password guessing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#suggestions_3" class="md-nav__link">
+    Suggestions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#password-stealing" class="md-nav__link">
+    Password stealing
+  </a>
+  
+    <nav class="md-nav" aria-label="Password stealing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#suggestions_4" class="md-nav__link">
+    Suggestions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#offline-password-guessing" class="md-nav__link">
+    Offline password guessing
+  </a>
+  
+    <nav class="md-nav" aria-label="Offline password guessing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#suggestions_5" class="md-nav__link">
+    Suggestions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-use-the-obtained-passwords" class="md-nav__link">
+    How to use the obtained passwords
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#important-remark-on-windows-password-hashes" class="md-nav__link">
+    Important remark on Windows password hashes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pass-the-hash-pth" class="md-nav__link">
+    Pass the hash (pth)
+  </a>
+  
+    <nav class="md-nav" aria-label="Pass the hash (pth)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#suggestions_6" class="md-nav__link">
+    Suggestions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#important-remark-on-windows-password-hashes_1" class="md-nav__link">
+    Important remark on Windows password hashes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Lab%20-%20Virtual%20Machines/" class="md-nav__link">
+        Lab   Virtual Machines
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Resources/" class="md-nav__link">
+        Hacking - Resources
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          15   Access Control
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          15   Access Control
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../15%20-%20Access%20Control/Resources/" class="md-nav__link">
+        Access Control - Resources
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          20   MITRE ATTACK
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          20   MITRE ATTACK
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../20%20-%20MITRE%20ATTACK/ATTACK%20-%20MITRE/" class="md-nav__link">
+        MITRE ATT&CK
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../20%20-%20MITRE%20ATTACK/Intrusions_Case_Studies/" class="md-nav__link">
+        Intrusions - Case studies
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          30   Basic Techniques
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          30   Basic Techniques
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../30%20-%20Basic%20Techniques/Botnets/" class="md-nav__link">
+        Botnets
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../30%20-%20Basic%20Techniques/DLL%20Hijacking/" class="md-nav__link">
+        DLL Hijacking
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../30%20-%20Basic%20Techniques/FIX%20-%20PRELIMINARY%20WARNINGS/" class="md-nav__link">
+        FIX
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../30%20-%20Basic%20Techniques/FIX%20Discovery%20-%20Windows%20Domains/" class="md-nav__link">
+        FIX position
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../30%20-%20Basic%20Techniques/Impact%20-%20Ransomware/" class="md-nav__link">
+        Impact - Ransomware
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../30%20-%20Basic%20Techniques/Persistence/" class="md-nav__link">
+        Persistence
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../30%20-%20Basic%20Techniques/Privilege%20escalation%20-%20Linux/" class="md-nav__link">
+        Privilege escalation   Linux
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../30%20-%20Basic%20Techniques/Shellcode/" class="md-nav__link">
+        Shellcode
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          40   AiTM HTTPS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          40   AiTM HTTPS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../40%20-%20AiTM%20HTTPS/Resources%20-%20AitM%20-%20HTTPS/" class="md-nav__link">
+        Resources   AitM   HTTPS
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          50   Passwords and MFA
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          50   Passwords and MFA
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../50%20-%20Passwords%20and%20MFA/MFA/" class="md-nav__link">
+        MFA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../50%20-%20Passwords%20and%20MFA/Passwords/" class="md-nav__link">
+        Passwords
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          70   Authentication   NTLM Kerberos
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          70   Authentication   NTLM Kerberos
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../70%20-%20Authentication%20-%20NTLM%20Kerberos/Authentication%20-%20General/" class="md-nav__link">
+        Authentication   General
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../70%20-%20Authentication%20-%20NTLM%20Kerberos/Authentication%20-%20Kerberos/" class="md-nav__link">
+        Authentication   Kerberos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../70%20-%20Authentication%20-%20NTLM%20Kerberos/Authentication%20-%20NTLM/" class="md-nav__link">
+        Authentication   NTLM
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          80   Lateral Movement and AD Abuse
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          80   Lateral Movement and AD Abuse
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../80%20-%20Lateral%20Movement%20and%20AD%20Abuse/Lateral%20movement%20-%20Credential%20dumping/" class="md-nav__link">
+        Lateral Movement - Credential Dumping
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+          90   Vulnerabilities
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
+          90   Vulnerabilities
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../90%20-%20Vulnerabilities/Exploit%20PoC/" class="md-nav__link">
+        Exploit PoC
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../90%20-%20Vulnerabilities/Memory%20corruption_/" class="md-nav__link">
+        Memory corruption 
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../90%20-%20Vulnerabilities/Reverse%20engineering/" class="md-nav__link">
+        Reverse engineering
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../90%20-%20Vulnerabilities/Vulnerability%20-%20Case%20studies/" class="md-nav__link">
+        Vulnerability   Case studies
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+          Labs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_11">
+          <span class="md-nav__icon md-icon"></span>
+          Labs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Labs/BURP/" class="md-nav__link">
+        BURP
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Labs/MITRE_ATTACK_Navigator/" class="md-nav__link">
+        MITRE ATTACK Navigator
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Labs/OWASP%20Juice%20Shop/" class="md-nav__link">
+        OWASP Juice Shop
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Labs/TODO/" class="md-nav__link">
+        TODO
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#preliminaries" class="md-nav__link">
+    Preliminaries
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-of-the-required-software" class="md-nav__link">
+    Installation of the required software
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation of the required software">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metasploitable3" class="md-nav__link">
+    Metasploitable3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attack-tools" class="md-nav__link">
+    Attack tools
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#virtualbox-configuration" class="md-nav__link">
+    VirtualBox configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="VirtualBox configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#useful-links" class="md-nav__link">
+    Useful links:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observations" class="md-nav__link">
+    Observations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attack-preliminaries" class="md-nav__link">
+    Attack preliminaries
+  </a>
+  
+    <nav class="md-nav" aria-label="Attack preliminaries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metasploit" class="md-nav__link">
+    Metasploit
+  </a>
+  
+    <nav class="md-nav" aria-label="Metasploit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#meterpreter" class="md-nav__link">
+    Meterpreter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#very-brief-example" class="md-nav__link">
+    Very brief example
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useful-links_1" class="md-nav__link">
+    Useful links
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-execute-attacks" class="md-nav__link">
+    How to execute attacks
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attacking-metasploitable3" class="md-nav__link">
+    Attacking metasploitable3
+  </a>
+  
+    <nav class="md-nav" aria-label="Attacking metasploitable3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#preliminaries_1" class="md-nav__link">
+    Preliminaries
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enumeration" class="md-nav__link">
+    Enumeration
+  </a>
+  
+    <nav class="md-nav" aria-label="Enumeration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#preliminaries_2" class="md-nav__link">
+    Preliminaries
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suggestions" class="md-nav__link">
+    Suggestions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smb-exploitation-eternalblue" class="md-nav__link">
+    SMB Exploitation (EternalBlue)
+  </a>
+  
+    <nav class="md-nav" aria-label="SMB Exploitation (EternalBlue)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#suggestions_1" class="md-nav__link">
+    Suggestions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#online-password-guessing" class="md-nav__link">
+    Online password guessing
+  </a>
+  
+    <nav class="md-nav" aria-label="Online password guessing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ssh-password-guessing" class="md-nav__link">
+    SSH password guessing
+  </a>
+  
+    <nav class="md-nav" aria-label="SSH password guessing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#suggestions_2" class="md-nav__link">
+    Suggestions:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remark" class="md-nav__link">
+    Remark
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mysql-password-guessing" class="md-nav__link">
+    MySQL password guessing
+  </a>
+  
+    <nav class="md-nav" aria-label="MySQL password guessing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#suggestions_3" class="md-nav__link">
+    Suggestions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#password-stealing" class="md-nav__link">
+    Password stealing
+  </a>
+  
+    <nav class="md-nav" aria-label="Password stealing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#suggestions_4" class="md-nav__link">
+    Suggestions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#offline-password-guessing" class="md-nav__link">
+    Offline password guessing
+  </a>
+  
+    <nav class="md-nav" aria-label="Offline password guessing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#suggestions_5" class="md-nav__link">
+    Suggestions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-use-the-obtained-passwords" class="md-nav__link">
+    How to use the obtained passwords
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#important-remark-on-windows-password-hashes" class="md-nav__link">
+    Important remark on Windows password hashes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pass-the-hash-pth" class="md-nav__link">
+    Pass the hash (pth)
+  </a>
+  
+    <nav class="md-nav" aria-label="Pass the hash (pth)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#suggestions_6" class="md-nav__link">
+    Suggestions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#important-remark-on-windows-password-hashes_1" class="md-nav__link">
+    Important remark on Windows password hashes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Lab   Hacking Metasploitable</h1>
+
+<h2 id="preliminaries">Preliminaries</h2>
+<ol>
+<li>
+<p>For executing the suggested activities you need:</p>
+<ol>
+<li>VirtualBox (or another hypervisor) installed; and,</li>
+<li>some minimal (really minimal) familiarity with virtual machines and VirtualBox usage.</li>
+</ol>
+<p>A companion page of this "book" describes these two topics very briefly.</p>
+</li>
+<li>
+<p>This document is best understood after having attended the accompanying lecture.</p>
+</li>
+</ol>
+<h2 id="installation-of-the-required-software">Installation of the required software</h2>
+<h3 id="metasploitable3">Metasploitable3</h3>
+<p><a href="https://github.com/rapid7/metasploitable3">Metasploitable3</a> is a freely available virtual machine (VM) that contains a number of security vulnerabilities and has been designed for learning purposes. It comes in two flavors: Linux Ubuntu and Windows Server 2008.</p>
+<p>This document assumes that:</p>
+<ul>
+<li>The target is a metasploitable3 VM running Windows Server 2008.</li>
+<li>VMs are executed on <a href="https://www.virtualbox.org/">VirtualBox</a>. </li>
+</ul>
+<p>In order to create a metasploitable3 VM, one can either download a prebuilt image already configured for VirtualBox or construct one. Instructions can be found in <a href="https://github.com/rapid7/metasploitable3">this Github repository</a>. In order to follow the exercises suggested in this document, there is no need to obtain the Linux Ubuntu version. </p>
+<p>Downloading a prebuilt image configured for VirtualBox is simpler and quicker (“quick start” in the Github repo); however, in this case the Windows VM will warn that the 30 days evaluation period has elapsed and the Windows copy is not genuine.</p>
+<h3 id="attack-tools">Attack tools</h3>
+<p>This document assumes that the attacker uses Kali Linux. All the attack tools suggested in this document are already installed in Kali.</p>
+<p>Kali Linux can be used either as a native operating system, or as a VM in VirtualBox, or as a VM in WSL2 (Windows subsystem for Linux).</p>
+<p>Many pages describe how to install a Kali VM on VirtualBox (for example <a href="https://www.nakivo.com/blog/how-to-install-kali-linux-on-virtualbox/">this one</a>). In case WSL2 is used, some of the suggested attack tools (e.g., metasploit, hashcat) will have to be installed because the Kali distribution available for WSL2 is a minimal distribution. Useful links for WSL2are <a href="https://learn.microsoft.com/en-us/windows/wsl/setup/environment">WSL2 best practice</a> and <a href="https://www.kali.org/docs/general-use/metapackages/">Metapackages</a>.</p>
+<p>An alternative to Kali is Parrot OS. This is a Linux distribution similar to Kali that requires less memory and less secondary storage.</p>
+<h3 id="virtualbox-configuration">VirtualBox configuration</h3>
+<p>My suggested configuration is as follows:</p>
+<ul>
+<li>VirtualBox</li>
+<li>1 metasploitable3 Windows VM as target.</li>
+<li>1 Kali (or Parrot OS) VM as attacker.</li>
+<li>Both VMs with network configured in VirtualBox as “NAT network” and part of the same network. </li>
+</ul>
+<p>In this way the VMs (guests) will be able to communicate between themselves. Their servers will not be reachable from the PC running VirtualBox (host) nor from the external network. The VMs will be able to access the host and the external network as clients.</p>
+<h4 id="useful-links">Useful links:</h4>
+<ul>
+<li>Metasploitable3 <a href="https://github.com/rapid7/metasploitable3">Github repository</a>.</li>
+<li>VirtualBox network configuration <a href="https://www.virtualbox.org/manual/ch06.html">manual</a>.</li>
+<li>Guides and tutorials on VirtualBox network configuration: <a href="https://www.nakivo.com/blog/virtualbox-network-setting-guide/">one</a> and <a href="https://fabian-voith.de/2020/04/21/understanding-virtualbox-networking-schemes-to-set-up-a-good-and-safe-lab/">two</a>.</li>
+<li><a href="#appendix-virtual-machines">Appendix </a>to this document about VirtualBox and VirtualBox networking.</li>
+</ul>
+<h4 id="observations">Observations</h4>
+<p>A less hardware-demanding configuration is one in which the host operating system is used as attacker machine, i.e., the attacker machine is not a separate VM. In this case “port forwarding” will have to be enabled on VirtualBox, to make the services that will be attacked visible to the attacker (i.e., to make the servers on the guest o.s. reachable from the host o.s.). There are many ports that will have to be enabled. To find the corresponding list, search for “metasploitable3 enumeration” or a similar term. The same considerations apply to the case in which the attacker machine is run on WSL2.</p>
+<p>A better network configuration for the VMs in VirtualBox would be “internal network”, with both VMs connected to the same internal network. In this way, the VMs would be able to communicate between themselves but they would be fully isolated from the host and from the external network. Configuring the metasploitable3 VM for this network configuration is more difficult, though, because the scripts available in the Github repository configure the VM for the “NAT network” case and would have to be modified (which is not straightforward).</p>
+<h2 id="attack-preliminaries">Attack preliminaries</h2>
+<h3 id="metasploit">Metasploit</h3>
+<p>The main tool for attacking metasploitable3 is <strong>metasploit</strong>. This is a “modular framework” containing a number of modules, each specialized for executing a specific attack to a specific software. There are several ways for actually using this framework, the most common one being a command-line interface.</p>
+<p>Broadly speaking, one should:</p>
+<ol>
+<li>Specify the module or the exploit to be used. This is done by typing a sort of path name for the module.</li>
+<li>Set every option of the module that is not set by default or whose default value is not appropriate. This is done by executing the set option-name command as many times as needed. For example, in most cases considered in this document, it is necessary to execute <code>set rhosts IP-address-target</code>.</li>
+<li>Run the module. This is done by typing <code>run</code>or <code>exploit</code>, depending on the specific module being used.</li>
+</ol>
+<p>Metasploit is a very powerful and complex tool. This document is based on a tiny subset of its capabilities.</p>
+<h4 id="meterpreter">Meterpreter</h4>
+<p>Metasploit contains a remote shell software called <strong>meterpreter</strong>. The default payload of many metasploit exploits is a meterpreter server. If the exploit injection succeeds, thus, there will be a meterpreter session between a client on the attacker machine and a server on the attacked machine. In that case, the attacker will be able to execute many powerful operations on the attacked machine with a simple command-line interface.</p>
+<p>Meterpreter is a very sophisticated tool. For example, the server side usually is not run as a separate process. it is instead executed in the context of an existing process, by overwriting its memory. This fact makes its detection by defenders much more difficult than, e.g., when spawning a shell (i.e., a new process). The server side of meterpreter can also be migrated from the process where it is being executed to another process in execution on the target machine. Furthermore, in order to make its detection more difficult, meterpreter is a reverse shell and communication between client and server may occur over several different transport protocols (http, https, tls). These important topics are not discussed in this document.</p>
+<h4 id="very-brief-example">Very brief example</h4>
+<p>The following screenshot shows:</p>
+<ol>
+<li>Launch metasploit.</li>
+<li>Select a specific exploit for the elasticsearch server.</li>
+<li>Set the rhosts option (for targeting the metasploitable3 VM).</li>
+<li>Run the exploit. Injection is successful and a meterpreter session is open (presence of the “meterpreter &gt;” prompt).</li>
+<li>Execute the meterpreter “<code>shell</code>” command for launching a shell on the attacked machine (this spawns a new process on that machine; as observed above, launching a shell is usually not necessary, one could obtain more or less the same functionality by executing only meterpreter commands). Interaction with this shell is not shown in the figure.</li>
+</ol>
+<p><img alt="56e15719c4544f58d133d9edc23c0ca5.png" src="../../_resources/56e15719c4544f58d133d9edc23c0ca5-1.png" /></p>
+<h4 id="useful-links_1">Useful links</h4>
+<ul>
+<li><a href="https://www.nakivo.com/blog/how-to-install-kali-linux-on-virtualbox/">Installing Kali Linux on a VM on VirtualBox</a>.</li>
+<li>WSL2 (Windows Linux Subsystem): <a href="https://learn.microsoft.com/en-us/windows/wsl/setup/environment">best practice</a> and <a href="https://www.kali.org/docs/general-use/metapackages/">Metapackages</a>.</li>
+<li><a href="https://www.offensive-security.com/metasploit-unleashed/metasploit-fundamentals/">Metasploit full guide</a>.</li>
+<li><a href="https://www.infosecmatter.com/metasploit-module-library/">Metasploit module library</a>.</li>
+<li><a href="https://www.offensive-security.com/metasploit-unleashed/meterpreter-basics/">Meterpreter basic commands</a>.</li>
+</ul>
+<h3 id="how-to-execute-attacks">How to execute attacks</h3>
+<p>Many pages on the web provide forms of walkthrough or tutorials or solutions to one or more of the vulnerabilities in metasploitable3. Although such pages may be useful for learning purposes, they are hardly useful for understanding and generalizing. They typically consist of a long sequence of “use this tool with those options” steps. As a consequence, one may succeed in exploiting that specific vulnerability in that specific case, but without understanding why that approach works, whether other approaches would work as well, whether that approach may be applied to other scenarios and so on.</p>
+<p>My suggestion is to look at tutorials only for having a general idea of what should be done. One should then try to proceed autonomously, of course, with frequent interactions with search engines for finding examples of usage of the numerous hacking tools available.</p>
+<p>The indications below suggest attacks that could be useful for a beginner. Such indications do not take the form of a detailed, precise sequence of steps. They provide instead some general indications, sometimes with a few potentially useful links. One should understand autonomously what to do, by using search engines and, most importantly, by taking personal notes of what has been done, what worked, what did not work.</p>
+<h2 id="attacking-metasploitable3">Attacking metasploitable3</h2>
+<h3 id="preliminaries_1">Preliminaries</h3>
+<p>Vulnerabilities of metasploitable3 are listed in <a href="https://github.com/rapid7/metasploitable3/wiki/Vulnerabilities">this Github page</a>. The listing is very synthetic: it does not provide sufficient information for understanding the nature of a vulnerability, nor does it provide any indications for exploiting it.</p>
+<p>Many vulnerabilities are due to insecure default configuration of servers or to weak passwords.</p>
+<p>The credentials of (almost) all Windows users defined in metasploitable3 are provided in <a href="https://github.com/rapid7/metasploitable3/wiki/Configuration#credentials">this Github page</a>. These credentials may or may not be valid for accessing a given service of metasploitable3. For example, the SMB file-sharing service is accessed with credentials of Windows users while web servers or database servers usually are based on users and credentials stored and managed separately from those of Windows.</p>
+<p>Of course, one should pretend that credentials are not known. My suggestion is using this knowledge only as follows:</p>
+<ul>
+<li>if executing a password guessing attack, either offline (i.e., on stolen hashes with hashcat or with john the ripper) or online (with Hydra) then have a look at those credentials to have an idea of how long the attack might take (of course, in a real attack such an indication would not be available). You might want to prepare a dictionary containing the credentials that are known to be valid (again, in a real attack this knowledge in not available) and one of the dictionaries available in Kali Linux (see the <a href="https://www.kali.org/tools/wordlists/">wordlists </a>package).</li>
+<li>if logging on the Windows VM were necessary for some reason, then use the credentials of the <code>vagrant</code>user (password <code>vagrant</code>);</li>
+</ul>
+<h3 id="enumeration">Enumeration</h3>
+<p>The very first step is finding the IP address of the target machine. The second step is listing the servers (i.e., port numbers and protocols) that can be accessed and attacked. One of the ways these steps may be executed is with the nmap command. The information obtained with these steps is necessary for the attacks described in the next sections.</p>
+<h4 id="preliminaries_2">Preliminaries</h4>
+<ul>
+<li>First of all you need to find the IP address and network number of your Kali machine (ifconfig command).</li>
+<li>Then you need to determine which other hosts are connected to your network. This can be done with “nmap network-number-of-your-interface” (with /24 syntax). You will probably find 3 IP addresses: one for your Kali machine; one for the target (metasploitable3 VM) and the third one for what?</li>
+<li>How to determine which of the two addresses that do not belong to your Kali machine belongs to the target? (hints: which ports are open at those addresses?)</li>
+<li>Useful link: “<a href="https://www.redhat.com/sysadmin/quick-nmap-inventory">Running a quick NMAP scan to inventory my network</a>”.</li>
+</ul>
+<h4 id="suggestions">Suggestions</h4>
+<ul>
+<li>Execute a scan on IP-address-target with nmap with default options.</li>
+<li>Execute another scan with “nmap -sV -p- IP-address-target”, which takes a much longer time and generates much more network traffic but provides a more detailed description. Try to understand the difference in depth and coverage of the scan between the two cases.</li>
+<li>Metasploitable3 has a vulnerable service listening on ports 9200/9300. Is that service detected by nmap in both executions? If yes, is it identified correctly (search on the web what is the typical usage for those ports)?</li>
+<li>Capture the traffic generated by nmap with default options by running wireshark on the attacking machine. This is useful for understanding the amount of “noise” that could be detected by a defender.</li>
+</ul>
+<h3 id="smb-exploitation-eternalblue">SMB Exploitation (EternalBlue)</h3>
+<p><a href="https://en.wikipedia.org/wiki/Server_Message_Block">SMB </a>is a communication protocol for sharing files and printers. A service that can be accessed with this protocol runs on basically all Windows systems. It exposes functionalities for accessing files, navigating through directories and alike (e.g., search “<a href="https://www.google.com/search?client=opera&amp;q=smb+commands+window">smb commands windows</a>”). As such, this service does <strong>not </strong>expose any functionality for executing arbitrary commands, launching a shell, managing users or devices and alike.</p>
+<p>Vulnerability <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2017-0144">CVE-2017-0144</a> affects the Windows SMB server. This vulnerability can be exploited by an unauthenticated remote attacker for executing arbitrary code on the machine running the server (see also <a href="https://learn.microsoft.com/en-us/security-updates/securitybulletins/2017/ms17-010">Microsoft Security Bulletin MS17-010</a>).</p>
+<p>An exploit for this vulnerability, developed by the NSA and secretly used for their attacks, was publicly released on 17/4/2017 by "<a href="https://en.wikipedia.org/wiki/The_Shadow_Brokers">The Shadow Brokers</a>", a hacking group whose real identities are not known. This exploit is widely known as “EternalBlue'' and was used in several large scale ransomware attacks a few months later (<a href="https://en.wikipedia.org/wiki/WannaCry_ransomware_attack">WannaCry</a> / <a href="https://en.wikipedia.org/wiki/Petya_and_NotPetya">NotPetya</a>). Interestingly, a patch for this vulnerability had already been made available by Microsoft at the time of those disrupting attacks. One of the reasons for the large-scale impact of those attacks is that hundreds of thousands of machines around the world had not applied the patch (<a href="https://bartoli-alberto.blogspot.com/2017/05/osservazione-sul-worm-wannacry.html">a few notes</a> by myself on this fact).</p>
+<p>The metasploitable3 Windows VM has this vulnerability (no longer present in modern Windows platforms). Metasploit has a module containing an exploit for that vulnerability, where the default payload launches a Metepreter session with SYSTEM privilege (i.e., a shell with full control on the attacked system).</p>
+<h4 id="suggestions_1">Suggestions</h4>
+<ul>
+<li>Execute the “<code>search</code>” command of metasploit to have a look at the exploits available and possibly focus on those available for Windows targets.</li>
+<li>Use the exploit <a href="https://www.infosecmatter.com/metasploit-module-library/?mm=exploit/windows/smb/ms17_010_eternalblue">exploit/windows/smb/ms17_010_eternalblue</a> for obtaining a <code>meterpreter</code>session on metasploitable3.</li>
+<li>Ascertain the user associated with that session (meterpreter <code>getuid</code> command).</li>
+<li>Take a moment to realize what has happened. By exploiting a mistake in a service for accessing files and printers, one has taken full control of the attacked machine.</li>
+<li>Operate <strong>on metasploitable3 </strong>by playing with **<code>meterpreter</code></strong>. Some suggestions:<ul>
+<li>Have a look at which files might have interesting content (<code>search -f *.pdf</code> or txt or jpg). Search may be rooted at a specified directory with -d.</li>
+<li>Grab a screen of the desktop. To do so, there must be a user logged on metasploitable3, otherwise the screenshot will be fully black (no desktop); you might want to logon some user on metasploitable3, e.g., the <code>vagrant </code>user (password <code>vagrant</code>). Details for grabbing the screenshot are described <a href="https://www.offensive-security.com/metasploit-unleashed/screen-capture/">here</a>: try to understand what you are doing and why.</li>
+<li>Steal password hashes of Windows users (<code>hashdump)</code> and store them in a text file on the attacking machine. This <code>meterpreter </code>command extracts the list of users defined in the Windows operating system with the hashes of the respective passwords. \
+ \
+These hashes may be used later for trying to obtain the respective password (offline guessing, also improperly called “brute force”, with <code>hashcat </code>or <code>john the ripper</code>) or for impersonating the corresponding users even without figuring out the respective passwords (“pass the hash” attack that can be executed with several tools, e.g., <code>win-pth</code>)</li>
+<li>Have a look at the event logs in metasploitable3 (logon as <code>vagrant </code>and then search for the “event viewer”; understanding the meaning of those events and mapping high-level activities to them is very difficult; just have a look and see that there are many events). Then execute the <code>clearev </code>meterpreter command and look at the event logs again. Try to imagine the implications.</li>
+<li>Launch a shell on metasploitable3 with the meterpreter <code>shell </code>command. Execute some shell commands. If you want:<ul>
+<li>Create a new user (search for “windows create user command line”)</li>
+<li>Assign administrator privilege to that user (search for “windows modify user and account privileges command line”).</li>
+<li>Note that the newly created user will be visible on the logon screen of metasploitable3. If one wants to keep the newly created user hidden (in that screen), then a certain system attribute of that user should be modified. This is possible but not trivial, I do not think it is interesting in this context. It may be more interesting to identify the corresponding events that have been generated in the Security log of metasploitable3 and then clearing the log as suggested above.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="online-password-guessing">Online password guessing</h3>
+<p>There are many tools for executing an online password guessing attack, including nmap, metasploit, Hydra (these tools are already installed in Kali). A tool of this kind must be able to execute the authentication exchange of the specific protocol considered and the tools mentioned above support many protocols. In general, one has to specify a list of users and a list of passwords as inputs. There are many such lists available and many possible ways for constructing them. Note that many web pages (somewhat improperly) use the term “brute force” for describing this kind of guessing attacks.</p>
+<p>One could use some of the many wordlists available on Kali Linux (see the <a href="https://www.kali.org/tools/wordlists/">wordlists </a>package), but those attacks would take a very long time. For simplicity, I suggest to proceed as follows:</p>
+<ul>
+<li>Use the cewl command for constructing a new wordlist from the content of the metasploitable3 configuration page: \
+“cewl -d 0 -w metasploitable3.txt <a href="https://github.com/rapid7/metasploitable3/wiki/Configuration">https://github.com/rapid7/metasploitable3/wiki/Configuration</a>” (option “-d 0” instructs cewl to not follow hyperlinks)</li>
+<li>Construct a much smaller wordlist (metasploitable3-short.txt) containing:<ul>
+<li>“vagrant”, “root”, “administrator”, “Administrator”</li>
+<li>5-10 words taken from metasploitable3.txt.</li>
+</ul>
+</li>
+<li>Use metasploitable3-short.txt in the attacks suggested below. This wordlist can be used as a user list or a password list, or both. </li>
+</ul>
+<p>In a real setting one could reasonably use cewl as indicated above for creating metasploitable3.txt. The step for shrinking this wordlist and obtaining metasploitable3-short.txt is obviously not realistic, though.</p>
+<p>Useful link: <a href="https://www.hackingarticles.in/a-detailed-guide-on-hydra/">Detailed guide on Hydra</a>.</p>
+<h4 id="ssh-password-guessing">SSH password guessing</h4>
+<p>The SSH service is an attractive target for password guessing attacks because a success would provide a remote shell (whose level of privilege will depend on the privilege of the user whose credentials have been found).</p>
+<p>Metasploitable3 has weak credentials for this service (of course, in a real setting this knowledge is not available).</p>
+<h5 id="suggestions_2">Suggestions:</h5>
+<ul>
+<li>Try to see whether the metasploitable3 SSH service is vulnerable to the exploit <a href="https://www.infosecmatter.com/metasploit-module-library/?mm=auxiliary/scanner/ssh/ssh_enumusers">auxiliary/scanner/ssh/ssh_enumusers</a>. This exploit takes a list of users as input and tells which of those users is a valid username for the targeted service.</li>
+<li>If the above exploit succeeds, use the corresponding user list with the password list obtained in a previous section for executing a guessing attack. Such an attack may be executed either with Hydra or with metasploit, with <a href="https://www.infosecmatter.com/metasploit-module-library/?mm=auxiliary/scanner/ssh/ssh_login">auxiiary/scanner/ssh/ssh_login</a>.</li>
+<li>Always make sure to set the necessary options for checking whether a null password works.</li>
+<li>If you manage to find valid credentials, you may connect to the SSH service with any SSH client or with the <a href="https://www.infosecmatter.com/metasploit-module-library/?mm=auxiliary/scanner/ssh/ssh_login">auxiiary/scanner/ssh/ssh_login</a> module, by setting the options username and password.</li>
+</ul>
+<h5 id="remark">Remark</h5>
+<p>SSH authentication often requires the client to also prove knowledge of a private key. In this case the server must know the corresponding client public key. The mechanism is conceptually identical to TLS authentication: in the default TLS configuration, it is the server that proves knowledge of a private key and the client must know the matching public key; in the mutual TLS configuration, each of the two sides prove knowledge of the respective private key to the other side.</p>
+<p>When a SSH service is configured with this “public key client authentication” mechanism, knowledge of a client password is not sufficient for impersonating that client. Metasploitable3 is not configured this way, thus obtaining a client password suffices for impersonating that client. Note that a guessing attack for obtaining the private key of a client is not meaningful.</p>
+<h4 id="mysql-password-guessing">MySQL password guessing</h4>
+<p>The MySQL service is an attractive target for password guessing attacks because a success would provide access to the corresponding databases (whose level of privilege will depend on the privilege of the user whose credentials have been found). The content of those databases may be very valuable to the attacker even if the attacker was not able to establish a remote shell. Furthermore, services that store and manage credentials independent of the store of the operating system often store their credentials in a database (this is usually the case of web applications, for example). If a MySQL service is available, probably that is the database used for this purpose.</p>
+<p>Metasploitable3 has weak credentials for this service (of course, in a real setting this knowledge is not available).</p>
+<h5 id="suggestions_3">Suggestions</h5>
+<ul>
+<li>Try to find credentials with Hydra or with metasploit, with <a href="https://www.infosecmatter.com/metasploit-module-library/?mm=auxiliary/scanner/mysql/mysql_login">auxiliary/scanner/msysql/mysql_login</a>. Use metasploitable3-short.txt as user list and password list. Make sure to set the necessary options for checking whether a null password works.</li>
+<li>If you manage to find valid credentials, you may connect to the MySQL service with any MySQL client (search for “kali mysql client”).</li>
+</ul>
+<h3 id="password-stealing">Password stealing</h3>
+<p>Credentials of all Windows users are stored in a portion of secondary storage called SAM (Security Account Manager). Passwords are stored in hashed form. Usage of password hashes by the Attacker is described in the next two sections (<a href="#offline-password-guessing">Offline password guessing</a> and <a href="#pass-the-hash-pth">Pass the hash (pth)</a>). For each password there are usually two hashes computed with different algorithms, one of them for compatibility reasons not discussed here. The SAM content may be read (i.e., password hashes may be stolen) by specialized programs executed on the target machine under an identity with SYSTEM privilege. Several such programs exist.</p>
+<p>Credentials of users of other services that do not rely on Windows credentials could be stored in a database. The target machine has a MySQL service running. This database could store such credentials (hint: it does store Wordpress credentials; Wordpress is an open source content management system widely used for building web sites).</p>
+<h5 id="suggestions_4">Suggestions</h5>
+<ul>
+<li><strong>Stealing credentials of Windows users</strong>. Having obtained a meterpreter session as described in section <a href="#smb-exploitation-eternalblue">SMB Exploitation (EternalBlue)</a>, dump the SAM content with the meterpreter command hashdump and store its output in a text file on the attacking machine.</li>
+<li><strong>Stealing credentials of other services.</strong> Having obtained MySQL credentials as described in section <a href="#mysql-password-guessing">MySQL password guessing</a>, try to determine whether any such credentials have admin privilege on MySQL. Then, use those credentials for:<ul>
+<li>Listing the databases on the MySQL service and see whether there is anyone that could contain credentials of some service.</li>
+<li>Listing the tables of that database and see which one could contain credentials.</li>
+<li>Inspect the schema of that table and prepare a SQL query for extracting the relevant columns.</li>
+<li>Execute that query and store its output in a text file on the attacking machine.</li>
+<li>Useful links: <a href="https://infosecwriteups.com/pwning-wordpress-passwords-2caf12216956">first part of this one</a> and <a href="https://tremblinguterus.blogspot.com/2020/11/metasploitable-3-windows-walkthrough_87.html">second part of this one</a>.</li>
+</ul>
+</li>
+<li>Now ask yourself: do I have passwords or password hashes? What can I do with password hashes? The next sections answer this last question.</li>
+</ul>
+<h3 id="offline-password-guessing">Offline password guessing</h3>
+<p>Offline password guessing is an attack that, given a password hash, attempts to obtain the corresponding password. Since hash functions are designed to be not invertible (an output value does not provide any information about the corresponding input), such attacks work by computing the hash of each password in an input password list until finding a value identical to the hash available. Of course, success of the attack depends on whether the password to be found is in the input password list and on the amount of computing resources available.</p>
+<p>This guessing attack is called “offline” because during its execution there is no communication at all with the service where the targeted credentials are used.</p>
+<h5 id="suggestions_5">Suggestions</h5>
+<ul>
+<li>Take the credentials extracted from MySQL in the previous section.</li>
+<li>Execute hash-identifier on one of the hashes in order to have an indication of the hash function used, i.e., of the program that could have originated that hash (we already have such information: Wordpress).</li>
+<li>Use the password list constructed in section <a href="#online-password-guessing">“Online password guessing”</a> for executing an offline guessing on the Wordpress credentials. Suitable tools are <code>hashcat</code>and john the ripper (command “<code>john</code>”). In less than half an hour you should recover some password (in a real setting you would not know in advance whether the attack will succeed and how much time will be needed). Make sure to invoke the tool such that:<ul>
+<li>The input file containing the hashes is structured as required by the tool (<code>hashcat</code> expects to receive only the hashes, <code>john</code>can receive a SAM line with the suitable input option).</li>
+<li>The correct hash format is specified in input.</li>
+</ul>
+</li>
+<li>Usage of both these tools is quite complex (e.g., john maintains a hidden cache of recently cracked hashes, so in repeated executions those hashes are not cracked again; and, a VM might not have enough memory to run hashcat).ò</li>
+</ul>
+<h5 id="how-to-use-the-obtained-passwords">How to use the obtained passwords</h5>
+<p>Assuming you obtained some wordpress credentials::</p>
+<ol>
+<li>Launch a browser and point it to http://IP-address-target:8585/wordpress (a website created with wordpress is usually available on the standard ports, i.e., 80/443; in metasploitable3 it has instead been configured to be available on port 8585 at that URL).</li>
+<li>Try to find the login page.</li>
+<li>Try to use one of the recovered credentials for becoming the admin of the web site.</li>
+</ol>
+<h5 id="important-remark-on-windows-password-hashes">Important remark on Windows password hashes</h5>
+<p>The very same steps could be executed for an offline guessing attack on the Windows credentials extracted from the SAM.</p>
+<p>However, the hash of a Windows password suffices for impersonating the corresponding user,<strong> even without knowing the password</strong>. The reason for this fact is beyond the scope of this document. In a nutshell:</p>
+<ul>
+<li>Windows uses several authentication protocols, including one called NTLMv2 that is present in all Windows versions.</li>
+<li>NTLMv2 is such that the client must prove knowledge of the hash of a user password.</li>
+<li>A “legitimate” client software designed for Windows takes a password as input, computes its hash and then executes NTLMv2 when needed. Thus, knowledge of a password hash is not sufficient with this kind of software, because such a software will compute the hash of the password hash before executing NTLMv2.</li>
+<li>A client software for executing attacks, instead, takes instead a password hash as input and executes NTLMv2 directly, without computing a further hash of the input. There are many free tools that have been implemented for this purpose. The next section shows an example.</li>
+</ul>
+<h3 id="pass-the-hash-pth">Pass the hash (pth)</h3>
+<p>Pass-the-hash is an attack in which an attacker impersonates a user against a Windows service by using only the password hash of that user. Password hashes may be obtained by dumping the content of a SAM, as described in section <a href="#password-stealing">“Password stealing”</a>.</p>
+<h5 id="suggestions_6">Suggestions</h5>
+<ul>
+<li>Take the hashes extracted from the SAM as in section “<a href="#password-stealing">Password stealing</a>”.</li>
+<li>Use a command from the win-pth suite available in Kali for executing a command on the targeted machine, by using one of those hashes.</li>
+</ul>
+<p>Useful link: <a href="https://www.puckiestyle.nl/pass-the-hash/">https://www.puckiestyle.nl/pass-the-hash/</a></p>
+<h5 id="important-remark-on-windows-password-hashes_1">Important remark on Windows password hashes</h5>
+<p>There are other ways for obtaining Windows password hashes, i.e., by reading them from the memory of a certain system process called LSASS that contains the password hash of all the users that are currently logged in.</p>
+<p>Several tools exist for executing this operation and they have to be executed under an identity with SYSTEM privilege. The one that is most widely known is called mimikatz.</p>
+<p><strong>This kind of attack may be particularly disruptive in enterprise environments</strong>. The reason is because system administrators often execute maintenance operations from a remote location by using credentials with high privilege (which is a very bad practice). If a malicious program with SYSTEM privilege happens to be in execution on the machine where such operations are being executed, that malicious program will steal password hashes of an identity with high privilege; such hash may be typically used on every other machine of the enterprise, again with high privilege.</p>
+<p>This simple fact may lead to total compromise of a large organization.</p>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "search.highlight", "navigation.instant", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.407015b8.min.js"></script>
+      
+    
+  </body>
+</html>

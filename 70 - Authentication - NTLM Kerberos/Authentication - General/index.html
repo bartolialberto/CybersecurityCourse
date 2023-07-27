@@ -8,18 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/Labs/TODO/">
+        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/70%20-%20Authentication%20-%20NTLM%20Kerberos/Authentication%20-%20General/">
       
       
-        <link rel="prev" href="../OWASP%20Juice%20Shop/">
+        <link rel="prev" href="../../50%20-%20Passwords%20and%20MFA/Passwords/">
       
+      
+        <link rel="next" href="../Authentication%20-%20Kerberos/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.5">
     
     
       
-        <title>TODO - Cybersecurity Course - University of Trieste</title>
+        <title>Authentication General - Cybersecurity Course - University of Trieste</title>
       
     
     
@@ -78,6 +80,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#windows-protocol-specifications" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -108,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              TODO
+              Authentication   General
             
           </span>
         </div>
@@ -656,14 +663,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
       
       
       
@@ -672,7 +681,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_8">
           <span class="md-nav__icon md-icon"></span>
           70   Authentication   NTLM Kerberos
@@ -683,11 +692,61 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../70%20-%20Authentication%20-%20NTLM%20Kerberos/Authentication%20-%20General/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Authentication   General
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Authentication   General
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#windows-protocol-specifications" class="md-nav__link">
+    Windows Protocol Specifications
+  </a>
+  
+    <nav class="md-nav" aria-label="Windows Protocol Specifications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#some-wrap-ups" class="md-nav__link">
+    Some wrap ups
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -699,7 +758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../70%20-%20Authentication%20-%20NTLM%20Kerberos/Authentication%20-%20Kerberos/" class="md-nav__link">
+      <a href="../Authentication%20-%20Kerberos/" class="md-nav__link">
         Authentication   Kerberos
       </a>
     </li>
@@ -713,7 +772,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../70%20-%20Authentication%20-%20NTLM%20Kerberos/Authentication%20-%20NTLM/" class="md-nav__link">
+      <a href="../Authentication%20-%20NTLM/" class="md-nav__link">
         Authentication   NTLM
       </a>
     </li>
@@ -873,16 +932,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
       
       
       
@@ -891,7 +948,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_11">
           <span class="md-nav__icon md-icon"></span>
           Labs
@@ -904,7 +961,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../BURP/" class="md-nav__link">
+      <a href="../../Labs/BURP/" class="md-nav__link">
         BURP
       </a>
     </li>
@@ -918,7 +975,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../MITRE_ATTACK_Navigator/" class="md-nav__link">
+      <a href="../../Labs/MITRE_ATTACK_Navigator/" class="md-nav__link">
         MITRE ATTACK Navigator
       </a>
     </li>
@@ -932,7 +989,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../OWASP%20Juice%20Shop/" class="md-nav__link">
+      <a href="../../Labs/OWASP%20Juice%20Shop/" class="md-nav__link">
         OWASP Juice Shop
       </a>
     </li>
@@ -944,19 +1001,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Labs/TODO/" class="md-nav__link">
         TODO
       </a>
-      
     </li>
   
 
@@ -986,6 +1035,34 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#windows-protocol-specifications" class="md-nav__link">
+    Windows Protocol Specifications
+  </a>
+  
+    <nav class="md-nav" aria-label="Windows Protocol Specifications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#some-wrap-ups" class="md-nav__link">
+    Some wrap ups
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -999,18 +1076,23 @@
                   
 
 
-  <h1>TODO</h1>
+  <h1>Authentication   General</h1>
 
+<h2 id="windows-protocol-specifications">Windows Protocol Specifications</h2>
 <ul>
-<li>Lista di corsi "pratici" <a href="../undefined">Courses - Practice - Cybersecurity Networking</a></li>
-<li>Lista di writeup interessanti (notebook writeup)</li>
-<li>Convertire esercitazioni MITM (web server, dns server) e altro</li>
-<li>Convertire i miei appunti Windows?</li>
-<li><a href="https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-clop">An overview of Clop operations</a></li>
-<li><a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-165a">LockBit CISA</a>  </li>
-<li>https://thedfirreport.com/2023/06/12/a-truly-graceful-wipe-out/</li>
-<li>Spiegar IOC e TTP</li>
-<li>Mettere un altro esempio di report in <a href="/Links%20and%20Examples/ATTACK%20-%20MITRE.md">ATTACK - MITRE</a></li>
+<li>
+<p>Microsoft <a href="https://learn.microsoft.com/en-us/openspecs/main/ms-openspeclp/3589baea-5b22-48f2-9d43-f5bea4960ddb">specification</a> of ALL the  protocols (more than 600MB compressed): Windows, Office, SQLServer, SharePoint, Exchange. For <a href="https://learn.microsoft.com/en-us/openspecs/windows_protocols/MS-WINPROTLP/92b33e19-6fff-496b-86c3-d168206f9845">Windows Protocols</a>, the documentation is split up into Windows Technology Overviews, Windows Technical Specifications, and References. Always start from overviews.</p>
+</li>
+<li>
+<p><a href="https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-nlmp/b38c36ed-2804-4868-a9ff-8dd3182128e4">NT LAN Manager (NTLM) Authentication Protocol</a> The original spec by Microsoft. Extremely complex. Too detailed to be useful (unless you are really an expert working on this very specific topic).</p>
+</li>
+<li><a href="https://medium.com/@petergombos/lm-ntlm-net-ntlmv2-oh-my-a9b235c58ed4">LM, NTLM, Net-NTLMv2, oh my!</a> Some order in the very confusing terminology of Windows hashes: NTLM hash, NT hash,...</li>
+<li><a href="https://docs.oracle.com/cd/E37838_01/html/E61050/overview-61.html">Introduction to GSSAPI (Oracle)</a> Generic Security Support API. <a href="https://learn.microsoft.com/en-us/windows-server/security/windows-authentication/security-support-provider-interface-architecture">SSPI Windows Security Support Provider Interface</a> is the Windows GSSAPI implementation.</li>
+</ul>
+<h3 id="some-wrap-ups">Some wrap ups</h3>
+<ul>
+<li><a href="https://csandker.io/2021/02/21/Offensive-Windows-IPC-2-RPC.html">Offensive Windows IPC Internals 2: RPC</a> Explain in detail how Remote Procedure Calls (RPC) works in Windows. An essential issue in many protocols, including <strong>negotiation</strong> of the authentication protocol (for <strong>downgrading</strong> to NTLM when MITM).</li>
+<li><a href="https://csandker.io/2018/04/04/SPNEGODown.html">Downgrade SPNEGO Authentication</a> The Windows protocol that client and server use for negotiating authentication, including the reason why a <em>"use Kerberos"</em> offer can be downgraded to <em>"let's use NTLM"</em>.</li>
 </ul>
 
 

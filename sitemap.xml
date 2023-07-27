@@ -2,132 +2,152 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://bartolialberto.github.io/CybersecurityCourse/</loc>
-         <lastmod>2023-07-24</lastmod>
+         <lastmod>2023-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://bartolialberto.github.io/CybersecurityCourse/Authentication/Authentication%20-%20General/</loc>
-         <lastmod>2023-07-24</lastmod>
+         <loc>https://bartolialberto.github.io/CybersecurityCourse/10%20-%20Hacking%20Lab/Lab%20-%20Hacking%20Metasploitable/</loc>
+         <lastmod>2023-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://bartolialberto.github.io/CybersecurityCourse/Authentication/Authentication%20-%20Kerberos/</loc>
-         <lastmod>2023-07-24</lastmod>
+         <loc>https://bartolialberto.github.io/CybersecurityCourse/10%20-%20Hacking%20Lab/Lab%20-%20Virtual%20Machines/</loc>
+         <lastmod>2023-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://bartolialberto.github.io/CybersecurityCourse/Authentication/Authentication%20-%20NTLM/</loc>
-         <lastmod>2023-07-24</lastmod>
+         <loc>https://bartolialberto.github.io/CybersecurityCourse/10%20-%20Hacking%20Lab/Resources/</loc>
+         <lastmod>2023-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://bartolialberto.github.io/CybersecurityCourse/Case%20Studies%20-%20Intrusions/Intrusions/</loc>
-         <lastmod>2023-07-24</lastmod>
+         <loc>https://bartolialberto.github.io/CybersecurityCourse/15%20-%20Access%20Control/Resources/</loc>
+         <lastmod>2023-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://bartolialberto.github.io/CybersecurityCourse/HTTPS%20-%20AitM/AitM%20-%20HTTPS/</loc>
-         <lastmod>2023-07-24</lastmod>
+         <loc>https://bartolialberto.github.io/CybersecurityCourse/20%20-%20MITRE%20ATTACK/ATTACK%20-%20MITRE/</loc>
+         <lastmod>2023-07-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://bartolialberto.github.io/CybersecurityCourse/20%20-%20MITRE%20ATTACK/Intrusions_Case_Studies/</loc>
+         <lastmod>2023-07-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://bartolialberto.github.io/CybersecurityCourse/30%20-%20Basic%20Techniques/Botnets/</loc>
+         <lastmod>2023-07-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://bartolialberto.github.io/CybersecurityCourse/30%20-%20Basic%20Techniques/DLL%20Hijacking/</loc>
+         <lastmod>2023-07-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://bartolialberto.github.io/CybersecurityCourse/30%20-%20Basic%20Techniques/FIX%20-%20PRELIMINARY%20WARNINGS/</loc>
+         <lastmod>2023-07-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://bartolialberto.github.io/CybersecurityCourse/30%20-%20Basic%20Techniques/FIX%20Discovery%20-%20Windows%20Domains/</loc>
+         <lastmod>2023-07-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://bartolialberto.github.io/CybersecurityCourse/30%20-%20Basic%20Techniques/Impact%20-%20Ransomware/</loc>
+         <lastmod>2023-07-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://bartolialberto.github.io/CybersecurityCourse/30%20-%20Basic%20Techniques/Persistence/</loc>
+         <lastmod>2023-07-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://bartolialberto.github.io/CybersecurityCourse/30%20-%20Basic%20Techniques/Privilege%20escalation%20-%20Linux/</loc>
+         <lastmod>2023-07-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://bartolialberto.github.io/CybersecurityCourse/30%20-%20Basic%20Techniques/Shellcode/</loc>
+         <lastmod>2023-07-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://bartolialberto.github.io/CybersecurityCourse/40%20-%20AiTM%20HTTPS/Resources%20-%20AitM%20-%20HTTPS/</loc>
+         <lastmod>2023-07-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://bartolialberto.github.io/CybersecurityCourse/50%20-%20Passwords%20and%20MFA/MFA/</loc>
+         <lastmod>2023-07-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://bartolialberto.github.io/CybersecurityCourse/50%20-%20Passwords%20and%20MFA/Passwords/</loc>
+         <lastmod>2023-07-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://bartolialberto.github.io/CybersecurityCourse/70%20-%20Authentication%20-%20NTLM%20Kerberos/Authentication%20-%20General/</loc>
+         <lastmod>2023-07-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://bartolialberto.github.io/CybersecurityCourse/70%20-%20Authentication%20-%20NTLM%20Kerberos/Authentication%20-%20Kerberos/</loc>
+         <lastmod>2023-07-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://bartolialberto.github.io/CybersecurityCourse/70%20-%20Authentication%20-%20NTLM%20Kerberos/Authentication%20-%20NTLM/</loc>
+         <lastmod>2023-07-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://bartolialberto.github.io/CybersecurityCourse/80%20-%20Lateral%20Movement%20and%20AD%20Abuse/Lateral%20movement%20-%20Credential%20dumping/</loc>
+         <lastmod>2023-07-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://bartolialberto.github.io/CybersecurityCourse/90%20-%20Vulnerabilities/Exploit%20PoC/</loc>
+         <lastmod>2023-07-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://bartolialberto.github.io/CybersecurityCourse/90%20-%20Vulnerabilities/Memory%20corruption_/</loc>
+         <lastmod>2023-07-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://bartolialberto.github.io/CybersecurityCourse/90%20-%20Vulnerabilities/Reverse%20engineering/</loc>
+         <lastmod>2023-07-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://bartolialberto.github.io/CybersecurityCourse/90%20-%20Vulnerabilities/Vulnerability%20-%20Case%20studies/</loc>
+         <lastmod>2023-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://bartolialberto.github.io/CybersecurityCourse/Labs/BURP/</loc>
-         <lastmod>2023-07-24</lastmod>
+         <lastmod>2023-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://bartolialberto.github.io/CybersecurityCourse/Labs/Hacking%20Metasploitable/</loc>
-         <lastmod>2023-07-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://bartolialberto.github.io/CybersecurityCourse/Labs/MITRE%20ATTACK%20-%20Navigator/</loc>
-         <lastmod>2023-07-24</lastmod>
+         <loc>https://bartolialberto.github.io/CybersecurityCourse/Labs/MITRE_ATTACK_Navigator/</loc>
+         <lastmod>2023-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://bartolialberto.github.io/CybersecurityCourse/Labs/OWASP%20Juice%20Shop/</loc>
-         <lastmod>2023-07-24</lastmod>
+         <lastmod>2023-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://bartolialberto.github.io/CybersecurityCourse/Labs/TODO/</loc>
-         <lastmod>2023-07-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://bartolialberto.github.io/CybersecurityCourse/Labs/Virtual%20Machines/</loc>
-         <lastmod>2023-07-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://bartolialberto.github.io/CybersecurityCourse/Lateral%20Movement/Lateral%20movement%20-%20Credential%20dumping/</loc>
-         <lastmod>2023-07-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://bartolialberto.github.io/CybersecurityCourse/Passwords%20and%20MFA/MFA/</loc>
-         <lastmod>2023-07-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://bartolialberto.github.io/CybersecurityCourse/Passwords%20and%20MFA/Passwords/</loc>
-         <lastmod>2023-07-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://bartolialberto.github.io/CybersecurityCourse/Techniques/ATTACK%20-%20MITRE/</loc>
-         <lastmod>2023-07-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://bartolialberto.github.io/CybersecurityCourse/Techniques/DLL%20Hijacking/</loc>
-         <lastmod>2023-07-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://bartolialberto.github.io/CybersecurityCourse/Techniques/Discovery%20-%20Windows%20Domains/</loc>
-         <lastmod>2023-07-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://bartolialberto.github.io/CybersecurityCourse/Techniques/Enumeration%20-%20Web/</loc>
-         <lastmod>2023-07-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://bartolialberto.github.io/CybersecurityCourse/Techniques/PRELIMINARY%20WARNINGS/</loc>
-         <lastmod>2023-07-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://bartolialberto.github.io/CybersecurityCourse/Techniques/Privilege%20escalation%20-%20Linux/</loc>
-         <lastmod>2023-07-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://bartolialberto.github.io/CybersecurityCourse/Techniques/Shellcode/</loc>
-         <lastmod>2023-07-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://bartolialberto.github.io/CybersecurityCourse/Vulnerabilities/Exploit%20PoC/</loc>
-         <lastmod>2023-07-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://bartolialberto.github.io/CybersecurityCourse/Vulnerabilities/Memory%20corruption_/</loc>
-         <lastmod>2023-07-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://bartolialberto.github.io/CybersecurityCourse/Vulnerabilities/Reverse%20engineering/</loc>
-         <lastmod>2023-07-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://bartolialberto.github.io/CybersecurityCourse/Vulnerabilities/Vulnerability%20-%20Case%20studies/</loc>
-         <lastmod>2023-07-24</lastmod>
+         <lastmod>2023-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
