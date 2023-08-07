@@ -8,20 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/30%20-%20Basic%20Techniques/FIX%20Discovery%20-%20Windows%20Domains/">
+        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/80%20-%20Lateral%20Movement%20and%20AD%20Abuse/Offensive/">
       
       
-        <link rel="prev" href="../FIX%20-%20PRELIMINARY%20WARNINGS/">
+        <link rel="prev" href="../Discovery/">
       
       
-        <link rel="next" href="../Impact%20-%20Ransomware/">
+        <link rel="next" href="../../90%20-%20Vulnerabilities/Memory%20corruption_/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.5">
     
     
       
-        <title>FIX position - Cybersecurity Course - University of Trieste</title>
+        <title>Offensive - Cybersecurity Course - University of Trieste</title>
       
     
     
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#fix-position" class="md-skip">
+        <a href="#offensive" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              FIX position
+              Offensive
             
           </span>
         </div>
@@ -404,16 +404,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
       
       
       
@@ -422,7 +420,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           30   Basic Techniques
@@ -435,154 +433,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../Botnets/" class="md-nav__link">
+      <a href="../../30%20-%20Basic%20Techniques/Basic_Techniques/" class="md-nav__link">
+        Basic Techniques
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../30%20-%20Basic%20Techniques/Botnets/" class="md-nav__link">
         Botnets
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../DLL%20Hijacking/" class="md-nav__link">
-        DLL Hijacking
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../FIX%20-%20PRELIMINARY%20WARNINGS/" class="md-nav__link">
-        FIX
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          FIX position
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        FIX position
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#enumeration" class="md-nav__link">
-    Enumeration
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exploration" class="md-nav__link">
-    Exploration
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Impact%20-%20Ransomware/" class="md-nav__link">
-        Impact - Ransomware
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Persistence/" class="md-nav__link">
-        Persistence
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Privilege%20escalation%20-%20Linux/" class="md-nav__link">
-        Privilege escalation   Linux
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Shellcode/" class="md-nav__link">
-        Shellcode
       </a>
     </li>
   
@@ -630,8 +496,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../../40%20-%20AiTM%20HTTPS/Resources%20-%20AitM%20-%20HTTPS/" class="md-nav__link">
-        Resources   AitM   HTTPS
+      <a href="../../40%20-%20AiTM%20HTTPS/AitM%20-%20HTTPS/" class="md-nav__link">
+        AiTM - HTTPS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../40%20-%20AiTM%20HTTPS/Understanding_MITM_proxies_with_HTTPS/" class="md-nav__link">
+        Understanding MITM proxies with HTTPS
       </a>
     </li>
   
@@ -790,14 +670,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
       
       
       
@@ -806,7 +688,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_9">
           <span class="md-nav__icon md-icon"></span>
           80   Lateral Movement and AD Abuse
@@ -819,9 +701,99 @@
   
   
     <li class="md-nav__item">
-      <a href="../../80%20-%20Lateral%20Movement%20and%20AD%20Abuse/Lateral%20movement%20-%20Credential%20dumping/" class="md-nav__link">
-        Lateral Movement - Credential Dumping
+      <a href="../AD_abuse/" class="md-nav__link">
+        AD Abuse
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Discovery/" class="md-nav__link">
+        Discovery
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Offensive
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Offensive
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#logon-types" class="md-nav__link">
+    Logon types
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#offensive-lateral-movement" class="md-nav__link">
+    Offensive Lateral Movement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lab-examples" class="md-nav__link">
+    Lab Examples
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#offensive-tools" class="md-nav__link">
+    Offensive tools
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -942,12 +914,61 @@
       
       
         <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
-          Labs
+          How to use this website
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_11">
+          <span class="md-nav__icon md-icon"></span>
+          How to use this website
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../How%20to%20use%20this%20website/This_website/" class="md-nav__link">
+        This website
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+          Labs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_12">
           <span class="md-nav__icon md-icon"></span>
           Labs
         </label>
@@ -1042,15 +1063,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#enumeration" class="md-nav__link">
-    Enumeration
+  <a href="#logon-types" class="md-nav__link">
+    Logon types
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#exploration" class="md-nav__link">
-    Exploration
+  <a href="#offensive-lateral-movement" class="md-nav__link">
+    Offensive Lateral Movement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lab-examples" class="md-nav__link">
+    Lab Examples
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#offensive-tools" class="md-nav__link">
+    Offensive tools
   </a>
   
 </li>
@@ -1070,21 +1105,42 @@
                   
 
 
-<h1 id="fix-position">FIX position</h1>
-<p><a href="https://0xdf.gitlab.io/2023/05/27/htb-absolute.html#">Writeup</a> of hacking a vulnerable machine called Absolute in <a href="https://www.hackthebox.com/">Hack The Box</a>.</p>
-<h2 id="enumeration">Enumeration</h2>
-<p>All the commands below can be downloaded from Github.</p>
+<h1 id="offensive">Offensive</h1>
+<h2 id="logon-types">Logon types</h2>
 <ul>
-<li>Command <a href="https://github.com/urbanadventurer/username-anarchy">username-anarchy</a> can be used for <strong>constructing lists of potential usernames</strong> based on predefined criteria or input files.</li>
-<li>Command <a href="https://github.com/ropnop/kerbrute">kerbrute</a> takes a list of usernames and checks <strong>which of those usernames are valid</strong> in a specified domain. It also can perform password stuffing/spraying to the specified domain controller.</li>
-<li>Command <a href="https://wadcoms.github.io/wadcoms/Impacket-GetNPUsers/">Impacket-GetNPUsers</a> (script GetNPUsers of the Impacket framework) takes a list of usernames, selects those that can be attacked with <strong>AS-Rep-Roast</strong> and obtain the corresponding domain controller response in a format suitable to John the ripper or Hashcat.</li>
-<li>Command <a href="https://github.com/pwnfoo/NTLMRecon">NTLMRecon</a> <strong>takes a DNS domain name</strong> as input and looks for <strong>NTLM enabled HTTP endpoints</strong> in that domain. It returns information describing the AD infrastructure, if some HTTP endpoints indeed exist. A detailed example of usage is given in <a href="https://www.sprocketsecurity.com/resources/how-to-bypass-mfa-all-day">Password spraying and MFA bypasses in the modern security landscape</a>.</li>
+<li><a href="https://learn.microsoft.com/en-us/windows-server/identity/securing-privileged-access/reference-tools-logon-types">Administrative tools and logon types</a> A nightmare of variant and details. Practically important for understanding which network operations leave credentials in memory of the remote node.</li>
 </ul>
-<h2 id="exploration">Exploration</h2>
+<h2 id="offensive-lateral-movement">Offensive Lateral Movement</h2>
 <ul>
-<li><a href="https://github.com/SnaffCon/Snaffler?ref=labs.lares.com">Snaffler</a> it takes a list of Windows computers from Active Directory as input; it figures out which ones have file shares, and whether you can read them. It also enumerates the files in these shares and searches passwords (that should not be stored there) with some heuristics.</li>
-<li><a href="https://labs.lares.com/introducing-scraping-kit/">Scraping kit</a> Tools for scraping services, domain controllers, Outlook email client based on a provided list of keywords.</li>
-<li><a href="https://adsecurity.org/?p=4115">There’s Something About Service Accounts Discover (SPN scanning)</a> Discover service accounts (user accounts with SPN). Useful for Kerberoasting. Discover probable AD Admin accounts.</li>
+<li><a href="https://posts.specterops.io/offensive-lateral-movement-1744ae62b14f#:~:text=Lateral%20movement%20is%20the%20process%20of%20moving%20from%20one%20compromised,which%20would%20return%20a%20beacon.">Offensive Lateral Movement</a> The difficulty with lateral movement is doing it with good operational security (OpSec) which means generating the least amount of logs as possible, or generating logs that look normal, i.e. hiding in plain sight to avoid detection. The purpose of this blog post is to not only <em>show the techniques</em>, but to <em>show what is happening under the hood</em> and any high-level indicators associated with them.</li>
+<li><a href="https://www.akamai.com/blog/security-research/linux-lateral-movement-more-than-ssh#file-transfer">The L in Linux Stands for Lateral Movement</a> Only one protocol comes to mind — SSH. In this blog post, we’ll look at other protocols in Linux that can be used to achieve (or to help achieve) lateral movement.</li>
+</ul>
+<h2 id="lab-examples">Lab Examples</h2>
+<p>Fantastic resources with many attacks explained with clear step-by-step instructions.</p>
+<p><a href="https://www.ired.team/offensive-security-experiments/active-directory-kerberos-abuse">Red Team Notes</a> A collection of techniques that exploit and abuse Active Directory, Kerberos authentication, Domain Controllers and similar matters. </p>
+<ul>
+<li>Unconstrained delegation </li>
+<li>Constrained delegation </li>
+<li>Resource-based constrained delegation (RBCD)</li>
+<li>Kerberoasting </li>
+<li>AS-Rep Roasting </li>
+<li>Golden Tickets </li>
+<li>Silver Tickets </li>
+<li>and more</li>
+</ul>
+<p>GOAD - Go Active Directory. It would be nice to have time and skills for setting up their (free) <a href="https://github.com/Orange-Cyberdefense/GOAD">lab</a>. But it is too complex. Many examples, in particular:</p>
+<ul>
+<li><a href="https://mayfly277.github.io/posts/GOADv2-pwning-part10/">Delegations</a></li>
+<li><a href="https://mayfly277.github.io/posts/GOADv2-pwning-part11/">ACL</a> based on BloodHound</li>
+<li><a href="https://mayfly277.github.io/posts/GOADv2-pwning-part9/">Lateral Movement</a></li>
+</ul>
+<h2 id="offensive-tools">Offensive tools</h2>
+<ul>
+<li><a href="https://github.com/GhostPack/Rubeus">Rubeus</a> Ticket requests and renewals; Ticket Forgery; Ticket Management; Ticket Extraction and Harvesting; Brute force and spray; Constrained delegation abuse; Roasting; S4U.</li>
+<li><a href="https://wiki.porchetta.industries/">CrackMapExec (a.k.a CME)</a> is a post-exploitation tool that helps automate assessing the security of large Active Directory networks. Built with stealth in mind, CME follows the concept of "Living off the Land": abusing built-in Active Directory features/protocols to achieve its functionality and allowing it to evade most endpoint protection/IDS/IPS solutions.
+CME makes heavy use of the Impacket library for working with network protocols and performing a variety of post-exploitation techniques.</li>
+<li><a href="https://github.com/ly4k/Certipy">Certipy</a> Offensive tool for enumerating and abusing Active Directory Certificate Services (AD CS).</li>
+<li><a href="https://github.com/ParrotSec/mimikatz">Mimikatz</a> The father of modern Windows attacks. Many tutorials out there, including <a href="https://www.sentinelone.com/cybersecurity-101/mimikatz/#:~:text=Mimikatz%20is%20a%20tool%20that,credentials%2C%20from%20a%20system%27s%20memory.">this one</a>.</li>
 </ul>
 
 
