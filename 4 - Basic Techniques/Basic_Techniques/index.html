@@ -8,20 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/How%20to%20use%20this%20website/This_website/">
+        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/4%20-%20Basic%20Techniques/Basic_Techniques/">
       
       
-        <link rel="prev" href="../../9%20-%20Vulnerabilities/Vulnerability%20-%20Case%20studies/">
+        <link rel="prev" href="../../3%20-%20MITRE%20ATTACK/Intrusions_Case_Studies/">
       
       
-        <link rel="next" href="../../Labs/BURP/">
+        <link rel="next" href="../Botnets/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.5">
     
     
       
-        <title>This website - Cybersecurity Course - University of Trieste</title>
+        <title>Basic Techniques - Cybersecurity Course - University of Trieste</title>
       
     
     
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#this-website" class="md-skip">
+        <a href="#basic-techniques" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              This website
+              Basic Techniques
             
           </span>
         </div>
@@ -390,14 +390,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
       
       
       
@@ -406,7 +408,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           4   Basic Techniques
@@ -417,11 +419,114 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../4%20-%20Basic%20Techniques/Basic_Techniques/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Basic Techniques
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Basic Techniques
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#malware" class="md-nav__link">
+    Malware
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dll" class="md-nav__link">
+    DLL
+  </a>
+  
+    <nav class="md-nav" aria-label="DLL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dll-hijacking" class="md-nav__link">
+    DLL Hijacking
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#privilege-escalation-linux" class="md-nav__link">
+    Privilege Escalation - Linux
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cc" class="md-nav__link">
+    C&amp;C
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reverse-shells" class="md-nav__link">
+    Reverse shells
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#web-shells" class="md-nav__link">
+    Web shells
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#impact-ransomware" class="md-nav__link">
+    Impact - Ransomware
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appendix-evasion" class="md-nav__link">
+    Appendix: Evasion
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -433,7 +538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../4%20-%20Basic%20Techniques/Botnets/" class="md-nav__link">
+      <a href="../Botnets/" class="md-nav__link">
         Botnets
       </a>
     </li>
@@ -824,16 +929,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
       
       
       
@@ -842,7 +945,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_11">
           <span class="md-nav__icon md-icon"></span>
           How to use this website
@@ -853,59 +956,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          This website
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../How%20to%20use%20this%20website/This_website/" class="md-nav__link">
         This website
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#do-not-be-frustrated" class="md-nav__link">
-    Do not be frustrated
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#chatgpt-bard" class="md-nav__link">
-    ChatGPT / Bard
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1035,15 +1090,70 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#do-not-be-frustrated" class="md-nav__link">
-    Do not be frustrated
+  <a href="#malware" class="md-nav__link">
+    Malware
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chatgpt-bard" class="md-nav__link">
-    ChatGPT / Bard
+  <a href="#dll" class="md-nav__link">
+    DLL
+  </a>
+  
+    <nav class="md-nav" aria-label="DLL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dll-hijacking" class="md-nav__link">
+    DLL Hijacking
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#privilege-escalation-linux" class="md-nav__link">
+    Privilege Escalation - Linux
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cc" class="md-nav__link">
+    C&amp;C
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reverse-shells" class="md-nav__link">
+    Reverse shells
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#web-shells" class="md-nav__link">
+    Web shells
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#impact-ransomware" class="md-nav__link">
+    Impact - Ransomware
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appendix-evasion" class="md-nav__link">
+    Appendix: Evasion
   </a>
   
 </li>
@@ -1063,19 +1173,63 @@
                   
 
 
-<h1 id="this-website">This website</h1>
-<p>This website contains a curated list of references, grouped according to the topics listed.</p>
-<p>References provide real-world examples, in-depth analysis, technical manuals and the like. They are intended to be a resource for those interested in delving deeper.</p>
-<p>Please always keep in mind that <em>the content of this website is not needed for the exam</em>: the slides are all that is needed in this respect.</p>
-<h2 id="do-not-be-frustrated">Do not be frustrated</h2>
-<p>Many of the linked documents can only be fully understood with very specific technical skills (and sometimes theoretical knowledge) far beyond those required or provided by this course. Please try to focus on the topics relevant to the course. Most importantly, do not be frustrated if you do not manage to understand everything.</p>
-<p>In many cases I do not understand everything either.</p>
-<h2 id="chatgpt-bard">ChatGPT / Bard</h2>
-<p>Many examples and writeups are based on very specific commands of Linux, Windows, Powershell, PHP and other technologies.</p>
-<p>When reading commands, or a piece of a program, that you do not understand, you might want to ask ChatGPT/Bard with a prompt like “explain” followed by that command (that can often be cut-and-paste easily)</p>
-<p>While <em>there is no guarantee that the response will be correct</em> in many cases the response is very useful (and indeed correct).</p>
-<p>Relying on ChatGPT/Bard for having a quick (approximate) understanding of what a piece of code actually does is a strategy used also by a top security company, Mandiant: see <a href="https://www.mandiant.com/resources/blog/mandiant-leveraging-ai">Analyzing an Alert for a PowerShell Script</a> (there might be a conflict of interest, though, as Mandiant is part of Google and this post promotes the use of Bard, also a Google service).</p>
-<p>I have occasionally provided a link to brief explanations provided by ChatGPT/Bard on specific topics, for ease of reading. As just pointed out, there is no guarantee that those explanations are correct: take them just as hints.</p>
+<h1 id="basic-techniques">Basic Techniques</h1>
+<h2 id="malware">Malware</h2>
+<p>One of the many topics that would deserve a (close to impossible to maintain) encyclopedia.</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Shellcode">Wikipedia</a> has a nice description of <em>shellcodes</em> (i.e., first-stage malware).</li>
+<li><a href="https://docs.metasploit.com/docs/using-metasploit/basics/how-to-use-msfvenom.html">msfvenom</a> is a <em>payload generator</em> (part of Metasploit) for
+writing shellcodes in a specified format, given an input program. Another example of usage below in this page</li>
+<li><a href="../../3%20-%20MITRE%20ATTACK/Intrusions_Case_Studies/">Intrusions Case Studies</a> Many of the case studies in this page describe malware samples in detail.</li>
+</ul>
+<h2 id="dll">DLL</h2>
+<p><em>Dynamic-link libraries (DLLs)</em> are code modules that contain sets of functions that other executables can call. Unlike statically linked libraries, which become part of an executable during the compilation process, DLLs can live on their own outside of the application that uses them. There are two ways to perform linking with DLLs: implicit or explicit.
+- A listing of the DLLs loaded by an executable can be obtained with Process Monitor from sysinternals
+- Decompilation of a specified DLL (in order to see which files are possibly loaded by that DLL from which directory) can be done with <code>dnspy</code>.
+- <a href="https://chat.openai.com/share/b1aaa09f-126e-42f3-a7f2-462f33a3446a">A chat with ChatGPT about some DLL tools</a></p>
+<ul>
+<li><a href="https://www.codereversing.com/archives/653">DLL Injection: Background &amp; DLL Proxying</a>. The first of a 5-part and in-depth analysis of DLL injection in WIndows. Next parts are: Windows Hooks, Remote Threads, Thread Context Hijacking, Manual Mapping. </li>
+</ul>
+<h3 id="dll-hijacking">DLL Hijacking</h3>
+<ul>
+<li><a href="https://hijacklibs.net/">HijackLibs</a> describes DLL hijacking and a searchable list of DLL Hijacking candidates (mapping between DLLs and vulnerable executables).
+For defenders, this project can provide valuable information when trying to detect DLL Hijacking attempts.</li>
+<li><a href="https://notes.secure77.de/?link=%2FWriteUps%2FVulnLab%2FBruno%2FWriteup">Writeup</a> of hacking a vulnerable machine called Bruno in <a href="https://www.vulnlab.com/main/standalone-labs">VulnLab</a>. One the steps (<a href="https://notes.secure77.de/?link=%2FWriteUps%2FVulnLab%2FBruno%2FWriteup#SampleScanner_APP">SampleScanner APP</a>) is based on a form of DLL hijacking. A malicious DLL is written in a folder determined with process monitor and dnspy. Actual writing occurs with a path traversal in unzipping.</li>
+</ul>
+<h3 id="privilege-escalation-linux">Privilege Escalation - Linux</h3>
+<p><a href="https://infosecwriteups.com/privileges-escalation-techniques-basic-to-advanced-in-linux-3cff8b623b">Part 1</a> and <a href="https://infosecwriteups.com/privileges-escalation-techniques-basic-to-advanced-in-linux-973cb62cbe8d">Part 2</a>.</p>
+<h2 id="cc">C&amp;C</h2>
+<ul>
+<li><a href="https://www.ncsc.gov.uk/report/joint-report-on-publicly-available-hacking-tools">Joint report on publicly available hacking tools</a> Research provided by the cyber security authorities of five nations: Australia, Canada, New Zealand, the UK and USA (the so called "five eyes"). It mentions <a href="https://attack.mitre.org/software/S0040/">HTRAN</a> "<em>a tool that proxies connections through intermediate hops and aids users in disguising their true geographical location</em>" (<a href="https://github.com/HiwinCN/HTran">HTRAN sources on Github</a>).</li>
+</ul>
+<h2 id="reverse-shells">Reverse shells</h2>
+<ul>
+<li><a href="https://highon.coffee/blog/reverse-shell-cheat-sheet/">Reverse Shell Cheat Sheet: PHP, Python, Powershell, Bash, NC (netcat), JSP, Java, Perl</a> collection of Windows and Linux reverse shells that use commonly installed programming languages. </li>
+</ul>
+<h2 id="web-shells">Web shells</h2>
+<ul>
+<li><a href="https://hacksland.net/build-a-simple-web-shell">Build A Simple Web shell (PHP)</a></li>
+<li>Breaking Down the China Chopper Web Shell <a href="https://www.mandiant.com/resources/blog/breaking-down-china-chopper-web-shell-part-i">Part I</a> and Part <a href="https://www.mandiant.com/resources/blog/breaking-down-the-china-chopper-web-shell-part-ii">II</a>. This web shell is one of those included in the <a href="https://www.ncsc.gov.uk/report/joint-report-on-publicly-available-hacking-tools">Joint report on publicly available hacking tools</a> mentioned above.</li>
+</ul>
+<p>Some of the many alerts about web shell implants.</p>
+<ul>
+<li><a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-201a">Threat Actors Exploiting Citrix CVE-2023-3519
+to Implant Webshells</a> An alert by CISA to notify of the explolitation of a certain unauthenticated remote code execution (RCE) vulnerability to drop a webshell in critical infrastructure organizations.</li>
+<li><a href="https://blog.aquasec.com/tomcat-under-attack-investigating-the-mirai-malware">Tomcat Under Attack: Exploring Mirai Malware and Beyond</a> Not particularly sophisticated and much less relevant and surprising than claimed in the post...just a few hundreds web shells planted by using default Tomcat credentials. Nice to read and well written, though. </li>
+</ul>
+<h2 id="impact-ransomware">Impact - Ransomware</h2>
+<ul>
+<li><a href="https://www.secureworks.com/research/revil-sodinokibi-ransomware">REvil/Sodinokibi Ransomware</a>. The REvil (also known as Sodinokibi) ransomware was first identified on April 17, 2019. It is used by the financially motivated GOLD SOUTHFIELD threat group, which distributes ransomware via exploit kits, scan-and-exploit techniques, RDP servers, and backdoored software installers. The ransomware group REvil was itself hacked and forced offline by a multi-country operation (see <a href="https://www.reuters.com/technology/exclusive-governments-turn-tables-ransomware-gang-revil-by-pushing-it-offline-2021-10-21/">Governments turn tables on ransomware gang REvil by pushing it offline</a>) .</li>
+</ul>
+<h2 id="appendix-evasion">Appendix: Evasion</h2>
+<p>This is out of scope (not discussed in the course) but may be interesting.</p>
+<ul>
+<li><a href="https://labs.nettitude.com/blog/shellcode-source-mutations/">Avoiding Detection with Shellcode Mutator</a> A tool that <em>mutates</em> exploit source code without affecting its functionality, changing its signature and making it harder to reliably detect as malicious.</li>
+<li><a href="https://www.kitploit.com/2023/06/killer-is-tool-created-to-evade-avs-and.html?m=1">Killer</a>: A Tool Created To Evade AVs And EDRs Or Security Tools</li>
+<li><a href="https://github.com/CMEPW/BypassAV/tree/main">List of techniques for bypassing AV and EDR</a>, with a nice graphic.</li>
+<li><a href="https://ethicalchaos.dev/2020/05/27/lets-create-an-edr-and-bypass-it-part-1/">Let's create an EDR and bypass it</a>.</li>
+<li><a href="https://redops.at/en/blog/meterpreter-vs-modern-edrs-in-2023">Meterpreter vs Modern EDR(s)</a> describes experiments for <em>injecting payloads with Meterpreter while bypassing EDR</em> (Endpoint Detection and Response: the modern term for indicating an "Antivirus"). Section "Meterpreter Reference Dropper" contains an <em>example of usage of msfvenom</em>.</li>
+</ul>
 
 
   

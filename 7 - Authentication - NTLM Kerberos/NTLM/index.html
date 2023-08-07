@@ -8,20 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/How%20to%20use%20this%20website/This_website/">
+        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/7%20-%20Authentication%20-%20NTLM%20Kerberos/NTLM/">
       
       
-        <link rel="prev" href="../../9%20-%20Vulnerabilities/Vulnerability%20-%20Case%20studies/">
+        <link rel="prev" href="../Kerberos/">
       
       
-        <link rel="next" href="../../Labs/BURP/">
+        <link rel="next" href="../../8%20-%20Lateral%20Movement%20and%20AD%20Abuse/AD_abuse/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.5">
     
     
       
-        <title>This website - Cybersecurity Course - University of Trieste</title>
+        <title>NTLM - Cybersecurity Course - University of Trieste</title>
       
     
     
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#this-website" class="md-skip">
+        <a href="#ntlm" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              This website
+              NTLM
             
           </span>
         </div>
@@ -579,14 +579,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
       
       
       
@@ -595,7 +597,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_8">
           <span class="md-nav__icon md-icon"></span>
           7   Authentication   NTLM Kerberos
@@ -608,7 +610,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../7%20-%20Authentication%20-%20NTLM%20Kerberos/Authentication%20-%20Windows/" class="md-nav__link">
+      <a href="../Authentication%20-%20Windows/" class="md-nav__link">
         Authentication - Windows
       </a>
     </li>
@@ -622,7 +624,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../7%20-%20Authentication%20-%20NTLM%20Kerberos/Kerberos/" class="md-nav__link">
+      <a href="../Kerberos/" class="md-nav__link">
         Kerberos
       </a>
     </li>
@@ -634,11 +636,59 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../7%20-%20Authentication%20-%20NTLM%20Kerberos/NTLM/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          NTLM
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         NTLM
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ntlm-relay" class="md-nav__link">
+    NTLM Relay
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ntlm-relay-coerced-authentication-in-outlook" class="md-nav__link">
+    NTLM Relay + Coerced authentication in Outlook
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -824,16 +874,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
       
       
       
@@ -842,7 +890,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_11">
           <span class="md-nav__icon md-icon"></span>
           How to use this website
@@ -853,59 +901,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          This website
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../How%20to%20use%20this%20website/This_website/" class="md-nav__link">
         This website
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#do-not-be-frustrated" class="md-nav__link">
-    Do not be frustrated
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#chatgpt-bard" class="md-nav__link">
-    ChatGPT / Bard
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1035,15 +1035,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#do-not-be-frustrated" class="md-nav__link">
-    Do not be frustrated
+  <a href="#ntlm-relay" class="md-nav__link">
+    NTLM Relay
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chatgpt-bard" class="md-nav__link">
-    ChatGPT / Bard
+  <a href="#ntlm-relay-coerced-authentication-in-outlook" class="md-nav__link">
+    NTLM Relay + Coerced authentication in Outlook
   </a>
   
 </li>
@@ -1063,19 +1063,31 @@
                   
 
 
-<h1 id="this-website">This website</h1>
-<p>This website contains a curated list of references, grouped according to the topics listed.</p>
-<p>References provide real-world examples, in-depth analysis, technical manuals and the like. They are intended to be a resource for those interested in delving deeper.</p>
-<p>Please always keep in mind that <em>the content of this website is not needed for the exam</em>: the slides are all that is needed in this respect.</p>
-<h2 id="do-not-be-frustrated">Do not be frustrated</h2>
-<p>Many of the linked documents can only be fully understood with very specific technical skills (and sometimes theoretical knowledge) far beyond those required or provided by this course. Please try to focus on the topics relevant to the course. Most importantly, do not be frustrated if you do not manage to understand everything.</p>
-<p>In many cases I do not understand everything either.</p>
-<h2 id="chatgpt-bard">ChatGPT / Bard</h2>
-<p>Many examples and writeups are based on very specific commands of Linux, Windows, Powershell, PHP and other technologies.</p>
-<p>When reading commands, or a piece of a program, that you do not understand, you might want to ask ChatGPT/Bard with a prompt like “explain” followed by that command (that can often be cut-and-paste easily)</p>
-<p>While <em>there is no guarantee that the response will be correct</em> in many cases the response is very useful (and indeed correct).</p>
-<p>Relying on ChatGPT/Bard for having a quick (approximate) understanding of what a piece of code actually does is a strategy used also by a top security company, Mandiant: see <a href="https://www.mandiant.com/resources/blog/mandiant-leveraging-ai">Analyzing an Alert for a PowerShell Script</a> (there might be a conflict of interest, though, as Mandiant is part of Google and this post promotes the use of Bard, also a Google service).</p>
-<p>I have occasionally provided a link to brief explanations provided by ChatGPT/Bard on specific topics, for ease of reading. As just pointed out, there is no guarantee that those explanations are correct: take them just as hints.</p>
+<h1 id="ntlm">NTLM</h1>
+<ul>
+<li><a href="https://csandker.io/2017/09/10/NTLMAuthenticationAWrapUp.html">NTLM Authentication: A Wrap Up</a> Excellent and concise summary, with detailed explanation of:<ul>
+<li>offline cracking</li>
+<li>pass-the-hash</li>
+<li>NTLM relay</li>
+</ul>
+</li>
+<li><a href="https://medium.com/@petergombos/lm-ntlm-net-ntlmv2-oh-my-a9b235c58ed4">LM, NTLM, Net-NTLMv2, oh my!</a> Some order in the very confusing terminology of Windows hashes: NTLM hash, NT hash,...</li>
+</ul>
+<h2 id="ntlm-relay">NTLM Relay</h2>
+<p>There is a lot of existing material describing techniques and tools for executing NTLM Relay attacks. Such material may be hard to understand when the attack is used as part of a more complex chain, in particular, chains based on advanced Kerberos tricks and/or ACL paths in Active Directory. The links below are generally not based on such complex paths.</p>
+<ul>
+<li><a href="https://aas-s3curity.gitbook.io/cheatsheet/internalpentest/active-directory/exploitation/exploit-without-account/smb-relay">SMB Relay</a> This page deals with gaining code execution relaying NTLMv1/2 hashes in a very effective manner. Very basic.</li>
+<li><a href="https://www.trustedsec.com/blog/a-comprehensive-guide-on-relaying-anno-2022/">I’M BRINGING RELAYING BACK: A COMPREHENSIVE GUIDE ON RELAYING ANNO 2022</a></li>
+<li><a href="https://0xdeaddood.rocks/2023/02/28/relaying-everything-coercing-authentications-episode-1-mssql/">Relaying Everything: Coercing Authentications Episode 1 – MSSQL</a></li>
+<li>Other relaying examples in the section about <a href="../../8%20-%20Lateral%20Movement%20and%20AD%20Abuse/AD_abuse/">AD Abuse</a>.</li>
+</ul>
+<h2 id="ntlm-relay-coerced-authentication-in-outlook">NTLM Relay + Coerced authentication in Outlook</h2>
+<ul>
+<li><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-outlook-zero-day-used-by-russian-hackers-since-april-2022/">Microsoft fixes Outlook zero-day used by Russian hackers since April 2022</a></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-23397">CVE-2023-23397</a></li>
+<li><a href="https://www.youtube.com/watch?v=8OtfW4uo75k">Nice video</a> describing how to obtain full domain compromise. It only takes a meeting invite and a user simply opening outlook to exploit this vulnerability. Some details not easy to understand; it requires a bit of knowledge of Active Directory Certificate Services.</li>
+<li><a href="https://www.akamai.com/blog/security-research/important-outlook-vulnerability-bypass-windows-api">From One Vulnerability to Another: Outlook Patch Analysis Reveals Important Flaw in Windows API</a> Akamai realized that the patch issued by Microsoft was incorrect and a further patch was needed. Very well written. <a href="https://bartoli-alberto.blogspot.com/2023/05/come-non-pensare-alla-penosa.html">My summary and explanation of this mistake</a> (Italian only).</li>
+</ul>
 
 
   

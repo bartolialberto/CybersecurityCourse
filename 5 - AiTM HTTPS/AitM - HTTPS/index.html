@@ -8,20 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/How%20to%20use%20this%20website/This_website/">
+        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/5%20-%20AiTM%20HTTPS/AitM%20-%20HTTPS/">
       
       
-        <link rel="prev" href="../../9%20-%20Vulnerabilities/Vulnerability%20-%20Case%20studies/">
+        <link rel="prev" href="../../4%20-%20Basic%20Techniques/Botnets/">
       
       
-        <link rel="next" href="../../Labs/BURP/">
+        <link rel="next" href="../Understanding_MITM_proxies_with_HTTPS/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.5">
     
     
       
-        <title>This website - Cybersecurity Course - University of Trieste</title>
+        <title>AiTM - HTTPS - Cybersecurity Course - University of Trieste</title>
       
     
     
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#this-website" class="md-skip">
+        <a href="#aitm-https" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              This website
+              AiTM - HTTPS
             
           </span>
         </div>
@@ -453,14 +453,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
       
       
       
@@ -469,7 +471,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
           5   AiTM HTTPS
@@ -480,11 +482,113 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../5%20-%20AiTM%20HTTPS/AitM%20-%20HTTPS/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          AiTM - HTTPS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         AiTM - HTTPS
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#proxy-tls-interception" class="md-nav__link">
+    Proxy TLS interception
+  </a>
+  
+    <nav class="md-nav" aria-label="Proxy TLS interception">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#software-tools" class="md-nav__link">
+    Software tools
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evilginx" class="md-nav__link">
+    Evilginx
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#certificate-transparency" class="md-nav__link">
+    Certificate Transparency
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#certificate-pinning" class="md-nav__link">
+    Certificate pinning
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tls" class="md-nav__link">
+    TLS
+  </a>
+  
+    <nav class="md-nav" aria-label="TLS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tls-internals" class="md-nav__link">
+    TLS internals
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#certification-authorities-trust-and-revocation" class="md-nav__link">
+    Certification authorities: trust and revocation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -496,7 +600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../5%20-%20AiTM%20HTTPS/Understanding_MITM_proxies_with_HTTPS/" class="md-nav__link">
+      <a href="../Understanding_MITM_proxies_with_HTTPS/" class="md-nav__link">
         Understanding MITM proxies with HTTPS
       </a>
     </li>
@@ -824,16 +928,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
       
       
       
@@ -842,7 +944,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_11">
           <span class="md-nav__icon md-icon"></span>
           How to use this website
@@ -853,59 +955,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          This website
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../How%20to%20use%20this%20website/This_website/" class="md-nav__link">
         This website
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#do-not-be-frustrated" class="md-nav__link">
-    Do not be frustrated
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#chatgpt-bard" class="md-nav__link">
-    ChatGPT / Bard
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1035,16 +1089,70 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#do-not-be-frustrated" class="md-nav__link">
-    Do not be frustrated
+  <a href="#proxy-tls-interception" class="md-nav__link">
+    Proxy TLS interception
+  </a>
+  
+    <nav class="md-nav" aria-label="Proxy TLS interception">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#software-tools" class="md-nav__link">
+    Software tools
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evilginx" class="md-nav__link">
+    Evilginx
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#certificate-transparency" class="md-nav__link">
+    Certificate Transparency
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chatgpt-bard" class="md-nav__link">
-    ChatGPT / Bard
+  <a href="#certificate-pinning" class="md-nav__link">
+    Certificate pinning
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tls" class="md-nav__link">
+    TLS
+  </a>
+  
+    <nav class="md-nav" aria-label="TLS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tls-internals" class="md-nav__link">
+    TLS internals
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#certification-authorities-trust-and-revocation" class="md-nav__link">
+    Certification authorities: trust and revocation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1063,19 +1171,63 @@
                   
 
 
-<h1 id="this-website">This website</h1>
-<p>This website contains a curated list of references, grouped according to the topics listed.</p>
-<p>References provide real-world examples, in-depth analysis, technical manuals and the like. They are intended to be a resource for those interested in delving deeper.</p>
-<p>Please always keep in mind that <em>the content of this website is not needed for the exam</em>: the slides are all that is needed in this respect.</p>
-<h2 id="do-not-be-frustrated">Do not be frustrated</h2>
-<p>Many of the linked documents can only be fully understood with very specific technical skills (and sometimes theoretical knowledge) far beyond those required or provided by this course. Please try to focus on the topics relevant to the course. Most importantly, do not be frustrated if you do not manage to understand everything.</p>
-<p>In many cases I do not understand everything either.</p>
-<h2 id="chatgpt-bard">ChatGPT / Bard</h2>
-<p>Many examples and writeups are based on very specific commands of Linux, Windows, Powershell, PHP and other technologies.</p>
-<p>When reading commands, or a piece of a program, that you do not understand, you might want to ask ChatGPT/Bard with a prompt like “explain” followed by that command (that can often be cut-and-paste easily)</p>
-<p>While <em>there is no guarantee that the response will be correct</em> in many cases the response is very useful (and indeed correct).</p>
-<p>Relying on ChatGPT/Bard for having a quick (approximate) understanding of what a piece of code actually does is a strategy used also by a top security company, Mandiant: see <a href="https://www.mandiant.com/resources/blog/mandiant-leveraging-ai">Analyzing an Alert for a PowerShell Script</a> (there might be a conflict of interest, though, as Mandiant is part of Google and this post promotes the use of Bard, also a Google service).</p>
-<p>I have occasionally provided a link to brief explanations provided by ChatGPT/Bard on specific topics, for ease of reading. As just pointed out, there is no guarantee that those explanations are correct: take them just as hints.</p>
+<h1 id="aitm-https">AiTM - HTTPS</h1>
+<h2 id="proxy-tls-interception">Proxy TLS interception</h2>
+<ul>
+<li><a href="https://www.enisa.europa.eu/publications/encrypted-traffic-analysis">Encrypted Traffic Analysis (ENISA)</a> Key use cases: application identification, network analytics, user information identification, detection of encrypted malware, file/device/website/location fingerprinting and DNS tunnelling detection.</li>
+</ul>
+<h3 id="software-tools">Software tools</h3>
+<ul>
+<li><a href="https://mitmproxy.org/">mitmproxy</a> is your swiss-army knife for debugging, testing, privacy measurements, and penetration testing. It can be used to intercept, inspect, modify and replay web traffic such as HTTP/1, HTTP/2, WebSockets, or any other SSL/TLS-protected protocols</li>
+<li><a href="https://portswigger.net/burp/communitydownload">Burp Suite Community Edition</a> Start your web security testing journey for free.</li>
+<li><a href="https://www.telerik.com/fiddler">Fiddler</a> Web debugging proxy for MacOS, Windows, and Linux</li>
+</ul>
+<h3 id="evilginx">Evilginx</h3>
+<ul>
+<li><a href="https://github.com/kgretzky/evilginx2">Evilginx 3.0</a> Man-in-the-middle attack framework used for phishing login credentials along with session cookies, which in turn allows to bypass 2-factor authentication protection.<ul>
+<li>This tool is a successor to Evilginx, released in 2017, which used a custom version of nginx HTTP server to provide man-in-the-middle functionality to act as a proxy between a browser and phished website.</li>
+<li>Most existing tutorials are for version 2. Version 3 phishlets (i.e., YAML configuration files for targeting a specific site) are not fully compatible with version 2, hence some tutorial might not work with the new version.</li>
+</ul>
+</li>
+<li><a href="https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/bypassing-2fa-authentication-with-evilginx2/">Bypassing 2FA Authentication with Evilginx2</a></li>
+<li><a href="https://janbakker.tech/how-to-set-up-evilginx-to-phish-office-365-credentials/">How to set up Evilginx to phish Office 365 credentials</a></li>
+</ul>
+<h2 id="certificate-transparency">Certificate Transparency</h2>
+<ul>
+<li><a href="https://medium.com/cloud-security/certificate-transparency-logs-what-you-need-to-know-c7d20738eaa9#id_token=eyJhbGciOiJSUzI1NiIsImtpZCI6IjY3NmRhOWQzMTJjMzlhNDI5OTMyZjU0M2U2YzFiNmU2NTEyZTQ5ODMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJuYmYiOjE2ODkyNDE1MDMsImF1ZCI6IjIxNjI5NjAzNTgzNC1rMWs2cWUwNjBzMnRwMmEyamFtNGxqZGNtczAwc3R0Zy5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsInN1YiI6IjEwODUxNDk3MzE5Nzc1ODMxMTMyMiIsImVtYWlsIjoiYmFydG9saS5hbGJlcnRvQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhenAiOiIyMTYyOTYwMzU4MzQtazFrNnFlMDYwczJ0cDJhMmphbTRsamRjbXMwMHN0dGcuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJuYW1lIjoiQWxiZXJ0byBCYXJ0b2xpIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FBY0hUdGVnUzdLU2h0UTRHcVpETmg3bDk5NngtQnVSUTJvNTNxckI3Vjl1TWtSM0RoYz1zOTYtYyIsImdpdmVuX25hbWUiOiJBbGJlcnRvIiwiZmFtaWx5X25hbWUiOiJCYXJ0b2xpIiwiaWF0IjoxNjg5MjQxODAzLCJleHAiOjE2ODkyNDU0MDMsImp0aSI6IjM2NDk4Y2I0MThkNTI3OGI4NjU4Njk4NTk1YjQ5MTFlNmFlOTdmYWYifQ.OJSvpq_4YeJAyH5Eh9W4zW4e1jA2Jy8eMCWEO5n09zK3nDGQfc4b5E6ccWkxsClQVimZg-Yn8y2lg_i82X5JBsrQSGnWlePDDptQDhUClP9o59aJOOUwQ1wl3SMrHBWTYhTcQ0_YKGdL9CNg9ekRv0GN5I0nDvwaHa-3P8-QN2KzURlPOK32R_w2Q-ASVaWvp3rzLjbvd1Sh2d6xe7xRB34TQtlFrbS1lOjMD9RQG9aOGg5zJRr-qyLO1S3TnXExykFdPxoH-wGmpqcyathexI9t1MB-7wUn1rjQcPx_GRF8u1B6ePTQIS5_FWPZ466q5868XHTvqHodHbCMJufxDA">Certificate Transparency Logs —What you need to know</a></li>
+</ul>
+<h2 id="certificate-pinning">Certificate pinning</h2>
+<ul>
+<li><a href="https://littlemaninmyhead.wordpress.com/2020/06/08/understanding-certificate-pinning/">Understanding certificate pinning</a></li>
+<li><a href="https://repositum.tuwien.at/bitstream/20.500.12708/150264/1/Pradeep-2022-A%20Comparative%20Analysis%20of%20Certificate%20Pinning%20in%20Android%20%20iOS-ao.pdf">Certificate pinning: A Comparative Analysis of Certificate Pinning in Android &amp; iOS</a>. A scientific paper with a large scale analysis. Interesting for understanding how to determine whether a smartphone app indeed implements Certificate pinning. <em>"We find that 0.9% to 8% of Android apps and 2.5% to 11% of iOS apps use certificate pinning"</em>.</li>
+<li><a href="https://www.youtube.com/watch?v=xp8ufidc514">Intercepting Android App Traffic with BurpSuite</a> Video on setting up an Android VM, Installing the Burp Certificate in the System Store, and proxying application traffic through BurpSuite. It also go over using Frida to defeat certificate pinning.</li>
+<li><a href="https://petruknisme.medium.com/easy-way-to-bypass-ssl-pinning-with-objection-frida-beginner-friendly-58118be4094">Easy Way to Bypass SSL Pinning with Objection &amp; Frida (Beginner Friendly)</a></li>
+</ul>
+<h2 id="tls">TLS</h2>
+<ul>
+<li><a href="https://www.feistyduck.com/ssl-tls-and-pki-history/">SSL/TLS and PKI History</a>
+A comprehensive history of the most important events that shaped the SSL/TLS and PKI ecosystem (i.e., certificates and certification authorities). Describes the major vulnerabilities discovered in this area. </li>
+<li><a href="https://www.ssllabs.com/ssltest/index.html">SSL Server Test</a> Free online service performs a deep analysis of the configuration of any TLS SSL web server on the public Internet (is the TLS configuration ofn esse3.units.it ok?)</li>
+<li><a href="https://securityheaders.com/">Security Headers</a> A similar service that focusses instead on the security-relevant HTTPS headers.</li>
+</ul>
+<h3 id="tls-internals">TLS internals</h3>
+<p>Out of scope but important topic.</p>
+<ul>
+<li><a href="https://textbook.cs161.org/network/tls.html">31 TLS</a> from Computer Security at Berkeley (CS161). Everything in this book is more than ok. </li>
+<li><a href="https://tls12.xargs.org/">The Illustrated TLS 1.2 Connection</a>
+Every byte explained and reproduced (TLS 1.2, TLS 1.3, QUIC)</li>
+<li><a href="https://tlseminar.github.io/first-few-milliseconds/">The First Few Milliseconds of an TLS 1.2 Connection</a> </li>
+<li><a href="https://www.cloudflare.com/learning/ssl/why-use-tls-1.3/">Why use TLS 1.3?</a> by Cloudflare, clear and concise.</li>
+</ul>
+<h3 id="certification-authorities-trust-and-revocation">Certification authorities: trust and revocation</h3>
+<ul>
+<li><a href="https://textbook.cs161.org/crypto/certificates.html">13. Certificates</a> from Computer Security at Berkeley (CS161). Everything in this book is more than ok. </li>
+<li><a href="https://blog.apnic.net/2022/03/22/whats-going-on-with-certificate-revocation/">What’s going on with certificate revocation?</a> A <em>fantastic</em> description of why certificate revocation is so hard. Complex because the topic is complex.</li>
+<li><a href="https://pluralistic.net/2022/11/09/infosec-blackpill/">Delegating trust is really, really, really hard (infosec edition)</a> A <em>fantastic</em> description of why defining and managing trust in certification authorities is so hard. Complex because the topic is complex.</li>
+<li><a href="https://koen.engineer/russias-certificate-authority-for-sanctioned-organizations-645d61af8ac6">Russia’s certificate authority for sanctioned organizations</a></li>
+<li><a href="https://www.agwa.name/blog/post/roots_intermediates_and_resellers">The Difference Between Root Certificate Authorities, Intermediates, and Resellers</a></li>
+<li><a href="https://www.agwa.name/blog/post/checking_if_a_certificate_is_revoked_how_hard_can_it_be">Checking if a Certificate is Revoked: How Hard Can It Be?</a> Another discussion of why certificate revocation is hard. </li>
+</ul>
 
 
   

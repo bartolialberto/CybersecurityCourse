@@ -8,20 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/How%20to%20use%20this%20website/This_website/">
+        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/6%20-%20Passwords%20and%20MFA/Passwords/">
       
       
-        <link rel="prev" href="../../9%20-%20Vulnerabilities/Vulnerability%20-%20Case%20studies/">
+        <link rel="prev" href="../MFA/">
       
       
-        <link rel="next" href="../../Labs/BURP/">
+        <link rel="next" href="../../7%20-%20Authentication%20-%20NTLM%20Kerberos/Authentication%20-%20Windows/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.5">
     
     
       
-        <title>This website - Cybersecurity Course - University of Trieste</title>
+        <title>Passwords - Cybersecurity Course - University of Trieste</title>
       
     
     
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#this-website" class="md-skip">
+        <a href="#analyses-of-password-attacks" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              This website
+              Passwords
             
           </span>
         </div>
@@ -516,14 +516,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
       
       
       
@@ -532,7 +534,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
           6   Passwords and MFA
@@ -545,7 +547,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../6%20-%20Passwords%20and%20MFA/MFA/" class="md-nav__link">
+      <a href="../MFA/" class="md-nav__link">
         MFA
       </a>
     </li>
@@ -557,11 +559,69 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../6%20-%20Passwords%20and%20MFA/Passwords/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Passwords
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Passwords
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#analyses-of-password-attacks" class="md-nav__link">
+    Analyses of password attacks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#password-choice" class="md-nav__link">
+    Password Choice
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#password-storage" class="md-nav__link">
+    Password Storage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#benchmarks-cracking-speed" class="md-nav__link">
+    Benchmarks / Cracking speed
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -824,16 +884,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
       
       
       
@@ -842,7 +900,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_11">
           <span class="md-nav__icon md-icon"></span>
           How to use this website
@@ -853,59 +911,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          This website
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../How%20to%20use%20this%20website/This_website/" class="md-nav__link">
         This website
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#do-not-be-frustrated" class="md-nav__link">
-    Do not be frustrated
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#chatgpt-bard" class="md-nav__link">
-    ChatGPT / Bard
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1025,8 +1035,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1035,15 +1043,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#do-not-be-frustrated" class="md-nav__link">
-    Do not be frustrated
+  <a href="#analyses-of-password-attacks" class="md-nav__link">
+    Analyses of password attacks
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chatgpt-bard" class="md-nav__link">
-    ChatGPT / Bard
+  <a href="#password-choice" class="md-nav__link">
+    Password Choice
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#password-storage" class="md-nav__link">
+    Password Storage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#benchmarks-cracking-speed" class="md-nav__link">
+    Benchmarks / Cracking speed
   </a>
   
 </li>
@@ -1063,19 +1085,54 @@
                   
 
 
-<h1 id="this-website">This website</h1>
-<p>This website contains a curated list of references, grouped according to the topics listed.</p>
-<p>References provide real-world examples, in-depth analysis, technical manuals and the like. They are intended to be a resource for those interested in delving deeper.</p>
-<p>Please always keep in mind that <em>the content of this website is not needed for the exam</em>: the slides are all that is needed in this respect.</p>
-<h2 id="do-not-be-frustrated">Do not be frustrated</h2>
-<p>Many of the linked documents can only be fully understood with very specific technical skills (and sometimes theoretical knowledge) far beyond those required or provided by this course. Please try to focus on the topics relevant to the course. Most importantly, do not be frustrated if you do not manage to understand everything.</p>
-<p>In many cases I do not understand everything either.</p>
-<h2 id="chatgpt-bard">ChatGPT / Bard</h2>
-<p>Many examples and writeups are based on very specific commands of Linux, Windows, Powershell, PHP and other technologies.</p>
-<p>When reading commands, or a piece of a program, that you do not understand, you might want to ask ChatGPT/Bard with a prompt like “explain” followed by that command (that can often be cut-and-paste easily)</p>
-<p>While <em>there is no guarantee that the response will be correct</em> in many cases the response is very useful (and indeed correct).</p>
-<p>Relying on ChatGPT/Bard for having a quick (approximate) understanding of what a piece of code actually does is a strategy used also by a top security company, Mandiant: see <a href="https://www.mandiant.com/resources/blog/mandiant-leveraging-ai">Analyzing an Alert for a PowerShell Script</a> (there might be a conflict of interest, though, as Mandiant is part of Google and this post promotes the use of Bard, also a Google service).</p>
-<p>I have occasionally provided a link to brief explanations provided by ChatGPT/Bard on specific topics, for ease of reading. As just pointed out, there is no guarantee that those explanations are correct: take them just as hints.</p>
+  <h1>Passwords</h1>
+
+<h2 id="analyses-of-password-attacks">Analyses of password attacks</h2>
+<ul>
+<li><a href="https://github.com/ignis-sec/Pwdb-Public">PWDB - New generation of Password Mass-Analysis</a> Interesting facts and statistics from the analysis of hundreds of millions of leaked passwords.</li>
+<li><a href="https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/your-pa-word-doesn-t-matter/ba-p/731984">Your Pa$$word doesn't matter (2019)</a> An analysis of password attacks observed by Microsoft Threat Intelligence.</li>
+<li><a href="https://www.microsoft.com/en-us/security/blog/2020/09/10/strontium-detecting-new-patters-credential-harvesting/">STRONTIUM: Detecting new patterns in credential harvesting (2023)</a> Rates of spraying observed in this particular campaign (4 per hour and account, each attempt from a different IP address). Microsoft Threat Intelligence.</li>
+<li><a href="https://haveibeenpwned.com/">Haveibeenpnwed</a> Free resource for anyone to quickly assess if they may have been put at risk due to an online account of theirs having been compromised or "pwned" in a data breach.  </li>
+</ul>
+<h2 id="password-choice">Password Choice</h2>
+<ul>
+<li><a href="https://www.schneier.com/blog/archives/2017/10/changes_in_pass.html">Password Best Practice - NIST</a> No complexity, no expiration, use password managers. The original NIST document is <a href="https://pages.nist.gov/800-63-3/sp800-63b.html#sec5">here</a>.</li>
+<li><a href="https://www.ncsc.gov.uk/collection/passwords/updating-your-approach">Password policy: updating your approach - NCSC UK</a>
+Advice for system owners responsible for determining password policies and identity management within their organisations. </li>
+<li><a href="https://learn.microsoft.com/en-us/microsoft-365/admin/misc/password-policy-recommendations?view=o365-worldwide">Password policy recommendations - Microsoft</a></li>
+</ul>
+<h2 id="password-storage">Password Storage</h2>
+<ul>
+<li>
+<p><a href="https://textbook.cs161.org/crypto/passwords.html">14.7. Password hashing</a> from Computer Security at Berkeley (CS161). Everything in this book is more than ok. </p>
+</li>
+<li>
+<p><a href="https://crackstation.net/hashing-security.htm">Salted Password Hashing - Doing it Right</a></p>
+</li>
+<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html#hashing-vs-encryption">Password Storage Cheat Sheet - OWASP</a> This cheat sheet provides guidance on the various areas that need to be considered related to storing passwords.</li>
+<li><a href="https://freerainbowtables.com/">Rainbow tables download</a> Tables of hashed passwords.</li>
+</ul>
+<h2 id="benchmarks-cracking-speed">Benchmarks / Cracking speed</h2>
+<ul>
+<li><a href="https://gist.github.com/bigpick/cfa22947c884f7a3fc1431475e345427">Nvidia RTX4080 FE latest Hashcat benchmark (2023)</a> Includes results for each hashcat benchmark (on this particular hw, 2023).<ul>
+<li><a href="https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/decrypting-the-selection-of-supported-kerberos-encryption-types/ba-p/1628797">Decrypting the Selection of Supported Kerberos Encryption Types</a> Decrypting Kerberos RC4 tickets (encryption types 0x17,0x18 dec 23,24) is much faster than decrypting default AES tickets (0x11,0x12 dec 17,18). This is why in roasting attacks RC4 tickets are requested rather than AES tickets. The above benchmark indicates approximately 3 orders of magnitude difference in speed (see "TGS-REP").</li>
+</ul>
+</li>
+<li><a href="https://openwall.info/wiki/john/benchmarks">John the Ripper benchmarks</a> Not easy to interpret and understand.</li>
+</ul>
+<p>The resources below estimate the time required for completing a brute force attack over a predefined password space. Always keep in mind that this kind of calculations do not reflect what attackers usually do as a first step, i.e., trying commonly used passwords.</p>
+<ul>
+<li><a href="https://www.hivesystems.io/blog/are-your-passwords-in-the-green">Hive Systems Password Table</a> Colorful infographic table (released every year) that showed the relative strength of a hashed password against a cracking attempt, based on:<ul>
+<li>the password’s length,</li>
+<li>complexity,</li>
+<li>hashing algorithm used by the victim,</li>
+<li>and the hardware used by the attacker.</li>
+</ul>
+</li>
+<li><a href="https://thesecurityfactory.be/password-cracking-speed/">Password cracking speed (2020)</a></li>
+<li><a href="https://i.imgur.com/gfYw57t.png">Entropy vs Password length vs Cracking speed</a></li>
+<li><a href="https://www.grc.com/haystack.htm">Brute force calculator</a></li>
+</ul>
 
 
   

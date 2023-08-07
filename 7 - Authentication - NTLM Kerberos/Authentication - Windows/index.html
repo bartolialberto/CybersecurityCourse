@@ -8,20 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/How%20to%20use%20this%20website/This_website/">
+        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/7%20-%20Authentication%20-%20NTLM%20Kerberos/Authentication%20-%20Windows/">
       
       
-        <link rel="prev" href="../../9%20-%20Vulnerabilities/Vulnerability%20-%20Case%20studies/">
+        <link rel="prev" href="../../6%20-%20Passwords%20and%20MFA/Passwords/">
       
       
-        <link rel="next" href="../../Labs/BURP/">
+        <link rel="next" href="../Kerberos/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.5">
     
     
       
-        <title>This website - Cybersecurity Course - University of Trieste</title>
+        <title>Authentication - Windows - Cybersecurity Course - University of Trieste</title>
       
     
     
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#this-website" class="md-skip">
+        <a href="#authentication-windows" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              This website
+              Authentication - Windows
             
           </span>
         </div>
@@ -579,14 +579,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
       
       
       
@@ -595,7 +597,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_8">
           <span class="md-nav__icon md-icon"></span>
           7   Authentication   NTLM Kerberos
@@ -606,11 +608,66 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../7%20-%20Authentication%20-%20NTLM%20Kerberos/Authentication%20-%20Windows/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Authentication - Windows
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Authentication - Windows
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#windows-protocol-specifications" class="md-nav__link">
+    Windows Protocol Specifications
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#active-directory-ad" class="md-nav__link">
+    Active Directory (AD)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authentication-negotiation-in-windows" class="md-nav__link">
+    Authentication Negotiation in Windows
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -622,7 +679,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../7%20-%20Authentication%20-%20NTLM%20Kerberos/Kerberos/" class="md-nav__link">
+      <a href="../Kerberos/" class="md-nav__link">
         Kerberos
       </a>
     </li>
@@ -636,7 +693,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../7%20-%20Authentication%20-%20NTLM%20Kerberos/NTLM/" class="md-nav__link">
+      <a href="../NTLM/" class="md-nav__link">
         NTLM
       </a>
     </li>
@@ -824,16 +881,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
       
       
       
@@ -842,7 +897,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_11">
           <span class="md-nav__icon md-icon"></span>
           How to use this website
@@ -853,59 +908,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          This website
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../How%20to%20use%20this%20website/This_website/" class="md-nav__link">
         This website
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#do-not-be-frustrated" class="md-nav__link">
-    Do not be frustrated
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#chatgpt-bard" class="md-nav__link">
-    ChatGPT / Bard
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1035,15 +1042,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#do-not-be-frustrated" class="md-nav__link">
-    Do not be frustrated
+  <a href="#windows-protocol-specifications" class="md-nav__link">
+    Windows Protocol Specifications
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chatgpt-bard" class="md-nav__link">
-    ChatGPT / Bard
+  <a href="#active-directory-ad" class="md-nav__link">
+    Active Directory (AD)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authentication-negotiation-in-windows" class="md-nav__link">
+    Authentication Negotiation in Windows
   </a>
   
 </li>
@@ -1063,19 +1077,28 @@
                   
 
 
-<h1 id="this-website">This website</h1>
-<p>This website contains a curated list of references, grouped according to the topics listed.</p>
-<p>References provide real-world examples, in-depth analysis, technical manuals and the like. They are intended to be a resource for those interested in delving deeper.</p>
-<p>Please always keep in mind that <em>the content of this website is not needed for the exam</em>: the slides are all that is needed in this respect.</p>
-<h2 id="do-not-be-frustrated">Do not be frustrated</h2>
-<p>Many of the linked documents can only be fully understood with very specific technical skills (and sometimes theoretical knowledge) far beyond those required or provided by this course. Please try to focus on the topics relevant to the course. Most importantly, do not be frustrated if you do not manage to understand everything.</p>
-<p>In many cases I do not understand everything either.</p>
-<h2 id="chatgpt-bard">ChatGPT / Bard</h2>
-<p>Many examples and writeups are based on very specific commands of Linux, Windows, Powershell, PHP and other technologies.</p>
-<p>When reading commands, or a piece of a program, that you do not understand, you might want to ask ChatGPT/Bard with a prompt like “explain” followed by that command (that can often be cut-and-paste easily)</p>
-<p>While <em>there is no guarantee that the response will be correct</em> in many cases the response is very useful (and indeed correct).</p>
-<p>Relying on ChatGPT/Bard for having a quick (approximate) understanding of what a piece of code actually does is a strategy used also by a top security company, Mandiant: see <a href="https://www.mandiant.com/resources/blog/mandiant-leveraging-ai">Analyzing an Alert for a PowerShell Script</a> (there might be a conflict of interest, though, as Mandiant is part of Google and this post promotes the use of Bard, also a Google service).</p>
-<p>I have occasionally provided a link to brief explanations provided by ChatGPT/Bard on specific topics, for ease of reading. As just pointed out, there is no guarantee that those explanations are correct: take them just as hints.</p>
+<h1 id="authentication-windows">Authentication - Windows</h1>
+<h2 id="windows-protocol-specifications">Windows Protocol Specifications</h2>
+<ul>
+<li>Microsoft <a href="https://learn.microsoft.com/en-us/openspecs/main/ms-openspeclp/3589baea-5b22-48f2-9d43-f5bea4960ddb">specification</a> of ALL the  protocols (more than 600MB compressed): Windows, Office, SQLServer, SharePoint, Exchange.</li>
+<li>For <a href="https://learn.microsoft.com/en-us/openspecs/windows_protocols/MS-WINPROTLP/92b33e19-6fff-496b-86c3-d168206f9845">Windows Protocols</a>, the documentation is split up into:<ul>
+<li>Windows Technology Overviews (always start from here)</li>
+<li>Windows Technical Specifications</li>
+<li>References</li>
+</ul>
+</li>
+<li><a href="https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-nlmp/b38c36ed-2804-4868-a9ff-8dd3182128e4">NT LAN Manager (NTLM) Authentication Protocol</a> The original specification by Microsoft. Extremely complex. Too detailed to be useful (unless you are really an expert working on this very specific topic).</li>
+</ul>
+<h2 id="active-directory-ad">Active Directory (AD)</h2>
+<ul>
+<li>See LDAP and Active Directory in the <a href="../../2-%20Access%20Control/Resources/">Access Control section</a></li>
+</ul>
+<h2 id="authentication-negotiation-in-windows">Authentication Negotiation in Windows</h2>
+<ul>
+<li><a href="https://docs.oracle.com/cd/E37838_01/html/E61050/overview-61.html">Introduction to GSSAPI (Oracle)</a> Generic Security Support API. <a href="https://learn.microsoft.com/en-us/windows-server/security/windows-authentication/security-support-provider-interface-architecture">SSPI Windows Security Support Provider Interface</a> is the Windows GSSAPI implementation.</li>
+<li><a href="https://csandker.io/2021/02/21/Offensive-Windows-IPC-2-RPC.html">Offensive Windows IPC Internals 2: RPC</a> Explain in detail how Remote Procedure Calls (RPC) works in Windows. An essential issue in many protocols, including <em>negotiation</em> of the authentication protocol (for <em>downgrading</em> to NTLM when MITM).</li>
+<li><a href="https://csandker.io/2018/04/04/SPNEGODown.html">Downgrade SPNEGO Authentication</a> The Windows protocol that client and server use for negotiating authentication, including the reason why a <em>"use Kerberos"</em> offer can be downgraded to <em>"let's use NTLM"</em>.</li>
+</ul>
 
 
   
