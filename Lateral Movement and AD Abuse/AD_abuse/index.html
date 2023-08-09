@@ -8,20 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/Labs/MITRE_ATTACK_Navigator/">
+        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/Lateral%20Movement%20and%20AD%20Abuse/AD_abuse/">
       
       
-        <link rel="prev" href="../BURP/">
+        <link rel="prev" href="../../Authentication%20-%20NTLM%20Kerberos/NTLM/">
       
       
-        <link rel="next" href="../OWASP%20Juice%20Shop/">
+        <link rel="next" href="../Discovery/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.5">
     
     
       
-        <title>MITRE ATTACK Navigator - Cybersecurity Course - University of Trieste</title>
+        <title>AD Abuse - Cybersecurity Course - University of Trieste</title>
       
     
     
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#understanding-basic-usage-and-potential-of-mitre-attck-navigator" class="md-skip">
+        <a href="#ad-abuse" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              MITRE ATTACK Navigator
+              AD Abuse
             
           </span>
         </div>
@@ -671,14 +671,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
       
       
       
@@ -687,7 +689,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_10">
           <span class="md-nav__icon md-icon"></span>
           Lateral Movement and AD Abuse
@@ -698,11 +700,107 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Lateral%20Movement%20and%20AD%20Abuse/AD_abuse/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          AD Abuse
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         AD Abuse
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ad-attack-paths" class="md-nav__link">
+    AD Attack paths
+  </a>
+  
+    <nav class="md-nav" aria-label="AD Attack paths">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defense-guidance" class="md-nav__link">
+    Defense guidance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ad-security-assessment" class="md-nav__link">
+    AD security assessment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bloodhound" class="md-nav__link">
+    BloodHound
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bloodhound-tools" class="md-nav__link">
+    BloodHound Tools
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kerberos-abuse" class="md-nav__link">
+    Kerberos Abuse
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relaying" class="md-nav__link">
+    Relaying
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-ad-attack-paths" class="md-nav__link">
+    Other AD Attack Paths
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -714,7 +812,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Lateral%20Movement%20and%20AD%20Abuse/Discovery/" class="md-nav__link">
+      <a href="../Discovery/" class="md-nav__link">
         Discovery
       </a>
     </li>
@@ -728,7 +826,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Lateral%20Movement%20and%20AD%20Abuse/Offensive/" class="md-nav__link">
+      <a href="../Offensive/" class="md-nav__link">
         Offensive
       </a>
     </li>
@@ -888,16 +986,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
       
       
       
@@ -906,7 +1002,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_13">
           <span class="md-nav__icon md-icon"></span>
           Labs
@@ -919,7 +1015,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../BURP/" class="md-nav__link">
+      <a href="../../Labs/BURP/" class="md-nav__link">
         BURP
       </a>
     </li>
@@ -931,116 +1027,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          MITRE ATTACK Navigator
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Labs/MITRE_ATTACK_Navigator/" class="md-nav__link">
         MITRE ATTACK Navigator
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#understanding-basic-usage-and-potential-of-mitre-attck-navigator" class="md-nav__link">
-    Understanding basic usage and potential of MITRE ATT&amp;CK NAVIGATOR.
-  </a>
-  
-    <nav class="md-nav" aria-label="Understanding basic usage and potential of MITRE ATT&amp;CK NAVIGATOR.">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#define-layers" class="md-nav__link">
-    Define layers
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#understanding-techniques" class="md-nav__link">
-    Understanding techniques
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-scores-for-each-layer" class="md-nav__link">
-    Define scores for each layer
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-new-layer-from-the-three-existing-layers" class="md-nav__link">
-    Create new layer from the three existing layers
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-a-gradient-color-in-the-newly-created-layer" class="md-nav__link">
-    Define a gradient color in the newly created layer
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#analyze-results" class="md-nav__link">
-    ANALYZE RESULTS
-  </a>
-  
-    <nav class="md-nav" aria-label="ANALYZE RESULTS">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#further-activities-if-you-want" class="md-nav__link">
-    Further activities, if you want…
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#attck-calculator" class="md-nav__link">
-    ATT&amp;CK CALCULATOR
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1052,7 +1043,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../OWASP%20Juice%20Shop/" class="md-nav__link">
+      <a href="../../Labs/OWASP%20Juice%20Shop/" class="md-nav__link">
         OWASP Juice Shop
       </a>
     </li>
@@ -1066,7 +1057,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Vulnerable%20Platforms/" class="md-nav__link">
+      <a href="../../Labs/Vulnerable%20Platforms/" class="md-nav__link">
         Vulnerable Platforms
       </a>
     </li>
@@ -1097,6 +1088,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1105,44 +1098,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#understanding-basic-usage-and-potential-of-mitre-attck-navigator" class="md-nav__link">
-    Understanding basic usage and potential of MITRE ATT&amp;CK NAVIGATOR.
+  <a href="#ad-attack-paths" class="md-nav__link">
+    AD Attack paths
   </a>
   
-    <nav class="md-nav" aria-label="Understanding basic usage and potential of MITRE ATT&amp;CK NAVIGATOR.">
+    <nav class="md-nav" aria-label="AD Attack paths">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#define-layers" class="md-nav__link">
-    Define layers
+  <a href="#defense-guidance" class="md-nav__link">
+    Defense guidance
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#understanding-techniques" class="md-nav__link">
-    Understanding techniques
+  <a href="#ad-security-assessment" class="md-nav__link">
+    AD security assessment
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#define-scores-for-each-layer" class="md-nav__link">
-    Define scores for each layer
+  <a href="#bloodhound" class="md-nav__link">
+    BloodHound
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-new-layer-from-the-three-existing-layers" class="md-nav__link">
-    Create new layer from the three existing layers
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-a-gradient-color-in-the-newly-created-layer" class="md-nav__link">
-    Define a gradient color in the newly created layer
+  <a href="#bloodhound-tools" class="md-nav__link">
+    BloodHound Tools
   </a>
   
 </li>
@@ -1153,28 +1139,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#analyze-results" class="md-nav__link">
-    ANALYZE RESULTS
+  <a href="#kerberos-abuse" class="md-nav__link">
+    Kerberos Abuse
   </a>
-  
-    <nav class="md-nav" aria-label="ANALYZE RESULTS">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#further-activities-if-you-want" class="md-nav__link">
-    Further activities, if you want…
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#attck-calculator" class="md-nav__link">
-    ATT&amp;CK CALCULATOR
+  <a href="#relaying" class="md-nav__link">
+    Relaying
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-ad-attack-paths" class="md-nav__link">
+    Other AD Attack Paths
   </a>
   
 </li>
@@ -1194,93 +1174,71 @@
                   
 
 
-  <h1>MITRE ATTACK Navigator</h1>
-
-<h2 id="understanding-basic-usage-and-potential-of-mitre-attck-navigator">Understanding basic usage and potential of MITRE ATT&amp;CK NAVIGATOR.</h2>
-<p>We will use the <a href="https://mitre-attack.github.io/attack-navigator/">hosted webapp</a>. The webapp sources are public domain. The webapp could be hosted locally, which may be useful if one did not want to disclose any analysis to anyone.</p>
-<p>We will assess the defensive usage of multi-factor authentication (MFA) against two recent and highly relevant campaigns:</p>
-<ol>
-<li>CUBA ransomware campaign: <a href="https://www.cisa.gov/uscert/ncas/alerts/aa22-335a">CISA alert</a></li>
-<li>HIVE ransomware campaign: <a href="https://www.cisa.gov/uscert/ncas/alerts/aa22-321a">CISA alert</a></li>
-</ol>
-<h3 id="define-layers">Define layers</h3>
-<p>One can create a new layer manually, select a set of techniques and save it as a json.</p>
-<p>For example, one could create a layer that describes a specific attack campaign; one that describes the techniques impacted by a specific mitigation; one that describes the techniques impacted by a specific detection.</p>
-<p>The NAVIGATOR webapp embeds a number of past attack campaigns that can be selected easily (magnifying glass button): by selecting a specific campaign, the set of corresponding techniques will be selected automatically. The same button allows selecting a specific mitigation or a specific detection, which will select the set of corresponding techniques.</p>
-<p><img alt="6c05ec66b36468050dfbd4606d396387.png" src="../../_resources/6c05ec66b36468050dfbd4606d396387-1.png" /></p>
-<p>To save time, the layers required for this activity have been prepared already and can be uploaded in the webapp.</p>
+<h1 id="ad-abuse">AD Abuse</h1>
+<h2 id="ad-attack-paths">AD Attack paths</h2>
 <ul>
-<li>Create new layer with techniques used by CUBA (<a href="https://tinyurl.com/bartoli-mitre-cuba">CUBA json</a>)</li>
-<li>Create new layer with techniques used by HIVE (<a href="https://tinyurl.com/bartoli-mitre-hive">HIVE json</a>)</li>
-<li>Create new layer with techniques mitigated by MFA (<a href="https://tinyurl.com/bartoli-mitre-mfa">MFA json</a>)</li>
+<li><a href="https://labs.lares.com/securing-active-directory-via-acls/">The Phantom Menace: Exposing hidden risks through ACLs in Active Directory (Part 1)</a> An excellent and concise description of ACLs in Active Directory (starting from what a Securable Object is) from an offensive point of view.</li>
+<li><a href="https://bloodhound.readthedocs.io/en/latest/data-analysis/edges.html">BloodHound Edges</a> Perhaps the best way for understanding the breadth and depth of AD Attack paths is looking at how many edge types exist in BloodHound. This page is very interesting because it describes how the edge could be abused, the associated technical difficulty and some operational security (OpSec) consideration.</li>
+<li><a href="https://www.politoinc.com/post/ldap-queries-for-offensive-and-defensive-operations">LDAP Queries for Offensive and Defensive Operations</a> Basic queries for targeted Active Directory information gathering used in penetration testing (“low and slow” approach without BloodHound).</li>
+<li><a href="https://zer1t0.gitlab.io/posts/attacking_ad/">Attacking Active Directory: 0 to 0.</a> Nice description of many Windows topics, including Active Directory, Access Rights and so on.</li>
 </ul>
-<p>Layers for specific attack campaigns not included in the NAVIGATOR webapp can be created simply, by analyzing threat intelligence reports, taking note of the techniques mentioned in those reports and by selecting those techniques in a new layer.</p>
-<h3 id="understanding-techniques">Understanding techniques</h3>
-<p>Click the right button on a specific technique. Scroll down and select either “view technique” or “view tactic”. A new tab will be open to the relevant page of the MITRE ATT&amp;CK framework, that describes the corresponding technique/tactic, along with possible detections and mitigations (e.g. <a href="https://attack.mitre.org/techniques/T1539/">https://attack.mitre.org/techniques/T1539/</a>).</p>
-<h3 id="define-scores-for-each-layer">Define scores for each layer</h3>
-<p>In each layer, assign a score to each technique selected in that layer. This can be done with the score button in the “technique controls” section.</p>
-<p>In general, one could assign different scores to different techniques. In this exercise we will assign the same score to all the selected techniques in a given layer:</p>
+<h3 id="defense-guidance">Defense guidance</h3>
 <ul>
-<li>CUBA 5</li>
-<li>HIVE 5</li>
-<li>MFA 20</li>
+<li><a href="https://www.hub.trimarcsecurity.com/post/ten-ways-to-improve-ad-security-quickly">Top 10 ways of securing AD</a>. List of most common misconfigurations that can be exploited and how to fix them. </li>
+<li><a href="https://techcommunity.microsoft.com/t5/microsoft-security-experts-blog/total-identity-compromise-microsoft-incident-response-lessons-on/ba-p/3753391">Total Identity Compromise: Microsoft Incident Response lessons on securing Active Directory</a> Across all industry verticals, Microsoft Incident Response often finds similar issues within Active Directory environments. In this blog, we will be highlighting some of the most common issues seen in on-premises Active Directory environments and provide guidance on how to secure those weaknesses.</li>
 </ul>
-<h3 id="create-new-layer-from-the-three-existing-layers">Create new layer from the three existing layers</h3>
-<p>Create a new tab (press +).</p>
-<p><img alt="df5c38bd8cce8e8c087c218024d6318a.png" src="../../_resources/df5c38bd8cce8e8c087c218024d6318a-1.png" /></p>
-<p>Then select “create layer from other layers” and in the “score expression” field define a sum of the three previously loaded layers (probably it will be “a + b + c” and probably you will need to insert a space in between operands and operators). Do <strong>not </strong>insert anything in the other fields (in particular, do not define any gradient or coloring at this stage).</p>
-<p><img alt="26e0df2a7b4f4d5b6813ded9be0b4490.png" src="../../_resources/26e0df2a7b4f4d5b6813ded9be0b4490-1.png" />
-At this point you will have a new layer in which each technique will be automatically given a score that is the sum of the score of the three other layers. With the values suggested above there will be these possible scores:</p>
+<h3 id="ad-security-assessment">AD security assessment</h3>
+<p>Tools for checking common AD misconfigurations and obtain synthetic reports.
+- <a href="https://www.pingcastle.com/">PingCastle</a> 
+- <a href="https://www.hub.trimarcsecurity.com/post/securing-active-directory-performing-an-active-directory-security-review">Trimarc ADChecks</a> 
+- <a href="https://www.cert.ssi.gouv.fr/uploads/ad_checklist.html">Checklist</a> A self-assessment checklist by CERT France.</p>
+<h3 id="bloodhound">BloodHound</h3>
 <ul>
-<li>5 Technique used by one attack campaign and not mitigated by MFA</li>
-<li>10 Technique used by both attack campaigns and not mitigated by MFA</li>
-<li>20 Technique not used by any of the attack campaigns and mitigated by MFA</li>
-<li>25 Technique used by one attack campaign and mitigated by MFA</li>
-<li>30 Technique used by both attack campaign and mitigated by MFA</li>
+<li><a href="https://www.youtube.com/watch?v=z8thoG7gPd0">Here Be Dragons The Unexplored Land of Active Directory ACLs</a> The original 45-minutes video at DerbyCon 2017 that introduced this tool.</li>
+<li><a href="https://www.sans.org/blog/bloodhound-sniffing-out-path-through-windows-domains/">BloodHound – Sniffing Out the Path Through Windows Domains</a> One of the many tutorials available.</li>
+<li><a href="https://bloodhound.readthedocs.io/en/latest/index.html">BloodHound: Six Degrees of Domain Admin</a> The official site.</li>
+<li><a href="https://github.com/lkarlslund/Adalanche">Adalanche</a> a tool similar to BloodHound.</li>
+<li><a href="https://zeronetworks.com/blog/bluehound-community-driven-resilience/">BlueHound</a> another tool similar to BloodHound. It collects metrics similar to some available only in the paid version of BloodHound.</li>
+<li><a href="https://labs.lares.com/introducing-slinkycat/">Introducing Slinky Cat - Living off the AD Land</a> Help security and IT teams reduce their AD exposures and uncover quick wins and fixes designed for pen-testers and defenders alike.</li>
 </ul>
-<h3 id="define-a-gradient-color-in-the-newly-created-layer">Define a gradient color in the newly created layer</h3>
-<p>Button “color setup” in the “layer controls” section. Choose 3 or 4 colors for understanding the various combinations quickly:</p>
+<h3 id="bloodhound-tools">BloodHound Tools</h3>
 <ul>
-<li>5 or 10:  uncovered by MFA</li>
-<li>20:       covered by MFA but not relevant</li>
-<li>25 or 30: covered by MFA</li>
+<li><a href="https://blog.bitsadmin.com/blog/dealing-with-large-bloodhound-datasets">Dealing with large BloodHound datasets</a>. Discusses other tools similar to BloodHound, including <a href="https://www.youtube.com/watch?app=desktop&amp;v=76MWt8uugAg">BlueHound</a>.</li>
+<li>
+<p><a href="https://github.com/zeronetworks/BloodHound-Tools">BloodHound tools</a>.</p>
+<ul>
+<li><em>ShotHound</em>: Validate practical paths discovered by BloodHound.</li>
+<li><em>Ransomulator</em>: Simulate ransomware-like infection in your dataset.</li>
+<li><em>DBCreator</em>: Simulate BloodHound dataset, along with "Open" network access edges and unpatched vulnerabilities information.</li>
+<li><em>CustomQueries</em>: A list of common queries that reflect the network dimension, if it is integrated into the dataset.</li>
+<li><em>VulnerabilitiesDataImport</em>:
+Parse Vulnerability Scanners reports and enrich host nodes with information about unpatched vulnerabilities</li>
 </ul>
-<p>Save layer for later use (buttons in “layer controls” section; excel or json, the latter can be loaded in the tool later).</p>
-<h2 id="analyze-results">ANALYZE RESULTS</h2>
-<p>You will see that MFA does provide some mitigation against several of the techniques used in the considered attack campaigns but not all.</p>
-<ol>
-<li>Consider the uncovered technique in “Command and Control”.</li>
-<li>Locate that technique in <a href="https://attack.mitre.org/matrices/enterprise/">https://attack.mitre.org/matrices/enterprise/</a>.</li>
-<li>Read the suggested detections and mitigations carefully.</li>
-<li>For each of them<ol>
-<li>Do you know it?</li>
-<li>Is it implemented in our environment?</li>
-<li>If yes, to which degree?</li>
-</ol>
 </li>
-<li>Consider the uncovered technique in “Privilege Escalation”.</li>
-<li>Repeat the above analysis.</li>
-</ol>
-<h3 id="further-activities-if-you-want">Further activities, if you want…</h3>
-<ol>
-<li>Create and save  a layer for describing the Uber breach (shown in the slides).</li>
-<li>Analyze effectiveness of MFA for this specific breach.</li>
-<li>Analyze effectiveness of MFA for this breach, CUBA and HIVE together.</li>
-</ol>
-<h2 id="attck-calculator">ATT&amp;CK CALCULATOR</h2>
-<p>Objective: Grasp an idea of which mitigations and detections could be most needed in our environment.</p>
-<p>We will use the <a href="https://top-attack-techniques.mitre-engenuity.org/calculator">hosted webapp</a>. The webapp sources are not public domain.</p>
-<ol>
-<li>Select the input combination that, in your opinion, is most relevant to our environment (or to your view of our environment).</li>
-<li>Generate results (results can be downloaded in json, but the format is not recognized by the Navigator).</li>
-<li>Consider the 3 detections and 3 mitigations that are suggested as being most relevant. Read their definitions carefully.</li>
-<li>For each of them:<ol>
-<li>Do you know it?</li>
-<li>Is it implemented in our environment?</li>
-<li>If yes, to which degree?</li>
-</ol>
+<li>
+<p><a href="https://assurancemaladiesec.github.io/foxterrier-on-the-trail/">FoxTerrier : On the trail of vulnerable Active Directory objects and a report</a>. You use Sharphound/Bloodhound to collect data/audit your AD and you would like to generate report of vulnerable objects in your AD? You should give a look to FoxTerrier!</p>
 </li>
-</ol>
+</ul>
+<h2 id="kerberos-abuse">Kerberos Abuse</h2>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/archive/msdn-magazine/2003/april/exploring-s4u-kerberos-extensions-in-windows-server-2003">Exploring S4U Kerberos Extensions in Windows Server 2003</a> Microsoft explanation of S4U.</li>
+<li><a href="https://posts.specterops.io/shadow-credentials-abusing-key-trust-account-mapping-for-takeover-8ee1a53566ab">Shadow Credentials: Abusing Key Trust Account Mapping for Account Takeover</a>. Easy and reliable takeover primitive against Users and Computers. Based on Kerberos authentication with PKINIT (public key crypto).</li>
+<li><a href="https://www.linkedin.com/posts/mor-davidovich-57641614a_krbrelayup-rbcd-lpe-activity-7071418645842731008-c2wD/?originalSubdomain=qa">Krbrelayup</a> A 30-sec video showing usage of the DavRelayUp tool.</li>
+<li><a href="https://www.microsoft.com/en-us/security/blog/2022/05/25/detecting-and-preventing-privilege-escalation-attacks-leveraging-kerberos-relaying-krbrelayup/">Detecting and preventing privilege escalation attacks leveraging Kerberos relaying (KrbRelayUp)</a> Description and recommendations by Microsoft.</li>
+<li><a href="https://posts.specterops.io/kerberosity-killed-the-domain-an-offensive-kerberos-overview-eb04b1402c61">Kerberosity Killed the Domain: An Offensive Kerberos Overview</a> This article is intended to give an overview of how Kerberos works and some of the more common attacks associated with it.</li>
+</ul>
+<h2 id="relaying">Relaying</h2>
+<ul>
+<li><a href="https://www.secureauth.com/blog/we-love-relaying-credentials-a-technical-guide-to-relaying-credentials-everywhere/">A guide to relaying credentials everywhere in 2022</a> </li>
+<li><a href="https://www.praetorian.com/blog/how-to-exploit-active-directory-acl-attack-paths-through-ldap-relaying-attacks/">How to Exploit Active Directory ACL Attack Paths Through LDAP Relaying Attacks</a></li>
+</ul>
+<h2 id="other-ad-attack-paths">Other AD Attack Paths</h2>
+<ul>
+<li><a href="https://posts.specterops.io/certified-pre-owned-d95910965cd2">Certified Pre-Owned</a> Abusing Actice Directory Certificate Services (8 insecure certificate templates). Accompanied by a +140-pages report including some prevention and detection guidance.</li>
+<li><a href="https://www.youtube.com/watch?v=8OtfW4uo75k">Exploiting Outlook CVE-2023-23397 to Relay Credentials</a> Based on a coerced authentication vulnerability of Outlook. It uses PKINIT and credential relay. Nice and focussed video.</li>
+<li><a href="https://pentestlab.blog/2018/07/04/dumping-domain-password-hashes/">Dumping Domain Password Hashes</a> (from domain controllers). These hashes are stored in a database file in the domain controller (NTDS.DIT). Step-by-step examples with several software tools (Mimikatz, Empire and others)</li>
+<li>Active Directory Abuse Primitives and Operation Security: Demo of four different AD attack paths, with considerations about their OPSEC (i.e., ability to remain undetected). <a href="https://conference.hitb.org/hitbsecconf2023ams/materials/D2T2%20-%20Active%20Directory%20Abuse%20Primitive%20and%20Operation%20Security%20-%20Mars%20Cheng.pdf">Slides</a> and <a href="https://www.youtube.com/watch?v=CIkSiECswYw">one hour video</a>.</li>
+</ul>
 
 
   

@@ -8,20 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/Labs/MITRE_ATTACK_Navigator/">
+        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/Basic%20Techniques/Basic_Techniques/">
       
       
-        <link rel="prev" href="../BURP/">
+        <link rel="prev" href="../../MITRE%20ATTACK/Intrusions_Case_Studies/">
       
       
-        <link rel="next" href="../OWASP%20Juice%20Shop/">
+        <link rel="next" href="../Botnets/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.5">
     
     
       
-        <title>MITRE ATTACK Navigator - Cybersecurity Course - University of Trieste</title>
+        <title>Basic Techniques - Cybersecurity Course - University of Trieste</title>
       
     
     
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#understanding-basic-usage-and-potential-of-mitre-attck-navigator" class="md-skip">
+        <a href="#basic-techniques" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              MITRE ATTACK Navigator
+              Basic Techniques
             
           </span>
         </div>
@@ -405,14 +405,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
       
       
       
@@ -421,7 +423,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
           Basic Techniques
@@ -432,11 +434,114 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Basic%20Techniques/Basic_Techniques/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Basic Techniques
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Basic Techniques
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#malware" class="md-nav__link">
+    Malware
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dll" class="md-nav__link">
+    DLL
+  </a>
+  
+    <nav class="md-nav" aria-label="DLL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dll-hijacking" class="md-nav__link">
+    DLL Hijacking
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#privilege-escalation-linux" class="md-nav__link">
+    Privilege Escalation - Linux
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cc" class="md-nav__link">
+    C&amp;C
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reverse-shells" class="md-nav__link">
+    Reverse shells
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#web-shells" class="md-nav__link">
+    Web shells
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#impact-ransomware" class="md-nav__link">
+    Impact - Ransomware
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appendix-evasion" class="md-nav__link">
+    Appendix: Evasion
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -448,7 +553,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Basic%20Techniques/Botnets/" class="md-nav__link">
+      <a href="../Botnets/" class="md-nav__link">
         Botnets
       </a>
     </li>
@@ -888,16 +993,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
       
       
       
@@ -906,7 +1009,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_13">
           <span class="md-nav__icon md-icon"></span>
           Labs
@@ -919,7 +1022,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../BURP/" class="md-nav__link">
+      <a href="../../Labs/BURP/" class="md-nav__link">
         BURP
       </a>
     </li>
@@ -931,116 +1034,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          MITRE ATTACK Navigator
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Labs/MITRE_ATTACK_Navigator/" class="md-nav__link">
         MITRE ATTACK Navigator
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#understanding-basic-usage-and-potential-of-mitre-attck-navigator" class="md-nav__link">
-    Understanding basic usage and potential of MITRE ATT&amp;CK NAVIGATOR.
-  </a>
-  
-    <nav class="md-nav" aria-label="Understanding basic usage and potential of MITRE ATT&amp;CK NAVIGATOR.">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#define-layers" class="md-nav__link">
-    Define layers
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#understanding-techniques" class="md-nav__link">
-    Understanding techniques
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-scores-for-each-layer" class="md-nav__link">
-    Define scores for each layer
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-new-layer-from-the-three-existing-layers" class="md-nav__link">
-    Create new layer from the three existing layers
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-a-gradient-color-in-the-newly-created-layer" class="md-nav__link">
-    Define a gradient color in the newly created layer
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#analyze-results" class="md-nav__link">
-    ANALYZE RESULTS
-  </a>
-  
-    <nav class="md-nav" aria-label="ANALYZE RESULTS">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#further-activities-if-you-want" class="md-nav__link">
-    Further activities, if you want…
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#attck-calculator" class="md-nav__link">
-    ATT&amp;CK CALCULATOR
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1052,7 +1050,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../OWASP%20Juice%20Shop/" class="md-nav__link">
+      <a href="../../Labs/OWASP%20Juice%20Shop/" class="md-nav__link">
         OWASP Juice Shop
       </a>
     </li>
@@ -1066,7 +1064,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Vulnerable%20Platforms/" class="md-nav__link">
+      <a href="../../Labs/Vulnerable%20Platforms/" class="md-nav__link">
         Vulnerable Platforms
       </a>
     </li>
@@ -1097,6 +1095,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1105,44 +1105,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#understanding-basic-usage-and-potential-of-mitre-attck-navigator" class="md-nav__link">
-    Understanding basic usage and potential of MITRE ATT&amp;CK NAVIGATOR.
+  <a href="#malware" class="md-nav__link">
+    Malware
   </a>
   
-    <nav class="md-nav" aria-label="Understanding basic usage and potential of MITRE ATT&amp;CK NAVIGATOR.">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dll" class="md-nav__link">
+    DLL
+  </a>
+  
+    <nav class="md-nav" aria-label="DLL">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#define-layers" class="md-nav__link">
-    Define layers
+  <a href="#dll-hijacking" class="md-nav__link">
+    DLL Hijacking
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#understanding-techniques" class="md-nav__link">
-    Understanding techniques
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-scores-for-each-layer" class="md-nav__link">
-    Define scores for each layer
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-new-layer-from-the-three-existing-layers" class="md-nav__link">
-    Create new layer from the three existing layers
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-a-gradient-color-in-the-newly-created-layer" class="md-nav__link">
-    Define a gradient color in the newly created layer
+  <a href="#privilege-escalation-linux" class="md-nav__link">
+    Privilege Escalation - Linux
   </a>
   
 </li>
@@ -1153,28 +1139,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#analyze-results" class="md-nav__link">
-    ANALYZE RESULTS
+  <a href="#cc" class="md-nav__link">
+    C&amp;C
   </a>
-  
-    <nav class="md-nav" aria-label="ANALYZE RESULTS">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#further-activities-if-you-want" class="md-nav__link">
-    Further activities, if you want…
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#attck-calculator" class="md-nav__link">
-    ATT&amp;CK CALCULATOR
+  <a href="#reverse-shells" class="md-nav__link">
+    Reverse shells
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#web-shells" class="md-nav__link">
+    Web shells
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#impact-ransomware" class="md-nav__link">
+    Impact - Ransomware
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appendix-evasion" class="md-nav__link">
+    Appendix: Evasion
   </a>
   
 </li>
@@ -1194,93 +1188,63 @@
                   
 
 
-  <h1>MITRE ATTACK Navigator</h1>
-
-<h2 id="understanding-basic-usage-and-potential-of-mitre-attck-navigator">Understanding basic usage and potential of MITRE ATT&amp;CK NAVIGATOR.</h2>
-<p>We will use the <a href="https://mitre-attack.github.io/attack-navigator/">hosted webapp</a>. The webapp sources are public domain. The webapp could be hosted locally, which may be useful if one did not want to disclose any analysis to anyone.</p>
-<p>We will assess the defensive usage of multi-factor authentication (MFA) against two recent and highly relevant campaigns:</p>
-<ol>
-<li>CUBA ransomware campaign: <a href="https://www.cisa.gov/uscert/ncas/alerts/aa22-335a">CISA alert</a></li>
-<li>HIVE ransomware campaign: <a href="https://www.cisa.gov/uscert/ncas/alerts/aa22-321a">CISA alert</a></li>
-</ol>
-<h3 id="define-layers">Define layers</h3>
-<p>One can create a new layer manually, select a set of techniques and save it as a json.</p>
-<p>For example, one could create a layer that describes a specific attack campaign; one that describes the techniques impacted by a specific mitigation; one that describes the techniques impacted by a specific detection.</p>
-<p>The NAVIGATOR webapp embeds a number of past attack campaigns that can be selected easily (magnifying glass button): by selecting a specific campaign, the set of corresponding techniques will be selected automatically. The same button allows selecting a specific mitigation or a specific detection, which will select the set of corresponding techniques.</p>
-<p><img alt="6c05ec66b36468050dfbd4606d396387.png" src="../../_resources/6c05ec66b36468050dfbd4606d396387-1.png" /></p>
-<p>To save time, the layers required for this activity have been prepared already and can be uploaded in the webapp.</p>
+<h1 id="basic-techniques">Basic Techniques</h1>
+<h2 id="malware">Malware</h2>
+<p>One of the many topics that would deserve a (close to impossible to maintain) encyclopedia.</p>
 <ul>
-<li>Create new layer with techniques used by CUBA (<a href="https://tinyurl.com/bartoli-mitre-cuba">CUBA json</a>)</li>
-<li>Create new layer with techniques used by HIVE (<a href="https://tinyurl.com/bartoli-mitre-hive">HIVE json</a>)</li>
-<li>Create new layer with techniques mitigated by MFA (<a href="https://tinyurl.com/bartoli-mitre-mfa">MFA json</a>)</li>
+<li><a href="https://en.wikipedia.org/wiki/Shellcode">Wikipedia</a> has a nice description of <em>shellcodes</em> (i.e., first-stage malware).</li>
+<li><a href="https://docs.metasploit.com/docs/using-metasploit/basics/how-to-use-msfvenom.html">msfvenom</a> is a <em>payload generator</em> (part of Metasploit) for
+writing shellcodes in a specified format, given an input program. Another example of usage below in this page</li>
+<li><a href="../../MITRE%20ATTACK/Intrusions_Case_Studies/">Intrusions Case Studies</a> Many of the case studies in this page describe malware samples in detail.</li>
 </ul>
-<p>Layers for specific attack campaigns not included in the NAVIGATOR webapp can be created simply, by analyzing threat intelligence reports, taking note of the techniques mentioned in those reports and by selecting those techniques in a new layer.</p>
-<h3 id="understanding-techniques">Understanding techniques</h3>
-<p>Click the right button on a specific technique. Scroll down and select either “view technique” or “view tactic”. A new tab will be open to the relevant page of the MITRE ATT&amp;CK framework, that describes the corresponding technique/tactic, along with possible detections and mitigations (e.g. <a href="https://attack.mitre.org/techniques/T1539/">https://attack.mitre.org/techniques/T1539/</a>).</p>
-<h3 id="define-scores-for-each-layer">Define scores for each layer</h3>
-<p>In each layer, assign a score to each technique selected in that layer. This can be done with the score button in the “technique controls” section.</p>
-<p>In general, one could assign different scores to different techniques. In this exercise we will assign the same score to all the selected techniques in a given layer:</p>
+<h2 id="dll">DLL</h2>
+<p><em>Dynamic-link libraries (DLLs)</em> are code modules that contain sets of functions that other executables can call. Unlike statically linked libraries, which become part of an executable during the compilation process, DLLs can live on their own outside of the application that uses them. There are two ways to perform linking with DLLs: implicit or explicit.
+- A listing of the DLLs loaded by an executable can be obtained with Process Monitor from sysinternals
+- Decompilation of a specified DLL (in order to see which files are possibly loaded by that DLL from which directory) can be done with <code>dnspy</code>.
+- <a href="https://chat.openai.com/share/b1aaa09f-126e-42f3-a7f2-462f33a3446a">A chat with ChatGPT about some DLL tools</a></p>
 <ul>
-<li>CUBA 5</li>
-<li>HIVE 5</li>
-<li>MFA 20</li>
+<li><a href="https://www.codereversing.com/archives/653">DLL Injection: Background &amp; DLL Proxying</a>. The first of a 5-part and in-depth analysis of DLL injection in WIndows. Next parts are: Windows Hooks, Remote Threads, Thread Context Hijacking, Manual Mapping. </li>
 </ul>
-<h3 id="create-new-layer-from-the-three-existing-layers">Create new layer from the three existing layers</h3>
-<p>Create a new tab (press +).</p>
-<p><img alt="df5c38bd8cce8e8c087c218024d6318a.png" src="../../_resources/df5c38bd8cce8e8c087c218024d6318a-1.png" /></p>
-<p>Then select “create layer from other layers” and in the “score expression” field define a sum of the three previously loaded layers (probably it will be “a + b + c” and probably you will need to insert a space in between operands and operators). Do <strong>not </strong>insert anything in the other fields (in particular, do not define any gradient or coloring at this stage).</p>
-<p><img alt="26e0df2a7b4f4d5b6813ded9be0b4490.png" src="../../_resources/26e0df2a7b4f4d5b6813ded9be0b4490-1.png" />
-At this point you will have a new layer in which each technique will be automatically given a score that is the sum of the score of the three other layers. With the values suggested above there will be these possible scores:</p>
+<h3 id="dll-hijacking">DLL Hijacking</h3>
 <ul>
-<li>5 Technique used by one attack campaign and not mitigated by MFA</li>
-<li>10 Technique used by both attack campaigns and not mitigated by MFA</li>
-<li>20 Technique not used by any of the attack campaigns and mitigated by MFA</li>
-<li>25 Technique used by one attack campaign and mitigated by MFA</li>
-<li>30 Technique used by both attack campaign and mitigated by MFA</li>
+<li><a href="https://hijacklibs.net/">HijackLibs</a> describes DLL hijacking and a searchable list of DLL Hijacking candidates (mapping between DLLs and vulnerable executables).
+For defenders, this project can provide valuable information when trying to detect DLL Hijacking attempts.</li>
+<li><a href="https://notes.secure77.de/?link=%2FWriteUps%2FVulnLab%2FBruno%2FWriteup">Writeup</a> of hacking a vulnerable machine called Bruno in <a href="https://www.vulnlab.com/main/standalone-labs">VulnLab</a>. One the steps (<a href="https://notes.secure77.de/?link=%2FWriteUps%2FVulnLab%2FBruno%2FWriteup#SampleScanner_APP">SampleScanner APP</a>) is based on a form of DLL hijacking. A malicious DLL is written in a folder determined with process monitor and dnspy. Actual writing occurs with a path traversal in unzipping.</li>
 </ul>
-<h3 id="define-a-gradient-color-in-the-newly-created-layer">Define a gradient color in the newly created layer</h3>
-<p>Button “color setup” in the “layer controls” section. Choose 3 or 4 colors for understanding the various combinations quickly:</p>
+<h3 id="privilege-escalation-linux">Privilege Escalation - Linux</h3>
+<p><a href="https://infosecwriteups.com/privileges-escalation-techniques-basic-to-advanced-in-linux-3cff8b623b">Part 1</a> and <a href="https://infosecwriteups.com/privileges-escalation-techniques-basic-to-advanced-in-linux-973cb62cbe8d">Part 2</a>.</p>
+<h2 id="cc">C&amp;C</h2>
 <ul>
-<li>5 or 10:  uncovered by MFA</li>
-<li>20:       covered by MFA but not relevant</li>
-<li>25 or 30: covered by MFA</li>
+<li><a href="https://www.ncsc.gov.uk/report/joint-report-on-publicly-available-hacking-tools">Joint report on publicly available hacking tools</a> Research provided by the cyber security authorities of five nations: Australia, Canada, New Zealand, the UK and USA (the so called "five eyes"). It mentions <a href="https://attack.mitre.org/software/S0040/">HTRAN</a> "<em>a tool that proxies connections through intermediate hops and aids users in disguising their true geographical location</em>" (<a href="https://github.com/HiwinCN/HTran">HTRAN sources on Github</a>).</li>
 </ul>
-<p>Save layer for later use (buttons in “layer controls” section; excel or json, the latter can be loaded in the tool later).</p>
-<h2 id="analyze-results">ANALYZE RESULTS</h2>
-<p>You will see that MFA does provide some mitigation against several of the techniques used in the considered attack campaigns but not all.</p>
-<ol>
-<li>Consider the uncovered technique in “Command and Control”.</li>
-<li>Locate that technique in <a href="https://attack.mitre.org/matrices/enterprise/">https://attack.mitre.org/matrices/enterprise/</a>.</li>
-<li>Read the suggested detections and mitigations carefully.</li>
-<li>For each of them<ol>
-<li>Do you know it?</li>
-<li>Is it implemented in our environment?</li>
-<li>If yes, to which degree?</li>
-</ol>
-</li>
-<li>Consider the uncovered technique in “Privilege Escalation”.</li>
-<li>Repeat the above analysis.</li>
-</ol>
-<h3 id="further-activities-if-you-want">Further activities, if you want…</h3>
-<ol>
-<li>Create and save  a layer for describing the Uber breach (shown in the slides).</li>
-<li>Analyze effectiveness of MFA for this specific breach.</li>
-<li>Analyze effectiveness of MFA for this breach, CUBA and HIVE together.</li>
-</ol>
-<h2 id="attck-calculator">ATT&amp;CK CALCULATOR</h2>
-<p>Objective: Grasp an idea of which mitigations and detections could be most needed in our environment.</p>
-<p>We will use the <a href="https://top-attack-techniques.mitre-engenuity.org/calculator">hosted webapp</a>. The webapp sources are not public domain.</p>
-<ol>
-<li>Select the input combination that, in your opinion, is most relevant to our environment (or to your view of our environment).</li>
-<li>Generate results (results can be downloaded in json, but the format is not recognized by the Navigator).</li>
-<li>Consider the 3 detections and 3 mitigations that are suggested as being most relevant. Read their definitions carefully.</li>
-<li>For each of them:<ol>
-<li>Do you know it?</li>
-<li>Is it implemented in our environment?</li>
-<li>If yes, to which degree?</li>
-</ol>
-</li>
-</ol>
+<h2 id="reverse-shells">Reverse shells</h2>
+<ul>
+<li><a href="https://highon.coffee/blog/reverse-shell-cheat-sheet/">Reverse Shell Cheat Sheet: PHP, Python, Powershell, Bash, NC (netcat), JSP, Java, Perl</a> collection of Windows and Linux reverse shells that use commonly installed programming languages. </li>
+</ul>
+<h2 id="web-shells">Web shells</h2>
+<ul>
+<li><a href="https://hacksland.net/build-a-simple-web-shell">Build A Simple Web shell (PHP)</a></li>
+<li>Breaking Down the China Chopper Web Shell <a href="https://www.mandiant.com/resources/blog/breaking-down-china-chopper-web-shell-part-i">Part I</a> and Part <a href="https://www.mandiant.com/resources/blog/breaking-down-the-china-chopper-web-shell-part-ii">II</a>. This web shell is one of those included in the <a href="https://www.ncsc.gov.uk/report/joint-report-on-publicly-available-hacking-tools">Joint report on publicly available hacking tools</a> mentioned above.</li>
+</ul>
+<p>Some of the many alerts about web shell implants.</p>
+<ul>
+<li><a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-201a">Threat Actors Exploiting Citrix CVE-2023-3519
+to Implant Webshells</a> An alert by CISA to notify of the explolitation of a certain unauthenticated remote code execution (RCE) vulnerability to drop a webshell in critical infrastructure organizations.</li>
+<li><a href="https://blog.aquasec.com/tomcat-under-attack-investigating-the-mirai-malware">Tomcat Under Attack: Exploring Mirai Malware and Beyond</a> Not particularly sophisticated and much less relevant and surprising than claimed in the post...just a few hundreds web shells planted by using default Tomcat credentials. Nice to read and well written, though. </li>
+</ul>
+<h2 id="impact-ransomware">Impact - Ransomware</h2>
+<ul>
+<li><a href="https://www.secureworks.com/research/revil-sodinokibi-ransomware">REvil/Sodinokibi Ransomware</a>. The REvil (also known as Sodinokibi) ransomware was first identified on April 17, 2019. It is used by the financially motivated GOLD SOUTHFIELD threat group, which distributes ransomware via exploit kits, scan-and-exploit techniques, RDP servers, and backdoored software installers. The ransomware group REvil was itself hacked and forced offline by a multi-country operation (see <a href="https://www.reuters.com/technology/exclusive-governments-turn-tables-ransomware-gang-revil-by-pushing-it-offline-2021-10-21/">Governments turn tables on ransomware gang REvil by pushing it offline</a>) .</li>
+</ul>
+<h2 id="appendix-evasion">Appendix: Evasion</h2>
+<p>This is out of scope (not discussed in the course) but may be interesting.</p>
+<ul>
+<li><a href="https://labs.nettitude.com/blog/shellcode-source-mutations/">Avoiding Detection with Shellcode Mutator</a> A tool that <em>mutates</em> exploit source code without affecting its functionality, changing its signature and making it harder to reliably detect as malicious.</li>
+<li><a href="https://www.kitploit.com/2023/06/killer-is-tool-created-to-evade-avs-and.html?m=1">Killer</a>: A Tool Created To Evade AVs And EDRs Or Security Tools</li>
+<li><a href="https://github.com/CMEPW/BypassAV/tree/main">List of techniques for bypassing AV and EDR</a>, with a nice graphic.</li>
+<li><a href="https://ethicalchaos.dev/2020/05/27/lets-create-an-edr-and-bypass-it-part-1/">Let's create an EDR and bypass it</a>.</li>
+<li><a href="https://redops.at/en/blog/meterpreter-vs-modern-edrs-in-2023">Meterpreter vs Modern EDR(s)</a> describes experiments for <em>injecting payloads with Meterpreter while bypassing EDR</em> (Endpoint Detection and Response: the modern term for indicating an "Antivirus"). Section "Meterpreter Reference Dropper" contains an <em>example of usage of msfvenom</em>.</li>
+</ul>
 
 
   

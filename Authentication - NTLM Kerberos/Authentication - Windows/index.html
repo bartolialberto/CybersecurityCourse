@@ -8,20 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/Labs/MITRE_ATTACK_Navigator/">
+        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/Authentication%20-%20NTLM%20Kerberos/Authentication%20-%20Windows/">
       
       
-        <link rel="prev" href="../BURP/">
+        <link rel="prev" href="../../Passwords%20and%20MFA/Passwords/">
       
       
-        <link rel="next" href="../OWASP%20Juice%20Shop/">
+        <link rel="next" href="../Kerberos/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.5">
     
     
       
-        <title>MITRE ATTACK Navigator - Cybersecurity Course - University of Trieste</title>
+        <title>Authentication - Windows - Cybersecurity Course - University of Trieste</title>
       
     
     
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#understanding-basic-usage-and-potential-of-mitre-attck-navigator" class="md-skip">
+        <a href="#authentication-windows" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              MITRE ATTACK Navigator
+              Authentication - Windows
             
           </span>
         </div>
@@ -594,14 +594,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
       
       
       
@@ -610,7 +612,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_9">
           <span class="md-nav__icon md-icon"></span>
           Authentication - NTLM Kerberos
@@ -621,11 +623,66 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Authentication%20-%20NTLM%20Kerberos/Authentication%20-%20Windows/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Authentication - Windows
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Authentication - Windows
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#windows-protocol-specifications" class="md-nav__link">
+    Windows Protocol Specifications
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#active-directory-ad" class="md-nav__link">
+    Active Directory (AD)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authentication-negotiation-in-windows" class="md-nav__link">
+    Authentication Negotiation in Windows
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -637,7 +694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Authentication%20-%20NTLM%20Kerberos/Kerberos/" class="md-nav__link">
+      <a href="../Kerberos/" class="md-nav__link">
         Kerberos
       </a>
     </li>
@@ -651,7 +708,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Authentication%20-%20NTLM%20Kerberos/NTLM/" class="md-nav__link">
+      <a href="../NTLM/" class="md-nav__link">
         NTLM
       </a>
     </li>
@@ -888,16 +945,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
       
       
       
@@ -906,7 +961,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_13">
           <span class="md-nav__icon md-icon"></span>
           Labs
@@ -919,7 +974,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../BURP/" class="md-nav__link">
+      <a href="../../Labs/BURP/" class="md-nav__link">
         BURP
       </a>
     </li>
@@ -931,116 +986,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          MITRE ATTACK Navigator
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Labs/MITRE_ATTACK_Navigator/" class="md-nav__link">
         MITRE ATTACK Navigator
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#understanding-basic-usage-and-potential-of-mitre-attck-navigator" class="md-nav__link">
-    Understanding basic usage and potential of MITRE ATT&amp;CK NAVIGATOR.
-  </a>
-  
-    <nav class="md-nav" aria-label="Understanding basic usage and potential of MITRE ATT&amp;CK NAVIGATOR.">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#define-layers" class="md-nav__link">
-    Define layers
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#understanding-techniques" class="md-nav__link">
-    Understanding techniques
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-scores-for-each-layer" class="md-nav__link">
-    Define scores for each layer
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-new-layer-from-the-three-existing-layers" class="md-nav__link">
-    Create new layer from the three existing layers
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-a-gradient-color-in-the-newly-created-layer" class="md-nav__link">
-    Define a gradient color in the newly created layer
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#analyze-results" class="md-nav__link">
-    ANALYZE RESULTS
-  </a>
-  
-    <nav class="md-nav" aria-label="ANALYZE RESULTS">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#further-activities-if-you-want" class="md-nav__link">
-    Further activities, if you want…
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#attck-calculator" class="md-nav__link">
-    ATT&amp;CK CALCULATOR
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1052,7 +1002,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../OWASP%20Juice%20Shop/" class="md-nav__link">
+      <a href="../../Labs/OWASP%20Juice%20Shop/" class="md-nav__link">
         OWASP Juice Shop
       </a>
     </li>
@@ -1066,7 +1016,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Vulnerable%20Platforms/" class="md-nav__link">
+      <a href="../../Labs/Vulnerable%20Platforms/" class="md-nav__link">
         Vulnerable Platforms
       </a>
     </li>
@@ -1097,6 +1047,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1105,76 +1057,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#understanding-basic-usage-and-potential-of-mitre-attck-navigator" class="md-nav__link">
-    Understanding basic usage and potential of MITRE ATT&amp;CK NAVIGATOR.
+  <a href="#windows-protocol-specifications" class="md-nav__link">
+    Windows Protocol Specifications
   </a>
-  
-    <nav class="md-nav" aria-label="Understanding basic usage and potential of MITRE ATT&amp;CK NAVIGATOR.">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#define-layers" class="md-nav__link">
-    Define layers
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#understanding-techniques" class="md-nav__link">
-    Understanding techniques
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-scores-for-each-layer" class="md-nav__link">
-    Define scores for each layer
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-new-layer-from-the-three-existing-layers" class="md-nav__link">
-    Create new layer from the three existing layers
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-a-gradient-color-in-the-newly-created-layer" class="md-nav__link">
-    Define a gradient color in the newly created layer
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#analyze-results" class="md-nav__link">
-    ANALYZE RESULTS
+  <a href="#active-directory-ad" class="md-nav__link">
+    Active Directory (AD)
   </a>
-  
-    <nav class="md-nav" aria-label="ANALYZE RESULTS">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#further-activities-if-you-want" class="md-nav__link">
-    Further activities, if you want…
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#attck-calculator" class="md-nav__link">
-    ATT&amp;CK CALCULATOR
+  <a href="#authentication-negotiation-in-windows" class="md-nav__link">
+    Authentication Negotiation in Windows
   </a>
   
 </li>
@@ -1194,93 +1092,28 @@
                   
 
 
-  <h1>MITRE ATTACK Navigator</h1>
-
-<h2 id="understanding-basic-usage-and-potential-of-mitre-attck-navigator">Understanding basic usage and potential of MITRE ATT&amp;CK NAVIGATOR.</h2>
-<p>We will use the <a href="https://mitre-attack.github.io/attack-navigator/">hosted webapp</a>. The webapp sources are public domain. The webapp could be hosted locally, which may be useful if one did not want to disclose any analysis to anyone.</p>
-<p>We will assess the defensive usage of multi-factor authentication (MFA) against two recent and highly relevant campaigns:</p>
-<ol>
-<li>CUBA ransomware campaign: <a href="https://www.cisa.gov/uscert/ncas/alerts/aa22-335a">CISA alert</a></li>
-<li>HIVE ransomware campaign: <a href="https://www.cisa.gov/uscert/ncas/alerts/aa22-321a">CISA alert</a></li>
-</ol>
-<h3 id="define-layers">Define layers</h3>
-<p>One can create a new layer manually, select a set of techniques and save it as a json.</p>
-<p>For example, one could create a layer that describes a specific attack campaign; one that describes the techniques impacted by a specific mitigation; one that describes the techniques impacted by a specific detection.</p>
-<p>The NAVIGATOR webapp embeds a number of past attack campaigns that can be selected easily (magnifying glass button): by selecting a specific campaign, the set of corresponding techniques will be selected automatically. The same button allows selecting a specific mitigation or a specific detection, which will select the set of corresponding techniques.</p>
-<p><img alt="6c05ec66b36468050dfbd4606d396387.png" src="../../_resources/6c05ec66b36468050dfbd4606d396387-1.png" /></p>
-<p>To save time, the layers required for this activity have been prepared already and can be uploaded in the webapp.</p>
+<h1 id="authentication-windows">Authentication - Windows</h1>
+<h2 id="windows-protocol-specifications">Windows Protocol Specifications</h2>
 <ul>
-<li>Create new layer with techniques used by CUBA (<a href="https://tinyurl.com/bartoli-mitre-cuba">CUBA json</a>)</li>
-<li>Create new layer with techniques used by HIVE (<a href="https://tinyurl.com/bartoli-mitre-hive">HIVE json</a>)</li>
-<li>Create new layer with techniques mitigated by MFA (<a href="https://tinyurl.com/bartoli-mitre-mfa">MFA json</a>)</li>
+<li>Microsoft <a href="https://learn.microsoft.com/en-us/openspecs/main/ms-openspeclp/3589baea-5b22-48f2-9d43-f5bea4960ddb">specification</a> of ALL the  protocols (more than 600MB compressed): Windows, Office, SQLServer, SharePoint, Exchange.</li>
+<li>For <a href="https://learn.microsoft.com/en-us/openspecs/windows_protocols/MS-WINPROTLP/92b33e19-6fff-496b-86c3-d168206f9845">Windows Protocols</a>, the documentation is split up into:<ul>
+<li>Windows Technology Overviews (always start from here)</li>
+<li>Windows Technical Specifications</li>
+<li>References</li>
 </ul>
-<p>Layers for specific attack campaigns not included in the NAVIGATOR webapp can be created simply, by analyzing threat intelligence reports, taking note of the techniques mentioned in those reports and by selecting those techniques in a new layer.</p>
-<h3 id="understanding-techniques">Understanding techniques</h3>
-<p>Click the right button on a specific technique. Scroll down and select either “view technique” or “view tactic”. A new tab will be open to the relevant page of the MITRE ATT&amp;CK framework, that describes the corresponding technique/tactic, along with possible detections and mitigations (e.g. <a href="https://attack.mitre.org/techniques/T1539/">https://attack.mitre.org/techniques/T1539/</a>).</p>
-<h3 id="define-scores-for-each-layer">Define scores for each layer</h3>
-<p>In each layer, assign a score to each technique selected in that layer. This can be done with the score button in the “technique controls” section.</p>
-<p>In general, one could assign different scores to different techniques. In this exercise we will assign the same score to all the selected techniques in a given layer:</p>
-<ul>
-<li>CUBA 5</li>
-<li>HIVE 5</li>
-<li>MFA 20</li>
-</ul>
-<h3 id="create-new-layer-from-the-three-existing-layers">Create new layer from the three existing layers</h3>
-<p>Create a new tab (press +).</p>
-<p><img alt="df5c38bd8cce8e8c087c218024d6318a.png" src="../../_resources/df5c38bd8cce8e8c087c218024d6318a-1.png" /></p>
-<p>Then select “create layer from other layers” and in the “score expression” field define a sum of the three previously loaded layers (probably it will be “a + b + c” and probably you will need to insert a space in between operands and operators). Do <strong>not </strong>insert anything in the other fields (in particular, do not define any gradient or coloring at this stage).</p>
-<p><img alt="26e0df2a7b4f4d5b6813ded9be0b4490.png" src="../../_resources/26e0df2a7b4f4d5b6813ded9be0b4490-1.png" />
-At this point you will have a new layer in which each technique will be automatically given a score that is the sum of the score of the three other layers. With the values suggested above there will be these possible scores:</p>
-<ul>
-<li>5 Technique used by one attack campaign and not mitigated by MFA</li>
-<li>10 Technique used by both attack campaigns and not mitigated by MFA</li>
-<li>20 Technique not used by any of the attack campaigns and mitigated by MFA</li>
-<li>25 Technique used by one attack campaign and mitigated by MFA</li>
-<li>30 Technique used by both attack campaign and mitigated by MFA</li>
-</ul>
-<h3 id="define-a-gradient-color-in-the-newly-created-layer">Define a gradient color in the newly created layer</h3>
-<p>Button “color setup” in the “layer controls” section. Choose 3 or 4 colors for understanding the various combinations quickly:</p>
-<ul>
-<li>5 or 10:  uncovered by MFA</li>
-<li>20:       covered by MFA but not relevant</li>
-<li>25 or 30: covered by MFA</li>
-</ul>
-<p>Save layer for later use (buttons in “layer controls” section; excel or json, the latter can be loaded in the tool later).</p>
-<h2 id="analyze-results">ANALYZE RESULTS</h2>
-<p>You will see that MFA does provide some mitigation against several of the techniques used in the considered attack campaigns but not all.</p>
-<ol>
-<li>Consider the uncovered technique in “Command and Control”.</li>
-<li>Locate that technique in <a href="https://attack.mitre.org/matrices/enterprise/">https://attack.mitre.org/matrices/enterprise/</a>.</li>
-<li>Read the suggested detections and mitigations carefully.</li>
-<li>For each of them<ol>
-<li>Do you know it?</li>
-<li>Is it implemented in our environment?</li>
-<li>If yes, to which degree?</li>
-</ol>
 </li>
-<li>Consider the uncovered technique in “Privilege Escalation”.</li>
-<li>Repeat the above analysis.</li>
-</ol>
-<h3 id="further-activities-if-you-want">Further activities, if you want…</h3>
-<ol>
-<li>Create and save  a layer for describing the Uber breach (shown in the slides).</li>
-<li>Analyze effectiveness of MFA for this specific breach.</li>
-<li>Analyze effectiveness of MFA for this breach, CUBA and HIVE together.</li>
-</ol>
-<h2 id="attck-calculator">ATT&amp;CK CALCULATOR</h2>
-<p>Objective: Grasp an idea of which mitigations and detections could be most needed in our environment.</p>
-<p>We will use the <a href="https://top-attack-techniques.mitre-engenuity.org/calculator">hosted webapp</a>. The webapp sources are not public domain.</p>
-<ol>
-<li>Select the input combination that, in your opinion, is most relevant to our environment (or to your view of our environment).</li>
-<li>Generate results (results can be downloaded in json, but the format is not recognized by the Navigator).</li>
-<li>Consider the 3 detections and 3 mitigations that are suggested as being most relevant. Read their definitions carefully.</li>
-<li>For each of them:<ol>
-<li>Do you know it?</li>
-<li>Is it implemented in our environment?</li>
-<li>If yes, to which degree?</li>
-</ol>
-</li>
-</ol>
+<li><a href="https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-nlmp/b38c36ed-2804-4868-a9ff-8dd3182128e4">NT LAN Manager (NTLM) Authentication Protocol</a> The original specification by Microsoft. Extremely complex. Too detailed to be useful (unless you are really an expert working on this very specific topic).</li>
+</ul>
+<h2 id="active-directory-ad">Active Directory (AD)</h2>
+<ul>
+<li>See LDAP and Active Directory in the <a href="../../Access%20Control/Resources/">Access Control section</a></li>
+</ul>
+<h2 id="authentication-negotiation-in-windows">Authentication Negotiation in Windows</h2>
+<ul>
+<li><a href="https://docs.oracle.com/cd/E37838_01/html/E61050/overview-61.html">Introduction to GSSAPI (Oracle)</a> Generic Security Support API. <a href="https://learn.microsoft.com/en-us/windows-server/security/windows-authentication/security-support-provider-interface-architecture">SSPI Windows Security Support Provider Interface</a> is the Windows GSSAPI implementation.</li>
+<li><a href="https://csandker.io/2021/02/21/Offensive-Windows-IPC-2-RPC.html">Offensive Windows IPC Internals 2: RPC</a> Explain in detail how Remote Procedure Calls (RPC) works in Windows. An essential issue in many protocols, including <em>negotiation</em> of the authentication protocol (for <em>downgrading</em> to NTLM when MITM).</li>
+<li><a href="https://csandker.io/2018/04/04/SPNEGODown.html">Downgrade SPNEGO Authentication</a> The Windows protocol that client and server use for negotiating authentication, including the reason why a <em>"use Kerberos"</em> offer can be downgraded to <em>"let's use NTLM"</em>.</li>
+</ul>
 
 
   
