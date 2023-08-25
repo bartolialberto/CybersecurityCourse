@@ -17,7 +17,7 @@
         <link rel="next" href="../Vulnerabilities%20-%20Misc/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.5">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.5">
     
     
       
@@ -1202,6 +1202,7 @@
 <li><a href="https://www.cs.ru.nl/E.Poll/ss/">Slides</a> on memory corruption from <strong>Software Security at Radboud University</strong> (prof. Erik Poll). Discusses format string and integer conversion vulnerabilities (as well as many subtle C bugs).</li>
 <li>A <a href="https://www.youtube.com/watch?v=qpyRz5lkRjE">short video</a> explaining how to write an exploit for a toy application: a C program (compiled and run without any mitigation) where a password is read with <code>gets()</code>. By overflowing the <code>password</code> variable, execution flow bypass the password check (<strong>stack smashing, code reuse</strong>; no shellcode is injected). It provides an idea of how to determine the correct address values to overwrite on the return address on the stack. Running this toy example requires disabling stack canary.</li>
 <li><a href="https://www.cl.cam.ac.uk/teaching/2021/Security/materials.html">Handout Slides</a> on <strong>Security from Cambridge University</strong> (2020-2021). Much material on various topics, including memory safety vulnerabilities examples and mitigations.</li>
+<li><a href="https://blog.isosceles.com/an-introduction-to-exploit-reliability/">An Introduction to Exploit Reliability</a> A big consideration when you're writing exploits professionally is exploit reliability: a measure of an exploit's failure rate. If your exploit is 100% reliable, you know it's always going to succeed. If it's 90% reliable, then your exploit will fail in one in ten cases, and so on. Take a look at the CISA KEV database or the CISA/FBI most exploited CVEs list -- <em>most of the issues listed are not memory corruption vulnerabilities</em>. Instead, we commonly see logic issues like command injection, path traversal, and deserialization bugs, all of which typically have <em>extremely high exploit reliability</em>.</li>
 </ul>
 <h3 id="some-fundamental-papers">Some fundamental papers</h3>
 <ul>
