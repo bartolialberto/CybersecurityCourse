@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/Authentication%20-%20NTLM%20Kerberos/Kerberos/">
+        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/Basic%20Techniques/FIX%20-%20PRELIMINARY%20WARNINGS/">
       
       
-        <link rel="prev" href="../Authentication%20-%20Windows/">
+        <link rel="prev" href="../DLL%20Hijacking/">
       
       
-        <link rel="next" href="../NTLM/">
+        <link rel="next" href="../Privilege%20escalation%20-%20Linux/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Kerberos - Cybersecurity Course - University of Trieste</title>
+        <title>FIX - Cybersecurity Course - University of Trieste</title>
       
     
     
@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#kerberos" class="md-skip">
+        <a href="#fix" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Kerberos
+              FIX
             
           </span>
         </div>
@@ -489,17 +489,19 @@
       
   
   
+    
+  
   
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
@@ -512,7 +514,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Basic Techniques
@@ -525,7 +527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Basic%20Techniques/Basic_Techniques/" class="md-nav__link">
+      <a href="../Basic_Techniques/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -545,7 +547,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Basic%20Techniques/Botnets/" class="md-nav__link">
+      <a href="../Botnets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -565,7 +567,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Basic%20Techniques/DLL%20Hijacking/" class="md-nav__link">
+      <a href="../DLL%20Hijacking/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -583,9 +585,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Basic%20Techniques/FIX%20-%20PRELIMINARY%20WARNINGS/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    FIX
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -594,6 +616,40 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#chatgpt-bard" class="md-nav__link">
+    ChatGPT / Bard
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linked-documents" class="md-nav__link">
+    Linked documents
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -605,7 +661,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Basic%20Techniques/Privilege%20escalation%20-%20Linux/" class="md-nav__link">
+      <a href="../Privilege%20escalation%20-%20Linux/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -792,19 +848,17 @@
       
   
   
-    
-  
   
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
         
           <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
             
@@ -817,7 +871,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             Authentication - NTLM Kerberos
@@ -830,7 +884,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Authentication%20-%20Windows/" class="md-nav__link">
+      <a href="../../Authentication%20-%20NTLM%20Kerberos/Authentication%20-%20Windows/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -848,29 +902,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Kerberos
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Authentication%20-%20NTLM%20Kerberos/Kerberos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -879,47 +913,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#protocol-specification" class="md-nav__link">
-    Protocol specification
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#storing-long-term-secrets" class="md-nav__link">
-    Storing long term secrets
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kerberos-attacks" class="md-nav__link">
-    Kerberos attacks
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -931,7 +924,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../NTLM/" class="md-nav__link">
+      <a href="../../Authentication%20-%20NTLM%20Kerberos/NTLM/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1403,22 +1396,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#protocol-specification" class="md-nav__link">
-    Protocol specification
+  <a href="#chatgpt-bard" class="md-nav__link">
+    ChatGPT / Bard
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#storing-long-term-secrets" class="md-nav__link">
-    Storing long term secrets
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kerberos-attacks" class="md-nav__link">
-    Kerberos attacks
+  <a href="#linked-documents" class="md-nav__link">
+    Linked documents
   </a>
   
 </li>
@@ -1438,32 +1424,16 @@
                   
 
 
-<h1 id="kerberos">Kerberos</h1>
-<h2 id="protocol-specification">Protocol specification</h2>
-<ul>
-<li><a href="https://learn.microsoft.com/en-us/windows/win32/secauthn/microsoft-kerberos?redirectedfrom=MSDN">Microsoft Kerberos</a> All (i.e., too many) details.</li>
-<li><a href="https://www.kerberos.org/software/tutorial.html#1.5.1">Kerberos tutorial</a> Very clear and compact. More focussed on the non-Windows version.</li>
-<li><a href="https://datatracker.ietf.org/doc/html/rfc4120">Kerberos v5 RFC</a>  All (i.e., too many) details.</li>
-<li><a href="https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-pac/c38cc307-f3e6-4ed4-8c81-dc550d96223c">Privilege Attribute Certificate (PAC)</a> Many complex details.</li>
-<li><a href="https://www.blackhat.com/docs/us-14/materials/us-14-Duckwall-Abusing-Microsoft-Kerberos-Sorry-You-Guys-Don't-Get-It-wp.pdf">Abusing Kerberos</a> Relatively old but still highly relevant for:<ul>
-<li>Salting in Windows Kerberos vs Standard Kerberos</li>
-<li>Golden ticket and ticket validation</li>
-</ul>
-</li>
-</ul>
-<h2 id="storing-long-term-secrets">Storing long term secrets</h2>
-<p>Where does a service store its password? There is no user typing that password at bootstrap.</p>
-<ul>
-<li><a href="https://web.mit.edu/kerberos/krb5-1.5/krb5-1.5.4/doc/krb5-install/The-Keytab-File.html">The Keytab File</a> Where service keys are stored in MIT Kerberos.</li>
-<li><a href="https://www.passcape.com/index.php?section=docsys&amp;cmd=details&amp;id=23">Windows LSA secrets</a> LSA secrets is a special protected storage for important data used by the Local Security Authority (LSA) in Windows. LSA is designed for managing a system's local security policy, auditing, authenticating, logging users on to the system, storing private data. Users' and system's sensitive data is stored in secrets. Access to all secret data is available to system only. </li>
-<li><a href="https://www.synacktiv.com/publications/windows-secrets-extraction-a-summary">WINDOWS SECRETS EXTRACTION: A SUMMARY</a> Post-exploitation in Windows environments often implies <strong>secrets collection</strong>. The collected secrets can be reused for lateral or vertical movement, making them high value assets. Most people already know the LSASS process, but other secrets such as LSA secrets and DPAPI ones could also allow privilege escalation or access to sensitive resources. This article will describe the different types of secrets that can be found within a Windows machine, and public tools that can be used to retrieve them. </li>
-</ul>
-<h2 id="kerberos-attacks">Kerberos attacks</h2>
-<ul>
-<li><a href="https://csandker.io/2017/09/12/KerberosAuthenticationAWrapUp.html">Kerberos Authentication: A Wrap Up</a> Very clear and concise summary of Kerberos, along with a detailed explanation of <em>Kerberoasting</em> and <em>AS-REP-roasting</em>.</li>
-<li><a href="https://blog.harmj0y.net/redteaming/kerberoasting-revisited/">Kerberoasting revisited</a>.</li>
-<li>Many more attacks in the section about <a href="../../Lateral%20Movement%20and%20AD%20Abuse/AD_abuse/">AD Abuse</a></li>
-</ul>
+<h1 id="fix">FIX</h1>
+<h3 id="chatgpt-bard">ChatGPT / Bard</h3>
+<p>Many examples and writeups are based on very specific commands.</p>
+<p>Purpose and usage of those commands may be found on the respective documentation pages or on specialized tutorials. </p>
+<p>Querying ChatGPT/Bard is often very useful: when reading a command or a sequence of commands that you do not understand, you might want to ask ChatGPT/Bard with a prompt like “explain” followed by the corresponding sequence of commands copied and pasted from the writeup. Of course, <strong>there is no guarantee that the response will be correct</strong>. However, the response is usually very useful (and indeed correct). I have occasionally provided a link to brief explanations provided by ChatGPT/Bard on specific topics, for ease of reading. As just pointed out, there is no guarantee that those explanations are correct: take them just as hints.</p>
+<p>Relying on ChatGPT/Bard for having a quick (approximate) understanding of what a piece of code actually does is a strategy used also by a top security company, Mandiant: see <a href="https://www.mandiant.com/resources/blog/mandiant-leveraging-ai">Analyzing an Alert for a PowerShell Script</a> (there might be a conflict of interest, though, as Mandiant is part of Google and this post promotes the use of Bard, also a Google service).</p>
+<h3 id="linked-documents">Linked documents</h3>
+<p>The notes below contain links to many documents. Usually, those documents can only be fully understood with very specific technical skills (and sometimes theoretical knowledge) far beyond those required or provided by this course.</p>
+<p>Please focus on the topic associated with the note and do not be frustrated if you do not manage to understand everything.</p>
+<p>For example, the DLL hijacking section points to a certain writeup. The part of that writeup that focuses on DLL hijacking can be understood and is indeed an useful example. The final part of that writeup describes a privilege escalation based on “Resource Based Constrained Delegation”, which is quite difficult and not part of this course.</p>
 
 
   
