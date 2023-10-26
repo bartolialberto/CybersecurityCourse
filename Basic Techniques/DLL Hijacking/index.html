@@ -82,6 +82,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#dll-hijacking" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -569,6 +574,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    DLL Hijacking
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -578,6 +594,50 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dll-hijacking" class="md-nav__link">
+    DLL HIjacking
+  </a>
+  
+    <nav class="md-nav" aria-label="DLL HIjacking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tools" class="md-nav__link">
+    Tools
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1336,6 +1396,41 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dll-hijacking" class="md-nav__link">
+    DLL HIjacking
+  </a>
+  
+    <nav class="md-nav" aria-label="DLL HIjacking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tools" class="md-nav__link">
+    Tools
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1351,18 +1446,25 @@
 
   <h1>DLL Hijacking</h1>
 
-<p><strong>Dynamic-link libraries (DLLs)</strong> are code modules that contain sets of functions that other executables can call. Unlike statically linked libraries, which become part of an executable during the compilation process, DLLs can live on their own outside of the application that uses them. There are two ways to perform linking with DLLs: <strong>implicit</strong> or <strong>explicit</strong>.</p>
-<p>DLL Injection: <a href="https://www.codereversing.com/archives/653">Background &amp; DLL Proxying</a> (1/5)
-DLL Injection: Windows Hooks (2/5)
-DLL Injection: Remote Threads (3/5)
-DLL Injection: Thread Context Hijacking (4/5)
-DLL Injection: Manual Mapping (5/5)</p>
-<hr />
+<h2 id="dll-hijacking">DLL HIjacking</h2>
 <ul>
-<li>A listing of the DLLs loaded by an executable can be obtained with Process Monitor from sysinternals.</li>
-<li>Decompilation of a specified DLL (in order to see which files are possibly loaded by that DLL from which directory) can be done with dnspy.</li>
-<li><a href="https://chat.openai.com/share/b1aaa09f-126e-42f3-a7f2-462f33a3446a">ChatGPT link</a></li>
+<li>
+<p><a href="https://www.codereversing.com/archives/653">DLL Injection: Background &amp; DLL Proxying</a> Dynamic-link libraries (DLLs) are code modules that contain sets of functions that other executables can call. Unlike statically linked libraries, which become part of an executable during the compilation process, DLLs can live on their own outside of the application that uses them. There are two ways to perform linking with DLLs:</p>
+<ul>
+<li>In <em>implicit linking</em>, during the compilation phase, the application links with an import library file provided by the developer of the DLL. When the application is loaded, the Windows loader will identify that there is a dynamically linked reference and load the DLL into the application’s address space.</li>
+<li><em>explicit linking</em> involves the application loading the DLL  with the use of the LoadLibrary function, and resolving pointers to functions that it would like to call by calling GetProcAddress.</li>
+</ul>
+</li>
+</ul>
+<h3 id="examples">Examples</h3>
+<ul>
+<li><a href="https://www.praetorian.com/blog/vulnerabilities-within-listserv/">Technical Advisory: Vulnerabilities Identified within ListServ</a> ListServ is a widely used email list management application. In October 2023 a DLL hijacking vulnerability was identified (section "Local Privilege Escalation via DLL Hijacking"). </li>
 <li><a href="https://notes.secure77.de/?link=%2FWriteUps%2FVulnLab%2FBruno%2FWriteup">Writeup</a> of hacking a vulnerable machine called Bruno in <a href="https://www.vulnlab.com/main/standalone-labs">VulnLab</a>. One the steps (<a href="https://notes.secure77.de/?link=%2FWriteUps%2FVulnLab%2FBruno%2FWriteup#SampleScanner_APP">SampleScanner APP</a>) is based on a form of DLL hijacking. A malicious DLL is written in a folder determined with process monitor and dnspy. Actual writing occurs with a path traversal in unzipping.</li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>A listing of the DLLs loaded by an executable can be obtained with <a href="https://learn.microsoft.com/en-us/sysinternals/downloads/procmon">Process Monitor</a> from sysinternals.</li>
+<li>Decompilation of a specified DLL (in order to see which files are possibly loaded by that DLL from which directory) can be done with <a href="https://github.com/dnSpy/dnSpy">dnspy</a>. This <a href="https://chat.openai.com/share/b1aaa09f-126e-42f3-a7f2-462f33a3446a">conversation with ChatGPT colink</a> explains how to use DNSpy for DLL analysis.</li>
 <li>List of DLL Hijacking candidates: A mapping between DLLs and vulnerable executables is kept and can be searched via <a href="https://hijacklibs.net/">this website</a>.
 For defenders, this project can provide valuable information when trying to detect DLL Hijacking attempts.</li>
 </ul>
