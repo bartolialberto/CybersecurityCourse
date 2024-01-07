@@ -393,6 +393,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#system-level-questions-about-linux-and-windows" class="md-nav__link">
+    System-level questions about Linux and Windows
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#active-directory-and-ldap" class="md-nav__link">
     Active Directory and LDAP
   </a>
@@ -1169,6 +1176,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#system-level-questions-about-linux-and-windows" class="md-nav__link">
+    System-level questions about Linux and Windows
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#active-directory-and-ldap" class="md-nav__link">
     Active Directory and LDAP
   </a>
@@ -1200,15 +1214,23 @@
 <ul>
 <li><a href="https://www.redhat.com/sysadmin/suid-sgid-sticky-bit">Linux permissions: SUID, SGID, and sticky bit</a></li>
 <li><a href="https://learn.microsoft.com/en-us/windows/security/identity-protection/access-control/access-control">Windows Access Control Overview</a> Warning: this is a huge and complex topic, with terminology often incoherent.</li>
+<li>How a process can change its account:<ul>
 <li><a href="https://man7.org/linux/man-pages/man2/setuid.2.html">Linux setuid system call</a></li>
 <li><a href="https://learn.microsoft.com/en-us/windows/win32/api/securitybaseapi/nf-securitybaseapi-impersonateloggedonuser">Windows ImpersonateLoggedOnUser</a> </li>
-<li><a href="https://www.baeldung.com/linux/sudo-command">Sudo Command in Linux</a>. This site has a nice Linux administration guide.</li>
-<li>A general, high-level discussion of the many flavors and facets of access control can be found in "Authentication, Authorisation &amp; Accountability, Section 3 - Authorization" <a href="https://www.cybok.org/knowledgebase1_1/">Knowledgebase – CyBOK v1.1</a>.</li>
+</ul>
+</li>
+<li><a href="https://www.baeldung.com/linux/sudo-command">Sudo Command in Linux</a>. This site has a very nice Linux administration guide.</li>
+<li>A general, high-level discussion of the many flavors and facets of access control can be found in "<em>Authentication, Authorisation &amp; Accountability, Section 3 - Authorization</em>" <a href="https://www.cybok.org/knowledgebase1_1/">Knowledgebase – CyBOK v1.1</a>.</li>
 </ul>
 <h2 id="authentication">Authentication</h2>
 <ul>
 <li><a href="https://chat.openai.com/share/bc58760b-d533-4061-a8a8-bad1c7faa85c">ChatGPT: where are accounts defined in Linux and in Windows?</a></li>
 </ul>
+<h2 id="system-level-questions-about-linux-and-windows">System-level questions about Linux and Windows</h2>
+<p>I personally find ChatGPT extremely useful in this respect.</p>
+<p>Asking broad and general questions is not very useful (e.g. <em>"how does access control work in Windows?</em>"). On the other hand, asking specific questions is often extremely useful and much more efficient than trying to navigate across blogs and man pages (e.g., <em>"In Windows, how can I list all users of a given group from the command line?"</em>)</p>
+<p>In order to construct useful prompts, it is often advisable to start with something like <em>"I want to understand Linux administration"</em> and then be very specific on the question you would like to be answered.</p>
+<p>Usage of ChatGPT is often very useful also for understanding the output of specific commands (e.g., <em>"can you please explain the output of the following Linux command"</em> followed by a cut-and-paste).</p>
 <h2 id="active-directory-and-ldap">Active Directory and LDAP</h2>
 <ul>
 <li><a href="https://posts.specterops.io/an-introduction-to-manual-active-directory-querying-with-dsquery-and-ldapsearch-84943c13d7eb">An Introduction to Manual Active Directory Querying with Dsquery and Ldapsearch</a></li>
