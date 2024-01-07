@@ -41,31 +41,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://bartolialberto.github.io/CybersecurityCourse/Basic%20Techniques/Basic_Techniques/</loc>
-         <lastmod>2024-01-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://bartolialberto.github.io/CybersecurityCourse/Basic%20Techniques/Botnets/</loc>
-         <lastmod>2024-01-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://bartolialberto.github.io/CybersecurityCourse/Basic%20Techniques/DLL%20Hijacking/</loc>
-         <lastmod>2024-01-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://bartolialberto.github.io/CybersecurityCourse/Basic%20Techniques/FIX%20-%20PRELIMINARY%20WARNINGS/</loc>
-         <lastmod>2024-01-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://bartolialberto.github.io/CybersecurityCourse/Basic%20Techniques/Privilege%20escalation%20-%20Linux/</loc>
-         <lastmod>2024-01-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://bartolialberto.github.io/CybersecurityCourse/Final%20Remarks/Final%20Remarks/</loc>
          <lastmod>2024-01-07</lastmod>
          <changefreq>daily</changefreq>
@@ -132,6 +107,16 @@
     </url>
     <url>
          <loc>https://bartolialberto.github.io/CybersecurityCourse/MITRE%20ATTACK/Intrusions_Case_Studies/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://bartolialberto.github.io/CybersecurityCourse/Malware/Botnet%20Case%20Studies/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://bartolialberto.github.io/CybersecurityCourse/Malware/Resources%20-%20Malware/</loc>
          <lastmod>2024-01-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
