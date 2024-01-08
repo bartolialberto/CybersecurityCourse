@@ -8,20 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/Final%20Remarks/Final%20Remarks/">
+        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/Lateral%20Movement%20and%20AD%20Abuse/Discovery/">
       
       
-        <link rel="prev" href="../../Vulnerabilities/Vulnerability%20-%20Case%20studies/">
+        <link rel="prev" href="../AD_abuse/">
       
       
-        <link rel="next" href="../../Labs/Automated%20Malware%20Analysis/">
+        <link rel="next" href="../Lateral%20Movement/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.5">
     
     
       
-        <title>Final Remarks - Cybersecurity Course - University of Trieste</title>
+        <title>Discovery - Cybersecurity Course - University of Trieste</title>
       
     
     
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#final-remarks" class="md-skip">
+        <a href="#discovery" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Final Remarks
+              Discovery
             
           </span>
         </div>
@@ -713,14 +713,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
       
       
       
@@ -729,7 +731,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_10">
           <span class="md-nav__icon md-icon"></span>
           7 - Lateral Movement and AD Abuse
@@ -742,7 +744,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Lateral%20Movement%20and%20AD%20Abuse/AD_abuse/" class="md-nav__link">
+      <a href="../AD_abuse/" class="md-nav__link">
         AD Abuse
       </a>
     </li>
@@ -754,11 +756,79 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Lateral%20Movement%20and%20AD%20Abuse/Discovery/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Discovery
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Discovery
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#websites" class="md-nav__link">
+    Websites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#windows-domains" class="md-nav__link">
+    Windows Domains
+  </a>
+  
+    <nav class="md-nav" aria-label="Windows Domains">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enumeration" class="md-nav__link">
+    Enumeration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exploration" class="md-nav__link">
+    Exploration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -770,7 +840,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Lateral%20Movement%20and%20AD%20Abuse/Lateral%20Movement/" class="md-nav__link">
+      <a href="../Lateral%20Movement/" class="md-nav__link">
         Lateral Movement
       </a>
     </li>
@@ -895,16 +965,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
       
       
       
@@ -913,7 +981,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_12">
           <span class="md-nav__icon md-icon"></span>
           Final Remarks
@@ -924,126 +992,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Final Remarks
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Final%20Remarks/Final%20Remarks/" class="md-nav__link">
         Final Remarks
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#automated-attacks" class="md-nav__link">
-    Automated attacks
-  </a>
-  
-    <nav class="md-nav" aria-label="Automated attacks">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#petya-notpetya" class="md-nav__link">
-    Petya - NotPetya
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#wannacry" class="md-nav__link">
-    Wannacry
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#attack-categories" class="md-nav__link">
-    Attack Categories
-  </a>
-  
-    <nav class="md-nav" aria-label="Attack Categories">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#smb-small-and-medium-businesses" class="md-nav__link">
-    SMB - Small and Medium Businesses
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#apt-advanced-and-persistent-threat" class="md-nav__link">
-    APT - Advanced and Persistent Threat
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#case-studies" class="md-nav__link">
-    Case Studies
-  </a>
-  
-    <nav class="md-nav" aria-label="Case Studies">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#solarwinds" class="md-nav__link">
-    SolarWInds
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#proxylogon-microsoft-exchange" class="md-nav__link">
-    ProxyLogon - Microsoft Exchange
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1187,77 +1140,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#automated-attacks" class="md-nav__link">
-    Automated attacks
+  <a href="#websites" class="md-nav__link">
+    Websites
   </a>
-  
-    <nav class="md-nav" aria-label="Automated attacks">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#petya-notpetya" class="md-nav__link">
-    Petya - NotPetya
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#wannacry" class="md-nav__link">
-    Wannacry
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#attack-categories" class="md-nav__link">
-    Attack Categories
+  <a href="#windows-domains" class="md-nav__link">
+    Windows Domains
   </a>
   
-    <nav class="md-nav" aria-label="Attack Categories">
+    <nav class="md-nav" aria-label="Windows Domains">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#smb-small-and-medium-businesses" class="md-nav__link">
-    SMB - Small and Medium Businesses
+  <a href="#enumeration" class="md-nav__link">
+    Enumeration
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#apt-advanced-and-persistent-threat" class="md-nav__link">
-    APT - Advanced and Persistent Threat
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#case-studies" class="md-nav__link">
-    Case Studies
-  </a>
-  
-    <nav class="md-nav" aria-label="Case Studies">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#solarwinds" class="md-nav__link">
-    SolarWInds
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#proxylogon-microsoft-exchange" class="md-nav__link">
-    ProxyLogon - Microsoft Exchange
+  <a href="#exploration" class="md-nav__link">
+    Exploration
   </a>
   
 </li>
@@ -1282,51 +1188,25 @@
                   
 
 
-<h1 id="final-remarks">Final Remarks</h1>
-<h2 id="automated-attacks">Automated attacks</h2>
-<h3 id="petya-notpetya">Petya - NotPetya</h3>
+<h1 id="discovery">Discovery</h1>
+<h2 id="websites">Websites</h2>
 <ul>
-<li><a href="https://unit42.paloaltonetworks.com/unit42-threat-brief-petya-ransomware/">Threat Brief: Petya Ransomware</a></li>
-<li><a href="https://gvnshtn.com/posts/maersk-me-notpetya/">Maersk, me &amp; Notpetya</a> "Along with tens (if not hundreds) of others, I played a role in the recovery and cybersecurity response to the events of the well-publicised notPetya malware attack in 2017"</li>
-<li><a href="https://www.zdnet.com/article/maersk-forced-to-reinstall-4000-servers-45000-pcs-due-to-notpetya-attack/">NonPetya ransomware forced Maersk to reinstall 4000 servers, 45000 PCs</a> "Imagine a company where a ship with 10 to 20 thousand containers is entering a port every 15 minutes, and for 10 days, you have no IT...It's almost impossible to even imagine."</li>
+<li><a href="https://github.com/Mr-Robert0/Logsensor">Logsensor</a> Given a list of URLs, it applies a set of heuristics for discovering login panels and/or for attempting SQL injection on POST forms.</li>
 </ul>
-<h3 id="wannacry">Wannacry</h3>
+<h2 id="windows-domains">Windows Domains</h2>
+<h3 id="enumeration">Enumeration</h3>
+<p>All the commands below can be downloaded from Github.</p>
 <ul>
-<li><a href="https://www.nytimes.com/interactive/2017/05/12/world/europe/wannacry-ransomware-map.html">Animated Map of How Tens of Thousands of Computers Were Infected With Ransomware</a> (Wannacry)</li>
-<li><a href="https://labs.vipre.com/wannacry-technical-analysis">Wannacry Technical Analysis</a></li>
-<li><a href="https://www.troyhunt.com/everything-you-need-to-know-about-the-wannacrypt-ransomware/">Everything you need to know about the WannaCry / Wcry / WannaCrypt ransomware</a> Troy Hunt (the founder of <a href="https://haveibeenpwned.com/">haveibeenp0wned</a>) More high level description.</li>
+<li>Command <a href="https://github.com/urbanadventurer/username-anarchy">username-anarchy</a> can be used for <em>constructing lists of potential usernames</em> based on predefined criteria or input files.</li>
+<li>Command <a href="https://github.com/ropnop/kerbrute">kerbrute</a> takes a list of usernames and checks <em>which of those usernames are valid</em> in a specified domain. It also can perform password stuffing/spraying to the specified domain controller.</li>
+<li>Command <a href="https://wadcoms.github.io/wadcoms/Impacket-GetNPUsers/">Impacket-GetNPUsers</a> (script GetNPUsers of the Impacket framework) takes a list of usernames, selects those that can be attacked with <em>AS-Rep-Roast</em> and obtain the corresponding domain controller response in a format suitable to John the ripper or Hashcat.</li>
+<li>Command <a href="https://github.com/pwnfoo/NTLMRecon">NTLMRecon</a> <em>takes a DNS domain name</em> as input and looks for <em>NTLM enabled HTTP endpoints</em> in that domain. It returns information describing the AD infrastructure, if some HTTP endpoints indeed exist. A detailed example of usage is given in <a href="https://www.sprocketsecurity.com/resources/how-to-bypass-mfa-all-day">Password spraying and MFA bypasses in the modern security landscape</a>.</li>
 </ul>
-<p>Non-technical analyses, very interesting.</p>
+<h3 id="exploration">Exploration</h3>
 <ul>
-<li><a href="https://www.lightbluetouchpaper.org/2017/05/13/bad-malware-worse-reporting/">Bad malware, worse reporting</a> Ross Anderson, University of Cambridge. "In well over 90% of NHS organisations, the well-meaning amateurs managed perfectly well. What they did was to keep their systems patched up-to-date; simple hygiene, like washing your hands after going to the toilet."</li>
-<li><a href="https://blogs.microsoft.com/on-the-issues/2017/05/14/need-urgent-collective-action-keep-people-safe-online-lessons-last-weeks-cyberattack/#sm.00001xty8cdrhjeawpakunyh01lfd">The need for urgent collective action to keep people safe online: Lessons from last week’s cyberattack</a> Brad Smith, Microsoft VicePresident. "As cybercriminals become more sophisticated, there is simply no way for customers to protect themselves against threats unless they update their systems. Otherwise they’re literally fighting the problems of the present with tools from the past. This attack is a powerful reminder that information technology basics like keeping computers current and patched are a high responsibility for everyone, and it’s something every top executive should support". </li>
-</ul>
-<h2 id="attack-categories">Attack Categories</h2>
-<h3 id="smb-small-and-medium-businesses">SMB - Small and Medium Businesses</h3>
-<ul>
-<li><a href="https://www.cs.columbia.edu/~smb/papers/nyc-council-testimony.pdf">Cybersecurity for Small Businesses</a> Hearing before the New York City Council Committee on Technology, Steve Bellovin, University of Columbia, 2020 (<em>My opinion: When Steve Bellovin speaks or writes, one should only try to listen or read very carefully</em>). Basic "security hygiene" practices.</li>
-</ul>
-<h3 id="apt-advanced-and-persistent-threat">APT - Advanced and Persistent Threat</h3>
-<ul>
-<li><a href="https://www.wired.com/2016/01/nsa-hacker-chief-explains-how-to-keep-him-out-of-your-system/">NSA Hacker Chief Explains How to Keep Him Out of Your System</a> A very interesting read for understanding the capabilities of APT groups (better said, the capabilities that this person decided to make public).</li>
-<li><a href="https://www.cisa.gov/topics/cyber-threats-and-advisories/advanced-persistent-threats-and-nation-state-actors">Advanced Persistent Threats and Nation-State Actors</a> Threat overviews and advisories maintained by CISA for: China, Russia, North Korea, Iran.</li>
-</ul>
-<h2 id="case-studies">Case Studies</h2>
-<ul>
-<li><a href="https://blog.erratasec.com/2020/07/how-ceos-think.html">How CEOs think</a> A must read for understanding cybersecurity in the real world. Its author, Robert Graham, is a well known person in the cybersec world.</li>
-<li><a href="https://www.microsoft.com/en-us/security/business/microsoft-digital-defense-report-2022-cyber-resilience#Viewactionableinsights1">Microsoft Digital Defense Report 2022</a> Long and detailed, quite interesting. One of the final sections (Cyber resilience) contains the diagram summarizing the missing security controls detected by Microsoft in their impacted customers. <em>My personal opinion: a product that in most cases is installed or deployed with so many problems is a product with many problems. Microsoft is telling us this fact about one of its most important products.</em></li>
-</ul>
-<h3 id="solarwinds">SolarWInds</h3>
-<ul>
-<li><a href="https://www.intelligence.senate.gov/hearings/open-hearing-hearing-hack-us-networks-foreign-adversary">U.S. Senate Intelligence Hearings - Solar Winds</a> Hearings of CEOs of FireEye, Mandiant, SolarWinds, Microsoft, CrowdStrike. Extremely interesting.</li>
-<li><a href="https://www.rpc.senate.gov/policy-papers/the-solarwinds-cyberattack">The SolarWinds Cyberattack</a> A very interesting non-technical summary with a detailed timeline.</li>
-</ul>
-<h3 id="proxylogon-microsoft-exchange">ProxyLogon - Microsoft Exchange</h3>
-<ul>
-<li><a href="https://www.cisa.gov/news-events/directives/ed-21-02-mitigate-microsoft-exchange-premises-product-vulnerabilities">Mitigate Microsoft Exchange On-Premises Product Vulnerabilities</a> Cybersecurity and Infrastructure Security Agency (CISA) Emergency Directive.</li>
-<li><a href="https://m365internals.com/2022/10/16/investigating-proxylogon-attacks-and-how-to-mitigate-it/">Investigating ProxyLogon Attacks And How To Mitigate It</a> A demo with screenshots.</li>
-<li><a href="https://proxylogon.com/">ProxyLogon
-The latest pre-authenticated Remote Code Execution vulnerability on Microsoft Exchange Server</a> A detailed technical explanation by the researchers that notified Microsoft. "An unauthenticated attacker can execute arbitrary commands on Microsoft Exchange Server through an only opened 443 port!".</li>
+<li><a href="https://github.com/SnaffCon/Snaffler?ref=labs.lares.com">Snaffler</a> it takes a list of Windows computers from Active Directory as input; it figures out which ones have file shares, and whether you can read them. It also enumerates the files in these shares and searches passwords (that should not be stored there) with some heuristics.</li>
+<li><a href="https://labs.lares.com/introducing-scraping-kit/">Scraping kit</a> Tools for scraping services, domain controllers, Outlook email client based on a provided list of keywords.</li>
+<li><a href="https://adsecurity.org/?p=4115">There’s Something About Service Accounts Discover (SPN scanning)</a> Discover service accounts (user accounts with SPN). Useful for Kerberoasting. Discover probable AD Admin accounts.</li>
 </ul>
 
 

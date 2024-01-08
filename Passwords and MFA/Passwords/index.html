@@ -8,20 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/Final%20Remarks/Final%20Remarks/">
+        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/Passwords%20and%20MFA/Passwords/">
       
       
-        <link rel="prev" href="../../Vulnerabilities/Vulnerability%20-%20Case%20studies/">
+        <link rel="prev" href="../MFA/">
       
       
-        <link rel="next" href="../../Labs/Automated%20Malware%20Analysis/">
+        <link rel="next" href="../../Authentication%20-%20NTLM%20Kerberos/Authentication%20-%20Windows/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.5">
     
     
       
-        <title>Final Remarks - Cybersecurity Course - University of Trieste</title>
+        <title>Passwords - Cybersecurity Course - University of Trieste</title>
       
     
     
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#final-remarks" class="md-skip">
+        <a href="#password-attacks-analyses" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Final Remarks
+              Passwords
             
           </span>
         </div>
@@ -573,14 +573,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
       
       
       
@@ -589,7 +591,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_8">
           <span class="md-nav__icon md-icon"></span>
           5 - Passwords and MFA
@@ -602,7 +604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Passwords%20and%20MFA/MFA/" class="md-nav__link">
+      <a href="../MFA/" class="md-nav__link">
         MFA
       </a>
     </li>
@@ -614,11 +616,69 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Passwords%20and%20MFA/Passwords/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Passwords
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Passwords
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#password-attacks-analyses" class="md-nav__link">
+    Password Attacks - Analyses
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#password-choice" class="md-nav__link">
+    Password Choice
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#password-storage" class="md-nav__link">
+    Password Storage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#benchmarks-cracking-speed" class="md-nav__link">
+    Benchmarks / Cracking speed
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -895,16 +955,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
       
       
       
@@ -913,7 +971,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_12">
           <span class="md-nav__icon md-icon"></span>
           Final Remarks
@@ -924,126 +982,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Final Remarks
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Final%20Remarks/Final%20Remarks/" class="md-nav__link">
         Final Remarks
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#automated-attacks" class="md-nav__link">
-    Automated attacks
-  </a>
-  
-    <nav class="md-nav" aria-label="Automated attacks">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#petya-notpetya" class="md-nav__link">
-    Petya - NotPetya
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#wannacry" class="md-nav__link">
-    Wannacry
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#attack-categories" class="md-nav__link">
-    Attack Categories
-  </a>
-  
-    <nav class="md-nav" aria-label="Attack Categories">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#smb-small-and-medium-businesses" class="md-nav__link">
-    SMB - Small and Medium Businesses
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#apt-advanced-and-persistent-threat" class="md-nav__link">
-    APT - Advanced and Persistent Threat
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#case-studies" class="md-nav__link">
-    Case Studies
-  </a>
-  
-    <nav class="md-nav" aria-label="Case Studies">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#solarwinds" class="md-nav__link">
-    SolarWInds
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#proxylogon-microsoft-exchange" class="md-nav__link">
-    ProxyLogon - Microsoft Exchange
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1177,8 +1120,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1187,83 +1128,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#automated-attacks" class="md-nav__link">
-    Automated attacks
+  <a href="#password-attacks-analyses" class="md-nav__link">
+    Password Attacks - Analyses
   </a>
-  
-    <nav class="md-nav" aria-label="Automated attacks">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#petya-notpetya" class="md-nav__link">
-    Petya - NotPetya
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#wannacry" class="md-nav__link">
-    Wannacry
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#attack-categories" class="md-nav__link">
-    Attack Categories
+  <a href="#password-choice" class="md-nav__link">
+    Password Choice
   </a>
-  
-    <nav class="md-nav" aria-label="Attack Categories">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#smb-small-and-medium-businesses" class="md-nav__link">
-    SMB - Small and Medium Businesses
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#apt-advanced-and-persistent-threat" class="md-nav__link">
-    APT - Advanced and Persistent Threat
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#case-studies" class="md-nav__link">
-    Case Studies
-  </a>
-  
-    <nav class="md-nav" aria-label="Case Studies">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#solarwinds" class="md-nav__link">
-    SolarWInds
+  <a href="#password-storage" class="md-nav__link">
+    Password Storage
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#proxylogon-microsoft-exchange" class="md-nav__link">
-    ProxyLogon - Microsoft Exchange
+      
+        <li class="md-nav__item">
+  <a href="#benchmarks-cracking-speed" class="md-nav__link">
+    Benchmarks / Cracking speed
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1282,51 +1170,55 @@
                   
 
 
-<h1 id="final-remarks">Final Remarks</h1>
-<h2 id="automated-attacks">Automated attacks</h2>
-<h3 id="petya-notpetya">Petya - NotPetya</h3>
+  <h1>Passwords</h1>
+
+<h2 id="password-attacks-analyses">Password Attacks - Analyses</h2>
 <ul>
-<li><a href="https://unit42.paloaltonetworks.com/unit42-threat-brief-petya-ransomware/">Threat Brief: Petya Ransomware</a></li>
-<li><a href="https://gvnshtn.com/posts/maersk-me-notpetya/">Maersk, me &amp; Notpetya</a> "Along with tens (if not hundreds) of others, I played a role in the recovery and cybersecurity response to the events of the well-publicised notPetya malware attack in 2017"</li>
-<li><a href="https://www.zdnet.com/article/maersk-forced-to-reinstall-4000-servers-45000-pcs-due-to-notpetya-attack/">NonPetya ransomware forced Maersk to reinstall 4000 servers, 45000 PCs</a> "Imagine a company where a ship with 10 to 20 thousand containers is entering a port every 15 minutes, and for 10 days, you have no IT...It's almost impossible to even imagine."</li>
+<li><a href="https://github.com/ignis-sec/Pwdb-Public">PWDB - New generation of Password Mass-Analysis</a> Interesting facts and statistics from the analysis of hundreds of millions of leaked passwords.</li>
+<li><a href="https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/your-pa-word-doesn-t-matter/ba-p/731984">Your Pa$$word doesn't matter (2019)</a> An analysis of password attacks observed by Microsoft Threat Intelligence.</li>
+<li><a href="https://www.microsoft.com/en-us/security/blog/2020/09/10/strontium-detecting-new-patters-credential-harvesting/">STRONTIUM: Detecting new patterns in credential harvesting (2023)</a> Rates of spraying observed in this particular campaign (4 per hour and account, each attempt from a different IP address). Microsoft Threat Intelligence.</li>
+<li><a href="https://haveibeenpwned.com/">Haveibeenpnwed</a> Free resource for anyone to quickly assess if they may have been put at risk due to an online account of theirs having been compromised or "pwned" in a data breach. <em>Highly recommended.</em>  </li>
 </ul>
-<h3 id="wannacry">Wannacry</h3>
+<h2 id="password-choice">Password Choice</h2>
 <ul>
-<li><a href="https://www.nytimes.com/interactive/2017/05/12/world/europe/wannacry-ransomware-map.html">Animated Map of How Tens of Thousands of Computers Were Infected With Ransomware</a> (Wannacry)</li>
-<li><a href="https://labs.vipre.com/wannacry-technical-analysis">Wannacry Technical Analysis</a></li>
-<li><a href="https://www.troyhunt.com/everything-you-need-to-know-about-the-wannacrypt-ransomware/">Everything you need to know about the WannaCry / Wcry / WannaCrypt ransomware</a> Troy Hunt (the founder of <a href="https://haveibeenpwned.com/">haveibeenp0wned</a>) More high level description.</li>
+<li><a href="https://www.schneier.com/blog/archives/2017/10/changes_in_pass.html">Password Best Practice - NIST</a> No complexity, no expiration, use password managers. The original NIST document is <a href="https://pages.nist.gov/800-63-3/sp800-63b.html#sec5">here</a>.</li>
+<li><a href="https://www.ncsc.gov.uk/collection/passwords/updating-your-approach">Password policy: updating your approach - NCSC UK</a>
+Advice for system owners responsible for determining password policies and identity management within their organisations. </li>
+<li><a href="https://learn.microsoft.com/en-us/microsoft-365/admin/misc/password-policy-recommendations?view=o365-worldwide">Password policy recommendations - Microsoft</a></li>
+<li><a href="https://projectblack.io/blog/trusted-by-millions-yet-so-wrong/">Trusted by Millions, Yet So Wrong - Password Strength Tools</a> Ever trusted a password strength tool online? You might be surprised to see how far off the mark some of the most popular password strength tools are.</li>
 </ul>
-<p>Non-technical analyses, very interesting.</p>
+<h2 id="password-storage">Password Storage</h2>
 <ul>
-<li><a href="https://www.lightbluetouchpaper.org/2017/05/13/bad-malware-worse-reporting/">Bad malware, worse reporting</a> Ross Anderson, University of Cambridge. "In well over 90% of NHS organisations, the well-meaning amateurs managed perfectly well. What they did was to keep their systems patched up-to-date; simple hygiene, like washing your hands after going to the toilet."</li>
-<li><a href="https://blogs.microsoft.com/on-the-issues/2017/05/14/need-urgent-collective-action-keep-people-safe-online-lessons-last-weeks-cyberattack/#sm.00001xty8cdrhjeawpakunyh01lfd">The need for urgent collective action to keep people safe online: Lessons from last week’s cyberattack</a> Brad Smith, Microsoft VicePresident. "As cybercriminals become more sophisticated, there is simply no way for customers to protect themselves against threats unless they update their systems. Otherwise they’re literally fighting the problems of the present with tools from the past. This attack is a powerful reminder that information technology basics like keeping computers current and patched are a high responsibility for everyone, and it’s something every top executive should support". </li>
+<li>
+<p><a href="https://textbook.cs161.org/crypto/passwords.html">14.7. Password hashing</a> from Computer Security at Berkeley (CS161). Everything in this book is more than ok. </p>
+</li>
+<li>
+<p><a href="https://crackstation.net/hashing-security.htm">Salted Password Hashing - Doing it Right</a></p>
+</li>
+<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html#hashing-vs-encryption">Password Storage Cheat Sheet - OWASP</a> This cheat sheet provides guidance on the various areas that need to be considered related to storing passwords.</li>
+<li><a href="https://freerainbowtables.com/">Rainbow tables download</a> Tables of hashed passwords.</li>
+<li><a href="https://gchq.github.io/CyberChef/">Cyberchef</a> Online webapp for executing many infosec-related calculations, including bcrypt hashes and NT hashes.</li>
 </ul>
-<h2 id="attack-categories">Attack Categories</h2>
-<h3 id="smb-small-and-medium-businesses">SMB - Small and Medium Businesses</h3>
+<h2 id="benchmarks-cracking-speed">Benchmarks / Cracking speed</h2>
 <ul>
-<li><a href="https://www.cs.columbia.edu/~smb/papers/nyc-council-testimony.pdf">Cybersecurity for Small Businesses</a> Hearing before the New York City Council Committee on Technology, Steve Bellovin, University of Columbia, 2020 (<em>My opinion: When Steve Bellovin speaks or writes, one should only try to listen or read very carefully</em>). Basic "security hygiene" practices.</li>
+<li><a href="https://gist.github.com/bigpick/cfa22947c884f7a3fc1431475e345427">Nvidia RTX4080 FE latest Hashcat benchmark (2023)</a> Includes results for each hashcat benchmark (on this particular hw, 2023).<ul>
+<li><a href="https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/decrypting-the-selection-of-supported-kerberos-encryption-types/ba-p/1628797">Decrypting the Selection of Supported Kerberos Encryption Types</a> Decrypting Kerberos RC4 tickets (encryption types 0x17,0x18 dec 23,24) is much faster than decrypting default AES tickets (0x11,0x12 dec 17,18). This is why in roasting attacks RC4 tickets are requested rather than AES tickets. The above benchmark indicates approximately 3 orders of magnitude difference in speed (see "TGS-REP").</li>
 </ul>
-<h3 id="apt-advanced-and-persistent-threat">APT - Advanced and Persistent Threat</h3>
-<ul>
-<li><a href="https://www.wired.com/2016/01/nsa-hacker-chief-explains-how-to-keep-him-out-of-your-system/">NSA Hacker Chief Explains How to Keep Him Out of Your System</a> A very interesting read for understanding the capabilities of APT groups (better said, the capabilities that this person decided to make public).</li>
-<li><a href="https://www.cisa.gov/topics/cyber-threats-and-advisories/advanced-persistent-threats-and-nation-state-actors">Advanced Persistent Threats and Nation-State Actors</a> Threat overviews and advisories maintained by CISA for: China, Russia, North Korea, Iran.</li>
+</li>
+<li><a href="https://openwall.info/wiki/john/benchmarks">John the Ripper benchmarks</a> Not easy to interpret and understand.</li>
 </ul>
-<h2 id="case-studies">Case Studies</h2>
+<p>The resources below estimate the time required for completing a brute force attack over a predefined password space. Always keep in mind that this kind of calculations do not reflect what attackers usually do as a first step, i.e., trying commonly used passwords (see the link on password strength tools above).</p>
 <ul>
-<li><a href="https://blog.erratasec.com/2020/07/how-ceos-think.html">How CEOs think</a> A must read for understanding cybersecurity in the real world. Its author, Robert Graham, is a well known person in the cybersec world.</li>
-<li><a href="https://www.microsoft.com/en-us/security/business/microsoft-digital-defense-report-2022-cyber-resilience#Viewactionableinsights1">Microsoft Digital Defense Report 2022</a> Long and detailed, quite interesting. One of the final sections (Cyber resilience) contains the diagram summarizing the missing security controls detected by Microsoft in their impacted customers. <em>My personal opinion: a product that in most cases is installed or deployed with so many problems is a product with many problems. Microsoft is telling us this fact about one of its most important products.</em></li>
+<li><a href="https://www.hivesystems.io/blog/are-your-passwords-in-the-green">Hive Systems Password Table</a> Colorful infographic table (released every year) that showed the relative strength of a hashed password against a cracking attempt, based on:<ul>
+<li>the password’s length,</li>
+<li>complexity,</li>
+<li>hashing algorithm used by the victim,</li>
+<li>and the hardware used by the attacker.</li>
 </ul>
-<h3 id="solarwinds">SolarWInds</h3>
-<ul>
-<li><a href="https://www.intelligence.senate.gov/hearings/open-hearing-hearing-hack-us-networks-foreign-adversary">U.S. Senate Intelligence Hearings - Solar Winds</a> Hearings of CEOs of FireEye, Mandiant, SolarWinds, Microsoft, CrowdStrike. Extremely interesting.</li>
-<li><a href="https://www.rpc.senate.gov/policy-papers/the-solarwinds-cyberattack">The SolarWinds Cyberattack</a> A very interesting non-technical summary with a detailed timeline.</li>
-</ul>
-<h3 id="proxylogon-microsoft-exchange">ProxyLogon - Microsoft Exchange</h3>
-<ul>
-<li><a href="https://www.cisa.gov/news-events/directives/ed-21-02-mitigate-microsoft-exchange-premises-product-vulnerabilities">Mitigate Microsoft Exchange On-Premises Product Vulnerabilities</a> Cybersecurity and Infrastructure Security Agency (CISA) Emergency Directive.</li>
-<li><a href="https://m365internals.com/2022/10/16/investigating-proxylogon-attacks-and-how-to-mitigate-it/">Investigating ProxyLogon Attacks And How To Mitigate It</a> A demo with screenshots.</li>
-<li><a href="https://proxylogon.com/">ProxyLogon
-The latest pre-authenticated Remote Code Execution vulnerability on Microsoft Exchange Server</a> A detailed technical explanation by the researchers that notified Microsoft. "An unauthenticated attacker can execute arbitrary commands on Microsoft Exchange Server through an only opened 443 port!".</li>
+</li>
+<li><a href="https://thesecurityfactory.be/password-cracking-speed/">Password cracking speed (2020)</a></li>
+<li><a href="https://i.imgur.com/gfYw57t.png">Entropy vs Password length vs Cracking speed</a></li>
+<li><a href="https://www.grc.com/haystack.htm">Brute force calculator</a></li>
 </ul>
 
 

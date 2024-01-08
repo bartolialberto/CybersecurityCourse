@@ -8,20 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/Final%20Remarks/Final%20Remarks/">
+        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/Vulnerabilities/Memory%20corruption_/">
       
       
-        <link rel="prev" href="../../Vulnerabilities/Vulnerability%20-%20Case%20studies/">
+        <link rel="prev" href="../Analyses/">
       
       
-        <link rel="next" href="../../Labs/Automated%20Malware%20Analysis/">
+        <link rel="next" href="../Reverse%20engineering/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.5">
     
     
       
-        <title>Final Remarks - Cybersecurity Course - University of Trieste</title>
+        <title>Memory corruption - Cybersecurity Course - University of Trieste</title>
       
     
     
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#final-remarks" class="md-skip">
+        <a href="#memory-management-and-function-calling" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Final Remarks
+              Memory corruption 
             
           </span>
         </div>
@@ -790,14 +790,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
       
       
       
@@ -806,7 +808,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_11">
           <span class="md-nav__icon md-icon"></span>
           8 - Vulnerabilities
@@ -819,7 +821,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Vulnerabilities/Analyses/" class="md-nav__link">
+      <a href="../Analyses/" class="md-nav__link">
         Analyses
       </a>
     </li>
@@ -831,11 +833,110 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Vulnerabilities/Memory%20corruption_/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Memory corruption 
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Memory corruption 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#memory-management-and-function-calling" class="md-nav__link">
+    Memory management and function calling
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memory-safety-vulnerabilities" class="md-nav__link">
+    Memory safety vulnerabilities
+  </a>
+  
+    <nav class="md-nav" aria-label="Memory safety vulnerabilities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#statistics-and-general-considerations" class="md-nav__link">
+    Statistics and General Considerations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#more-in-depth" class="md-nav__link">
+    More in depth
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#some-fundamental-papers" class="md-nav__link">
+    Some fundamental papers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mitigations" class="md-nav__link">
+    Mitigations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#some-nice-vulnerabilities" class="md-nav__link">
+    Some nice vulnerabilities
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-security" class="md-nav__link">
+    Software security
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reverse-engineering" class="md-nav__link">
+    Reverse engineering
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -847,7 +948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Vulnerabilities/Reverse%20engineering/" class="md-nav__link">
+      <a href="../Reverse%20engineering/" class="md-nav__link">
         Reverse engineering
       </a>
     </li>
@@ -861,7 +962,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Vulnerabilities/Vulnerabilities%20-%20Misc/" class="md-nav__link">
+      <a href="../Vulnerabilities%20-%20Misc/" class="md-nav__link">
         Vulnerabilities - Misc
       </a>
     </li>
@@ -875,7 +976,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Vulnerabilities/Vulnerability%20-%20Case%20studies/" class="md-nav__link">
+      <a href="../Vulnerability%20-%20Case%20studies/" class="md-nav__link">
         Vulnerability   Case studies
       </a>
     </li>
@@ -895,16 +996,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
       
       
       
@@ -913,7 +1012,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_12">
           <span class="md-nav__icon md-icon"></span>
           Final Remarks
@@ -924,126 +1023,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Final Remarks
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Final%20Remarks/Final%20Remarks/" class="md-nav__link">
         Final Remarks
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#automated-attacks" class="md-nav__link">
-    Automated attacks
-  </a>
-  
-    <nav class="md-nav" aria-label="Automated attacks">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#petya-notpetya" class="md-nav__link">
-    Petya - NotPetya
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#wannacry" class="md-nav__link">
-    Wannacry
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#attack-categories" class="md-nav__link">
-    Attack Categories
-  </a>
-  
-    <nav class="md-nav" aria-label="Attack Categories">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#smb-small-and-medium-businesses" class="md-nav__link">
-    SMB - Small and Medium Businesses
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#apt-advanced-and-persistent-threat" class="md-nav__link">
-    APT - Advanced and Persistent Threat
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#case-studies" class="md-nav__link">
-    Case Studies
-  </a>
-  
-    <nav class="md-nav" aria-label="Case Studies">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#solarwinds" class="md-nav__link">
-    SolarWInds
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#proxylogon-microsoft-exchange" class="md-nav__link">
-    ProxyLogon - Microsoft Exchange
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1177,8 +1161,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1187,23 +1169,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#automated-attacks" class="md-nav__link">
-    Automated attacks
+  <a href="#memory-management-and-function-calling" class="md-nav__link">
+    Memory management and function calling
   </a>
   
-    <nav class="md-nav" aria-label="Automated attacks">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memory-safety-vulnerabilities" class="md-nav__link">
+    Memory safety vulnerabilities
+  </a>
+  
+    <nav class="md-nav" aria-label="Memory safety vulnerabilities">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#petya-notpetya" class="md-nav__link">
-    Petya - NotPetya
+  <a href="#statistics-and-general-considerations" class="md-nav__link">
+    Statistics and General Considerations
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#wannacry" class="md-nav__link">
-    Wannacry
+  <a href="#more-in-depth" class="md-nav__link">
+    More in depth
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#some-fundamental-papers" class="md-nav__link">
+    Some fundamental papers
   </a>
   
 </li>
@@ -1214,56 +1210,30 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#attack-categories" class="md-nav__link">
-    Attack Categories
+  <a href="#mitigations" class="md-nav__link">
+    Mitigations
   </a>
-  
-    <nav class="md-nav" aria-label="Attack Categories">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#smb-small-and-medium-businesses" class="md-nav__link">
-    SMB - Small and Medium Businesses
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#apt-advanced-and-persistent-threat" class="md-nav__link">
-    APT - Advanced and Persistent Threat
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#case-studies" class="md-nav__link">
-    Case Studies
-  </a>
-  
-    <nav class="md-nav" aria-label="Case Studies">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#solarwinds" class="md-nav__link">
-    SolarWInds
+  <a href="#some-nice-vulnerabilities" class="md-nav__link">
+    Some nice vulnerabilities
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#proxylogon-microsoft-exchange" class="md-nav__link">
-    ProxyLogon - Microsoft Exchange
+      
+        <li class="md-nav__item">
+  <a href="#software-security" class="md-nav__link">
+    Software security
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#reverse-engineering" class="md-nav__link">
+    Reverse engineering
+  </a>
   
 </li>
       
@@ -1282,51 +1252,70 @@
                   
 
 
-<h1 id="final-remarks">Final Remarks</h1>
-<h2 id="automated-attacks">Automated attacks</h2>
-<h3 id="petya-notpetya">Petya - NotPetya</h3>
+  <h1>Memory corruption </h1>
+
+<h2 id="memory-management-and-function-calling">Memory management and function calling</h2>
 <ul>
-<li><a href="https://unit42.paloaltonetworks.com/unit42-threat-brief-petya-ransomware/">Threat Brief: Petya Ransomware</a></li>
-<li><a href="https://gvnshtn.com/posts/maersk-me-notpetya/">Maersk, me &amp; Notpetya</a> "Along with tens (if not hundreds) of others, I played a role in the recovery and cybersecurity response to the events of the well-publicised notPetya malware attack in 2017"</li>
-<li><a href="https://www.zdnet.com/article/maersk-forced-to-reinstall-4000-servers-45000-pcs-due-to-notpetya-attack/">NonPetya ransomware forced Maersk to reinstall 4000 servers, 45000 PCs</a> "Imagine a company where a ship with 10 to 20 thousand containers is entering a port every 15 minutes, and for 10 days, you have no IT...It's almost impossible to even imagine."</li>
+<li><a href="https://sp23.cs161.org/">Slides</a> and <a href="https://textbook.cs161.org/memory-safety/x86.html">textbook chapter</a> from Computer Security at Berkeley (CS161)</li>
 </ul>
-<h3 id="wannacry">Wannacry</h3>
+<h2 id="memory-safety-vulnerabilities">Memory safety vulnerabilities</h2>
+<h3 id="statistics-and-general-considerations">Statistics and General Considerations</h3>
 <ul>
-<li><a href="https://www.nytimes.com/interactive/2017/05/12/world/europe/wannacry-ransomware-map.html">Animated Map of How Tens of Thousands of Computers Were Infected With Ransomware</a> (Wannacry)</li>
-<li><a href="https://labs.vipre.com/wannacry-technical-analysis">Wannacry Technical Analysis</a></li>
-<li><a href="https://www.troyhunt.com/everything-you-need-to-know-about-the-wannacrypt-ransomware/">Everything you need to know about the WannaCry / Wcry / WannaCrypt ransomware</a> Troy Hunt (the founder of <a href="https://haveibeenpwned.com/">haveibeenp0wned</a>) More high level description.</li>
+<li><a href="https://alexgaynor.net/2019/aug/12/introduction-to-memory-unsafety-for-vps-of-engineering/">Introduction to Memory Unsafety for VPs of Engineering</a> Links to statistics for different platforms and for 0-days.</li>
+<li><a href="https://github.com/microsoft/MSRC-Security-Research/blob/master/presentations/2019_02_BlueHatIL/2019_01%20-%20BlueHatIL%20-%20Trends%2C%20challenge%2C%20and%20shifts%20in%20software%20vulnerability%20mitigation.pdf">Trends, challenge, and shifts in software vulnerability mitigation</a> Microsoft presentation at BlueHat 2019. Very interesting data and statistics over a decade.</li>
+<li><a href="https://www.chromium.org/Home/chromium-security/memory-safety/">Memory Safety in Chromium</a> More than 70% of "serious security bugs" are memory safety problems.</li>
+<li><a href="https://www.youtube.com/watch?v=drfXNB6p6nI&amp;t=133s">USENIX Enigma 2021 - Quantifying Memory Unsafety and Reactions to It</a> Interesting statistics on the prevalence of memory safety vulns across all vulns in different platforms (including 0days),</li>
+<li><a href="https://security.googleblog.com/2022/12/memory-safe-languages-in-android-13.html?m=1">Memory Safe Languages in Android 13</a> Android 13 is the first Android release where a majority of new code added to the release is in a memory safe language. While correlation doesn’t necessarily mean causation, it’s interesting to note that the percent of vulnerabilities caused by memory safety issues seems to correlate rather closely with the development language that’s used for new code. To date (1/12/2022), there have been zero memory safety vulnerabilities discovered in Android’s Rust code.</li>
+<li><a href="https://www.cisa.gov/news-events/news/urgent-need-memory-safety-software-products">The Urgent Need for Memory Safety in Software Products</a> by CISA. "In what other industry would the market tolerate such well-understood and severe dangers for users of products for decades?"</li>
 </ul>
-<p>Non-technical analyses, very interesting.</p>
+<h3 id="more-in-depth">More in depth</h3>
 <ul>
-<li><a href="https://www.lightbluetouchpaper.org/2017/05/13/bad-malware-worse-reporting/">Bad malware, worse reporting</a> Ross Anderson, University of Cambridge. "In well over 90% of NHS organisations, the well-meaning amateurs managed perfectly well. What they did was to keep their systems patched up-to-date; simple hygiene, like washing your hands after going to the toilet."</li>
-<li><a href="https://blogs.microsoft.com/on-the-issues/2017/05/14/need-urgent-collective-action-keep-people-safe-online-lessons-last-weeks-cyberattack/#sm.00001xty8cdrhjeawpakunyh01lfd">The need for urgent collective action to keep people safe online: Lessons from last week’s cyberattack</a> Brad Smith, Microsoft VicePresident. "As cybercriminals become more sophisticated, there is simply no way for customers to protect themselves against threats unless they update their systems. Otherwise they’re literally fighting the problems of the present with tools from the past. This attack is a powerful reminder that information technology basics like keeping computers current and patched are a high responsibility for everyone, and it’s something every top executive should support". </li>
+<li><a href="https://sp23.cs161.org/">Slides</a> and <a href="https://textbook.cs161.org/memory-safety/vulnerabilities.html">textbook chapter</a> from <strong>Computer Security at Berkeley (CS161)</strong>. Discusses format string and integer conversion vulnerabilities.</li>
+<li><a href="https://www.cs.ru.nl/E.Poll/ss/">Slides</a> on memory corruption from <strong>Software Security at Radboud University</strong> (prof. Erik Poll). Discusses format string and integer conversion vulnerabilities (as well as many subtle C bugs).</li>
+<li>A <a href="https://www.youtube.com/watch?v=qpyRz5lkRjE">short video</a> explaining how to write an exploit for a toy application: a C program (compiled and run without any mitigation) where a password is read with <code>gets()</code>. By overflowing the <code>password</code> variable, execution flow bypass the password check (<strong>stack smashing, code reuse</strong>; no shellcode is injected). It provides an idea of how to determine the correct address values to overwrite on the return address on the stack. Running this toy example requires disabling stack canary.</li>
+<li><a href="https://www.cl.cam.ac.uk/teaching/2021/Security/materials.html">Handout Slides</a> on <strong>Security from Cambridge University</strong> (2020-2021). Much material on various topics, including memory safety vulnerabilities examples and mitigations.</li>
+<li><a href="https://blog.isosceles.com/an-introduction-to-exploit-reliability/">An Introduction to Exploit Reliability</a> A big consideration when you're writing exploits professionally is exploit reliability: a measure of an exploit's failure rate. If your exploit is 100% reliable, you know it's always going to succeed. If it's 90% reliable, then your exploit will fail in one in ten cases, and so on. Take a look at the CISA KEV database or the CISA/FBI most exploited CVEs list -- <em>most of the issues listed are not memory corruption vulnerabilities</em>. Instead, we commonly see logic issues like command injection, path traversal, and deserialization bugs, all of which typically have <em>extremely high exploit reliability</em>.</li>
 </ul>
-<h2 id="attack-categories">Attack Categories</h2>
-<h3 id="smb-small-and-medium-businesses">SMB - Small and Medium Businesses</h3>
+<h3 id="some-fundamental-papers">Some fundamental papers</h3>
 <ul>
-<li><a href="https://www.cs.columbia.edu/~smb/papers/nyc-council-testimony.pdf">Cybersecurity for Small Businesses</a> Hearing before the New York City Council Committee on Technology, Steve Bellovin, University of Columbia, 2020 (<em>My opinion: When Steve Bellovin speaks or writes, one should only try to listen or read very carefully</em>). Basic "security hygiene" practices.</li>
+<li><a href="https://inst.eecs.berkeley.edu/~cs161/fa08/papers/stack_smashing.pdf">Smashing the stack for fun and for profit</a> "the" reference, written in 1996.</li>
+<li><a href="https://thesquareplanet.com/blog/smashing-the-stack-21st-century/">Smashing the Stack in the 21st Century</a> A look from 64-bit architectures (not considering mitigations)</li>
+<li><a href="https://www.google.com/search?q=Sok+Eternal+war+in+memory">SoK: Eternal war in memory</a>: a 2014 paper that <em>"systematizes the current knowledge about various protection techniques by setting up a general model for memory corruption attacks"</em>. Still very interesting (quite complex).</li>
+<li><a href="https://www.google.com/search?q=ASLR+Smack+%26+Laugh+Reference">ASLR Smack &amp; Laugh Reference</a>: a 2008 paper that discusses many exploitation strategies for circumventing ASLR. Still very interesting (quite complex).</li>
 </ul>
-<h3 id="apt-advanced-and-persistent-threat">APT - Advanced and Persistent Threat</h3>
+<h2 id="mitigations">Mitigations</h2>
 <ul>
-<li><a href="https://www.wired.com/2016/01/nsa-hacker-chief-explains-how-to-keep-him-out-of-your-system/">NSA Hacker Chief Explains How to Keep Him Out of Your System</a> A very interesting read for understanding the capabilities of APT groups (better said, the capabilities that this person decided to make public).</li>
-<li><a href="https://www.cisa.gov/topics/cyber-threats-and-advisories/advanced-persistent-threats-and-nation-state-actors">Advanced Persistent Threats and Nation-State Actors</a> Threat overviews and advisories maintained by CISA for: China, Russia, North Korea, Iran.</li>
+<li><a href="https://sp23.cs161.org/">Slides</a> and <a href="https://textbook.cs161.org/memory-safety/mitigations.html">textbook chapter</a> from <strong>Computer Security at Berkeley (CS161)</strong>. Discusses mitigations and corresponding circumventions (slightly) more in depth than in our lectures (heavily based on these slides, though).</li>
+<li><a href="https://www.cs.ru.nl/E.Poll/ss/">Slides</a> on memory corruption from <strong>Software Security at Radboud University</strong> (prof. Erik Poll). The final part of the slides mentions many more defenses than those in our lectures. Not in depth, but a broad coverage to have an idea.</li>
+<li><a href="https://developers.redhat.com/articles/2022/06/02/use-compiler-flags-stack-protection-gcc-and-clang#stack_canary">Use compiler flags for stack protection in GCC and Clang</a>. This article discusses the major stack protection mechanisms in the GNU Compiler Collection (GCC) and Clang, typical attack scenarios, and the compiler's attempts to prevent attacks.</li>
 </ul>
-<h2 id="case-studies">Case Studies</h2>
+<h2 id="some-nice-vulnerabilities">Some nice vulnerabilities</h2>
 <ul>
-<li><a href="https://blog.erratasec.com/2020/07/how-ceos-think.html">How CEOs think</a> A must read for understanding cybersecurity in the real world. Its author, Robert Graham, is a well known person in the cybersec world.</li>
-<li><a href="https://www.microsoft.com/en-us/security/business/microsoft-digital-defense-report-2022-cyber-resilience#Viewactionableinsights1">Microsoft Digital Defense Report 2022</a> Long and detailed, quite interesting. One of the final sections (Cyber resilience) contains the diagram summarizing the missing security controls detected by Microsoft in their impacted customers. <em>My personal opinion: a product that in most cases is installed or deployed with so many problems is a product with many problems. Microsoft is telling us this fact about one of its most important products.</em></li>
+<li><a href="https://www.praetorian.com/blog/vulnerabilities-within-listserv/">Technical Advisory: Vulnerabilities Identified within ListServ</a> ListServ is a widely used email list management application. In October 2023 a stack overflow vulnerability was identified (section "Stack Based Overflow Vulnerability"). Easy to understand but hardly exploitable.</li>
+<li><a href="https://www.assetnote.io/resources/research/citrix-bleed-leaking-session-tokens-with-cve-2023-4966">Citrix Bleed: Leaking Session Tokens with CVE-2023-4966</a> Citrix NetScaler is a network device providing load balancing, firewall and VPN services. A buffer overflow in a variable filled with the <code>Host</code> header of a received HTTP request (thus a variable <em>indirectly</em> controlled by the attacker) allow dumping portions of memory in the matching HTTP response, including currently valid session cookies. </li>
 </ul>
-<h3 id="solarwinds">SolarWInds</h3>
+<p>Understanding all the details in the following analyses is difficult and often some details are not reported. In particular, the steps for obtaining RCE from the overflow are rarely shown (the descriptions only illustrate the overflow).</p>
 <ul>
-<li><a href="https://www.intelligence.senate.gov/hearings/open-hearing-hearing-hack-us-networks-foreign-adversary">U.S. Senate Intelligence Hearings - Solar Winds</a> Hearings of CEOs of FireEye, Mandiant, SolarWinds, Microsoft, CrowdStrike. Extremely interesting.</li>
-<li><a href="https://www.rpc.senate.gov/policy-papers/the-solarwinds-cyberattack">The SolarWinds Cyberattack</a> A very interesting non-technical summary with a detailed timeline.</li>
+<li><a href="https://blog.qualys.com/vulnerabilities-threat-research/2021/01/26/cve-2021-3156-heap-based-buffer-overflow-in-sudo-baron-samedit">CVE-2021-3156: Heap-Based Buffer Overflow in Sudo (Baron Samedit)</a> Heap-based buffer overflow in sudo, a near-ubiquitous utility available on major Unix-like operating systems. <strong>Any unprivileged user can gain root privileges</strong> on a vulnerable host using a default sudo configuration. The vulnerability itself has been hiding in plain sight for nearly 10 years. It was introduced in July 2011.</li>
+<li><a href="https://talosintelligence.com/vulnerability_reports/TALOS-2023-1734">TALOS-2023-1734 Microsoft Office Excel WebCharts out-of-bounds write vulnerability</a>  An access violation vulnerability exists in the WebCharts functionality of Microsoft Office Excel 2019 Plus version 2302 build 16130.20332. A specially crafted malformed file can lead to a heap buffer overflow. An attacker can use arbitrary code execution to trigger this vulnerability.</li>
+<li><a href="https://www.akamai.com/blog/security-research/rpc-runtime-exploring-three-vulnerabilities">Akamai 2023 - Exploring Three Remote Code Execution Vulnerabilities in RPC Runtime</a> Important vulnerabilities in Microsoft Windows RPC runtime that can lead to remote code execution. Since the RPC runtime library is loaded into all RPC servers, and these are commonly used by Windows services, all Windows versions (Desktop and Server) are affected.
+The vulnerabilities are integer overflows in three data structures used by the RPC runtime.</li>
+<li><a href="https://www.keysight.com/blogs/tech/nwvs/2022/06/02/the-equation-groups-firewall-exploit-chain">The Equation Group's Firewall Exploit Chain</a> In August 2016 a near-complete exploit kit targeting all major firewall manufacturers (including <strong>CISCO ASA</strong>) was released by a group known as the ShadowBrokers. This exploit kit has been widely attributed as belonging to a group in the NSA known as the Tailored Access Operations Unit (also commonly referred to as "The Equation Group”). Description of an exploit chain consisting of 6 elements: the two first steps exploit a buffer overflow; the other steps do not exploit any vulnerability: secondary stage loading, persistence, C&amp;C.</li>
+<li>A <a href="https://www.youtube.com/watch?v=AzUdMf7cB4E">short video</a> explaining at a very high level the <strong>Heartbleed</strong> vulnerability in OpenSSL. This is an old <a href="https://heartbleed.com/">vulnerability</a> in OpenSSL that affected a lot of web servers around the world (many HTTPS servers use OpenSSL). It allowed stealing the private key of a web server, as well as username and passwords of users currently logged in, from a remote location. The slides on Heartbleed on <a href="https://www.handsonsecurity.net/resources.html">this page</a> describe the code problem in detail.</li>
 </ul>
-<h3 id="proxylogon-microsoft-exchange">ProxyLogon - Microsoft Exchange</h3>
+<h2 id="software-security">Software security</h2>
 <ul>
-<li><a href="https://www.cisa.gov/news-events/directives/ed-21-02-mitigate-microsoft-exchange-premises-product-vulnerabilities">Mitigate Microsoft Exchange On-Premises Product Vulnerabilities</a> Cybersecurity and Infrastructure Security Agency (CISA) Emergency Directive.</li>
-<li><a href="https://m365internals.com/2022/10/16/investigating-proxylogon-attacks-and-how-to-mitigate-it/">Investigating ProxyLogon Attacks And How To Mitigate It</a> A demo with screenshots.</li>
-<li><a href="https://proxylogon.com/">ProxyLogon
-The latest pre-authenticated Remote Code Execution vulnerability on Microsoft Exchange Server</a> A detailed technical explanation by the researchers that notified Microsoft. "An unauthenticated attacker can execute arbitrary commands on Microsoft Exchange Server through an only opened 443 port!".</li>
+<li>The <a href="https://www.cybok.org/knowledgebase1_1/">Cyber Security Body Of Knowledge</a> has several high-level documents on many topics in Cybersecurity. Those on "Software Security" and on "Secure Software Lifecycle" may be interesting.</li>
+<li>The <a href="http://www.cs.ru.nl/~erikpoll/ss/">Software Security</a> course at Radboud University (prof. Erik Poll) has lot of very interesting material.</li>
+</ul>
+<h2 id="reverse-engineering">Reverse engineering</h2>
+<p>This topic is out of scope. These links may be useful for grasping an idea of how to analyze the internals and memory layout of an existing program or device.</p>
+<ul>
+<li><a href="https://github.com/wtsxDev/reverse-engineering">A curated list of reverse engineering resources</a></li>
+<li><a href="https://www.varonis.com/blog/how-to-use-ghidra">How to Use Ghidra to Reverse Engineer Malware</a>  There are numerous tools freely available to cybersecurity professionals to assist in analyzing malware. Ghidra was first released a couple of years ago and has proved to be relatively popular due to it being a free tool that can be used to disassemble malware. </li>
+<li><a href="https://hex-rays.com/ida-free/">IDA disassembler</a> Many tutorials out there.</li>
+<li><a href="https://www.youtube.com/watch?v=qWzXYbCH3Ls&amp;list=PLc7W4b0WHTAWUjgX-q3067wbkPZQSDsn0&amp;index=7">I Hacked into my Son's Baby Monitor, for Safety</a> Nice video, part of a longer playlist devoted to reverse engineering.</li>
+<li><a href="https://frida.re/docs/home/">Frida</a> Dynamic code instrumentation toolkit. It lets you inject snippets of JavaScript or your own library into native apps on Windows, macOS, GNU/Linux, iOS, watchOS, tvOS, Android, FreeBSD, and QNX. Frida also provides you with some simple tools built on top of the Frida API. These can be used as-is, tweaked to your needs, or serve as examples of how to use the API.</li>
 </ul>
 
 

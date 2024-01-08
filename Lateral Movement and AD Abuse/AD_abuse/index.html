@@ -8,20 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/Final%20Remarks/Final%20Remarks/">
+        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/Lateral%20Movement%20and%20AD%20Abuse/AD_abuse/">
       
       
-        <link rel="prev" href="../../Vulnerabilities/Vulnerability%20-%20Case%20studies/">
+        <link rel="prev" href="../../Authentication%20-%20NTLM%20Kerberos/NTLM/">
       
       
-        <link rel="next" href="../../Labs/Automated%20Malware%20Analysis/">
+        <link rel="next" href="../Discovery/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.5">
     
     
       
-        <title>Final Remarks - Cybersecurity Course - University of Trieste</title>
+        <title>AD Abuse - Cybersecurity Course - University of Trieste</title>
       
     
     
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#final-remarks" class="md-skip">
+        <a href="#ad-abuse" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Final Remarks
+              AD Abuse
             
           </span>
         </div>
@@ -713,14 +713,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
       
       
       
@@ -729,7 +731,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_10">
           <span class="md-nav__icon md-icon"></span>
           7 - Lateral Movement and AD Abuse
@@ -740,11 +742,107 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Lateral%20Movement%20and%20AD%20Abuse/AD_abuse/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          AD Abuse
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         AD Abuse
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ad-attack-paths" class="md-nav__link">
+    AD Attack paths
+  </a>
+  
+    <nav class="md-nav" aria-label="AD Attack paths">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defense-guidance" class="md-nav__link">
+    Defense guidance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ad-security-assessment" class="md-nav__link">
+    AD security assessment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bloodhound" class="md-nav__link">
+    BloodHound
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bloodhound-tools" class="md-nav__link">
+    BloodHound Tools
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kerberos-abuse" class="md-nav__link">
+    Kerberos Abuse
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relaying" class="md-nav__link">
+    Relaying
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-ad-attack-paths" class="md-nav__link">
+    Other AD Attack Paths
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -756,7 +854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Lateral%20Movement%20and%20AD%20Abuse/Discovery/" class="md-nav__link">
+      <a href="../Discovery/" class="md-nav__link">
         Discovery
       </a>
     </li>
@@ -770,7 +868,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Lateral%20Movement%20and%20AD%20Abuse/Lateral%20Movement/" class="md-nav__link">
+      <a href="../Lateral%20Movement/" class="md-nav__link">
         Lateral Movement
       </a>
     </li>
@@ -895,16 +993,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
       
       
       
@@ -913,7 +1009,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_12">
           <span class="md-nav__icon md-icon"></span>
           Final Remarks
@@ -924,126 +1020,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Final Remarks
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Final%20Remarks/Final%20Remarks/" class="md-nav__link">
         Final Remarks
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#automated-attacks" class="md-nav__link">
-    Automated attacks
-  </a>
-  
-    <nav class="md-nav" aria-label="Automated attacks">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#petya-notpetya" class="md-nav__link">
-    Petya - NotPetya
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#wannacry" class="md-nav__link">
-    Wannacry
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#attack-categories" class="md-nav__link">
-    Attack Categories
-  </a>
-  
-    <nav class="md-nav" aria-label="Attack Categories">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#smb-small-and-medium-businesses" class="md-nav__link">
-    SMB - Small and Medium Businesses
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#apt-advanced-and-persistent-threat" class="md-nav__link">
-    APT - Advanced and Persistent Threat
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#case-studies" class="md-nav__link">
-    Case Studies
-  </a>
-  
-    <nav class="md-nav" aria-label="Case Studies">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#solarwinds" class="md-nav__link">
-    SolarWInds
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#proxylogon-microsoft-exchange" class="md-nav__link">
-    ProxyLogon - Microsoft Exchange
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1187,23 +1168,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#automated-attacks" class="md-nav__link">
-    Automated attacks
+  <a href="#ad-attack-paths" class="md-nav__link">
+    AD Attack paths
   </a>
   
-    <nav class="md-nav" aria-label="Automated attacks">
+    <nav class="md-nav" aria-label="AD Attack paths">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#petya-notpetya" class="md-nav__link">
-    Petya - NotPetya
+  <a href="#defense-guidance" class="md-nav__link">
+    Defense guidance
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#wannacry" class="md-nav__link">
-    Wannacry
+  <a href="#ad-security-assessment" class="md-nav__link">
+    AD security assessment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bloodhound" class="md-nav__link">
+    BloodHound
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bloodhound-tools" class="md-nav__link">
+    BloodHound Tools
   </a>
   
 </li>
@@ -1214,56 +1209,23 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#attack-categories" class="md-nav__link">
-    Attack Categories
+  <a href="#kerberos-abuse" class="md-nav__link">
+    Kerberos Abuse
   </a>
-  
-    <nav class="md-nav" aria-label="Attack Categories">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#smb-small-and-medium-businesses" class="md-nav__link">
-    SMB - Small and Medium Businesses
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#apt-advanced-and-persistent-threat" class="md-nav__link">
-    APT - Advanced and Persistent Threat
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#case-studies" class="md-nav__link">
-    Case Studies
-  </a>
-  
-    <nav class="md-nav" aria-label="Case Studies">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#solarwinds" class="md-nav__link">
-    SolarWInds
+  <a href="#relaying" class="md-nav__link">
+    Relaying
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#proxylogon-microsoft-exchange" class="md-nav__link">
-    ProxyLogon - Microsoft Exchange
+      
+        <li class="md-nav__item">
+  <a href="#other-ad-attack-paths" class="md-nav__link">
+    Other AD Attack Paths
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1282,51 +1244,71 @@
                   
 
 
-<h1 id="final-remarks">Final Remarks</h1>
-<h2 id="automated-attacks">Automated attacks</h2>
-<h3 id="petya-notpetya">Petya - NotPetya</h3>
+<h1 id="ad-abuse">AD Abuse</h1>
+<h2 id="ad-attack-paths">AD Attack paths</h2>
 <ul>
-<li><a href="https://unit42.paloaltonetworks.com/unit42-threat-brief-petya-ransomware/">Threat Brief: Petya Ransomware</a></li>
-<li><a href="https://gvnshtn.com/posts/maersk-me-notpetya/">Maersk, me &amp; Notpetya</a> "Along with tens (if not hundreds) of others, I played a role in the recovery and cybersecurity response to the events of the well-publicised notPetya malware attack in 2017"</li>
-<li><a href="https://www.zdnet.com/article/maersk-forced-to-reinstall-4000-servers-45000-pcs-due-to-notpetya-attack/">NonPetya ransomware forced Maersk to reinstall 4000 servers, 45000 PCs</a> "Imagine a company where a ship with 10 to 20 thousand containers is entering a port every 15 minutes, and for 10 days, you have no IT...It's almost impossible to even imagine."</li>
+<li><a href="https://labs.lares.com/securing-active-directory-via-acls/">The Phantom Menace: Exposing hidden risks through ACLs in Active Directory (Part 1)</a> An excellent and concise description of ACLs in Active Directory (starting from what a Securable Object is) from an offensive point of view.</li>
+<li><a href="https://bloodhound.readthedocs.io/en/latest/data-analysis/edges.html">BloodHound Edges</a> Perhaps the best way for understanding the breadth and depth of AD Attack paths is looking at how many edge types exist in BloodHound. This page is very interesting because it describes how the edge could be abused, the associated technical difficulty and some operational security (OpSec) consideration.</li>
+<li><a href="https://www.politoinc.com/post/ldap-queries-for-offensive-and-defensive-operations">LDAP Queries for Offensive and Defensive Operations</a> Basic queries for targeted Active Directory information gathering used in penetration testing (“low and slow” approach without BloodHound).</li>
+<li><a href="https://zer1t0.gitlab.io/posts/attacking_ad/">Attacking Active Directory: 0 to 0.</a> Nice description of many Windows topics, including Active Directory, Access Rights and so on.</li>
 </ul>
-<h3 id="wannacry">Wannacry</h3>
+<h3 id="defense-guidance">Defense guidance</h3>
 <ul>
-<li><a href="https://www.nytimes.com/interactive/2017/05/12/world/europe/wannacry-ransomware-map.html">Animated Map of How Tens of Thousands of Computers Were Infected With Ransomware</a> (Wannacry)</li>
-<li><a href="https://labs.vipre.com/wannacry-technical-analysis">Wannacry Technical Analysis</a></li>
-<li><a href="https://www.troyhunt.com/everything-you-need-to-know-about-the-wannacrypt-ransomware/">Everything you need to know about the WannaCry / Wcry / WannaCrypt ransomware</a> Troy Hunt (the founder of <a href="https://haveibeenpwned.com/">haveibeenp0wned</a>) More high level description.</li>
+<li><a href="https://www.hub.trimarcsecurity.com/post/ten-ways-to-improve-ad-security-quickly">Top 10 ways of securing AD</a>. List of most common misconfigurations that can be exploited and how to fix them. </li>
+<li><a href="https://techcommunity.microsoft.com/t5/microsoft-security-experts-blog/total-identity-compromise-microsoft-incident-response-lessons-on/ba-p/3753391">Total Identity Compromise: Microsoft Incident Response lessons on securing Active Directory</a> Across all industry verticals, Microsoft Incident Response often finds similar issues within Active Directory environments. In this blog, we will be highlighting some of the most common issues seen in on-premises Active Directory environments and provide guidance on how to secure those weaknesses.</li>
 </ul>
-<p>Non-technical analyses, very interesting.</p>
+<h3 id="ad-security-assessment">AD security assessment</h3>
+<p>Tools for checking common AD misconfigurations and obtain synthetic reports.
+- <a href="https://www.pingcastle.com/">PingCastle</a> 
+- <a href="https://www.hub.trimarcsecurity.com/post/securing-active-directory-performing-an-active-directory-security-review">Trimarc ADChecks</a> 
+- <a href="https://www.cert.ssi.gouv.fr/uploads/ad_checklist.html">Checklist</a> A self-assessment checklist by CERT France.</p>
+<h3 id="bloodhound">BloodHound</h3>
 <ul>
-<li><a href="https://www.lightbluetouchpaper.org/2017/05/13/bad-malware-worse-reporting/">Bad malware, worse reporting</a> Ross Anderson, University of Cambridge. "In well over 90% of NHS organisations, the well-meaning amateurs managed perfectly well. What they did was to keep their systems patched up-to-date; simple hygiene, like washing your hands after going to the toilet."</li>
-<li><a href="https://blogs.microsoft.com/on-the-issues/2017/05/14/need-urgent-collective-action-keep-people-safe-online-lessons-last-weeks-cyberattack/#sm.00001xty8cdrhjeawpakunyh01lfd">The need for urgent collective action to keep people safe online: Lessons from last week’s cyberattack</a> Brad Smith, Microsoft VicePresident. "As cybercriminals become more sophisticated, there is simply no way for customers to protect themselves against threats unless they update their systems. Otherwise they’re literally fighting the problems of the present with tools from the past. This attack is a powerful reminder that information technology basics like keeping computers current and patched are a high responsibility for everyone, and it’s something every top executive should support". </li>
+<li><a href="https://www.youtube.com/watch?v=z8thoG7gPd0">Here Be Dragons The Unexplored Land of Active Directory ACLs</a> The original 45-minutes video at DerbyCon 2017 that introduced this tool.</li>
+<li><a href="https://www.sans.org/blog/bloodhound-sniffing-out-path-through-windows-domains/">BloodHound – Sniffing Out the Path Through Windows Domains</a> One of the many tutorials available.</li>
+<li><a href="https://bloodhound.readthedocs.io/en/latest/index.html">BloodHound: Six Degrees of Domain Admin</a> The official site.</li>
+<li><a href="https://github.com/lkarlslund/Adalanche">Adalanche</a> a tool similar to BloodHound.</li>
+<li><a href="https://zeronetworks.com/blog/bluehound-community-driven-resilience/">BlueHound</a> another tool similar to BloodHound. It collects metrics similar to some available only in the paid version of BloodHound.</li>
+<li><a href="https://labs.lares.com/introducing-slinkycat/">Introducing Slinky Cat - Living off the AD Land</a> Help security and IT teams reduce their AD exposures and uncover quick wins and fixes designed for pen-testers and defenders alike.</li>
 </ul>
-<h2 id="attack-categories">Attack Categories</h2>
-<h3 id="smb-small-and-medium-businesses">SMB - Small and Medium Businesses</h3>
+<h3 id="bloodhound-tools">BloodHound Tools</h3>
 <ul>
-<li><a href="https://www.cs.columbia.edu/~smb/papers/nyc-council-testimony.pdf">Cybersecurity for Small Businesses</a> Hearing before the New York City Council Committee on Technology, Steve Bellovin, University of Columbia, 2020 (<em>My opinion: When Steve Bellovin speaks or writes, one should only try to listen or read very carefully</em>). Basic "security hygiene" practices.</li>
+<li><a href="https://blog.bitsadmin.com/blog/dealing-with-large-bloodhound-datasets">Dealing with large BloodHound datasets</a>. Discusses other tools similar to BloodHound, including <a href="https://www.youtube.com/watch?app=desktop&amp;v=76MWt8uugAg">BlueHound</a>.</li>
+<li>
+<p><a href="https://github.com/zeronetworks/BloodHound-Tools">BloodHound tools</a>.</p>
+<ul>
+<li><em>ShotHound</em>: Validate practical paths discovered by BloodHound.</li>
+<li><em>Ransomulator</em>: Simulate ransomware-like infection in your dataset.</li>
+<li><em>DBCreator</em>: Simulate BloodHound dataset, along with "Open" network access edges and unpatched vulnerabilities information.</li>
+<li><em>CustomQueries</em>: A list of common queries that reflect the network dimension, if it is integrated into the dataset.</li>
+<li><em>VulnerabilitiesDataImport</em>:
+Parse Vulnerability Scanners reports and enrich host nodes with information about unpatched vulnerabilities</li>
 </ul>
-<h3 id="apt-advanced-and-persistent-threat">APT - Advanced and Persistent Threat</h3>
-<ul>
-<li><a href="https://www.wired.com/2016/01/nsa-hacker-chief-explains-how-to-keep-him-out-of-your-system/">NSA Hacker Chief Explains How to Keep Him Out of Your System</a> A very interesting read for understanding the capabilities of APT groups (better said, the capabilities that this person decided to make public).</li>
-<li><a href="https://www.cisa.gov/topics/cyber-threats-and-advisories/advanced-persistent-threats-and-nation-state-actors">Advanced Persistent Threats and Nation-State Actors</a> Threat overviews and advisories maintained by CISA for: China, Russia, North Korea, Iran.</li>
+</li>
+<li>
+<p><a href="https://assurancemaladiesec.github.io/foxterrier-on-the-trail/">FoxTerrier : On the trail of vulnerable Active Directory objects and a report</a>. You use Sharphound/Bloodhound to collect data/audit your AD and you would like to generate report of vulnerable objects in your AD? You should give a look to FoxTerrier!</p>
+</li>
 </ul>
-<h2 id="case-studies">Case Studies</h2>
+<h2 id="kerberos-abuse">Kerberos Abuse</h2>
 <ul>
-<li><a href="https://blog.erratasec.com/2020/07/how-ceos-think.html">How CEOs think</a> A must read for understanding cybersecurity in the real world. Its author, Robert Graham, is a well known person in the cybersec world.</li>
-<li><a href="https://www.microsoft.com/en-us/security/business/microsoft-digital-defense-report-2022-cyber-resilience#Viewactionableinsights1">Microsoft Digital Defense Report 2022</a> Long and detailed, quite interesting. One of the final sections (Cyber resilience) contains the diagram summarizing the missing security controls detected by Microsoft in their impacted customers. <em>My personal opinion: a product that in most cases is installed or deployed with so many problems is a product with many problems. Microsoft is telling us this fact about one of its most important products.</em></li>
+<li><a href="https://learn.microsoft.com/en-us/archive/msdn-magazine/2003/april/exploring-s4u-kerberos-extensions-in-windows-server-2003">Exploring S4U Kerberos Extensions in Windows Server 2003</a> Microsoft explanation of S4U.</li>
+<li><a href="https://posts.specterops.io/shadow-credentials-abusing-key-trust-account-mapping-for-takeover-8ee1a53566ab">Shadow Credentials: Abusing Key Trust Account Mapping for Account Takeover</a>. Easy and reliable takeover primitive against Users and Computers. Based on Kerberos authentication with PKINIT (public key crypto).</li>
+<li><a href="https://www.linkedin.com/posts/mor-davidovich-57641614a_krbrelayup-rbcd-lpe-activity-7071418645842731008-c2wD/?originalSubdomain=qa">Krbrelayup</a> A 30-sec video showing usage of the DavRelayUp tool.</li>
+<li><a href="https://www.microsoft.com/en-us/security/blog/2022/05/25/detecting-and-preventing-privilege-escalation-attacks-leveraging-kerberos-relaying-krbrelayup/">Detecting and preventing privilege escalation attacks leveraging Kerberos relaying (KrbRelayUp)</a> Description and recommendations by Microsoft.</li>
+<li><a href="https://posts.specterops.io/kerberosity-killed-the-domain-an-offensive-kerberos-overview-eb04b1402c61">Kerberosity Killed the Domain: An Offensive Kerberos Overview</a> This article is intended to give an overview of how Kerberos works and some of the more common attacks associated with it.</li>
 </ul>
-<h3 id="solarwinds">SolarWInds</h3>
+<h2 id="relaying">Relaying</h2>
 <ul>
-<li><a href="https://www.intelligence.senate.gov/hearings/open-hearing-hearing-hack-us-networks-foreign-adversary">U.S. Senate Intelligence Hearings - Solar Winds</a> Hearings of CEOs of FireEye, Mandiant, SolarWinds, Microsoft, CrowdStrike. Extremely interesting.</li>
-<li><a href="https://www.rpc.senate.gov/policy-papers/the-solarwinds-cyberattack">The SolarWinds Cyberattack</a> A very interesting non-technical summary with a detailed timeline.</li>
+<li><a href="https://www.secureauth.com/blog/we-love-relaying-credentials-a-technical-guide-to-relaying-credentials-everywhere/">A guide to relaying credentials everywhere in 2022</a> </li>
+<li><a href="https://www.praetorian.com/blog/how-to-exploit-active-directory-acl-attack-paths-through-ldap-relaying-attacks/">How to Exploit Active Directory ACL Attack Paths Through LDAP Relaying Attacks</a></li>
 </ul>
-<h3 id="proxylogon-microsoft-exchange">ProxyLogon - Microsoft Exchange</h3>
+<h2 id="other-ad-attack-paths">Other AD Attack Paths</h2>
 <ul>
-<li><a href="https://www.cisa.gov/news-events/directives/ed-21-02-mitigate-microsoft-exchange-premises-product-vulnerabilities">Mitigate Microsoft Exchange On-Premises Product Vulnerabilities</a> Cybersecurity and Infrastructure Security Agency (CISA) Emergency Directive.</li>
-<li><a href="https://m365internals.com/2022/10/16/investigating-proxylogon-attacks-and-how-to-mitigate-it/">Investigating ProxyLogon Attacks And How To Mitigate It</a> A demo with screenshots.</li>
-<li><a href="https://proxylogon.com/">ProxyLogon
-The latest pre-authenticated Remote Code Execution vulnerability on Microsoft Exchange Server</a> A detailed technical explanation by the researchers that notified Microsoft. "An unauthenticated attacker can execute arbitrary commands on Microsoft Exchange Server through an only opened 443 port!".</li>
+<li><a href="https://posts.specterops.io/certified-pre-owned-d95910965cd2">Certified Pre-Owned</a> Abusing Actice Directory Certificate Services (8 insecure certificate templates). Accompanied by a +140-pages report including some prevention and detection guidance.</li>
+<li><a href="https://www.youtube.com/watch?v=8OtfW4uo75k">Exploiting Outlook CVE-2023-23397 to Relay Credentials</a> Based on a coerced authentication vulnerability of Outlook. It uses PKINIT and credential relay. Nice and focussed video.</li>
+<li><a href="https://pentestlab.blog/2018/07/04/dumping-domain-password-hashes/">Dumping Domain Password Hashes</a> (from domain controllers). These hashes are stored in a database file in the domain controller (NTDS.DIT). Step-by-step examples with several software tools (Mimikatz, Empire and others)</li>
+<li>Active Directory Abuse Primitives and Operation Security: Demo of four different AD attack paths, with considerations about their OPSEC (i.e., ability to remain undetected). <a href="https://conference.hitb.org/hitbsecconf2023ams/materials/D2T2%20-%20Active%20Directory%20Abuse%20Primitive%20and%20Operation%20Security%20-%20Mars%20Cheng.pdf">Slides</a> and <a href="https://www.youtube.com/watch?v=CIkSiECswYw">one hour video</a>.</li>
+<li><a href="https://www.ired.team/offensive-security-experiments/active-directory-kerberos-abuse/adcs-+-petitpotam-ntlm-relay-obtaining-krbtgt-hash-with-domain-controller-machine-certificate">ADCS + PetitPotam NTLM Relay: Obtaining krbtgt Hash with Domain Controller Machine Certificate</a> Lab that starts from misconfigured ADCS (which it is by default), to effectively escalate privileges from a low privileged domain user to Domain Admin.</li>
 </ul>
 
 
