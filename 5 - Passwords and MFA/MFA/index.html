@@ -8,25 +8,27 @@
       
       
       
-        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/">
+        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/5%20-%20Passwords%20and%20MFA/MFA/">
       
       
+        <link rel="prev" href="../../4%20-%20Malware/Resources%20-%20Malware/">
       
-        <link rel="next" href="Topics/">
       
-      <link rel="icon" href="assets/images/favicon.png">
+        <link rel="next" href="../Passwords/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.5">
     
     
       
-        <title>Cybersecurity Course - University of Trieste</title>
+        <title>MFA - Cybersecurity Course - University of Trieste</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.7a7fce14.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7a7fce14.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.a0c5b2b5.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
       
       
 
@@ -42,7 +44,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -79,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#course-topics" class="md-skip">
+        <a href="#why-mfa" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +99,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="https://bartoli.inginf.units.it" title="Cybersecurity Course - University of Trieste" class="md-header__button md-logo" aria-label="Cybersecurity Course - University of Trieste" data-md-component="logo">
       
-  <img src="bernabeu small.png" alt="logo">
+  <img src="../../bernabeu small.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -113,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              MFA
             
           </span>
         </div>
@@ -184,7 +186,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="https://bartoli.inginf.units.it" title="Cybersecurity Course - University of Trieste" class="md-nav__button md-logo" aria-label="Cybersecurity Course - University of Trieste" data-md-component="logo">
       
-  <img src="bernabeu small.png" alt="logo">
+  <img src="../../bernabeu small.png" alt="logo">
 
     </a>
     Cybersecurity Course - University of Trieste
@@ -198,82 +200,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Home
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         Home
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#course-topics" class="md-nav__link">
-    Course topics
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#course-organization" class="md-nav__link">
-    Course organization
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-use-this-website" class="md-nav__link">
-    How to use this website
-  </a>
-  
-    <nav class="md-nav" aria-label="How to use this website">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#do-not-be-frustrated" class="md-nav__link">
-    Do not be frustrated
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#chatgpt-bard" class="md-nav__link">
-    ChatGPT / Bard
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -286,7 +217,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Topics/" class="md-nav__link">
+      <a href="../../Topics/" class="md-nav__link">
         Topics
       </a>
     </li>
@@ -301,7 +232,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Hacking Lab" class="md-nav__link">
+      <a href="../../Hacking Lab" class="md-nav__link">
         Hacking Lab
       </a>
     </li>
@@ -316,7 +247,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Access Control" class="md-nav__link">
+      <a href="../../Access Control" class="md-nav__link">
         Access Control
       </a>
     </li>
@@ -331,7 +262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="MITRE ATTACK" class="md-nav__link">
+      <a href="../../MITRE ATTACK" class="md-nav__link">
         MITRE ATTACK
       </a>
     </li>
@@ -346,7 +277,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Basic Techniques" class="md-nav__link">
+      <a href="../../Basic Techniques" class="md-nav__link">
         Basic Techniques
       </a>
     </li>
@@ -388,7 +319,7 @@
   
   
     <li class="md-nav__item">
-      <a href="AiTM%20HTTPS/AitM%20-%20HTTPS/" class="md-nav__link">
+      <a href="../../AiTM%20HTTPS/AitM%20-%20HTTPS/" class="md-nav__link">
         AiTM - HTTPS
       </a>
     </li>
@@ -402,7 +333,7 @@
   
   
     <li class="md-nav__item">
-      <a href="AiTM%20HTTPS/Understanding_MITM_proxies_with_HTTPS/" class="md-nav__link">
+      <a href="../../AiTM%20HTTPS/Understanding_MITM_proxies_with_HTTPS/" class="md-nav__link">
         Understanding MITM proxies with HTTPS
       </a>
     </li>
@@ -424,7 +355,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Passwords and MFA" class="md-nav__link">
+      <a href="../../Passwords and MFA" class="md-nav__link">
         Passwords and MFA
       </a>
     </li>
@@ -439,7 +370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Authentication - NTLM Kerberos" class="md-nav__link">
+      <a href="../../Authentication - NTLM Kerberos" class="md-nav__link">
         Authentication - NTLM Kerberos
       </a>
     </li>
@@ -454,7 +385,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Lateral Movement and AD Abuse" class="md-nav__link">
+      <a href="../../Lateral Movement and AD Abuse" class="md-nav__link">
         Lateral Movement and AD Abuse
       </a>
     </li>
@@ -469,7 +400,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Vulnerabilities" class="md-nav__link">
+      <a href="../../Vulnerabilities" class="md-nav__link">
         Vulnerabilities
       </a>
     </li>
@@ -511,7 +442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Final%20Remarks/Final%20Remarks/" class="md-nav__link">
+      <a href="../../Final%20Remarks/Final%20Remarks/" class="md-nav__link">
         Final Remarks
       </a>
     </li>
@@ -560,7 +491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Labs/Automated%20Malware%20Analysis/" class="md-nav__link">
+      <a href="../../Labs/Automated%20Malware%20Analysis/" class="md-nav__link">
         Automated Malware Analysis
       </a>
     </li>
@@ -574,7 +505,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Labs/BURP/" class="md-nav__link">
+      <a href="../../Labs/BURP/" class="md-nav__link">
         BURP
       </a>
     </li>
@@ -588,7 +519,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Labs/MITRE_ATTACK_Navigator/" class="md-nav__link">
+      <a href="../../Labs/MITRE_ATTACK_Navigator/" class="md-nav__link">
         MITRE ATTACK Navigator
       </a>
     </li>
@@ -602,7 +533,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Labs/OWASP%20Juice%20Shop/" class="md-nav__link">
+      <a href="../../Labs/OWASP%20Juice%20Shop/" class="md-nav__link">
         OWASP Juice Shop
       </a>
     </li>
@@ -616,7 +547,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Labs/Vulnerable%20Platforms/" class="md-nav__link">
+      <a href="../../Labs/Vulnerable%20Platforms/" class="md-nav__link">
         Vulnerable Platforms
       </a>
     </li>
@@ -665,7 +596,7 @@
   
   
     <li class="md-nav__item">
-      <a href="1%20-%20Hacking%20Lab/Lab%20-%20Hacking%20Metasploitable/" class="md-nav__link">
+      <a href="../../1%20-%20Hacking%20Lab/Lab%20-%20Hacking%20Metasploitable/" class="md-nav__link">
         Lab   Hacking Metasploitable
       </a>
     </li>
@@ -679,7 +610,7 @@
   
   
     <li class="md-nav__item">
-      <a href="1%20-%20Hacking%20Lab/Lab%20-%20Virtual%20Machines/" class="md-nav__link">
+      <a href="../../1%20-%20Hacking%20Lab/Lab%20-%20Virtual%20Machines/" class="md-nav__link">
         Lab   Virtual Machines
       </a>
     </li>
@@ -693,7 +624,7 @@
   
   
     <li class="md-nav__item">
-      <a href="1%20-%20Hacking%20Lab/Resources/" class="md-nav__link">
+      <a href="../../1%20-%20Hacking%20Lab/Resources/" class="md-nav__link">
         Hacking - Resources
       </a>
     </li>
@@ -742,7 +673,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2%20-%20Access%20Control/Resources%20-%20Access%20Control/" class="md-nav__link">
+      <a href="../../2%20-%20Access%20Control/Resources%20-%20Access%20Control/" class="md-nav__link">
         Access Control - Resources
       </a>
     </li>
@@ -791,7 +722,7 @@
   
   
     <li class="md-nav__item">
-      <a href="3%20-%20MITRE%20ATTACK/ATTACK%20-%20MITRE/" class="md-nav__link">
+      <a href="../../3%20-%20MITRE%20ATTACK/ATTACK%20-%20MITRE/" class="md-nav__link">
         MITRE ATT&CK
       </a>
     </li>
@@ -805,7 +736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="3%20-%20MITRE%20ATTACK/ICS/" class="md-nav__link">
+      <a href="../../3%20-%20MITRE%20ATTACK/ICS/" class="md-nav__link">
         ICS - Industrial Control Systems
       </a>
     </li>
@@ -854,7 +785,7 @@
   
   
     <li class="md-nav__item">
-      <a href="4%20-%20Malware/Botnet%20Case%20Studies/" class="md-nav__link">
+      <a href="../../4%20-%20Malware/Botnet%20Case%20Studies/" class="md-nav__link">
         Botnets
       </a>
     </li>
@@ -868,7 +799,7 @@
   
   
     <li class="md-nav__item">
-      <a href="4%20-%20Malware/Malware%20detection/" class="md-nav__link">
+      <a href="../../4%20-%20Malware/Malware%20detection/" class="md-nav__link">
         Malware detection
       </a>
     </li>
@@ -882,7 +813,7 @@
   
   
     <li class="md-nav__item">
-      <a href="4%20-%20Malware/Malware_Case_Studies/" class="md-nav__link">
+      <a href="../../4%20-%20Malware/Malware_Case_Studies/" class="md-nav__link">
         Intrusions and Malware - Case studies
       </a>
     </li>
@@ -896,7 +827,7 @@
   
   
     <li class="md-nav__item">
-      <a href="4%20-%20Malware/Resources%20-%20Malware/" class="md-nav__link">
+      <a href="../../4%20-%20Malware/Resources%20-%20Malware/" class="md-nav__link">
         Malware Resources
       </a>
     </li>
@@ -916,14 +847,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_18" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_18" checked>
       
       
       
@@ -932,7 +865,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_18_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_18_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_18">
           <span class="md-nav__icon md-icon"></span>
           5   Passwords and MFA
@@ -943,11 +876,62 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="5%20-%20Passwords%20and%20MFA/MFA/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          MFA
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         MFA
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-mfa" class="md-nav__link">
+    Why MFA
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mfa-attacks" class="md-nav__link">
+    MFA attacks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passwordless" class="md-nav__link">
+    Passwordless
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -959,7 +943,7 @@
   
   
     <li class="md-nav__item">
-      <a href="5%20-%20Passwords%20and%20MFA/Passwords/" class="md-nav__link">
+      <a href="../Passwords/" class="md-nav__link">
         Passwords
       </a>
     </li>
@@ -1008,7 +992,7 @@
   
   
     <li class="md-nav__item">
-      <a href="6%20-%20Authentication%20-%20NTLM%20Kerberos/Authentication%20-%20Windows/" class="md-nav__link">
+      <a href="../../6%20-%20Authentication%20-%20NTLM%20Kerberos/Authentication%20-%20Windows/" class="md-nav__link">
         Authentication - Windows
       </a>
     </li>
@@ -1022,7 +1006,7 @@
   
   
     <li class="md-nav__item">
-      <a href="6%20-%20Authentication%20-%20NTLM%20Kerberos/Kerberos/" class="md-nav__link">
+      <a href="../../6%20-%20Authentication%20-%20NTLM%20Kerberos/Kerberos/" class="md-nav__link">
         Kerberos
       </a>
     </li>
@@ -1036,7 +1020,7 @@
   
   
     <li class="md-nav__item">
-      <a href="6%20-%20Authentication%20-%20NTLM%20Kerberos/NTLM/" class="md-nav__link">
+      <a href="../../6%20-%20Authentication%20-%20NTLM%20Kerberos/NTLM/" class="md-nav__link">
         NTLM
       </a>
     </li>
@@ -1085,7 +1069,7 @@
   
   
     <li class="md-nav__item">
-      <a href="7%20-%20Lateral%20Movement%20and%20AD%20Abuse/AD_abuse/" class="md-nav__link">
+      <a href="../../7%20-%20Lateral%20Movement%20and%20AD%20Abuse/AD_abuse/" class="md-nav__link">
         AD Abuse
       </a>
     </li>
@@ -1099,7 +1083,7 @@
   
   
     <li class="md-nav__item">
-      <a href="7%20-%20Lateral%20Movement%20and%20AD%20Abuse/Discovery/" class="md-nav__link">
+      <a href="../../7%20-%20Lateral%20Movement%20and%20AD%20Abuse/Discovery/" class="md-nav__link">
         Discovery
       </a>
     </li>
@@ -1113,7 +1097,7 @@
   
   
     <li class="md-nav__item">
-      <a href="7%20-%20Lateral%20Movement%20and%20AD%20Abuse/Lateral%20Movement/" class="md-nav__link">
+      <a href="../../7%20-%20Lateral%20Movement%20and%20AD%20Abuse/Lateral%20Movement/" class="md-nav__link">
         Lateral Movement
       </a>
     </li>
@@ -1162,7 +1146,7 @@
   
   
     <li class="md-nav__item">
-      <a href="8%20-%20Vulnerabilities/Analyses/" class="md-nav__link">
+      <a href="../../8%20-%20Vulnerabilities/Analyses/" class="md-nav__link">
         Analyses
       </a>
     </li>
@@ -1176,7 +1160,7 @@
   
   
     <li class="md-nav__item">
-      <a href="8%20-%20Vulnerabilities/Memory%20corruption_/" class="md-nav__link">
+      <a href="../../8%20-%20Vulnerabilities/Memory%20corruption_/" class="md-nav__link">
         Memory corruption 
       </a>
     </li>
@@ -1190,7 +1174,7 @@
   
   
     <li class="md-nav__item">
-      <a href="8%20-%20Vulnerabilities/Reverse%20engineering/" class="md-nav__link">
+      <a href="../../8%20-%20Vulnerabilities/Reverse%20engineering/" class="md-nav__link">
         Reverse engineering
       </a>
     </li>
@@ -1204,7 +1188,7 @@
   
   
     <li class="md-nav__item">
-      <a href="8%20-%20Vulnerabilities/Vulnerabilities%20-%20Misc/" class="md-nav__link">
+      <a href="../../8%20-%20Vulnerabilities/Vulnerabilities%20-%20Misc/" class="md-nav__link">
         Vulnerabilities - Misc
       </a>
     </li>
@@ -1218,7 +1202,7 @@
   
   
     <li class="md-nav__item">
-      <a href="8%20-%20Vulnerabilities/Vulnerability%20-%20Case%20studies/" class="md-nav__link">
+      <a href="../../8%20-%20Vulnerabilities/Vulnerability%20-%20Case%20studies/" class="md-nav__link">
         Vulnerability   Case studies
       </a>
     </li>
@@ -1257,43 +1241,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#course-topics" class="md-nav__link">
-    Course topics
+  <a href="#why-mfa" class="md-nav__link">
+    Why MFA
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#course-organization" class="md-nav__link">
-    Course organization
+  <a href="#mfa-attacks" class="md-nav__link">
+    MFA attacks
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-to-use-this-website" class="md-nav__link">
-    How to use this website
+  <a href="#passwordless" class="md-nav__link">
+    Passwordless
   </a>
-  
-    <nav class="md-nav" aria-label="How to use this website">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#do-not-be-frustrated" class="md-nav__link">
-    Do not be frustrated
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#chatgpt-bard" class="md-nav__link">
-    ChatGPT / Bard
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1312,25 +1276,32 @@
                   
 
 
-  <h1>Home</h1>
+  <h1>MFA</h1>
 
-<h2 id="course-topics">Course topics</h2>
-<p>The topics are listed in <a href="Topics/">this page</a>.</p>
-<h2 id="course-organization">Course organization</h2>
-<p>Exam, slide access, mailing list: see details on <a href="https://bartoli.inginf.units.it/didattica">my website</a>.</p>
-<h2 id="how-to-use-this-website">How to use this website</h2>
-<p>This website contains a curated set of references.</p>
-<p>References provide real-world examples, in-depth analysis, technical manuals and the like. They are intended to be a resource for those interested in delving deeper.</p>
-<p>Please always keep in mind that <em>the content of this website is not needed for the exam</em>: the slides are all that is needed in this respect.</p>
-<h3 id="do-not-be-frustrated">Do not be frustrated</h3>
-<p>Many of the linked documents can only be fully understood with very specific technical skills (and sometimes theoretical knowledge) far beyond those required or provided by this course. Please try to focus on the topics relevant to the course. Most importantly, do not be frustrated if you do not manage to understand everything.</p>
-<p>In many cases I do not understand everything either.</p>
-<h3 id="chatgpt-bard">ChatGPT / Bard</h3>
-<p>Many examples and writeups are based on very specific commands of Linux, Windows, Powershell, PHP and other technologies.</p>
-<p>When reading commands, or a piece of a program, that you do not understand, you might want to ask ChatGPT/Bard with a prompt like “explain” followed by that command (that can often be cut-and-paste easily)</p>
-<p>While <em>there is no guarantee that the response will be correct</em> in many cases the response is very useful (and indeed correct).</p>
-<p>Relying on ChatGPT/Bard for having a quick (approximate) understanding of what a piece of code actually does is a strategy used also by a top security company, Mandiant: see <a href="https://www.mandiant.com/resources/blog/mandiant-leveraging-ai">Analyzing an Alert for a PowerShell Script</a> (there might be a conflict of interest, though, as Mandiant is part of Google and this post promotes the use of Bard, also a Google service).</p>
-<p>I have occasionally provided a link to brief explanations provided by ChatGPT/Bard on specific topics, for ease of reading. As just pointed out, there is no guarantee that those explanations are correct: take them just as hints.</p>
+<h2 id="why-mfa">Why MFA</h2>
+<ul>
+<li><a href="https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/all-your-creds-are-belong-to-us/ba-p/855124">All your creds are belong to us!</a> Analysis of MFA impact on password attacks by Microsoft Threat Intelligence.</li>
+<li><a href="https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/it-s-time-to-hang-up-on-phone-transports-for-authentication/ba-p/1751752">It's Time to Hang Up on Phone Transports for Authentication</a> Microsoft Threat Intelligence advice: use MFA; do not use smartphones for MFA.</li>
+<li><a href="https://www.youtube.com/watch?v=drfXNB6p6nI&amp;t=133s">Account takeover prevention rate by challenge type</a>. A slide summarizing the (estimated) effectiveness of various MFA techniques (challenge type) as a function of the attack type (automated bot, bulk phishing, targeted). It can be seen that security keys are "perfect" even for targeted attacks (i.e., the most sophisticated ones).</li>
+</ul>
+<h2 id="mfa-attacks">MFA attacks</h2>
+<p>Always keep in mind that everything but security keys can be phished with Evilginx-like tools.</p>
+<ul>
+<li><a href="https://krebsonsecurity.com/2021/09/the-rise-of-one-time-password-interception-bots/">The Rise of One-Time Password Interception Bots</a></li>
+<li><a href="https://krebsonsecurity.com/?s=sim">SIM Swap at Krebs on Security</a></li>
+<li><a href="https://thehackernews.com/2017/05/ss7-vulnerability-bank-hacking.html">Real-World SS7 Attack — Hackers Are Stealing Money From Bank Accounts</a> SMS redirection in the phone network (SS7 vulnerability).</li>
+<li><a href="https://arstechnica.com/information-technology/2022/03/lapsus-and-solar-winds-hackers-both-use-the-same-old-trick-to-bypass-mfa/">Lapsus$ and SolarWinds hackers both use the same old trick to bypass MFA</a> "MFA bombing".</li>
+<li><a href="https://www.phonexia.com/blog/3-examples-of-typical-smishing-and-vishing-attacks-in-2022/">3 Examples of Typical Smishing and Vishing Attacks in 2022</a></li>
+<li><a href="https://www.bleepingcomputer.com/news/technology/ftc-fines-twitter-150m-for-using-2fa-info-for-targeted-advertising/">FTC fines Twitter $150M for using 2FA info for targeted advertising</a></li>
+</ul>
+<h2 id="passwordless">Passwordless</h2>
+<ul>
+<li><a href="https://developers.google.com/identity/passkeys">Passwordless login with passkeys</a> at Google. Less technical description: <a href="https://security.googleblog.com/2023/05/so-long-passwords-thanks-for-all-phish.html">So long passwords, thanks for all the phish</a>.  User experience: <a href="https://support.google.com/accounts/answer/13548313?hl=en">Sign in with a passkey instead of a password</a>.</li>
+<li><a href="https://arstechnica.com/information-technology/2023/05/passwordless-google-accounts-are-easier-and-more-secure-than-passwords-heres-why/">Google passkeys are a no-brainer. You’ve turned them on, right?</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-passwordless">Passwordless authentication options for Azure Active Directory Microsoft scenario</a> (very complex, as always).</li>
+<li><a href="https://developers.google.com/identity/passkeys">Passkeys vs Security Keys</a> FAQ by Yubico, manufacturer of security keys.</li>
+<li><a href="https://passkeys.dev/device-support/">Passkeys.dev</a> Description of passkey support across browsers and operating systems.</li>
+</ul>
 
 
   
@@ -1370,10 +1341,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["search.suggest", "search.highlight", "navigation.instant", "navigation.tracking"], "search": "assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "search.highlight", "navigation.instant", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.407015b8.min.js"></script>
+      <script src="../../assets/javascripts/bundle.407015b8.min.js"></script>
       
     
   </body>
