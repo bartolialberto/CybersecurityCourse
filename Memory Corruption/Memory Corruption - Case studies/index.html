@@ -940,6 +940,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Memory corruption - Case studies
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -949,6 +960,46 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#very-high-profile-example" class="md-nav__link">
+    Very high-profile example
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#not-very-difficult-to-understand" class="md-nav__link">
+    Not very difficult to understand
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-difficult-to-understand" class="md-nav__link">
+    More difficult to understand
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1305,6 +1356,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#very-high-profile-example" class="md-nav__link">
+    Very high-profile example
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#not-very-difficult-to-understand" class="md-nav__link">
+    Not very difficult to understand
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-difficult-to-understand" class="md-nav__link">
+    More difficult to understand
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1319,10 +1399,19 @@
 
 
 <h1 id="memory-corruption-case-studies">Memory corruption - Case studies</h1>
+<h2 id="very-high-profile-example">Very high-profile example</h2>
+<p>Chaining of several vulnerabilities, circumvention of hardware mitigations (including pointer authentication). Many people believe these shouyld be attributed to the NSA; some believe that Apple somehow helped them. I do not have any element in support.</p>
+<ul>
+<li><a href="https://www.schneier.com/blog/archives/2024/01/new-iphone-exploit-uses-four-zero-days.html">New iPhone Exploit Uses Four Zero-Days</a>
+Kaspersky researchers are detailing “<em>an attack that over four years backdoored dozens if not thousands of iPhones, many of which belonged to employees of Moscow-based security firm Kaspersky.</em>” It’s a zero-click exploit that makes use of four iPhone zero-days.</li>
+<li><a href="https://arstechnica.com/security/2023/12/exploit-used-in-mass-iphone-infection-campaign-targeted-secret-hardware-feature/">4-year campaign backdoored iPhones using possibly the most advanced exploit ever</a>.</li>
+</ul>
+<h2 id="not-very-difficult-to-understand">Not very difficult to understand</h2>
 <ul>
 <li><a href="https://www.praetorian.com/blog/vulnerabilities-within-listserv/">Technical Advisory: Vulnerabilities Identified within ListServ</a> ListServ is a widely used email list management application. In October 2023 a stack overflow vulnerability was identified (section "Stack Based Overflow Vulnerability"). Easy to understand but hardly exploitable.</li>
 <li><a href="https://www.assetnote.io/resources/research/citrix-bleed-leaking-session-tokens-with-cve-2023-4966">Citrix Bleed: Leaking Session Tokens with CVE-2023-4966</a> Citrix NetScaler is a network device providing load balancing, firewall and VPN services. A buffer overflow in a variable filled with the <code>Host</code> header of a received HTTP request (thus a variable <em>indirectly</em> controlled by the attacker) allow dumping portions of memory in the matching HTTP response, including currently valid session cookies. </li>
 </ul>
+<h2 id="more-difficult-to-understand">More difficult to understand</h2>
 <p>Understanding all the details in the following analyses is difficult and often some details are not reported. In particular, the steps for obtaining RCE from the overflow are rarely shown (the descriptions only illustrate the overflow).</p>
 <ul>
 <li><a href="https://blog.qualys.com/vulnerabilities-threat-research/2021/01/26/cve-2021-3156-heap-based-buffer-overflow-in-sudo-baron-samedit">CVE-2021-3156: Heap-Based Buffer Overflow in Sudo (Baron Samedit)</a> Heap-based buffer overflow in sudo, a near-ubiquitous utility available on major Unix-like operating systems. <strong>Any unprivileged user can gain root privileges</strong> on a vulnerable host using a default sudo configuration. The vulnerability itself has been hiding in plain sight for nearly 10 years. It was introduced in July 2011.</li>
