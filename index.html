@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#course-topics" class="md-skip">
+        <a href="#about-this-course" class="md-skip">
           Skip to content
         </a>
       
@@ -250,15 +250,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#course-topics" class="md-nav__link">
-    Course topics
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#course-organization" class="md-nav__link">
-    Course organization
+  <a href="#about-this-course" class="md-nav__link">
+    About this Course
   </a>
   
 </li>
@@ -279,22 +272,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#technical-questions-linux-windows" class="md-nav__link">
-    Technical questions (Linux, Windows, ...)
+  <a href="#ask-chatgpt" class="md-nav__link">
+    Ask ChatGPT
   </a>
-  
-    <nav class="md-nav" aria-label="Technical questions (Linux, Windows, ...)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#suggestions-for-prompt-engineering" class="md-nav__link">
-    Suggestions for prompt engineering
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -1425,15 +1405,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#course-topics" class="md-nav__link">
-    Course topics
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#course-organization" class="md-nav__link">
-    Course organization
+  <a href="#about-this-course" class="md-nav__link">
+    About this Course
   </a>
   
 </li>
@@ -1454,22 +1427,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#technical-questions-linux-windows" class="md-nav__link">
-    Technical questions (Linux, Windows, ...)
+  <a href="#ask-chatgpt" class="md-nav__link">
+    Ask ChatGPT
   </a>
-  
-    <nav class="md-nav" aria-label="Technical questions (Linux, Windows, ...)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#suggestions-for-prompt-engineering" class="md-nav__link">
-    Suggestions for prompt engineering
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -1495,9 +1455,9 @@
 
   <h1>Home</h1>
 
-<h2 id="course-topics">Course topics</h2>
+<h2 id="about-this-course">About this Course</h2>
+<p>Start with this <a href="https://docs.google.com/presentation/d/1QHzeDUQXDD9XKr8agRUENLLfnBR0g1oUUzgiNPRt6To/edit?usp=sharing">very concise description</a>.</p>
 <p>The topics are listed in <a href="Topics/">this page</a>.</p>
-<h2 id="course-organization">Course organization</h2>
 <p>Exam and slides: see <a href="https://bartoli.inginf.units.it/didattica/cybersecurity">my personal website</a>.</p>
 <h2 id="how-to-use-this-website">How to use this website</h2>
 <p>This website contains a curated set of references.</p>
@@ -1506,16 +1466,17 @@
 <h3 id="do-not-be-frustrated">Do not be frustrated</h3>
 <p>Many of the linked documents can only be fully understood with very specific technical skills (and sometimes theoretical knowledge) far beyond those required or provided by this course. Please try to focus on the topics relevant to the course. Most importantly, do not be frustrated if you do not manage to understand everything.</p>
 <p>In many cases I do not understand everything either.</p>
-<h3 id="technical-questions-linux-windows">Technical questions (Linux, Windows, ...)</h3>
-<p>Many technical documents on the web are based on very specific commands of Linux, Windows, Powershell, PHP and other technologies. Understanding those commands or their output is often difficult. Asking ChatGPT (or Bard, or a similar technology) to clarify is often of great help.</p>
-<p>While <em>there is no guarantee that the response will be correct</em> in many cases the response is very useful (and indeed correct).</p>
+<h3 id="ask-chatgpt">Ask ChatGPT</h3>
+<p>Many technical documents on the web rely on very specific commands from Linux, Windows, Powershell, PHP, and other technologies. Understanding these commands or their output is often difficult. Asking ChatGPT (or Bard, or a similar technology) for clarification is often a great help.</p>
+<p>While <em>there is no guarantee that the answer will be correct</em>, in many cases the answer will be very useful (and indeed correct).</p>
+<p>A prompt technique that often works well is this: <em>"explain this:"</em> followed by a copy-and-pasted command, or command output, or piece of code.</p>
+<p>If you want instead to "learn" something, asking broad and general questions is not very useful (e.g. <em>"how does access control work in Windows?</em>"). It is usually much better <em>to start general</em> in order to delimit the overall scenario and then be <em>very specific</em>.</p>
+<ul>
+<li>Start with something like <em>"I want to understand Linux administration"</em>, or <em>"I am a Windows user"</em>, <em>"I am a Python programmer; I want to write a script that operates on Pandas dataframes"</em>, etc.</li>
+<li>Then, make a very specific question. For example, <em>"In Windows, how can I list all users of a given group from the command line?"</em></li>
+</ul>
 <p>Relying on ChatGPT/Bard for having a quick, approximate understanding of what a command (or even a piece of code) actually does is a strategy used also by a top security company, Mandiant: see <a href="https://www.mandiant.com/resources/blog/mandiant-leveraging-ai">Analyzing an Alert for a PowerShell Script</a> (there might be a conflict of interest, though, as Mandiant is part of Google and this post promotes the use of Bard, also a Google service).</p>
 <p>I have occasionally provided a link to brief explanations provided by ChatGPT/Bard on specific topics, for ease of reading. As just pointed out, there is no guarantee that those explanations are correct: take them just as hints.</p>
-<h4 id="suggestions-for-prompt-engineering">Suggestions for prompt engineering</h4>
-<p>Asking broad and general questions is not very useful (e.g. <em>"how does access control work in Windows?</em>").</p>
-<p>Asking specific questions is often extremely useful and much more efficient than trying to navigate across blogs and man pages (e.g., <em>"In Windows, how can I list all users of a given group from the command line?"</em>)</p>
-<p>In order to construct useful prompts, it is often advisable to start with something like <em>"I want to understand Linux administration"</em>, in order to delimit the overall scenario (<em>"I am a Windows user"</em>, <em>"I am a Python programmer; I want to write a script that operates on Pandas dataframes"</em>, etc) and then be very specific on the question you would like to be answered. </p>
-<p>The question could be something like "explain this:" followed by a copy-and-pasted command, or command output, or piece of code.</p>
 
 
   
