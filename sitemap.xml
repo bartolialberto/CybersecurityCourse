@@ -51,7 +51,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://bartolialberto.github.io/CybersecurityCourse/Hacking%20Lab/Resources/</loc>
+         <loc>https://bartolialberto.github.io/CybersecurityCourse/Hacking%20Lab/Vulnerable%20Platforms/</loc>
          <lastmod>2024-02-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -72,11 +72,6 @@
     </url>
     <url>
          <loc>https://bartolialberto.github.io/CybersecurityCourse/Labs/OWASP%20Juice%20Shop/</loc>
-         <lastmod>2024-02-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://bartolialberto.github.io/CybersecurityCourse/Labs/Vulnerable%20Platforms/</loc>
          <lastmod>2024-02-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
