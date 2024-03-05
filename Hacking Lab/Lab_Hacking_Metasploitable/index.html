@@ -337,47 +337,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#installation-of-the-required-software" class="md-nav__link">
-    Installation of the required software
-  </a>
-  
-    <nav class="md-nav" aria-label="Installation of the required software">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#attacked-machine-metasploitable3" class="md-nav__link">
-    Attacked machine (Metasploitable3)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#attacking-machine" class="md-nav__link">
-    Attacking machine
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#virtualbox-configuration" class="md-nav__link">
-    VirtualBox configuration
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#useful-links" class="md-nav__link">
-    Useful links
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#our-attack-tools" class="md-nav__link">
     Our Attack Tools
   </a>
@@ -585,7 +544,7 @@
         
   
   <span class="md-ellipsis">
-    VirtualBox in a nutshell
+    Metasploitable3 Hacking Lab - Installation
   </span>
   
 
@@ -1605,47 +1564,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#installation-of-the-required-software" class="md-nav__link">
-    Installation of the required software
-  </a>
-  
-    <nav class="md-nav" aria-label="Installation of the required software">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#attacked-machine-metasploitable3" class="md-nav__link">
-    Attacked machine (Metasploitable3)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#attacking-machine" class="md-nav__link">
-    Attacking machine
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#virtualbox-configuration" class="md-nav__link">
-    VirtualBox configuration
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#useful-links" class="md-nav__link">
-    Useful links
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#our-attack-tools" class="md-nav__link">
     Our Attack Tools
   </a>
@@ -1856,44 +1774,9 @@
 <ol>
 <li>VirtualBox (or another hypervisor) installed.</li>
 <li>Some minimal (really minimal) familiarity with virtual machines and VirtualBox usage.</li>
+<li>Two VMs installed, one acting as attacked machine (metasploitable3) and the other acting as attacker machine (Kali Linux). </li>
 </ol>
-<p><a href="../Lab_Virtual_Machines/">This accompanying page</a> describes these two topics very briefly.</p>
-<h2 id="installation-of-the-required-software">Installation of the required software</h2>
-<h3 id="attacked-machine-metasploitable3">Attacked machine (Metasploitable3)</h3>
-<p><a href="https://github.com/rapid7/metasploitable3">Metasploitable3</a> is a freely available virtual machine (VM) that contains a number of security vulnerabilities and has been designed for learning purposes. It comes in two flavors: Linux Ubuntu and Windows Server 2008.</p>
-<p>This document assumes metasploitable3 Windows Server 2008, running on <a href="https://www.virtualbox.org/">VirtualBox</a>. </p>
-<p>In order to create a metasploitable3 VM, one can either download a prebuilt image already configured for VirtualBox or construct one. Instructions can be found in <a href="https://github.com/rapid7/metasploitable3">this Github repository</a>. In order to follow the exercises suggested in this document, there is no need to obtain the Linux Ubuntu version. </p>
-<p>Downloading a prebuilt image configured for VirtualBox is simpler and quicker (“quick start” in the Github repo); however, in this case the Windows VM will warn that the 30 days evaluation period has elapsed and the Windows copy is not genuine.</p>
-<h3 id="attacking-machine">Attacking machine</h3>
-<p>This document assumes that the attacker uses Kali Linux. All the suggested attack tools are already installed in Kali.</p>
-<p>Kali can be used in one of these ways:</p>
-<ol>
-<li><em>Native operating system</em>. This is the less hardware-demanding option. In this case the network configuration for the metasploitable3 VM is more complex (see below).</li>
-<li><em>VM in VirtualBox</em>. This is the scenario used as a reference in this document.  Many websites describe how to install a Kali VM on VirtualBox (see also section <a href="#useful-links">Useful links</a> below).</li>
-<li><em>VM in WSL2 (Windows subsystem for Linux)</em>. This is similar to 2 except that some of the suggested attack tools (e.g., metasploit, hashcat) will have to be installed separately, because the Kali distribution available for WSL2 is a minimal distribution.</li>
-</ol>
-<p><a href="https://www.parrotsec.org/">Parrot OS</a> is an alternative to Kali. It is a Linux distribution very similar to Kali that requires less memory and less secondary storage.</p>
-<h3 id="virtualbox-configuration">VirtualBox configuration</h3>
-<p>My suggested configuration is as follows:</p>
-<ul>
-<li>VirtualBox</li>
-<li>Metasploitable3 Windows VM as attacked machine.</li>
-<li>Kali (or Parrot OS) VM as attacker machine.</li>
-</ul>
-<p>Both VMs should be configured as “NAT network” and part of the same network. With this network configuration the VMs (guests) will be able to communicate between themselves. Their servers will not be reachable from the PC running VirtualBox (host) nor from the external network. The VMs will be able to access the host and the external network as clients.</p>
-<p>Special cases:</p>
-<ul>
-<li>A better network configuration for the VMs would be “internal network” with both VMs connected to the same (internal) network. In this way, the VMs would be fully isolated from the host and from the external network. Configuring the metasploitable3 VM for this network configuration is more difficult, though, because the scripts available in the Github repository configure the VM for the “NAT network” case and would have to be modified (which is not straightforward).</li>
-<li>If the attacker machine is not a VM running on VirtualBox (that is, options 1 or 3 above) the VirtualBox network configuration for metasploitable3 should enable “port forwarding”, to make their services visible to the attacker (i.e., to make the servers on the guest o.s. reachable from the host o.s.). There are many ports that will have to be enabled. To find the corresponding list, search for “metasploitable3 enumeration” or a similar term.</li>
-</ul>
-<h3 id="useful-links">Useful links</h3>
-<ul>
-<li>VirtualBox network configuration <a href="https://www.virtualbox.org/manual/ch06.html">manual</a>.</li>
-<li>Guides and tutorials on VirtualBox network configuration: <a href="https://www.nakivo.com/blog/virtualbox-network-setting-guide/">one</a> and <a href="https://fabian-voith.de/2020/04/21/understanding-virtualbox-networking-schemes-to-set-up-a-good-and-safe-lab/">two</a>.</li>
-<li><a href="Lab - Virtual Machines.md">Lab - Virtual Machines</a> on this website about VirtualBox and VirtualBox networking.</li>
-<li><a href="https://www.nakivo.com/blog/how-to-install-kali-linux-on-virtualbox/">Installing Kali Linux on a VM on VirtualBox</a>.</li>
-<li><a href="https://learn.microsoft.com/en-us/windows/wsl/setup/environment">WSL2 (Windows Linux Subsystem): best practice</a> and <a href="https://www.kali.org/docs/general-use/metapackages/">Kali Metapackages</a>.</li>
-</ul>
+<p><a href="../Lab_Virtual_Machines/">This accompanying page</a> describes the required installation steps.</p>
 <h2 id="our-attack-tools">Our Attack Tools</h2>
 <h3 id="metasploit">Metasploit</h3>
 <p>The main tool for attacking metasploitable3 is <em>metasploit</em>. This is a professional tool structured as a modular framework. There are a a number of <em>modules</em> available, each specialized for executing a specific attack to a specific software. Metasploit is a very powerful and complex tool. This document is based on a tiny subset of its capabilities.</p>

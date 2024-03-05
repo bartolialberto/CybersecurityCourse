@@ -306,7 +306,7 @@
         
   
   <span class="md-ellipsis">
-    VirtualBox in a nutshell
+    Metasploitable3 Hacking Lab - Installation
   </span>
   
 
@@ -1801,65 +1801,65 @@
 <h5 id="login">Login</h5>
 <p>Credentials are sent as a JSON resource in the request. The response contains a bearer token.</p>
 <p><strong><em>*Request</em></strong>*</p>
-<pre><code>POST /rest/user/login HTTP/1.1
-Host: owasp-juice-shop-alberto.herokuapp.com
-Cookie: language=en; welcomebanner_status=dismiss; cookieconsent_status=dismiss; continueCode=KQabVVENkBvjq9O2xgyoWrXb45wGnmTxdaL8m1pzYlPQKJMZ6D37neRqyn3x
-...
-Content-Type: application/json
-...
-
-{&quot;email&quot;:&quot;1@1.com&quot;,&quot;password&quot;:&quot;11111&quot;}
-</code></pre>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>POST /rest/user/login HTTP/1.1
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Host: owasp-juice-shop-alberto.herokuapp.com
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Cookie: language=en; welcomebanner_status=dismiss; cookieconsent_status=dismiss; continueCode=KQabVVENkBvjq9O2xgyoWrXb45wGnmTxdaL8m1pzYlPQKJMZ6D37neRqyn3x
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>...
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>Content-Type: application/json
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>...
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>{&quot;email&quot;:&quot;1@1.com&quot;,&quot;password&quot;:&quot;11111&quot;}
+</span></code></pre></div>
 <p><strong>Response</strong></p>
-<pre><code>HTTP/1.1 200 OK
-...
-Content-Type: application/json; charset=utf-8
-Content-Length: 808
-Etag: W/&quot;328-+1bdmcgdtIFfafMn3oEmj38Axmo&quot;
-...
-
-{
-&quot;Authentication&quot;:
-    {&quot;token&quot;:
-    &quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdGF0dXMiOiJzdWNjZXNzIiwiZGF0YSI6eyJpZCI6MjEsInVzZXJuYW1lIjoiIiwiZW1haWwiOiIxQDEuY29tIiwicGFzc3dvcmQiOiJiMGJhZWU5ZDI3OWQzNGZhMWRmZDcxYWFkYjkwOGMzZiIsInJvbGUiOiJjdXN0b21lciIsImRlbHV4ZVRva2VuIjoiIiwibGFzdExvZ2luSXAiOiIwLjAuMC4wIiwicHJvZmlsZUltYWdlIjoiL2Fzc2V0cy9wdWJsaWMvaW1hZ2VzL3VwbG9hZHMvZGVmYXVsdC5zdmciLCJ0b3RwU2VjcmV0IjoiIiwiaXNBY3RpdmUiOnRydWUsImNyZWF0ZWRBdCI6IjIwMjEtMDgtMjkgMTc6NDE6MDIuNTY2ICswMDowMCIsInVwZGF0ZWRBdCI6IjIwMjEtMDgtMjkgMTc6NDE6MDIuNTY2ICswMDowMCIsImRlbGV0ZWRBdCI6bnVsbH0sImlhdCI6MTYzMDI1ODg3MiwiZXhwIjoxNjMwMjc2ODcyfQ.vMIu5yD-VJux8FspwslykpET009gEYsIoYhb1azL62dIoeRIYFd2AX8wR6_RJrXDPgluwB9ra0QO2Wk9GA5LhadfCkfxxXB-Kgb7XjXzIWo6sxqDfAjza_Yt8mUevv3yIU84RHHpxDFFn0jtZnIAY90ZE5gmxvChOWIwWvLg3XA&quot;,
-
-    &quot;bid&quot;:6,
-    &quot;umail&quot;:&quot;[1@1.com](mailto:1@1.com)&quot;
-    }
-}
-</code></pre>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>HTTP/1.1 200 OK
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>...
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>Content-Type: application/json; charset=utf-8
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>Content-Length: 808
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>Etag: W/&quot;328-+1bdmcgdtIFfafMn3oEmj38Axmo&quot;
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>...
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>{
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>&quot;Authentication&quot;:
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    {&quot;token&quot;:
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>    &quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdGF0dXMiOiJzdWNjZXNzIiwiZGF0YSI6eyJpZCI6MjEsInVzZXJuYW1lIjoiIiwiZW1haWwiOiIxQDEuY29tIiwicGFzc3dvcmQiOiJiMGJhZWU5ZDI3OWQzNGZhMWRmZDcxYWFkYjkwOGMzZiIsInJvbGUiOiJjdXN0b21lciIsImRlbHV4ZVRva2VuIjoiIiwibGFzdExvZ2luSXAiOiIwLjAuMC4wIiwicHJvZmlsZUltYWdlIjoiL2Fzc2V0cy9wdWJsaWMvaW1hZ2VzL3VwbG9hZHMvZGVmYXVsdC5zdmciLCJ0b3RwU2VjcmV0IjoiIiwiaXNBY3RpdmUiOnRydWUsImNyZWF0ZWRBdCI6IjIwMjEtMDgtMjkgMTc6NDE6MDIuNTY2ICswMDowMCIsInVwZGF0ZWRBdCI6IjIwMjEtMDgtMjkgMTc6NDE6MDIuNTY2ICswMDowMCIsImRlbGV0ZWRBdCI6bnVsbH0sImlhdCI6MTYzMDI1ODg3MiwiZXhwIjoxNjMwMjc2ODcyfQ.vMIu5yD-VJux8FspwslykpET009gEYsIoYhb1azL62dIoeRIYFd2AX8wR6_RJrXDPgluwB9ra0QO2Wk9GA5LhadfCkfxxXB-Kgb7XjXzIWo6sxqDfAjza_Yt8mUevv3yIU84RHHpxDFFn0jtZnIAY90ZE5gmxvChOWIwWvLg3XA&quot;,
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    &quot;bid&quot;:6,
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    &quot;umail&quot;:&quot;[1@1.com](mailto:1@1.com)&quot;
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>    }
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>}
+</span></code></pre></div>
 <h5 id="shopping-basket">Shopping Basket</h5>
 <p>The request carries a cookie and a bearer token (encoded in a certain format). The response contains the corresponding shopping basket described in JSON.</p>
 <p><strong>Request</strong></p>
-<pre><code>GET /rest/basket/6 HTTP/1.1
-Host: owasp-juice-shop-alberto.herokuapp.com
-Cookie: language=en; welcomebanner_status=dismiss; cookieconsent_status=dismiss; continueCode=KQabVVENkBvjq9O2xgyoWrXb45wGnmTxdaL8m1pzYlPQKJMZ6D37neRqyn3x; ...
-Accept: application/json, text/plain, */*
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdGF0dXMiOiJzdWNjZXNzIiwiZGF0YSI6eyJpZCI6MjEsInVzZXJuYW1lIjoiIiwiZW1haWwiOiIxQDEuY29tIiwicGFzc3dvcmQiOiJiMGJhZWU5ZDI3OWQzNGZhMWRmZDcxYWFkYjkwOGMzZiIsInJvbGUiOiJjdXN0b21lciIsImRlbHV4ZVRva2VuIjoiIiwibGFzdExvZ2luSXAiOiIwLjAuMC4wIiwicHJvZmlsZUltYWdlIjoiL2Fzc2V0cy9wdWJsaWMvaW1hZ2VzL3VwbG9hZHMvZGVmYXVsdC5zdmciLCJ0b3RwU2VjcmV0IjoiIiwiaXNBY3RpdmUiOnRydWUsImNyZWF0ZWRBdCI6IjIwMjEtMDgtMjkgMTc6NDE6MDIuNTY2ICswMDowMCIsInVwZGF0ZWRBdCI6IjIwMjEtMDgtMjkgMTc6NDE6MDIuNTY2ICswMDowMCIsImRlbGV0ZWRBdCI6bnVsbH0sImlhdCI6MTYzMDI1ODg3MiwiZXhwIjoxNjMwMjc2ODcyfQ.vMIu5yD-VJux8FspwslykpET009gEYsIoYhb1azL62dIoeRIYFd2AX8wR6_RJrXDPgluwB9ra0QO2Wk9GA5LhadfCkfxxXB-Kgb7XjXzIWo6sxqDfAjza_Yt8mUevv3yIU84RHHpxDFFn0jtZnIAY90ZE5gmxvChOWIwWvLg3XA
-...
-Accept-Language: en-US,en;q=0.9
-</code></pre>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>GET /rest/basket/6 HTTP/1.1
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>Host: owasp-juice-shop-alberto.herokuapp.com
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>Cookie: language=en; welcomebanner_status=dismiss; cookieconsent_status=dismiss; continueCode=KQabVVENkBvjq9O2xgyoWrXb45wGnmTxdaL8m1pzYlPQKJMZ6D37neRqyn3x; ...
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>Accept: application/json, text/plain, */*
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdGF0dXMiOiJzdWNjZXNzIiwiZGF0YSI6eyJpZCI6MjEsInVzZXJuYW1lIjoiIiwiZW1haWwiOiIxQDEuY29tIiwicGFzc3dvcmQiOiJiMGJhZWU5ZDI3OWQzNGZhMWRmZDcxYWFkYjkwOGMzZiIsInJvbGUiOiJjdXN0b21lciIsImRlbHV4ZVRva2VuIjoiIiwibGFzdExvZ2luSXAiOiIwLjAuMC4wIiwicHJvZmlsZUltYWdlIjoiL2Fzc2V0cy9wdWJsaWMvaW1hZ2VzL3VwbG9hZHMvZGVmYXVsdC5zdmciLCJ0b3RwU2VjcmV0IjoiIiwiaXNBY3RpdmUiOnRydWUsImNyZWF0ZWRBdCI6IjIwMjEtMDgtMjkgMTc6NDE6MDIuNTY2ICswMDowMCIsInVwZGF0ZWRBdCI6IjIwMjEtMDgtMjkgMTc6NDE6MDIuNTY2ICswMDowMCIsImRlbGV0ZWRBdCI6bnVsbH0sImlhdCI6MTYzMDI1ODg3MiwiZXhwIjoxNjMwMjc2ODcyfQ.vMIu5yD-VJux8FspwslykpET009gEYsIoYhb1azL62dIoeRIYFd2AX8wR6_RJrXDPgluwB9ra0QO2Wk9GA5LhadfCkfxxXB-Kgb7XjXzIWo6sxqDfAjza_Yt8mUevv3yIU84RHHpxDFFn0jtZnIAY90ZE5gmxvChOWIwWvLg3XA
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>...
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>Accept-Language: en-US,en;q=0.9
+</span></code></pre></div>
 <p><strong>Response</strong></p>
-<pre><code>HTTP/1.1 200 OK
-...
-Content-Type: application/json; charset=utf-8
-Content-Length: 154
-Etag: W/&quot;9a-1IBRCZ5Q9/JL7raf23dCq8reO7A&quot;
-...
-
-{
-    &quot;status&quot;:&quot;success&quot;,
-    &quot;data&quot;:
-    {
-    &quot;id&quot;:6,
-    &quot;coupon&quot;:null,
-    &quot;createdAt&quot;:&quot;2021-08-29T17:41:11.950Z&quot;
-    &quot;updatedAt&quot;:&quot;2021-08-29T17:41:11.950Z&quot;
-    &quot;UserId&quot;:21,
-    &quot;Products&quot;:[]
-    }
-}
-</code></pre>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>HTTP/1.1 200 OK
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>...
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>Content-Type: application/json; charset=utf-8
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>Content-Length: 154
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>Etag: W/&quot;9a-1IBRCZ5Q9/JL7raf23dCq8reO7A&quot;
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>...
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>{
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    &quot;status&quot;:&quot;success&quot;,
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    &quot;data&quot;:
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    {
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>    &quot;id&quot;:6,
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>    &quot;coupon&quot;:null,
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>    &quot;createdAt&quot;:&quot;2021-08-29T17:41:11.950Z&quot;
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>    &quot;updatedAt&quot;:&quot;2021-08-29T17:41:11.950Z&quot;
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>    &quot;UserId&quot;:21,
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>    &quot;Products&quot;:[]
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>    }
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>}
+</span></code></pre></div>
 <h5 id="bearer-token-in-decoded-form">Bearer token in decoded form</h5>
 <p>By copying the above bearer token on the decoding facility on <a href="https://jwt.io/">https://jwt.io/</a> we obtain the JSON Web Token in decoded form as indicated below. Note the hash of the user password.</p>
 <p><img alt="8ff0491e41575238670558d2fac6c385.png" src="../../_resources/8ff0491e41575238670558d2fac6c385-1.png" /></p>
@@ -1972,13 +1972,13 @@ THEN … ELSE ...</code></p>
 <p>The SQL semantics is such that if the SQL query returns an empty result set then it corresponds to the boolean FALSE, otherwise it corresponds to the boolean TRUE. Thus, the boolean expression will behave as expected.</p>
 <p>The vulnerability (coding mistake) is when the web app code takes the data inserted in the HTTP request without any prior control or “sanitization”. Without such a control, carefully selected input strings (SQL injection payloads) might change the logical structure of the SQL query and provoke a behavior different from what expected by the developer of the web app.</p>
 <p>As it turns out, the OWASP Juice Shop suffers from this vulnerability in the login page. The value <code>' or 1=1--</code>  for the username has the effect of changing the structure of the the SQL_QUERY:</p>
-<pre><code>IF
-(SQL_QUERY(SELECT '' or 1=1--' FROM … AND …))
-THEN … ELSE ...
-</code></pre>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>IF
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>(SQL_QUERY(SELECT &#39;&#39; or 1=1--&#39; FROM … AND …))
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>THEN … ELSE ...
+</span></code></pre></div>
 <p>The query actually executed by the SQL engine will be:</p>
-<pre><code>SELECT '' or 1=1
-</code></pre>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>SELECT &#39;&#39; or 1=1
+</span></code></pre></div>
 <p>because characters -- correspond to the line comment in SQL syntax, thus the query portion <code>' FROM … AND …</code>will be ignored by the SQL interpreter. The query will return the boolean value TRUE irrespective of the actual content of the database, hence the check made by the web app will be satisfied and the session will be authenticated.</p>
 <p>The username that will be associated with the session depends on the structure of the code surrounding the query. In this case, the user id turns out to be 0 (probably the default value) and this id happens to be associated with the administrator account.</p>
 <p>The appendix of “The Official Companion of the OWASP Juice Shop” (see section Resources) illustrates how to extract the credentials of all users and how to exfiltrate the entire database of the application by means of SQL injection.</p>
