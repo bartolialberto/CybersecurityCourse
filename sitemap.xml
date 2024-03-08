@@ -101,12 +101,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://bartolialberto.github.io/CybersecurityCourse/MITRE%20ATTACK/Initial%20Access/</loc>
+         <loc>https://bartolialberto.github.io/CybersecurityCourse/Malware/Basic%20Malware%20Concepts/</loc>
          <lastmod>2024-03-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://bartolialberto.github.io/CybersecurityCourse/Malware/Botnet%20Case%20Studies/</loc>
+         <loc>https://bartolialberto.github.io/CybersecurityCourse/Malware/Initial%20Access/</loc>
          <lastmod>2024-03-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -117,11 +117,6 @@
     </url>
     <url>
          <loc>https://bartolialberto.github.io/CybersecurityCourse/Malware/Malware_Case_Studies/</loc>
-         <lastmod>2024-03-08</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://bartolialberto.github.io/CybersecurityCourse/Malware/Resources%20-%20Malware/</loc>
          <lastmod>2024-03-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
