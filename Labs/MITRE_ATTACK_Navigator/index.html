@@ -22,7 +22,7 @@
     
     
       
-        <title>MITRE ATTACK Navigator - Cybersecurity Course - University of Trieste</title>
+        <title>MITRE ATT&CK NAVIGATOR. - Cybersecurity Course - University of Trieste</title>
       
     
     
@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#understanding-basic-usage-and-potential-of-mitre-attck-navigator" class="md-skip">
+        <a href="#mitre-attck-navigator" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              MITRE ATTACK Navigator
+              MITRE ATT&CK NAVIGATOR.
             
           </span>
         </div>
@@ -1220,12 +1220,14 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
   <span class="md-ellipsis">
-    MITRE ATTACK Navigator
+    MITRE ATT&CK NAVIGATOR.
   </span>
   
 
@@ -1236,7 +1238,7 @@
         
   
   <span class="md-ellipsis">
-    MITRE ATTACK Navigator
+    MITRE ATT&CK NAVIGATOR.
   </span>
   
 
@@ -1248,6 +1250,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1256,23 +1260,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#understanding-basic-usage-and-potential-of-mitre-attck-navigator" class="md-nav__link">
-    Understanding basic usage and potential of MITRE ATT&amp;CK NAVIGATOR.
+  <a href="#demo-and-report" class="md-nav__link">
+    Demo and report
   </a>
   
-    <nav class="md-nav" aria-label="Understanding basic usage and potential of MITRE ATT&CK NAVIGATOR.">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#layers" class="md-nav__link">
+    Layers
+  </a>
+  
+    <nav class="md-nav" aria-label="Layers">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#define-layers" class="md-nav__link">
-    Define layers
+  <a href="#understanding-background-colors" class="md-nav__link">
+    Understanding background colors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lab" class="md-nav__link">
+    Lab
+  </a>
+  
+    <nav class="md-nav" aria-label="Lab">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#load-existing-layers" class="md-nav__link">
+    Load existing layers
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#understanding-techniques" class="md-nav__link">
-    Understanding techniques
+  <a href="#warning" class="md-nav__link">
+    WARNING
   </a>
   
 </li>
@@ -1402,6 +1433,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1410,23 +1443,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#understanding-basic-usage-and-potential-of-mitre-attck-navigator" class="md-nav__link">
-    Understanding basic usage and potential of MITRE ATT&amp;CK NAVIGATOR.
+  <a href="#demo-and-report" class="md-nav__link">
+    Demo and report
   </a>
   
-    <nav class="md-nav" aria-label="Understanding basic usage and potential of MITRE ATT&CK NAVIGATOR.">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#layers" class="md-nav__link">
+    Layers
+  </a>
+  
+    <nav class="md-nav" aria-label="Layers">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#define-layers" class="md-nav__link">
-    Define layers
+  <a href="#understanding-background-colors" class="md-nav__link">
+    Understanding background colors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lab" class="md-nav__link">
+    Lab
+  </a>
+  
+    <nav class="md-nav" aria-label="Lab">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#load-existing-layers" class="md-nav__link">
+    Load existing layers
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#understanding-techniques" class="md-nav__link">
-    Understanding techniques
+  <a href="#warning" class="md-nav__link">
+    WARNING
   </a>
   
 </li>
@@ -1499,43 +1559,82 @@
                   
 
 
-  <h1>MITRE ATTACK Navigator</h1>
-
-<h2 id="understanding-basic-usage-and-potential-of-mitre-attck-navigator">Understanding basic usage and potential of MITRE ATT&amp;CK NAVIGATOR.</h2>
+<h1 id="mitre-attck-navigator">MITRE ATT&amp;CK NAVIGATOR.</h1>
 <p>We will use the <a href="https://mitre-attack.github.io/attack-navigator/">hosted webapp</a>. The webapp sources are public domain. The webapp could be hosted locally, which may be useful if one did not want to disclose any analysis to anyone.</p>
 <p>We will assess the defensive usage of multi-factor authentication (MFA) against two recent and highly relevant campaigns:</p>
-<ol>
+<ul>
 <li>CUBA ransomware campaign: <a href="https://www.cisa.gov/uscert/ncas/alerts/aa22-335a">CISA alert</a></li>
 <li>HIVE ransomware campaign: <a href="https://www.cisa.gov/uscert/ncas/alerts/aa22-321a">CISA alert</a></li>
-</ol>
-<h3 id="define-layers">Define layers</h3>
-<p>One can create a new layer manually, select a set of techniques and save it as a json.</p>
-<p>For example, one could create a layer that describes a specific attack campaign; one that describes the techniques impacted by a specific mitigation; one that describes the techniques impacted by a specific detection.</p>
-<p>The NAVIGATOR webapp embeds a number of past attack campaigns that can be selected easily (magnifying glass button): by selecting a specific campaign, the set of corresponding techniques will be selected automatically. The same button allows selecting a specific mitigation or a specific detection, which will select the set of corresponding techniques.</p>
-<p><img alt="6c05ec66b36468050dfbd4606d396387.png" src="../../_resources/6c05ec66b36468050dfbd4606d396387-1.png" /></p>
-<p>To save time, the layers required for this activity have been prepared already and can be uploaded in the webapp.</p>
-<ul>
-<li>Create new layer with techniques used by CUBA (<a href="https://tinyurl.com/bartoli-mitre-cuba">CUBA json</a>)</li>
-<li>Create new layer with techniques used by HIVE (<a href="https://tinyurl.com/bartoli-mitre-hive">HIVE json</a>)</li>
-<li>Create new layer with techniques mitigated by MFA (<a href="https://tinyurl.com/bartoli-mitre-mfa">MFA json</a>)</li>
 </ul>
-<p>Layers for specific attack campaigns not included in the NAVIGATOR webapp can be created simply, by analyzing threat intelligence reports, taking note of the techniques mentioned in those reports and by selecting those techniques in a new layer.</p>
-<h3 id="understanding-techniques">Understanding techniques</h3>
-<p>Click the right button on a specific technique. Scroll down and select either “view technique” or “view tactic”. A new tab will be open to the relevant page of the MITRE ATT&amp;CK framework, that describes the corresponding technique/tactic, along with possible detections and mitigations (e.g. <a href="https://attack.mitre.org/techniques/T1539/">https://attack.mitre.org/techniques/T1539/</a>).</p>
+<p>The <code>help</code> button of NAVIGATOR seems quite useful.</p>
+<h2 id="demo-and-report">Demo and report</h2>
+<p>In the lectures I pointed out that some "analysis" of "some manually constructed layers" may be enough for the demo and report required for the exam. Such a simple demo is very unlikely to be assigned a grade increment.</p>
+<p>Idea for a more complex activity (which would likely receive a significant grade increment): development of a tool that:</p>
+<ol>
+<li>Takes a technical report or blog post as input (perhaps its URL);</li>
+<li>Extracts the mentioned ATT&amp;CK techniques (for example by means of a regular expression that matches technique identifiers)</li>
+<li>Construct a Navigator layer that summarizes the corresponding report (layers are internally represented in <code>json</code>);</li>
+</ol>
+<p>Automated activities of this kind, with a much higher level of scale and complexity, are often used by specialized companies. </p>
+<h2 id="layers">Layers</h2>
+<p>A <em>layer</em> is a set of <em>annotated</em> techniques, where an annotation can consist of one or more of: background color; textual description, possibly including an URL; numerical score and more.</p>
+<p>Such a set may describe the techniques relevant for a specific attack campaign, for a specific software, for a specific data source, for a specific mitigation, as well as any combination of them.</p>
+<p>One can instruct the NAVIGATOR webapp to:</p>
+<ul>
+<li>start from an empty layer;</li>
+<li>load a layer from a file or from an URL;</li>
+<li>construct a layer by combining the numerical scores assigned to techniques of other layers already loaded in the webapp.</li>
+<li>select all the techniques relevant to a specific category of the ATT&amp;CK framework (threat group, software, mitigation and alike; <em>magnifying glass</em> button in the "selection controls" section).</li>
+</ul>
+<p><img alt="../img.png" src="../../img.png" /></p>
+<p>After working on a layer, one can save the resulting layer in a file for later usage or distribution.</p>
+<p>Each technique is linked to the corresponding page of the MITRE ATT&amp;CK framework, that describes the technique along with detections, mitigations and alike. The link can be found in the menu that appears by clicking the right button on the technique.</p>
+<h3 id="understanding-background-colors">Understanding background colors</h3>
+<p>Background colors can be assigned to techniques in two ways:</p>
+<ol>
+<li>Individually, to each mouse-selected(s) technique (<em>color</em> button in the "technique controls" section).</li>
+<li>Globally, based on the <em>numerical score</em> possibly assigned to a technique (<em>gradient color</em> button in the "layer controls" section).</li>
+</ol>
+<p>The gradient color button allows selecting:</p>
+<ul>
+<li>a minimum and maximum score values;</li>
+<li>a number of intervals;</li>
+<li>a color for each interval;</li>
+</ul>
+<p>This way, one can grasp quickly how scores are distributed across techniques.</p>
+<p><em>Criterion 1 takes priority over criterion 2</em>: if a background color has been chosen for a technique, then the gradient color based on the score will <em>not</em> be applied to that technique.</p>
+<h2 id="lab">Lab</h2>
+<h3 id="load-existing-layers">Load existing layers</h3>
+<p>To save time, the layers required for this activity have been prepared already and can be uploaded in the webapp (read the <a href="#warning">Warning</a> section below!).</p>
+<ul>
+<li>Create new layer from existing CUBA layer (<a href="https://tinyurl.com/bartoli-mitre-cuba">CUBA json</a>)</li>
+<li>Create new layer from existing HIVE layer (<a href="https://tinyurl.com/bartoli-mitre-hive">HIVE json</a>)</li>
+<li>Create new layer from existing MFA layer (<a href="https://tinyurl.com/bartoli-mitre-mfa">MFA json</a>)</li>
+</ul>
+<p>Each layer consists of a set of techniques annotated with a background color and without any score.</p>
+<p>After loading a layer, click on the "expand annotated sub-techniques" button in the layer controls section. You will see that some layers use sub-techniques that would not be visible without such an expansion </p>
+<h3 id="warning">WARNING</h3>
+<p>The layers above were created with a past version of MITRE ATT&amp;CK. Upon loading those layers, the webapp offers to convert them to the most recent ATT&amp;CK version.</p>
+<p><em>Do not do that!</em></p>
+<p>Some of the annotated techniques are lost in the conversion (I suspect it is a bug of the webapp): the new layer would have only a small subset of the techniques that I actually annotated on the layer.</p>
+<p>If you want to play yourself with new campaign or techniques, perhaps for the demo, then you should use the new version. If you manually create layers for the new version please share them on the course team (and I could use them in the next years).  </p>
 <h3 id="define-scores-for-each-layer">Define scores for each layer</h3>
-<p>In each layer, assign a score to each technique selected in that layer. This can be done with the score button in the “technique controls” section.</p>
+<p>In each layer, assign a score to each technique selected in that layer. This can be done with the score button in the “technique controls” section. You may want to select multiple techniques (mouse+shift) and then assign the same score to all the selected techniques.</p>
 <p>In general, one could assign different scores to different techniques. In this exercise we will assign the same score to all the selected techniques in a given layer:</p>
 <ul>
 <li>CUBA 5</li>
 <li>HIVE 5</li>
 <li>MFA 20</li>
 </ul>
+<p>Note that numerical scores are not immediately visible: to see the score of a specific technique, one has to select that technique with the mouse and the click on the score button in the "technique controls" section.</p>
 <h3 id="create-new-layer-from-the-three-existing-layers">Create new layer from the three existing layers</h3>
 <p>Create a new tab (press +).</p>
 <p><img alt="df5c38bd8cce8e8c087c218024d6318a.png" src="../../_resources/df5c38bd8cce8e8c087c218024d6318a-1.png" /></p>
-<p>Then select “create layer from other layers” and in the “score expression” field define a sum of the three previously loaded layers (probably it will be “a + b + c” and probably you will need to insert a space in between operands and operators). Do <strong>not </strong>insert anything in the other fields (in particular, do not define any gradient or coloring at this stage).</p>
-<p><img alt="26e0df2a7b4f4d5b6813ded9be0b4490.png" src="../../_resources/26e0df2a7b4f4d5b6813ded9be0b4490-1.png" />
-At this point you will have a new layer in which each technique will be automatically given a score that is the sum of the score of the three other layers. With the values suggested above there will be these possible scores:</p>
+<p>Then select “create layer from other layers” and in the “score expression” field define a sum of the three previously loaded layers (probably it will be “a + b + c” and probably you will need to insert a space in between operands and operators).</p>
+<p><em>Do not insert anything in the other fields</em> (in particular, do not define any gradient or coloring at this stage).</p>
+<p><img alt="26e0df2a7b4f4d5b6813ded9be0b4490.png" src="../../_resources/26e0df2a7b4f4d5b6813ded9be0b4490-1.png" /></p>
+<p>At this point you will have a new layer in which each technique will be automatically given a score that is the sum of the score of the three other layers.</p>
+<p>With the values suggested in the previous section there will be these possible scores:</p>
 <ul>
 <li>5 Technique used by one attack campaign and not mitigated by MFA</li>
 <li>10 Technique used by both attack campaigns and not mitigated by MFA</li>
@@ -1544,11 +1643,11 @@ At this point you will have a new layer in which each technique will be automati
 <li>30 Technique used by both attack campaign and mitigated by MFA</li>
 </ul>
 <h3 id="define-a-gradient-color-in-the-newly-created-layer">Define a gradient color in the newly created layer</h3>
-<p>Button “color setup” in the “layer controls” section. Choose 3 or 4 colors for understanding the various combinations quickly:</p>
+<p>Define a gradient color criterion that allows understanding the scores of interest quickly :</p>
 <ul>
-<li>5 or 10:  uncovered by MFA</li>
-<li>20:       covered by MFA but not relevant</li>
-<li>25 or 30: covered by MFA</li>
+<li>5 or 10:  used in the attack campaigns but uncovered by MFA</li>
+<li>20:       covered by MFA but not used in the attack campaigns</li>
+<li>25 or 30: used in the attack campaigns and covered by MFA</li>
 </ul>
 <p>Save layer for later use (buttons in “layer controls” section; excel or json, the latter can be loaded in the tool later).</p>
 <h2 id="analyze-results">ANALYZE RESULTS</h2>
