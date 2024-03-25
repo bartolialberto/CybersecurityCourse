@@ -593,18 +593,44 @@
     MITRE ATT&amp;CK Main Tactics
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#analyses-of-password-attacks" class="md-nav__link">
-    Analyses of Password Attacks
+    <nav class="md-nav" aria-label="MITRE ATT&amp;CK Main Tactics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-these-attacks-work" class="md-nav__link">
+    Why these attacks work
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#dictionaries" class="md-nav__link">
     Dictionaries
+  </a>
+  
+    <nav class="md-nav" aria-label="Dictionaries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bad-passwords" class="md-nav__link">
+    Bad passwords
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analyses-of-password-attacks" class="md-nav__link">
+    Analyses of Password Attacks
   </a>
   
 </li>
@@ -1194,18 +1220,44 @@
     MITRE ATT&amp;CK Main Tactics
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#analyses-of-password-attacks" class="md-nav__link">
-    Analyses of Password Attacks
+    <nav class="md-nav" aria-label="MITRE ATT&amp;CK Main Tactics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-these-attacks-work" class="md-nav__link">
+    Why these attacks work
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#dictionaries" class="md-nav__link">
     Dictionaries
+  </a>
+  
+    <nav class="md-nav" aria-label="Dictionaries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bad-passwords" class="md-nav__link">
+    Bad passwords
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analyses-of-password-attacks" class="md-nav__link">
+    Analyses of Password Attacks
   </a>
   
 </li>
@@ -1279,28 +1331,31 @@
 <ul>
 <li><a href="https://attack.mitre.org/techniques/T1110/001/">Brute Force: Password Guessing</a></li>
 <li><a href="https://attack.mitre.org/techniques/T1110/003/">Brute Force: Password Spraying</a></li>
-<li><a href="https://attack.mitre.org/techniques/T1110/004/">Brute Force: Credential Stuffing</a></li>
-</ul>
-<p>Regarding Credential Stuffing, this is highly recommended:</p>
-<ul>
-<li><a href="https://haveibeenpwned.com/">Haveibeenpnwed</a> Free resource for anyone to quickly assess if they may have been put at risk due to an online account of theirs having been compromised or "pwned" in a data breach.  </li>
+<li><a href="https://attack.mitre.org/techniques/T1110/004/">Brute Force: Credential Stuffing</a>.</li>
 </ul>
 <p>Offline guessing:</p>
 <ul>
 <li><a href="https://attack.mitre.org/techniques/T1110/002/">Brute Force: Password Cracking</a></li>
 </ul>
+<h3 id="why-these-attacks-work">Why these attacks work</h3>
+<ul>
+<li><a href="https://haveibeenpwned.com/">Haveibeenpnwed</a> Free resource for anyone to quickly assess if they may have been put at risk due to an online account of theirs having been compromised or "pwned" in a data breach.  </li>
+<li><a href="https://haveibeenpwned.com/Passwords">Pwned Passwords</a> are hundreds of millions of real world passwords previously exposed in data breaches. This exposure makes them unsuitable for ongoing use as they're at much greater risk of being used to take over other accounts. They're searchable online here.</li>
+<li>Search <a href="https://www.google.com/search?q=worst+passwords+of+2023">worst passwords of 2023</a>. Github ready to use <a href="https://github.com/danielmiessler/SecLists/blob/master/Passwords/2023-200_most_used_passwords.txt">dictionary</a>.</li>
+</ul>
+<h2 id="dictionaries">Dictionaries</h2>
+<ul>
+<li><a href="https://github.com/danielmiessler/SecLists">SecLists</a> is the security tester's companion. It's a collection of multiple types of lists used during security assessments, collected in one place. List types include usernames, passwords, URLs, web shells, and many more (including <a href="https://github.com/danielmiessler/SecLists/tree/master/Passwords/Default-Credentials">default passwords</a>). </li>
+<li><a href="https://freerainbowtables.com/">Rainbow tables download</a> Tables of hashed passwords (for offline guessing).</li>
+<li>Search for <a href="https://www.google.com/search?q=github+password+dictionary">github password dictionary</a>.</li>
+<li>Search for <a href="https://www.google.com/search?q=milioni+password+email">milioni password email</a> Useful for finding dumps from data breaches and news about them.</li>
+</ul>
+<h3 id="bad-passwords">Bad passwords</h3>
 <h2 id="analyses-of-password-attacks">Analyses of Password Attacks</h2>
 <ul>
 <li><a href="https://github.com/ignis-sec/Pwdb-Public">PWDB - New generation of Password Mass-Analysis</a> Interesting facts and statistics from the analysis of hundreds of millions of leaked passwords.</li>
 <li><a href="https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/your-pa-word-doesn-t-matter/ba-p/731984">Your Pa$$word doesn't matter (2019)</a> An analysis of password attacks observed by Microsoft Threat Intelligence.</li>
 <li><a href="https://www.microsoft.com/en-us/security/blog/2020/09/10/strontium-detecting-new-patters-credential-harvesting/">STRONTIUM: Detecting new patterns in credential harvesting (2023)</a> Rates of spraying observed in this particular campaign (4 per hour and account, each attempt from a different IP address). Microsoft Threat Intelligence.</li>
-</ul>
-<h2 id="dictionaries">Dictionaries</h2>
-<ul>
-<li><a href="https://github.com/danielmiessler/SecLists">SecLists</a> is the security tester's companion. It's a collection of multiple types of lists used during security assessments, collected in one place. List types include usernames, passwords, URLs, sensitive data patterns, fuzzing payloads, web shells, and many more. </li>
-<li><a href="https://freerainbowtables.com/">Rainbow tables download</a> Tables of hashed passwords (for offline guessing).</li>
-<li>Search for <a href="https://www.google.com/search?q=github+password+dictionary">github password dictionary</a>.</li>
-<li>Search for <a href="https://www.google.com/search?q=milioni+password+email">milioni password email</a> Useful for finding dumps from data breaches and news about them.</li>
 </ul>
 <h2 id="password-storage">Password Storage</h2>
 <ul>
