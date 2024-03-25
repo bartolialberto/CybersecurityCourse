@@ -589,15 +589,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#password-attacks-analyses" class="md-nav__link">
-    Password Attacks - Analyses
+  <a href="#mitre-attck-main-tactics" class="md-nav__link">
+    MITRE ATT&amp;CK Main Tactics
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#password-choice" class="md-nav__link">
-    Password Choice
+  <a href="#analyses-of-password-attacks" class="md-nav__link">
+    Analyses of Password Attacks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dictionaries" class="md-nav__link">
+    Dictionaries
   </a>
   
 </li>
@@ -610,8 +617,35 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#offline-guessing-password-cracking" class="md-nav__link">
+    Offline guessing (Password Cracking)
+  </a>
+  
+    <nav class="md-nav" aria-label="Offline guessing (Password Cracking)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#benchmarks-cracking-speed" class="md-nav__link">
     Benchmarks / Cracking speed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#brute-forcing-the-full-password-space" class="md-nav__link">
+    Brute Forcing the Full Password Space
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appendix-password-policy" class="md-nav__link">
+    Appendix - Password Policy
   </a>
   
 </li>
@@ -1156,15 +1190,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#password-attacks-analyses" class="md-nav__link">
-    Password Attacks - Analyses
+  <a href="#mitre-attck-main-tactics" class="md-nav__link">
+    MITRE ATT&amp;CK Main Tactics
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#password-choice" class="md-nav__link">
-    Password Choice
+  <a href="#analyses-of-password-attacks" class="md-nav__link">
+    Analyses of Password Attacks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dictionaries" class="md-nav__link">
+    Dictionaries
   </a>
   
 </li>
@@ -1177,8 +1218,35 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#offline-guessing-password-cracking" class="md-nav__link">
+    Offline guessing (Password Cracking)
+  </a>
+  
+    <nav class="md-nav" aria-label="Offline guessing (Password Cracking)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#benchmarks-cracking-speed" class="md-nav__link">
     Benchmarks / Cracking speed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#brute-forcing-the-full-password-space" class="md-nav__link">
+    Brute Forcing the Full Password Space
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appendix-password-policy" class="md-nav__link">
+    Appendix - Password Policy
   </a>
   
 </li>
@@ -1199,20 +1267,40 @@
 
 
 <h1 id="passwords">Passwords</h1>
-<h2 id="password-attacks-analyses">Password Attacks - Analyses</h2>
+<h2 id="mitre-attck-main-tactics">MITRE ATT&amp;CK Main Tactics</h2>
+<p>Based on the flow of the lecture.</p>
+<p>Plaintext:</p>
+<ul>
+<li><a href="https://attack.mitre.org/techniques/T1056/">Input Capture</a></li>
+<li><a href="https://attack.mitre.org/techniques/T1552/">Unsecured Credentials</a></li>
+<li><a href="https://attack.mitre.org/techniques/T1040/">Network Sniffing</a></li>
+</ul>
+<p>Online guessing:</p>
+<ul>
+<li><a href="https://attack.mitre.org/techniques/T1110/001/">Brute Force: Password Guessing</a></li>
+<li><a href="https://attack.mitre.org/techniques/T1110/003/">Brute Force: Password Spraying</a></li>
+<li><a href="https://attack.mitre.org/techniques/T1110/004/">Brute Force: Credential Stuffing</a></li>
+</ul>
+<p>Regarding Credential Stuffing, this is highly recommended:</p>
+<ul>
+<li><a href="https://haveibeenpwned.com/">Haveibeenpnwed</a> Free resource for anyone to quickly assess if they may have been put at risk due to an online account of theirs having been compromised or "pwned" in a data breach.  </li>
+</ul>
+<p>Offline guessing:</p>
+<ul>
+<li><a href="https://attack.mitre.org/techniques/T1110/002/">Brute Force: Password Cracking</a></li>
+</ul>
+<h2 id="analyses-of-password-attacks">Analyses of Password Attacks</h2>
 <ul>
 <li><a href="https://github.com/ignis-sec/Pwdb-Public">PWDB - New generation of Password Mass-Analysis</a> Interesting facts and statistics from the analysis of hundreds of millions of leaked passwords.</li>
 <li><a href="https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/your-pa-word-doesn-t-matter/ba-p/731984">Your Pa$$word doesn't matter (2019)</a> An analysis of password attacks observed by Microsoft Threat Intelligence.</li>
 <li><a href="https://www.microsoft.com/en-us/security/blog/2020/09/10/strontium-detecting-new-patters-credential-harvesting/">STRONTIUM: Detecting new patterns in credential harvesting (2023)</a> Rates of spraying observed in this particular campaign (4 per hour and account, each attempt from a different IP address). Microsoft Threat Intelligence.</li>
-<li><a href="https://haveibeenpwned.com/">Haveibeenpnwed</a> Free resource for anyone to quickly assess if they may have been put at risk due to an online account of theirs having been compromised or "pwned" in a data breach. <em>Highly recommended.</em>  </li>
 </ul>
-<h2 id="password-choice">Password Choice</h2>
+<h2 id="dictionaries">Dictionaries</h2>
 <ul>
-<li><a href="https://www.schneier.com/blog/archives/2017/10/changes_in_pass.html">Password Best Practice - NIST</a> No complexity, no expiration, use password managers. The original NIST document is <a href="https://pages.nist.gov/800-63-3/sp800-63b.html#sec5">here</a>.</li>
-<li><a href="https://www.ncsc.gov.uk/collection/passwords/updating-your-approach">Password policy: updating your approach - NCSC UK</a>
-Advice for system owners responsible for determining password policies and identity management within their organisations. </li>
-<li><a href="https://learn.microsoft.com/en-us/microsoft-365/admin/misc/password-policy-recommendations?view=o365-worldwide">Password policy recommendations - Microsoft</a></li>
-<li><a href="https://projectblack.io/blog/trusted-by-millions-yet-so-wrong/">Trusted by Millions, Yet So Wrong - Password Strength Tools</a> Ever trusted a password strength tool online? You might be surprised to see how far off the mark some of the most popular password strength tools are.</li>
+<li><a href="https://github.com/danielmiessler/SecLists">SecLists</a> is the security tester's companion. It's a collection of multiple types of lists used during security assessments, collected in one place. List types include usernames, passwords, URLs, sensitive data patterns, fuzzing payloads, web shells, and many more. </li>
+<li><a href="https://freerainbowtables.com/">Rainbow tables download</a> Tables of hashed passwords (for offline guessing).</li>
+<li>Search for <a href="https://www.google.com/search?q=github+password+dictionary">github password dictionary</a>.</li>
+<li>Search for <a href="https://www.google.com/search?q=milioni+password+email">milioni password email</a> Useful for finding dumps from data breaches and news about them.</li>
 </ul>
 <h2 id="password-storage">Password Storage</h2>
 <ul>
@@ -1222,19 +1310,22 @@ Advice for system owners responsible for determining password policies and ident
 <li>
 <p><a href="https://crackstation.net/hashing-security.htm">Salted Password Hashing - Doing it Right</a></p>
 </li>
-<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html#hashing-vs-encryption">Password Storage Cheat Sheet - OWASP</a> This cheat sheet provides guidance on the various areas that need to be considered related to storing passwords.</li>
-<li><a href="https://freerainbowtables.com/">Rainbow tables download</a> Tables of hashed passwords.</li>
-<li><a href="https://gchq.github.io/CyberChef/">Cyberchef</a> Online webapp for executing many infosec-related calculations, including bcrypt hashes and NT hashes.</li>
-</ul>
-<h2 id="benchmarks-cracking-speed">Benchmarks / Cracking speed</h2>
-<ul>
-<li><a href="https://gist.github.com/bigpick/cfa22947c884f7a3fc1431475e345427">Nvidia RTX4080 FE latest Hashcat benchmark (2023)</a> Includes results for each hashcat benchmark (on this particular hw, 2023).<ul>
-<li><a href="https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/decrypting-the-selection-of-supported-kerberos-encryption-types/ba-p/1628797">Decrypting the Selection of Supported Kerberos Encryption Types</a> Decrypting Kerberos RC4 tickets (encryption types 0x17,0x18 dec 23,24) is much faster than decrypting default AES tickets (0x11,0x12 dec 17,18). This is why in roasting attacks RC4 tickets are requested rather than AES tickets. The above benchmark indicates approximately 3 orders of magnitude difference in speed (see "TGS-REP").</li>
-</ul>
+<li>
+<p><a href="https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html#hashing-vs-encryption">Password Storage Cheat Sheet - OWASP</a> This cheat sheet provides guidance on the various areas that need to be considered related to storing passwords.</p>
 </li>
+<li>
+<p><a href="https://gchq.github.io/CyberChef/">Cyberchef</a> Online webapp for executing many infosec-related calculations, including <code>bcrypt</code> hashes and <code>NT hashes</code>.</p>
+</li>
+</ul>
+<h2 id="offline-guessing-password-cracking">Offline guessing (Password Cracking)</h2>
+<h3 id="benchmarks-cracking-speed">Benchmarks / Cracking speed</h3>
+<ul>
+<li><a href="https://gist.github.com/bigpick/cfa22947c884f7a3fc1431475e345427">Nvidia RTX4080 FE latest Hashcat benchmark (2023)</a> Includes results for each hashcat benchmark (on this particular hw, 2023).</li>
 <li><a href="https://openwall.info/wiki/john/benchmarks">John the Ripper benchmarks</a> Not easy to interpret and understand.</li>
 </ul>
-<p>The resources below estimate the time required for completing a brute force attack over a predefined password space. Always keep in mind that this kind of calculations do not reflect what attackers usually do as a first step, i.e., trying commonly used passwords (see the link on password strength tools above).</p>
+<h3 id="brute-forcing-the-full-password-space">Brute Forcing the Full Password Space</h3>
+<p>The resources below estimate the time required for completing a brute force attack over a predefined password space. </p>
+<p>Always keep in mind that this kind of calculations do <em>not</em> reflect what attackers usually do as a first step, i.e., trying commonly used passwords. </p>
 <ul>
 <li><a href="https://www.hivesystems.io/blog/are-your-passwords-in-the-green">Hive Systems Password Table</a> Colorful infographic table (released every year) that showed the relative strength of a hashed password against a cracking attempt, based on:<ul>
 <li>the password’s length,</li>
@@ -1246,6 +1337,13 @@ Advice for system owners responsible for determining password policies and ident
 <li><a href="https://thesecurityfactory.be/password-cracking-speed/">Password cracking speed (2020)</a></li>
 <li><a href="https://i.imgur.com/gfYw57t.png">Entropy vs Password length vs Cracking speed</a></li>
 <li><a href="https://www.grc.com/haystack.htm">Brute force calculator</a></li>
+</ul>
+<h2 id="appendix-password-policy">Appendix - Password Policy</h2>
+<ul>
+<li><a href="https://www.schneier.com/blog/archives/2017/10/changes_in_pass.html">Password Best Practice - NIST</a> No complexity, no expiration, use password managers. The original NIST document is <a href="https://pages.nist.gov/800-63-3/sp800-63b.html#sec5">here</a>.</li>
+<li><a href="https://www.ncsc.gov.uk/collection/passwords/updating-your-approach">Password policy: updating your approach - NCSC UK</a>
+Advice for system owners responsible for determining password policies and identity management within their organisations. </li>
+<li><a href="https://learn.microsoft.com/en-us/microsoft-365/admin/misc/password-policy-recommendations?view=o365-worldwide">Password policy recommendations - Microsoft</a></li>
 </ul>
 
 

@@ -1209,6 +1209,11 @@
 <li><a href="https://csandker.io/2017/09/12/KerberosAuthenticationAWrapUp.html">Kerberos Authentication: A Wrap Up</a> Very clear and concise summary of Kerberos, along with a detailed explanation of <em>Kerberoasting</em> and <em>AS-REP-roasting</em>.</li>
 <li><a href="https://blog.harmj0y.net/redteaming/kerberoasting-revisited/">Kerberoasting revisited</a>.</li>
 <li>Many more attacks in the section of this website about <a href="../../Lateral%20Movement%20and%20AD%20Abuse/AD_abuse/">AD Abuse</a></li>
+<li>
+<ul>
+<li><a href="https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/decrypting-the-selection-of-supported-kerberos-encryption-types/ba-p/1628797">Decrypting the Selection of Supported Kerberos Encryption Types</a> Decrypting Kerberos RC4 tickets (encryption types 0x17,0x18 dec 23,24) is much faster than decrypting default AES tickets (0x11,0x12 dec 17,18). This is why in roasting attacks RC4 tickets are requested rather than AES tickets. The above benchmark indicates approximately 3 orders of magnitude difference in speed (see "TGS-REP").</li>
+</ul>
+</li>
 </ul>
 
 
