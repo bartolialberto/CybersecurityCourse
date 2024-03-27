@@ -831,6 +831,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#pass-the-hash-pth" class="md-nav__link">
+    Pass the Hash (PtH)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#ntlm-relay" class="md-nav__link">
     NTLM Relay
   </a>
@@ -1520,6 +1527,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#pass-the-hash-pth" class="md-nav__link">
+    Pass the Hash (PtH)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#ntlm-relay" class="md-nav__link">
     NTLM Relay
   </a>
@@ -1628,6 +1642,12 @@
 <li>NTLM relay</li>
 </ul>
 </li>
+</ul>
+<h3 id="pass-the-hash-pth">Pass the Hash (PtH)</h3>
+<p>In practice, there are some tricky limitations regarding what can and what cannot be done from a remote location. The <a href="https://csandker.io/2017/09/10/NTLMAuthenticationAWrapUp.html#pass-the-hash-pth">Pass the Hash section</a> of the above page summarizes those limitations very well. They are not easy to understand, but it is because they are really tricky; I have not found any clearer summary.</p>
+<ul>
+<li><a href="https://viperone.gitbook.io/pentest-everything/everything/everything-active-directory/lateral-movement/alternate-authentication-material/wip-pass-the-hash">Pass The Hash</a> Excellent summary with lot of examples and screenshots based on many different tools. This specific website (Pentest Everything) is <em>highly recommended</em> because it has many parts structured according to MITRE ATT&amp;CK.</li>
+<li><a href="https://www.n00py.io/2020/12/alternative-ways-to-pass-the-hash-pth/">Alternative ways to Pass the Hash (PtH)</a> This is a post on a Windows-focused blog. Very, very good.</li>
 </ul>
 <h3 id="ntlm-relay">NTLM Relay</h3>
 <p>There is a lot of existing material describing techniques and tools for executing NTLM Relay attacks. Such material may be hard to understand when the attack is used as part of a more complex chain, in particular, chains based on advanced Kerberos tricks and/or ACL paths in Active Directory. The links below are generally not based on such complex paths.</p>
