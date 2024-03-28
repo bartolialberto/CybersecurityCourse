@@ -728,8 +728,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#finding-good-targets" class="md-nav__link">
+    Finding good targets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#kerberoasting-and-as-rep-roasting" class="md-nav__link">
     Kerberoasting and AS-REP Roasting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detecting-kerberoasting" class="md-nav__link">
+    Detecting Kerberoasting
   </a>
   
 </li>
@@ -1299,8 +1313,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#finding-good-targets" class="md-nav__link">
+    Finding good targets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#kerberoasting-and-as-rep-roasting" class="md-nav__link">
     Kerberoasting and AS-REP Roasting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detecting-kerberoasting" class="md-nav__link">
+    Detecting Kerberoasting
   </a>
   
 </li>
@@ -1408,11 +1436,21 @@
 <li><a href="https://www.varonis.com/blog/outlook-vulnerability-new-ways-to-leak-ntlm-hashes">Outlook Vulnerability Discovery and New Ways to Leak NTLM Hashes</a> Varonis Threat Labs discovered a new Outlook vulnerability and three new ways to access NTLM v2 hashed passwords by exploiting Outlook, Windows Performance Analyzer (WPA), and Windows File Explorer.</li>
 </ul>
 <h2 id="kerberos-attacks">Kerberos attacks</h2>
+<h3 id="finding-good-targets">Finding good targets</h3>
+<p>Techniques in the <a href="https://attack.mitre.org/tactics/TA0007/">Discovery</a> tactic.</p>
+<ul>
+<li><a href="https://adsecurity.org/?p=4115">There’s Something About Service Accounts Discover (SPN scanning)</a> Queries for discovering service accounts, accounts that are probably in the Domain Admin group. Description of groups that are often overprivileged and of SPN classes found in manhy environments.</li>
+</ul>
 <h3 id="kerberoasting-and-as-rep-roasting">Kerberoasting and AS-REP Roasting</h3>
 <ul>
 <li><a href="https://csandker.io/2017/09/12/KerberosAuthenticationAWrapUp.html">Kerberos Authentication: A Wrap Up</a> Very clear and concise summary of Kerberos, along with a detailed explanation of Kerberoasting and AS-REP Roasting.</li>
 <li><a href="https://blog.harmj0y.net/redteaming/kerberoasting-revisited/">Kerberoasting revisited</a>. All you wanted to know about Kerberoasting (and AS-REP Roasting) by harmj0y, an authority on these topics.</li>
 <li><a href="https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/decrypting-the-selection-of-supported-kerberos-encryption-types/ba-p/1628797">Decrypting the Selection of Supported Kerberos Encryption Types</a> Decrypting Kerberos RC4 tickets (encryption types 0x17,0x18 dec 23,24) is much faster than decrypting default AES tickets (0x11,0x12 dec 17,18). This is why in roasting attacks RC4 tickets are requested rather than AES tickets.</li>
+<li><a href="https://wadcoms.github.io/wadcoms/Impacket-GetNPUsers/">Impacket-GetNPUsers</a> (script GetNPUsers of the Impacket framework) takes a list of usernames, selects those that can be attacked with <em>AS-Rep-Roast</em> and obtain the corresponding domain controller response in a format suitable to John the ripper or Hashcat.</li>
+</ul>
+<h3 id="detecting-kerberoasting">Detecting Kerberoasting</h3>
+<ul>
+<li><a href="https://adsecurity.org/?p=3513">Detecting Kerberoasting Activity Part 2 – Creating a Kerberoast Service Account Honeypot</a> This post describes how to filter from millions of events (that could be logged at the Domain Controller) to a single one to detect Kerberoasting activity.</li>
 </ul>
 <p>Many more Kerberos-based attacks in the section of this website about <a href="../../Lateral%20Movement%20and%20AD%20Abuse/AD_abuse/">AD Abuse</a>.</p>
 <h2 id="where-does-a-service-account-store-its-password">Where does a service account store its password?</h2>

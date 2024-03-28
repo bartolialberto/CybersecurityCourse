@@ -630,8 +630,42 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#password-storage" class="md-nav__link">
-    Password Storage
+  <a href="#online-guessing" class="md-nav__link">
+    Online guessing
+  </a>
+  
+    <nav class="md-nav" aria-label="Online guessing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#finding-login-pages" class="md-nav__link">
+    Finding Login pages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constructing-usernames" class="md-nav__link">
+    Constructing Usernames
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finding-and-attacking-legacy-protocols-within-organizations" class="md-nav__link">
+    Finding and attacking legacy protocols within organizations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secure-password-storage" class="md-nav__link">
+    Secure Password Storage
   </a>
   
 </li>
@@ -1230,8 +1264,42 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#password-storage" class="md-nav__link">
-    Password Storage
+  <a href="#online-guessing" class="md-nav__link">
+    Online guessing
+  </a>
+  
+    <nav class="md-nav" aria-label="Online guessing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#finding-login-pages" class="md-nav__link">
+    Finding Login pages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constructing-usernames" class="md-nav__link">
+    Constructing Usernames
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finding-and-attacking-legacy-protocols-within-organizations" class="md-nav__link">
+    Finding and attacking legacy protocols within organizations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secure-password-storage" class="md-nav__link">
+    Secure Password Storage
   </a>
   
 </li>
@@ -1347,7 +1415,27 @@
 <li><a href="https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/your-pa-word-doesn-t-matter/ba-p/731984">Your Pa$$word doesn't matter (2019)</a> An analysis of password attacks observed by Microsoft Threat Intelligence.</li>
 <li><a href="https://www.microsoft.com/en-us/security/blog/2020/09/10/strontium-detecting-new-patters-credential-harvesting/">STRONTIUM: Detecting new patterns in credential harvesting (2023)</a> Rates of spraying observed in this particular campaign (4 per hour and account, each attempt from a different IP address). Microsoft Threat Intelligence.</li>
 </ul>
-<h2 id="password-storage">Password Storage</h2>
+<h2 id="online-guessing">Online guessing</h2>
+<p>These techniques are part of the  <a href="https://attack.mitre.org/tactics/TA0007/">Discovery</a> tactic.</p>
+<h3 id="finding-login-pages">Finding Login pages</h3>
+<ul>
+<li><a href="https://github.com/mIcHyAmRaNe/okadminfinder3/tree/master">OKadminFinder: Easy way to find admin panel of website</a>: More than 1000 potential admin panels. Random User-Agents.
+Proxies and Tor.</li>
+<li><a href="https://github.com/Mr-Robert0/Logsensor">Logsensor</a></li>
+</ul>
+<h3 id="constructing-usernames">Constructing Usernames</h3>
+<ul>
+<li><a href="https://github.com/urbanadventurer/username-anarchy">Username Anarchy</a> Tools for generating usernames. Format string style username format definitions. Substitutions. e.g. when only a first initial and lastname is known (LinkedIn lists users like this), it will attempt all possible first names.  Country databases of common first and last names.</li>
+<li><a href="https://github.com/ropnop/kerbrute">Kerbrute</a> A tool to enumerate valid Active Directory accounts without causing any login failure (see also its usage for bruteforcing, below).</li>
+</ul>
+<h3 id="finding-and-attacking-legacy-protocols-within-organizations">Finding and attacking legacy protocols within organizations</h3>
+<ul>
+<li><a href="https://github.com/pwnfoo/NTLMRecon">NTLMRecon</a> Given a single URL, an IP address/range, it returns a list of URLs where NTLM over HTTP is used.</li>
+<li><a href="https://github.com/Tw1sm/spraycharles">spraycharles</a> Low and slow password spraying tool, designed to spray on an interval over a long period of time.</li>
+<li><a href="https://www.sprocketsecurity.com/resources/how-to-bypass-mfa-all-day">Password spraying and MFA bypasses in the modern security landscape</a> Detailed description of how to use the above tools.</li>
+<li><a href="https://github.com/ropnop/kerbrute">Kerbrute</a> A tool to quickly brute force Active Directory accounts (guessing, stuffing, spraying).</li>
+</ul>
+<h2 id="secure-password-storage">Secure Password Storage</h2>
 <ul>
 <li>
 <p><a href="https://textbook.cs161.org/crypto/passwords.html">14.7. Password hashing</a> from Computer Security at Berkeley (CS161). Everything in this book is more than ok. </p>
