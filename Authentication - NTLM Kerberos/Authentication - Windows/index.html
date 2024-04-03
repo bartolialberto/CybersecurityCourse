@@ -1673,7 +1673,8 @@
 </li>
 </ul>
 <h3 id="pass-the-hash-pth">Pass the Hash (PtH)</h3>
-<p>In practice, there are some tricky limitations regarding what can and what cannot be done from a remote location. The <a href="https://csandker.io/2017/09/10/NTLMAuthenticationAWrapUp.html#pass-the-hash-pth">Pass the Hash section</a> of the above page summarizes those limitations very well. They are not easy to understand, but it is because they are really tricky; I have not found any clearer summary.</p>
+<p>As a first approximation, the password hash of an account suffices to impersonate that account, even without knowing the password.</p>
+<p>In practice, there are some tricky limitations regarding what can and what cannot be done with a password hash from a remote location. The <a href="https://csandker.io/2017/09/10/NTLMAuthenticationAWrapUp.html#pass-the-hash-pth">Pass the Hash section</a> of the above page summarizes those limitations very well. They are not easy to understand, but it is because they are really tricky; I have not found any clearer summary.</p>
 <ul>
 <li><a href="https://viperone.gitbook.io/pentest-everything/everything/everything-active-directory/lateral-movement/alternate-authentication-material/wip-pass-the-hash">Pass The Hash</a> Excellent summary with lot of examples and screenshots based on many different tools. This specific website (Pentest Everything) is <em>highly recommended</em> because it has many parts structured according to MITRE ATT&amp;CK.</li>
 <li><a href="https://www.n00py.io/2020/12/alternative-ways-to-pass-the-hash-pth/">Alternative ways to Pass the Hash (PtH)</a> This is a post on a Windows-focused blog. Very, very good.</li>
