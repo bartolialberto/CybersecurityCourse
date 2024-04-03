@@ -8,10 +8,10 @@
       
       
       
-        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/Lateral%20Movement%20and%20AD%20Abuse/Lateral%20Movement/">
+        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/Lateral%20Movement%20and%20AD%20Abuse/Lateral%20movement/">
       
       
-        <link rel="prev" href="../Discovery/">
+        <link rel="prev" href="../AD%20Labs%20and%20Tools/">
       
       
         <link rel="next" href="../../MFA/MFA/">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Lateral Movement - Cybersecurity Course - University of Trieste</title>
+        <title>Lateral Movement and AD Abuse - Cybersecurity Course - University of Trieste</title>
       
     
     
@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#lateral-movement" class="md-skip">
+        <a href="#lateral-movement-and-ad-abuse" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Lateral Movement
+              Lateral Movement and AD Abuse
             
           </span>
         </div>
@@ -790,31 +790,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../AD_abuse/" class="md-nav__link">
+      <a href="../AD%20Labs%20and%20Tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    AD Abuse
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Discovery/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Discovery
+    AD Attack Examples and Tools
   </span>
   
 
@@ -843,7 +823,7 @@
           
   
   <span class="md-ellipsis">
-    Lateral Movement
+    Lateral Movement and AD Abuse
   </span>
   
 
@@ -854,7 +834,7 @@
         
   
   <span class="md-ellipsis">
-    Lateral Movement
+    Lateral Movement and AD Abuse
   </span>
   
 
@@ -876,29 +856,83 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#logon-types" class="md-nav__link">
-    Logon types
+  <a href="#lateral-movement" class="md-nav__link">
+    Lateral Movement
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#offensive-lateral-movement" class="md-nav__link">
-    Offensive Lateral Movement
+  <a href="#discovery" class="md-nav__link">
+    Discovery
+  </a>
+  
+    <nav class="md-nav" aria-label="Discovery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bloodhound" class="md-nav__link">
+    Bloodhound
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enumeration-tools" class="md-nav__link">
+    Enumeration tools
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ad-attack-paths" class="md-nav__link">
+    AD Attack paths
+  </a>
+  
+    <nav class="md-nav" aria-label="AD Attack paths">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#certified-pre-owned" class="md-nav__link">
+    Certified Pre-Owned
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#demo-video" class="md-nav__link">
+    Demo video
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relaying" class="md-nav__link">
+    Relaying
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appendix-ad-defense-guidance" class="md-nav__link">
+    APPENDIX - AD Defense guidance
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#lab-examples" class="md-nav__link">
-    Lab Examples
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#offensive-tools" class="md-nav__link">
-    Offensive tools
+  <a href="#appendix-kerberos-delegation-abuses" class="md-nav__link">
+    APPENDIX - Kerberos Delegation Abuses
   </a>
   
 </li>
@@ -1390,29 +1424,83 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#logon-types" class="md-nav__link">
-    Logon types
+  <a href="#lateral-movement" class="md-nav__link">
+    Lateral Movement
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#offensive-lateral-movement" class="md-nav__link">
-    Offensive Lateral Movement
+  <a href="#discovery" class="md-nav__link">
+    Discovery
+  </a>
+  
+    <nav class="md-nav" aria-label="Discovery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bloodhound" class="md-nav__link">
+    Bloodhound
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enumeration-tools" class="md-nav__link">
+    Enumeration tools
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ad-attack-paths" class="md-nav__link">
+    AD Attack paths
+  </a>
+  
+    <nav class="md-nav" aria-label="AD Attack paths">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#certified-pre-owned" class="md-nav__link">
+    Certified Pre-Owned
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#demo-video" class="md-nav__link">
+    Demo video
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relaying" class="md-nav__link">
+    Relaying
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appendix-ad-defense-guidance" class="md-nav__link">
+    APPENDIX - AD Defense guidance
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#lab-examples" class="md-nav__link">
-    Lab Examples
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#offensive-tools" class="md-nav__link">
-    Offensive tools
+  <a href="#appendix-kerberos-delegation-abuses" class="md-nav__link">
+    APPENDIX - Kerberos Delegation Abuses
   </a>
   
 </li>
@@ -1432,45 +1520,126 @@
                   
 
 
-<h1 id="lateral-movement">Lateral Movement</h1>
-<h2 id="logon-types">Logon types</h2>
+<h1 id="lateral-movement-and-ad-abuse">Lateral Movement and AD Abuse</h1>
+<h2 id="lateral-movement">Lateral Movement</h2>
 <ul>
+<li><a href="https://posts.specterops.io/offensive-lateral-movement-1744ae62b14f#:~:text=Lateral%20movement%20is%20the%20process%20of%20moving%20from%20one%20compromised,which%20would%20return%20a%20beacon.">Offensive Lateral Movement</a> The difficulty with lateral movement is doing it with good operational security (OpSec) which means generating the least amount of logs as possible, or generating logs that look normal. The purpose of this blog post is to not only <em>show the techniques</em>, but to <em>show what is happening under the hood</em> and any high-level indicators associated with them.</li>
+<li>
+<p><a href="https://posts.specterops.io/kerberosity-killed-the-domain-an-offensive-kerberos-overview-eb04b1402c61">Kerberosity Killed the Domain: An Offensive Kerberos Overview</a> This article is intended to give an overview of how Kerberos works and some of the more common attacks associated with it.</p>
+<ul>
+<li>Roasting</li>
+<li>Silver Ticket</li>
+<li>Golden Ticket</li>
+<li>Delegation attacks (out of scope)</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.akamai.com/blog/security-research/linux-lateral-movement-more-than-ssh#file-transfer">The L in Linux Stands for Lateral Movement</a> Only one protocol comes to mind — SSH. In this blog post, we’ll look at other protocols in Linux that can be used to achieve (or to help achieve) lateral movement.</p>
+</li>
 <li><a href="https://learn.microsoft.com/en-us/windows-server/identity/securing-privileged-access/reference-tools-logon-types">Administrative tools and logon types</a> A nightmare of variant and details. Practically important for understanding which network operations leave credentials in memory of the remote node.</li>
 </ul>
-<h2 id="offensive-lateral-movement">Offensive Lateral Movement</h2>
+<h2 id="discovery">Discovery</h2>
+<p>The <a href="https://attack.mitre.org/tactics/TA0007/">Discovery Tactic</a> is almost always used in conjuction with Lateral Movement.</p>
+<h3 id="bloodhound">Bloodhound</h3>
+<p>"The" Discovery tool for Windows Active Directory: a game changer.</p>
 <ul>
-<li><a href="https://posts.specterops.io/offensive-lateral-movement-1744ae62b14f#:~:text=Lateral%20movement%20is%20the%20process%20of%20moving%20from%20one%20compromised,which%20would%20return%20a%20beacon.">Offensive Lateral Movement</a> The difficulty with lateral movement is doing it with good operational security (OpSec) which means generating the least amount of logs as possible, or generating logs that look normal, i.e. hiding in plain sight to avoid detection. The purpose of this blog post is to not only <em>show the techniques</em>, but to <em>show what is happening under the hood</em> and any high-level indicators associated with them.</li>
-<li><a href="https://www.akamai.com/blog/security-research/linux-lateral-movement-more-than-ssh#file-transfer">The L in Linux Stands for Lateral Movement</a> Only one protocol comes to mind — SSH. In this blog post, we’ll look at other protocols in Linux that can be used to achieve (or to help achieve) lateral movement.</li>
+<li><a href="https://www.youtube.com/watch?v=z8thoG7gPd0">Here Be Dragons The Unexplored Land of Active Directory ACLs</a> The original 45-minutes video at DerbyCon 2017 that introduced this tool.</li>
+<li><a href="https://www.sans.org/blog/bloodhound-sniffing-out-path-through-windows-domains/">BloodHound – Sniffing Out the Path Through Windows Domains</a> One of the many tutorials available.</li>
+<li><a href="https://bloodhound.readthedocs.io/en/latest/index.html">BloodHound: Six Degrees of Domain Admin</a> The official site.</li>
 </ul>
-<h2 id="lab-examples">Lab Examples</h2>
-<p>Fantastic resources with many attacks explained with clear step-by-step instructions.</p>
+<p>BloodHound-related tools;</p>
 <ul>
-<li><a href="https://www.ired.team/offensive-security-experiments/active-directory-kerberos-abuse">Red Team Notes</a> A collection of techniques that exploit and abuse Active Directory, Kerberos authentication, Domain Controllers and similar matters.<ul>
-<li>Unconstrained delegation </li>
-<li>Constrained delegation </li>
-<li>Resource-based constrained delegation (RBCD)</li>
-<li>Kerberoasting </li>
-<li>AS-Rep Roasting </li>
-<li>Golden Tickets </li>
-<li>Silver Tickets </li>
-<li>and more</li>
+<li><a href="https://blog.bitsadmin.com/blog/dealing-with-large-bloodhound-datasets">Dealing with large BloodHound datasets</a>. Discusses other tools similar to BloodHound, including <a href="https://www.youtube.com/watch?app=desktop&amp;v=76MWt8uugAg">BlueHound</a>.</li>
+<li>
+<p><a href="https://github.com/zeronetworks/BloodHound-Tools">BloodHound tools</a>.</p>
+<ul>
+<li><em>ShotHound</em>: Validate practical paths discovered by BloodHound.</li>
+<li><em>Ransomulator</em>: Simulate ransomware-like infection in your dataset.</li>
+<li><em>DBCreator</em>: Simulate BloodHound dataset, along with "Open" network access edges and unpatched vulnerabilities information.</li>
+<li><em>CustomQueries</em>: A list of common queries that reflect the network dimension, if it is integrated into the dataset.</li>
+<li><em>VulnerabilitiesDataImport</em>:
+Parse Vulnerability Scanners reports and enrich host nodes with information about unpatched vulnerabilities</li>
 </ul>
 </li>
-<li><a href="https://github.com/Orange-Cyberdefense/GOAD">GOAD - Go Active Directory</a> It would be nice to have time and skills for setting up their (free) lab, but it is too complex. Reading their numerous examples is very useful, though, in particular:<ul>
-<li><a href="https://mayfly277.github.io/posts/GOADv2-pwning-part10/">Delegations</a></li>
-<li><a href="https://mayfly277.github.io/posts/GOADv2-pwning-part11/">ACL</a> based on BloodHound</li>
-<li><a href="https://mayfly277.github.io/posts/GOADv2-pwning-part9/">Lateral Movement</a></li>
-</ul>
+<li>
+<p><a href="https://assurancemaladiesec.github.io/foxterrier-on-the-trail/">FoxTerrier : On the trail of vulnerable Active Directory objects and a report</a>. You use Sharphound/Bloodhound to collect data/audit your AD and you would like to generate report of vulnerable objects in your AD? You should give a look to FoxTerrier!</p>
 </li>
-<li><a href="https://0xdf.gitlab.io/2023/05/27/htb-absolute.html#">Hack The Box - Absolute</a> Writeup (i.e., written summary) of how to get Administrator access on a virtual machine named Absolute (available on <a href="https://www.hackthebox.com/">Hack The Box</a>). Based on Kerberos abuse, showing both <em>KrbRelay</em> to add a user to the administrators group, and <em>KrbRelayUp</em> to get the machine account hash and do a DC sync attack.</li>
 </ul>
-<h2 id="offensive-tools">Offensive tools</h2>
+<p>BloodHound-like tools:</p>
 <ul>
-<li><a href="https://github.com/GhostPack/Rubeus">Rubeus</a> Ticket requests and renewals; Ticket Forgery; Ticket Management; Ticket Extraction and Harvesting; Brute force and spray; Constrained delegation abuse; Roasting; S4U.</li>
-<li><a href="https://wiki.porchetta.industries/">CrackMapExec (a.k.a CME)</a> is a post-exploitation tool that helps automate assessing the security of large Active Directory networks. Built with stealth in mind, CME follows the concept of "Living off the Land": abusing built-in Active Directory features/protocols to achieve its functionality and allowing it to evade most endpoint protection/IDS/IPS solutions.
-CME makes heavy use of the Impacket library for working with network protocols and performing a variety of post-exploitation techniques.</li>
-<li><a href="https://github.com/ly4k/Certipy">Certipy</a> Offensive tool for enumerating and abusing Active Directory Certificate Services (AD CS).</li>
-<li><a href="https://github.com/ParrotSec/mimikatz">Mimikatz</a> The father of modern Windows attacks. Many tutorials out there, including <a href="https://www.sentinelone.com/cybersecurity-101/mimikatz/#:~:text=Mimikatz%20is%20a%20tool%20that,credentials%2C%20from%20a%20system%27s%20memory.">this one</a>.</li>
+<li><a href="https://zeronetworks.com/blog/bluehound-community-driven-resilience/">BlueHound</a> Very similar to BloodHound. It collects metrics similar to some of those available only in the paid version of BloodHound.</li>
+<li><a href="https://github.com/lkarlslund/Adalanche">Adalanche</a> </li>
+<li><a href="https://labs.lares.com/introducing-slinkycat/">Introducing Slinky Cat - Living off the AD Land</a> Help security and IT teams reduce their AD exposures and uncover quick wins and fixes designed for pen-testers and defenders alike.</li>
+</ul>
+<h3 id="enumeration-tools">Enumeration tools</h3>
+<p>The Discovery techniques aimed at collecting information about a Windows domain are often called "enumeration". The tools below are useful to this purpose:</p>
+<ul>
+<li><a href="https://www.politoinc.com/post/ldap-queries-for-offensive-and-defensive-operations">LDAP Queries for Offensive and Defensive Operations</a> Basic queries for targeted Active Directory information gathering used in penetration testing (“low and slow” approach without BloodHound).</li>
+<li><a href="https://infosecwriteups.com/user-enumeration-techniques-and-tactics-in-an-active-directory-pentesting-engagement-c634bf241017">User Enumeration Techniques and Tactics In an Active Directory Pentesting Engagement</a> A blog post describing several techniques for finding valid accounts in Active Directory.</li>
+<li><a href="https://github.com/SnaffCon/Snaffler?ref=labs.lares.com">Snaffler</a> it takes a list of Windows computers from Active Directory as input; it figures out which ones have file shares, and whether you can read them. It also enumerates the files in these shares and searches passwords (that should not be stored there) with some heuristics.</li>
+<li><a href="https://labs.lares.com/introducing-scraping-kit/">Scraping kit</a> Tools for scraping services, domain controllers, Outlook email client based on a provided list of keywords.</li>
+<li><a href="https://adsecurity.org/?p=4115">There’s Something About Service Accounts Discover (SPN scanning)</a> Without port scanning.</li>
+</ul>
+<h2 id="ad-attack-paths">AD Attack paths</h2>
+<p>This is a huge topic.</p>
+<ul>
+<li><a href="https://labs.lares.com/securing-active-directory-via-acls/">The Phantom Menace: Exposing hidden risks through ACLs in Active Directory (Part 1)</a> An excellent and concise description of ACLs in Active Directory (starting from what a Securable Object is) from an offensive point of view.</li>
+<li>
+<p><a href="https://bloodhound.readthedocs.io/en/latest/data-analysis/edges.html">BloodHound Edges</a> Perhaps the best way for understanding the breadth and depth of AD Attack paths is looking at how many edge types exist in BloodHound. This page is very interesting because it describes how the edge could be abused, the associated technical difficulty and some operational security (OpSec) consideration.</p>
+</li>
+<li>
+<p><a href="https://swisskyrepo.github.io/InternalAllTheThings/">Internal All The Things</a>
+Active Directory and Internal Pentest Cheatsheets. Lots of useful step-by-step examples.</p>
+</li>
+<li><a href="https://zer1t0.gitlab.io/posts/attacking_ad/">Attacking Active Directory: 0 to 0.</a> Nice description of many Windows topics, including Active Directory, Access Rights and so on.</li>
+</ul>
+<h3 id="certified-pre-owned">Certified Pre-Owned</h3>
+<p>This is just one of the many families of AD Attack Paths.</p>
+<ul>
+<li><a href="https://www.mandiant.com/resources/blog/tracking-apt29-phishing-campaigns">Trello From the Other Side: Tracking APT29 Phishing Campaigns</a> APT29 is a Russian espionage group. Very interesting and detailed analysis of a phishing campaigns targeting diplomatic organizations in Europe, the Americas, and Asia. Based on <em>misconfigured certificate templates</em>.</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=8OtfW4uo75k">Exploiting Outlook CVE-2023-23397 to Relay Credentials</a> Based on a coerced authentication vulnerability of Outlook. It uses PKINIT and credential relay. <em>"I exploit Outlook to relay credentials to NTLMrelayx, get a certificate of a domain admin, and fully take over a domain. It only takes a meeting invite and a user simply opening outlook to exploit this vulnerability."</em> Nice and focussed video.</p>
+</li>
+<li>
+<p><a href="https://posts.specterops.io/certified-pre-owned-d95910965cd2">Certified Pre-Owned</a> By those that discovered this path. Abusing Actice Directory Certificate Services (8 insecure certificate templates). Accompanied by a +140-pages report including some prevention and detection guidance.</p>
+</li>
+<li><a href="https://www.ired.team/offensive-security-experiments/active-directory-kerberos-abuse/adcs-+-petitpotam-ntlm-relay-obtaining-krbtgt-hash-with-domain-controller-machine-certificate">ADCS + PetitPotam NTLM Relay: Obtaining krbtgt Hash with Domain Controller Machine Certificate</a> This is a quick lab to familiarize with an Active Directory Certificate Services (ADCS) + NLTM Relay. Step-by-step examples and screenshots.</li>
+<li><a href="https://vandanpathak.com/exploiting-ad/adcs-attacking-part-1/">Attacking AD Certificate Services – Part 1</a> Another of the many step-by-step tutorials in this area.</li>
+<li><a href="https://posts.specterops.io/shadow-credentials-abusing-key-trust-account-mapping-for-takeover-8ee1a53566ab">Shadow Credentials: Abusing Key Trust Account Mapping for Account Takeover</a> Very interesting attack path based on PKINIT, with considerations on detection and prevention. Not very easy.</li>
+</ul>
+<h3 id="demo-video">Demo video</h3>
+<p>Demo of four different AD attack paths, with considerations about their OPSEC (i.e., ability to remain undetected). <a href="https://conference.hitb.org/hitbsecconf2023ams/materials/D2T2%20-%20Active%20Directory%20Abuse%20Primitive%20and%20Operation%20Security%20-%20Mars%20Cheng.pdf">Slides</a> and <a href="https://www.youtube.com/watch?v=CIkSiECswYw">one hour video</a>.</p>
+<ol>
+<li>Kerberoasting, Pass the ticket, Dump ticket from Logon session and other</li>
+<li>Certificate Template Abuse, PKINIT authentication, Unconstrained delegation (this step out of scope), DCSync that is domain controller replication</li>
+<li>Password spray, Overprivilege + Shadow credential, UnPAC the hash + Silver Ticket, Golden Ticket</li>
+<li>Coerced authentication, NTLM Relay + Shadow credentials, DCSync + Diamond Ticket, SID-history infection (last steps out of scope)</li>
+</ol>
+<h3 id="relaying">Relaying</h3>
+<ul>
+<li><a href="https://www.secureauth.com/blog/we-love-relaying-credentials-a-technical-guide-to-relaying-credentials-everywhere/">A guide to relaying credentials everywhere in 2022</a> Including Shadow Credentials and Certificate Services (ADCS)</li>
+<li><a href="https://www.praetorian.com/blog/how-to-exploit-active-directory-acl-attack-paths-through-ldap-relaying-attacks/">How to Exploit Active Directory ACL Attack Paths Through LDAP Relaying Attacks</a></li>
+</ul>
+<h2 id="appendix-ad-defense-guidance">APPENDIX - AD Defense guidance</h2>
+<p>In my modest opinion, a lost battle.</p>
+<p>Look for example at the blog post presenting the <a href="https://www.microsoft.com/en-us/security/business/microsoft-digital-defense-report-2022-cyber-resilience">Microsoft Digital Defense Report 2022</a>: "<em>This chart shows the percentage of impacted customers missing basic security controls which are critical to increasing organizational cyber resilience. Findings are based on Microsoft engagements over the past year.</em>".  You will see that 90% of customers have an insecure AD configuration, 98% of customers do not use a tiered model, and the like. To me, this means, as I said, that defending AD is a losing battle from the start.</p>
+<ul>
+<li><a href="https://www.hub.trimarcsecurity.com/post/ten-ways-to-improve-ad-security-quickly">Top 10 ways of securing AD</a>. List of most common misconfigurations that can be exploited and how to fix them. </li>
+<li><a href="https://techcommunity.microsoft.com/t5/microsoft-security-experts-blog/total-identity-compromise-microsoft-incident-response-lessons-on/ba-p/3753391">Total Identity Compromise: Microsoft Incident Response lessons on securing Active Directory</a> Across all industry verticals, Microsoft Incident Response often finds similar issues within Active Directory environments. In this blog, we will be highlighting some of the most common issues seen in on-premises Active Directory environments and provide guidance on how to secure those weaknesses.</li>
+</ul>
+<p>Tools for checking common AD misconfigurations and obtain synthetic reports.</p>
+<ul>
+<li><a href="https://www.pingcastle.com/">PingCastle</a> </li>
+<li><a href="https://www.hub.trimarcsecurity.com/post/securing-active-directory-performing-an-active-directory-security-review">Trimarc ADChecks</a> </li>
+<li><a href="https://www.cert.ssi.gouv.fr/uploads/ad_checklist.html">Checklist</a> A self-assessment checklist by CERT France.</li>
+</ul>
+<h2 id="appendix-kerberos-delegation-abuses">APPENDIX - Kerberos Delegation Abuses</h2>
+<p>Out of scope (but very, very interesting...)</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/archive/msdn-magazine/2003/april/exploring-s4u-kerberos-extensions-in-windows-server-2003">Exploring S4U Kerberos Extensions in Windows Server 2003</a> Microsoft explanation of S4U.</li>
+<li><a href="https://www.linkedin.com/posts/mor-davidovich-57641614a_krbrelayup-rbcd-lpe-activity-7071418645842731008-c2wD/?originalSubdomain=qa">Krbrelayup</a> A 30-sec video showing usage of the DavRelayUp tool.</li>
+<li><a href="https://www.microsoft.com/en-us/security/blog/2022/05/25/detecting-and-preventing-privilege-escalation-attacks-leveraging-kerberos-relaying-krbrelayup/">Detecting and preventing privilege escalation attacks leveraging Kerberos relaying (KrbRelayUp)</a> Description and recommendations by Microsoft.</li>
+<li><a href="https://posts.specterops.io/kerberosity-killed-the-domain-an-offensive-kerberos-overview-eb04b1402c61">Kerberosity Killed the Domain: An Offensive Kerberos Overview</a> Kerberos delegation attacks.</li>
 </ul>
 
 
