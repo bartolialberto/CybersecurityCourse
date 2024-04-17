@@ -1285,15 +1285,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    Resources
+  <a href="#running-the-webapp" class="md-nav__link">
+    Running the webapp
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#writeups" class="md-nav__link">
-    Writeups
+  <a href="#tutorials" class="md-nav__link">
+    Tutorials
   </a>
   
 </li>
@@ -1368,15 +1368,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#finding" class="md-nav__link">
-    Finding
+  <a href="#discovery" class="md-nav__link">
+    Discovery
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#exploiting" class="md-nav__link">
-    Exploiting
+  <a href="#exploiting-in-practice" class="md-nav__link">
+    Exploiting in practice
   </a>
   
 </li>
@@ -1513,15 +1513,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    Resources
+  <a href="#running-the-webapp" class="md-nav__link">
+    Running the webapp
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#writeups" class="md-nav__link">
-    Writeups
+  <a href="#tutorials" class="md-nav__link">
+    Tutorials
   </a>
   
 </li>
@@ -1596,15 +1596,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#finding" class="md-nav__link">
-    Finding
+  <a href="#discovery" class="md-nav__link">
+    Discovery
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#exploiting" class="md-nav__link">
-    Exploiting
+  <a href="#exploiting-in-practice" class="md-nav__link">
+    Exploiting in practice
   </a>
   
 </li>
@@ -1691,34 +1691,43 @@
   <h1>OWASP Juice Shop</h1>
 
 <h2 id="owasp-juice-shop">OWASP Juice Shop</h2>
-<p>It is a web application that has been developed by the OWASP consortium for <strong>practicing web application security testing</strong>. It ontains many vulnerabilities of different nature. It also contains detection code that displays a “vulnerability found” banner whenever it detects that the user has managed to exploit one of the numerous vulnerabilities of the webapp.</p>
+<p>It is a web application that has been developed by the OWASP consortium for <strong>practicing web application security testing</strong>. It contains many vulnerabilities of different nature. It also contains detection code that displays a “vulnerability found” banner whenever it detects that the user has managed to exploit one of the numerous vulnerabilities of the webapp.</p>
 <p>OWASP has made the sources available and the webapp itself has to be installed and deployed on a web server in order to be actually used. An almost one-click and free deployment on a cloud platform can be obtained quite easily (see below).</p>
-<h3 id="resources">Resources</h3>
+<h3 id="running-the-webapp">Running the webapp</h3>
+<ul>
+<li><a href="https://pwning.owasp-juice.shop/companion-guide/latest/part1/running.html#_other_hosting_providers">Instructions for running the webapp</a> Reference guide.</li>
+</ul>
+<p>It contains "one-click deployment" on several cloud platforms.</p>
+<p>I suggest to use <a href="https://www.gitpod.io/">Gitpod</a>:</p>
+<ul>
+<li>Create an account (no credit card needed)</li>
+<li>Click the "one-click deployment above"</li>
+<li>Go on your dashboard, run the workload, <em>click share</em>, copy the URL (do not forget to click "share", otherwise the URL will not be visible).</li>
+<li>Paste the URL on a browser (or in the Burp browser, as indicated below).</li>
+</ul>
+<p>Gitpod has a free tier that is renewed each month automatically. Remember to “stop” the workspace while not in use (to not consume your credits) and to “pin” the workspace (otherwise it will be deleted after 30 days of inactivity).</p>
+<p><a href="https://www.heroku.com/">Heroku</a> is a platform analogous to Gitpod but it requires a small subscription fee. If you use Heroku, remember to deactivate the webapp on Heroku while it is not used, in order to not use Heroku resources unnecessarily (Resources section of your Heroku account; just stop the corresponding “Dyno”).</p>
+<h3 id="tutorials">Tutorials</h3>
 <p>Many videos and tutorials are available on the web that describe this webapp. Keep in mind that these resources:</p>
 <ul>
 <li>Do not describe the internal architecture of the webapp.</li>
 <li>Assume some basic knowledge of web application security.</li>
 <li>Do not provide a full step-by-step guide for detecting all the vulnerabilities of the webapp.</li>
-<li>
-<p>Have an extremely (excessive) practical orientation: the focus is not “understand what you are doing”; it is “let the application display the “vulnerability found” banner”.</p>
-</li>
-<li>
-<p><a href="https://pwning.owasp-juice.shop/">Official companion of the OWASP Juice Shop webapp</a> General overview of the webapp.</p>
-</li>
+<li>Have an extremely (excessive) practical orientation: the focus is not <em>“understand what you are doing”</em>; it is <em>“let the application display the “vulnerability found” banner”</em>.</li>
+</ul>
+<p>Useful resources:</p>
+<ul>
+<li><a href="https://pwning.owasp-juice.shop/">Official companion of the OWASP Juice Shop webapp</a> General overview of the webapp.</li>
 <li><a href="https://pwning.owasp-juice.shop/companion-guide/latest/part2/README.html">List of vulnerabilities</a> along with their difficulty and hints about how to discover them.</li>
 <li><a href="https://pwning.owasp-juice.shop/companion-guide/latest/appendix/solutions.html">Detailed solutions</a></li>
-<li><a href="https://pwning.owasp-juice.shop/companion-guide/latest/part1/running.html#_other_hosting_providers">Instructions for running the webapp</a> <ul>
-<li>One-click deployment on the cloud platform <em>Heroku</em> (which requires a small subscription fee; see below for a free platform). If you do so, remember to deactivate the webapp on Heroku while it is not used, in order to not use Heroku resources unnecessarily (Resources section of your Heroku account; just stop the corresponding “Dyno”)</li>
-<li><em>Gitpod</em> provides the same functionality of one-click deployment with a free tier that is renewed each month automatically. Follow the instructions above; remember to “stop” the workspace while not in use (to not consume your credits) and to “pin” the workspace (otherwise it will be deleted after 30 days of inactivity).</li>
-</ul>
-</li>
-</ul>
-<h3 id="writeups">Writeups</h3>
+<li>
 <p>Blog posts listing <strong>solutions to some of the challenges</strong> (vulnerabilities found):</p>
 <ul>
 <li><a href="https://neophytise.wordpress.com/2020/06/27/tryhackme-owasp-juice-shop-walkthrough/">Tryhackme - OWASP Juice Shop walkthrough</a></li>
 <li><a href="https://hacklido.com/blog/246-tryhackme-owasp-juice-shop-detailed-writeup">Tryhackme - OWASP Juice Shop walkthrough (2)</a></li>
 <li><a href="https://ex0a.medium.com/tryhackme-owasp-juice-shop-53e87fb1af36">Tryhackme - OWASP Juice Shop walkthrough (3)</a></li>
+</ul>
+</li>
 </ul>
 <h3 id="authentication-in-owasp-juice-shop">Authentication in OWASP Juice Shop</h3>
 <h4 id="bearer-tokens-explained">Bearer Tokens Explained</h4>
@@ -1800,76 +1809,55 @@
 <p>By copying the above bearer token on the decoding facility on <a href="https://jwt.io/">https://jwt.io/</a> we obtain the JSON Web Token in decoded form as indicated below. Note the hash of the user password.</p>
 <p><img alt="8ff0491e41575238670558d2fac6c385.png" src="../../_resources/8ff0491e41575238670558d2fac6c385-1.png" /></p>
 <h3 id="idor-vulnerability">IDOR vulnerability</h3>
-<p>The description of IDOR (Insecure Direct Object Reference) vulnerabilities is beyond the scope of this document. Many documents can be found on the web.  A simple and quick introduction can be found <a href="https://portswigger.net/web-security/access-control/idor">here</a>. Some real world examples:</p>
-<ul>
-<li><a href="https://blog.roysolberg.com/2018/07/airline-flights-leak">"I know what you did last summer - and also what you will be doing this one" 8 Jul. 2018</a>.</li>
-<li><a href="https://www.tgcom24.mediaset.it/skuola/uno-studente-riesce-ad-hackerare-il-sito-di-18app-poi-decide-di-collaborare_3043772-201602a.shtml">"Uno studente riesce ad hackerare il sito di 18app, poi decide di collaborare" 28 Nov. 2016</a></li>
-<li><a href="https://research.digitalinterruption.com/2020/09/10/giggle-laughable-security/">"Giggle; laughable security"  10 Sep 2020</a>.</li>
-</ul>
-<p>The OWASP Juice Shop webapp has an IDOR vulnerability: any authenticated user may read the shopping basket of any other user.</p>
-<p>The target shopping basket is identified by a numerical identifier. The association of a specific username with a shopping basket identifier cannot be found by exploiting this vulnerability and it may or may not be possible. In other words, one might read shopping basket <code>8</code> but determining what is the username that owns this basket or what is the shopping basket of user <code>clay@cornell.edu</code> is a different problem.</p>
-<h4 id="finding">Finding</h4>
-<p>Essentially, the procedure is as follows:</p>
+<p>The description of IDOR (Insecure Direct Object Reference) vulnerabilities is provided elsewhere in this website.
+The OWASP Juice Shop webapp has an IDOR vulnerability: <em>any authenticated user may read the shopping basket of any other user</em>.
+Of course, this is a <em>mistake</em> in the code of the webapp, i.e., a <em>vulnerability</em>: a user must not be able to see data private of another user.</p>
+<p>In order to play with this vulnerability, it is necessary to create at least two shopping baskets of different users:</p>
 <ol>
-<li>Create two users A and B.</li>
-<li>Insert some items in the respective shopping baskets.</li>
-<li>Identify the request sent by B for reading the shopping basket. Does the request contain a parameter that probably identifies B’s shopping basket?</li>
-<li>Identify the request sent by A for reading the shopping basket. Modify the request with the parameter found at the previous step and send the request.</li>
-<li>Can A see the shopping basket of B?</li>
+<li>Register a new user A, login, insert some items in the shopping basket, logout.</li>
+<li>Repeat for another new user B.</li>
 </ol>
-<p>This procedure can be executed in Burp easily:</p>
-<ul>
-<li>Set Intercept off.</li>
-<li>Open an embedded browser and create two users, say A and B (Login→Not yet a customer).</li>
-</ul>
-<p>Login as A</p>
-<ul>
-<li>Add some items to the shopping basket.</li>
-<li>Inspect the HTTP history (Proxy→HTTP history) and identify the HTTP request that shows the shopping basket. It is a 
-<code>GET</code> <code>/rest/basket/<em>small-integer-A</em></code> 
-(e.g., <code>small-integer-A</code> might be 1 or 3 or something alike).</li>
-<li>Logout</li>
-</ul>
-<p>Login as B</p>
-<ul>
-<li>Click on the shopping basket. Note that the shopping basket of B is empty.</li>
-<li>Set Intercept on.</li>
-<li>Reload the shopping basket</li>
-<li>Forward each request one by one (Proxy→Intercept) until seeing \
-<code>GET /rest/basket/<em>small-integer-B</em></code>.</li>
-<li>Replace <code><em>small-integer-B</em></code> by <code><em>small-integer-A.</em></code></li>
-<li>Forward this request and set Intercept off.</li>
-<li>You will now see the shopping basket of A although you are logged as B.</li>
-</ul>
-<p>I emphasize that this is a <em>mistake</em> in the code of the webapp, i.e., a <em>vulnerability</em>: a user must not be able to see data private of another user.</p>
-<p>The specific kind of this vulnerability belongs to the class described by the OWASP consortium as “<a href="https://owasp.org/www-community/Broken_Access_Control">Broken Access Control</a>”. In the past, vulnerabilities in this class were categorized in two separate classes: “Insecure Direct Object Reference (IDOR)” and “Missing Function Access Control”.</p>
-<h4 id="exploiting">Exploiting</h4>
-<p>If an attacker wanted to exploit this vulnerability in a practical setting, the attacker would not know how many users are logged in and what the corresponding “small integer” values are. In such a setting, thus, the attacker would have to repeatedly send <code>GET /rest/basket/<em>small-integer-X</em></code>, with many different values for <code><em>small-integer-X</em></code>.  Essentially, the procedure is as follows:</p>
+<h4 id="discovery">Discovery</h4>
+<p>The procedure is as follows:</p>
 <ol>
-<li>Login as A.</li>
-<li>Identify the request for reading the shopping basket.</li>
-<li>Instruct Burp to repeatedly send this request, specifying which part of the request to modify at each iteration and how.</li>
-<li>A will see the shopping basket of the other users currently logged in.</li>
+<li>Set <code>Intercept Off</code></li>
+<li>Login as either user, e.g., A.</li>
+<li>Set <code>Intercept On</code></li>
+<li>Read the shopping basket. Before forwarding each HTTP Request, analyze the request and search for parameters that <em>might</em> identify the shopping basket of this user (<em>hint</em>: search for a parameter whose value is a small integer).</li>
+<li>Set <code>Intercept Off</code> and make sure the shopping basket has been fully displayed (i.e., there is no pending request)</li>
+<li>Set <code>Intercept On</code></li>
+<li>Read the shopping basket. Before forwarding each HTTP Request, modify the value of the parameter(s) identified at step 4 with some "promising" value (hint: increment or decrement that small integer).</li>
 </ol>
-<p>This operation can be done automatically in Burp with the <strong>Intruder</strong> module, as follows.</p>
+<p>There may be essentially these outcomes:</p>
 <ul>
-<li>Set intercept off</li>
+<li>The webapp has an IDOR vulnerability: you will see the shopping basket of other users.</li>
+<li>
+<p>The webapp implements authorization correctly:</p>
+<ul>
+<li>The parameter modified at step 7 has a valid value (i.e., it indeed identifies a shopping basket) but the webapp realizes that the basket with that value must not be shown to the user that sent the request. Or,</li>
+<li>There is no parameter visible to the browser that identifies that shopping basket. The browser only observes cookies or bearer tokens that identify the authenticated user. Shopping baskets are within the session state maintained by the webapp and do not have any specific identifier.</li>
+</ul>
+</li>
+</ul>
+<h4 id="exploiting-in-practice">Exploiting in practice</h4>
+<p>In a practical setting the attacker would not know how many users are logged in and what their corresponding “small integer” values are. The attacker would thus have to repeatedly send <code>GET /rest/basket/<em>small-integer-X</em></code>, with many different values for <code><em>small-integer-X</em></code>.</p>
+<p>This procedure can be automated in Burp with the <strong>Intruder</strong> module, as follows.</p>
+<ol>
+<li>Set <code>Intercept Off</code></li>
 <li>Login and click on the shopping basket.</li>
 <li>Inspect the HTTP history (Proxy→HTTP history) and identify the HTTP request that shows the shopping basket.</li>
-<li>Send this request to <strong>Intruder</strong>(right-click).</li>
+<li>Send this request to <strong>Intruder</strong> (right-click).</li>
 <li>Go to the Intruder module of Burp. Select the Positions tab. A window will appear with the request just sent to this module.</li>
-<li>Click “clear §” (this is because Intruder assumes by default that the iteration should be done on cookie values).</li>
-<li>Specify which part of the request has to be modified at each iteration:</li>
-<li>Select the small integer portion of the URL; replace it with any letter (e.g., ‘s’) and click  “add §”. At this point Intruder knows that it is this part of the request that has to be modified at each iteration (Figure Intruder 1).</li>
-<li>Specify how to modify the specified part at each iteration:</li>
-<li>Click on the Payloads tab and insert a set of integer values in the Payload options section (either by preparing a text file in advance or by inserting the values one by one; the professional version of Burp has more options in this respect)  (Figure Intruder 2).</li>
+<li>Click <code>clear §</code> (this is because Intruder assumes by default that the iteration should be done on cookie values).</li>
+<li>Specify <em>which part of the request</em> has to be modified at each iteration: Select the small integer portion of the URL; replace it with any letter (e.g., <code>s</code>) and click  <code>add §</code>. At this point Intruder knows that it is this part of the request that has to be modified at each iteration (Figure Intruder 1).  </li>
+<li>Specify <em>how to modify the specified part</em> at each iteration: Click on the Payloads tab and insert a set of integer values in the Payload options section (either by preparing a text file in advance or by inserting the values one by one; the professional version of Burp has more options in this respect)  (Figure Intruder 2).</li>
 <li>Click “start attack”.</li>
-</ul>
-<p>At this point Intruder will repeatedly send the selected request to the webapp and will collect the corresponding responses. This traffic will <strong>not</strong> reach the browser. The traffic is shown in a new window and can be analyzed interactively  (Figure Intruder 3). Each message can be saved on a file.</p>
-<p><img alt="8660cc7f4b0a615aaee5712f3c490c84.png" src="../../_resources/8660cc7f4b0a615aaee5712f3c490c84-1.png" />
-Figure Intruder 1: Request with portion to modified</p>
-<p><img alt="9fdeebbdd4eb4809f74726c93c8800c8.png" src="../../_resources/9fdeebbdd4eb4809f74726c93c8800c8-1.png" />
-Figure Intruder 2: Payload set configured as a list of integers</p>
+</ol>
+<p><img alt="8660cc7f4b0a615aaee5712f3c490c84.png" src="../../_resources/8660cc7f4b0a615aaee5712f3c490c84-1.png" /></p>
+<p>Figure Intruder 1: Request with portion to modified</p>
+<p><img alt="9fdeebbdd4eb4809f74726c93c8800c8.png" src="../../_resources/9fdeebbdd4eb4809f74726c93c8800c8-1.png" /></p>
+<p>Figure Intruder 2: Payload set configured as a list of integers</p>
+<p>At this point Intruder will repeatedly send the selected request to the webapp and will collect the corresponding responses. Important: this traffic will be collected by Burp but it will <strong>not</strong> reach the browser. Burp shows this traffic in a new window for interactive analysis  (Figure Intruder 3). Each message can be saved on a file.</p>
 <p><img alt="e792d1cde9d3d2018e0d94b7f51fa9b5.png" src="../../_resources/e792d1cde9d3d2018e0d94b7f51fa9b5-1.png" /></p>
 <p>Figure Intruder 3: Part of the response for payload 5 (shopping basket of user id 16). In this execution, all the responses have returned a status code 200, thus corresponding to an existing shopping basket. Some of those baskets are empty.</p>
 <h4 id="another-idor-vulnerability">Another IDOR vulnerability</h4>
