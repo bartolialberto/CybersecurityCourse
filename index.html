@@ -241,19 +241,40 @@
     How to use this website
   </a>
   
-    <nav class="md-nav" aria-label="How to use this website">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chatgpt-and-friends-gemini-llama" class="md-nav__link">
+    ChatGPT (and friends: Gemini, LLama, ...)
+  </a>
+  
+    <nav class="md-nav" aria-label="ChatGPT (and friends: Gemini, LLama, ...)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#do-not-be-frustrated" class="md-nav__link">
-    Do not be frustrated
+  <a href="#what-does-this-code-do" class="md-nav__link">
+    "What does this code do?"
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#ask-chatgpt" class="md-nav__link">
-    Ask ChatGPT
+  <a href="#how-can-i-do-that" class="md-nav__link">
+    "How can I do that?"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-can-i-write-better" class="md-nav__link">
+    "How can I write better?"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#can-i-ask-chatgpt-to-write-my-report" class="md-nav__link">
+    "Can I ask ChatGPT to write my report?"
   </a>
   
 </li>
@@ -1211,19 +1232,40 @@
     How to use this website
   </a>
   
-    <nav class="md-nav" aria-label="How to use this website">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chatgpt-and-friends-gemini-llama" class="md-nav__link">
+    ChatGPT (and friends: Gemini, LLama, ...)
+  </a>
+  
+    <nav class="md-nav" aria-label="ChatGPT (and friends: Gemini, LLama, ...)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#do-not-be-frustrated" class="md-nav__link">
-    Do not be frustrated
+  <a href="#what-does-this-code-do" class="md-nav__link">
+    "What does this code do?"
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#ask-chatgpt" class="md-nav__link">
-    Ask ChatGPT
+  <a href="#how-can-i-do-that" class="md-nav__link">
+    "How can I do that?"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-can-i-write-better" class="md-nav__link">
+    "How can I write better?"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#can-i-ask-chatgpt-to-write-my-report" class="md-nav__link">
+    "Can I ask ChatGPT to write my report?"
   </a>
   
 </li>
@@ -1258,20 +1300,48 @@
 <p>This website contains a curated set of references.</p>
 <p>References provide real-world examples, in-depth analysis, technical manuals and the like. They are intended to be a resource for those interested in delving deeper.</p>
 <p>Please always keep in mind that <em>the content of this website is not needed for the exam</em>: the slides are all that is needed in this respect.</p>
-<h3 id="do-not-be-frustrated">Do not be frustrated</h3>
-<p>Many of the linked documents can only be fully understood with very specific technical skills (and sometimes theoretical knowledge) far beyond those required or provided by this course. Please try to focus on the topics relevant to the course. Most importantly, do not be frustrated if you do not manage to understand everything.</p>
+<p>Many of the linked documents can only be fully understood with very specific technical skills (and sometimes theoretical knowledge) far beyond those required or provided by this course. Please try to focus on the topics relevant to the course. Most importantly, <strong>do not be frustrated</strong> if you do not manage to understand everything.</p>
 <p>In many cases I do not understand everything either.</p>
-<h3 id="ask-chatgpt">Ask ChatGPT</h3>
-<p>Many technical documents on the web rely on very specific commands from Linux, Windows, Powershell, PHP, and other technologies. Understanding these commands or their output is often difficult. Asking ChatGPT (or Bard, or a similar technology) for clarification is often a great help.</p>
+<h2 id="chatgpt-and-friends-gemini-llama">ChatGPT (and friends: Gemini, LLama, ...)</h2>
+<h3 id="what-does-this-code-do">"What does this code do?"</h3>
+<p>Many technical documents rely on very specific commands from Linux, Windows, Powershell, PHP, and other technologies. Understanding these commands or their output is often difficult.</p>
+<p>Asking ChatGPT for clarification is often a great help.</p>
 <p>While <em>there is no guarantee that the answer will be correct</em>, in many cases the answer will be very useful (and indeed correct).</p>
-<p>A prompt technique that often works well is this: <em>"explain this:"</em> followed by a copy-and-pasted command, or command output, or piece of code.</p>
-<p>If you want instead to "learn" something, asking broad and general questions is not very useful (e.g. <em>"how does access control work in Windows?</em>"). It is usually much better <em>to start general</em> in order to delimit the overall scenario and then be <em>very specific</em>.</p>
-<ul>
+<p>A prompt technique that often works well is this: <em>"Explain this:"</em> followed by a copy-and-pasted command, or command output, or piece of code.</p>
+<p>Note: relying on ChatGPT for having a quick, approximate understanding of what a command (or even a piece of code) actually does is a strategy used also by a top security company, Mandiant: see <a href="https://www.mandiant.com/resources/blog/mandiant-leveraging-ai">Analyzing an Alert for a PowerShell Script</a> (there might be a conflict of interest, though, as Mandiant is part of Google and this post promotes the use of a Google competitor to ChatGPT).</p>
+<h3 id="how-can-i-do-that">"How can I do that?"</h3>
+<p>If you want to "learn" something, asking broad and general questions is not very useful (e.g. <em>"how does access control work in Windows?</em>"). </p>
+<p>It is usually much better <em>to start general</em> in order to delimit the overall scenario and then be <em>very specific</em>:</p>
+<ol>
 <li>Start with something like <em>"I want to understand Linux administration"</em>, or <em>"I am a Windows user"</em>, <em>"I am a Python programmer; I want to write a script that operates on Pandas dataframes"</em>, etc.</li>
 <li>Then, make a very specific question. For example, <em>"In Windows, how can I list all users of a given group from the command line?"</em></li>
-</ul>
-<p>Relying on ChatGPT/Bard for having a quick, approximate understanding of what a command (or even a piece of code) actually does is a strategy used also by a top security company, Mandiant: see <a href="https://www.mandiant.com/resources/blog/mandiant-leveraging-ai">Analyzing an Alert for a PowerShell Script</a> (there might be a conflict of interest, though, as Mandiant is part of Google and this post promotes the use of Bard, also a Google service).</p>
+</ol>
+<p>Of course, always keep in mind that <em>there is no guarantee that the answer will be correct</em>.</p>
 <p>I have occasionally provided a link to brief explanations provided by ChatGPT/Bard on specific topics, for ease of reading. As just pointed out, there is no guarantee that those explanations are correct: take them just as hints.</p>
+<h3 id="how-can-i-write-better">"How can I write better?"</h3>
+<p>Many web-based tools exist that are internally based on technologies "similar" to those that power ChatGPT (<a href="https://www.deepl.com/en/write">DeepL Write</a>, <a href="https://app.grammarly.com/">Grammarly</a>, ...).</p>
+<p>You type a sentence and get a "polished" version of that sentence, (usually) grammatically correct and easier to read.</p>
+<p>As usual, <em>there is no guarantee that the answer will be correct</em>, i.e. <em>always</em> check the meaning of the suggested sentence; sometimes it may be slightly different from what you actually mean.</p>
+<p>You should <em>definitely</em> start using these tools (e.g. to improve <a href="Student%20Projects/Requirements/">your report</a>).</p>
+<h3 id="can-i-ask-chatgpt-to-write-my-report">"Can I ask ChatGPT to write my report?"</h3>
+<p>The short answer is yes.</p>
+<p>The long answer is much more nuanced. It is very likely that:</p>
+<ul>
+<li>You will need to use ChatGPT a lot in your future career.</li>
+<li>Using ChatGPT will increase your productivity;</li>
+<li>
+<p>Your productivity will depend on how good you become at using ChatGPT effectively and, in particular, at</p>
+<ul>
+<li>understanding its limitations;</li>
+<li>identifying and correcting its inevitable errors.</li>
+</ul>
+</li>
+</ul>
+<p>However, <em>you will always remain fully responsible for what you deliver</em>.</p>
+<p>If you deliver something correct more quickly and efficiently, fine. If you deliver something wrong, it will be your fault.</p>
+<p>Having said that, I and my colleagues in Computer Engineering at UniTrieste have agreed to adopt the following policy in all our courses:</p>
+<p><em>In any type of content produced by the student for admission to or participation in an exam (projects, reports, exercises, tests), the use of Large Language Model tools (such as ChatGPT and the like) must be explicitly declared. This requirement must be met even in the case of partial use.</em></p>
+<p><em>Regardless of the method of assessment, the teacher reserves the right to further investigate the student's actual contribution with an oral exam for any type of content produced.</em></p>
 
 
   
