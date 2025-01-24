@@ -2103,7 +2103,9 @@ The mechanism is conceptually identical to TLS with mutual authentication (a top
 <p>The target machine has a MySQL service running. This database could store such credentials (hint: it does store Wordpress credentials; Wordpress is an open source content management system widely used for building web sites).</p>
 <p>Suggestions:</p>
 <ul>
-<li>Having obtained MySQL credentials as described in section <a href="#mysql-password-guessing">MySQL password guessing</a>, try to determine whether any such credentials have admin privilege on MySQL. Then, use those credentials for:<ul>
+<li>
+<p>Having obtained MySQL credentials as described in section <a href="#mysql-password-guessing">MySQL password guessing</a>, try to determine whether any such credentials have admin privilege on MySQL. Then, use those credentials for:</p>
+<ul>
 <li>Listing the databases on the MySQL service and see whether there is anyone that could contain credentials of some service.</li>
 <li>Listing the tables of that database and see which one could contain credentials.</li>
 <li>Inspect the schema of that table and prepare a SQL query for extracting the relevant columns.</li>
@@ -2111,9 +2113,11 @@ The mechanism is conceptually identical to TLS with mutual authentication (a top
 </ul>
 </li>
 </ul>
-<p>Useful links:
-- <a href="https://infosecwriteups.com/pwning-wordpress-passwords-2caf12216956">Pwning WordPress Passwords</a> (see first part)
-- <a href="https://tremblinguterus.blogspot.com/2020/11/metasploitable-3-windows-walkthrough_87.html">Metasploitable 3 Windows Walkthrough: Part VI</a> (see second part).</p>
+<p>Useful links:</p>
+<ul>
+<li><a href="https://infosecwriteups.com/pwning-wordpress-passwords-2caf12216956">Pwning WordPress Passwords</a> (see first part)</li>
+<li><a href="https://tremblinguterus.blogspot.com/2020/11/metasploitable-3-windows-walkthrough_87.html">Metasploitable 3 Windows Walkthrough: Part VI</a> (see second part).</li>
+</ul>
 <h3 id="offline-password-guessing">Offline password guessing</h3>
 <p>Offline password guessing is an attack that, given a password hash, attempts to obtain the corresponding password. Since hash functions are designed to be not invertible (an output value does not provide any information about the corresponding input), such attacks work by computing the hash of each password in an input password list until finding a value identical to the hash available. Of course, success of the attack depends on whether the password to be found is in the input password list and on the amount of computing resources available.</p>
 <p>This guessing attack is called “offline” because during its execution there is no communication at all with the service where the targeted credentials are used.</p>
@@ -2125,10 +2129,12 @@ The mechanism is conceptually identical to TLS with mutual authentication (a top
 </ul>
 <p>The very same steps could be executed for an offline guessing attack on the Windows credentials extracted from the SAM.
 However, the hash of a Windows password suffices for impersonating the corresponding user, even without knowing the password (see also  section <a href="#pass-the-hash">Pass the hash (pth)</a> ).</p>
-<p>When using a tool for offline guessing keep in mind:
-- The input file containing the hashes must be structured as required by the tool (<code>hashcat</code> expects to receive only the hashes, <code>john</code> can receive a SAM line with the suitable input option).
-- The correct hash format is specified in input. 
-- Usage of both <code>hashcat</code> and <code>john</code> is quite complex (e.g., <code>john</code> maintains a hidden cache of recently cracked hashes, so in repeated executions those hashes are not cracked again; and, a VM might not have enough memory to run hashcat).</p>
+<p>When using a tool for offline guessing keep in mind:</p>
+<ul>
+<li>The input file containing the hashes must be structured as required by the tool (<code>hashcat</code> expects to receive only the hashes, <code>john</code> can receive a SAM line with the suitable input option).</li>
+<li>The correct hash format is specified in input. </li>
+<li>Usage of both <code>hashcat</code> and <code>john</code> is quite complex (e.g., <code>john</code> maintains a hidden cache of recently cracked hashes, so in repeated executions those hashes are not cracked again; and, a VM might not have enough memory to run hashcat).</li>
+</ul>
 <h5 id="how-to-use-the-obtained-passwords">How to use the obtained passwords</h5>
 <p>Assuming you obtained some wordpress credentials:</p>
 <ol>
