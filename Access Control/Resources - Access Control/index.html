@@ -14,7 +14,7 @@
         <link rel="prev" href="../../MITRE%20ATTACK/ICS/">
       
       
-        <link rel="next" href="../../Malware/Execution%20and%20other%20tactics/">
+        <link rel="next" href="../Saltzer%20and%20Schroeder/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -411,16 +411,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#saltzer-and-schroeder-principles" class="md-nav__link">
-    Saltzer and Schroeder Principles
+  <a href="#access-control-and-acl" class="md-nav__link">
+    Access Control and ACL
   </a>
   
-    <nav class="md-nav" aria-label="Saltzer and Schroeder Principles">
+    <nav class="md-nav" aria-label="Access Control and ACL">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#example-application" class="md-nav__link">
-    Example application
+  <a href="#linux" class="md-nav__link">
+    Linux
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    Windows
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#android" class="md-nav__link">
+    Android
   </a>
   
 </li>
@@ -431,15 +445,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#access-control-and-acl" class="md-nav__link">
-    Access Control and ACL
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#authentication" class="md-nav__link">
-    Authentication
+  <a href="#accounts-and-groups" class="md-nav__link">
+    Accounts and Groups
   </a>
   
 </li>
@@ -451,10 +458,37 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#access-control-in-general" class="md-nav__link">
+    Access Control in General
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Saltzer%20and%20Schroeder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Saltzer and Schroeder Principles
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1524,16 +1558,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#saltzer-and-schroeder-principles" class="md-nav__link">
-    Saltzer and Schroeder Principles
+  <a href="#access-control-and-acl" class="md-nav__link">
+    Access Control and ACL
   </a>
   
-    <nav class="md-nav" aria-label="Saltzer and Schroeder Principles">
+    <nav class="md-nav" aria-label="Access Control and ACL">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#example-application" class="md-nav__link">
-    Example application
+  <a href="#linux" class="md-nav__link">
+    Linux
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    Windows
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#android" class="md-nav__link">
+    Android
   </a>
   
 </li>
@@ -1544,15 +1592,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#access-control-and-acl" class="md-nav__link">
-    Access Control and ACL
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#authentication" class="md-nav__link">
-    Authentication
+  <a href="#accounts-and-groups" class="md-nav__link">
+    Accounts and Groups
   </a>
   
 </li>
@@ -1560,6 +1601,13 @@
         <li class="md-nav__item">
   <a href="#active-directory-and-ldap" class="md-nav__link">
     Active Directory and LDAP
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#access-control-in-general" class="md-nav__link">
+    Access Control in General
   </a>
   
 </li>
@@ -1580,46 +1628,81 @@
 
 
 <h1 id="access-control-resources">Access Control - Resources</h1>
-<h2 id="saltzer-and-schroeder-principles">Saltzer and Schroeder Principles</h2>
-<p><strong>A masterpiece.</strong></p>
-<p><a href="https://www.cs.virginia.edu/~evans/cs551/saltzer/">The Protection of Information in Computer Systems, .</a> <em>Saltzer and Schroeder, Communications of the ACM 17, 7 (July 1974)</em>.</p>
-<p>Although this paper is very old, it is striking that many of the ideas in the introduction (Section I-A) are still valid today. The following was written <strong>50 years ago</strong>. It could very well have been written today.</p>
-<blockquote>
-<p>In practice, producing a system at any level of functionality ... that actually does prevent all ... unauthorized acts has proved to be extremely difficult. ... Even in systems designed and implemented with security as an important objective, design and implementation flaws provide paths that circumvent the intended access constraints. Design and construction techniques that systematically exclude flaws are the topic of much research activity, but no complete method applicable to the construction of large general-purpose systems exists yet....</p>
-<p>In the absence of such methodical techniques, experience has provided some useful principles that can guide the design and contribute to an implementation without security flaws. Here are <strong>eight examples of design principles</strong> that apply particularly to protection mechanisms.</p>
-</blockquote>
-<p><strong>I encourage everyone to read Section I-A-3: Design principles</strong>. Design principle 'C' is the core of access control today:</p>
-<blockquote>
-<p>Complete mediation: Every access to every object must be checked for authority...</p>
-</blockquote>
-<h3 id="example-application">Example application</h3>
-<p>A superstar team of security and privacy experts has published in January 2024 an extremely insightful paper for analyzing (and strongly criticizing) a technology being advocated by many police and intelligence agencies around the world for combating crime. They built many of their criticisms precisely on the fact that the proposed technology is in contrast with several of the design principles by Saltzer and Schroeder (first subsection of "CSS cannot be deployed safely").</p>
-<p><a href="https://academic.oup.com/cybersecurity/article/10/1/tyad020/7590463#437633037">Bugs in our pockets: the risks of client-side scanning</a> Journal of Cybersecurity, January 2024.</p>
-<p>Several other topics covered in our course are mentioned in their analysis. A really wonderful read also for everyone interested in privacy. </p>
 <h2 id="access-control-and-acl">Access Control and ACL</h2>
+<h3 id="linux">Linux</h3>
 <ul>
-<li><a href="https://www.redhat.com/sysadmin/linux-file-permissions-explained">Linux file permissions explained</a></li>
-<li><a href="https://www.redhat.com/sysadmin/suid-sgid-sticky-bit">Linux permissions: SUID, SGID, and sticky bit</a></li>
-<li><a href="https://learn.microsoft.com/en-us/windows/security/identity-protection/access-control/access-control">Windows Access Control Overview</a> Warning: this is a huge and complex topic, with terminology often incoherent.</li>
-<li>How a process can change its account:<ul>
-<li><a href="https://man7.org/linux/man-pages/man2/setuid.2.html">Linux setuid system call</a></li>
-<li><a href="https://learn.microsoft.com/en-us/windows/win32/api/securitybaseapi/nf-securitybaseapi-impersonateloggedonuser">Windows ImpersonateLoggedOnUser</a> </li>
+<li>
+<p><a href="https://www.baeldung.com/linux/">Baeldung Linux Guides</a></p>
+<ul>
+<li><a href="https://www.baeldung.com/linux/chown-chmod-permissions">Setting Permissions with chown and chmod</a></li>
+<li><a href="https://www.baeldung.com/linux/setuid-and-user-ids">Linux Setuid Programs and Their User IDs</a></li>
+<li><a href="https://www.baeldung.com/linux/sudo-command">Sudo Command in Linux</a></li>
 </ul>
 </li>
-<li><a href="https://www.baeldung.com/linux/sudo-command">Sudo Command in Linux</a>. This site has a very nice Linux administration guide.</li>
-<li>A general, high-level discussion of the many flavors and facets of access control can be found in "<em>Authentication, Authorisation &amp; Accountability, Section 3 - Authorization</em>" <a href="https://www.cybok.org/knowledgebase1_1/">Knowledgebase – CyBOK v1.1</a>.</li>
 </ul>
-<h2 id="authentication">Authentication</h2>
+<h3 id="windows">Windows</h3>
 <ul>
-<li><a href="https://chat.openai.com/share/bc58760b-d533-4061-a8a8-bad1c7faa85c">ChatGPT: where are accounts defined in Linux and in Windows?</a></li>
-<li><a href="https://chat.openai.com/share/2cd7796e-d0e7-49c6-bbd0-61e29f7b2ecf">ChatGPT: which are the predefined account groups in Linux and in Windows?</a></li>
+<li>
+<p><a href="https://learn.microsoft.com/en-us/windows/security/">Windows security documentation</a></p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/windows/security/identity-protection/access-control/access-control">Access Control Overview</a> </li>
+<li><a href="https://learn.microsoft.com/en-us/windows/security/application-security/application-control/user-account-control/">User Account Control Overview</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://learn.microsoft.com/en-us/windows/dev-environment/">Windows development environment</a> </p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/windows/sudo/">Sudo for Windows</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="android">Android</h3>
+<ul>
+<li><a href="https://developer.android.com/guide/topics/permissions/overview">Permissions on Android</a></li>
+</ul>
+<h2 id="accounts-and-groups">Accounts and Groups</h2>
+<p>How a process can change its account?</p>
+<ul>
+<li>
+<p><a href="https://man7.org/linux/man-pages/man2/setuid.2.html">Linux system calls</a> </p>
+<ul>
+<li><a href="https://man7.org/linux/man-pages/man2/setuid.2.html">setuid system call</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://learn.microsoft.com/en-us/windows/win32/api/_security/">Windows Security and Identity API</a> </p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/windows/win32/api/securitybaseapi/nf-securitybaseapi-impersonateloggedonuser">ImpersonateLoggedOnUser</a> </li>
+</ul>
+</li>
+</ul>
+<p>Selected chats from ChatGPT (Linux and Windows):</p>
+<ul>
+<li><a href="https://chat.openai.com/share/bc58760b-d533-4061-a8a8-bad1c7faa85c">Where are accounts defined?</a></li>
+<li><a href="https://chat.openai.com/share/2cd7796e-d0e7-49c6-bbd0-61e29f7b2ecf">Which are the predefined account groups?</a></li>
 </ul>
 <h2 id="active-directory-and-ldap">Active Directory and LDAP</h2>
 <ul>
-<li><a href="https://posts.specterops.io/an-introduction-to-manual-active-directory-querying-with-dsquery-and-ldapsearch-84943c13d7eb">An Introduction to Manual Active Directory Querying with Dsquery and Ldapsearch</a></li>
-<li><a href="https://learn.microsoft.com/en-us/windows/win32/adschema/attributes-all">All Active Directory attributes</a></li>
-<li><a href="https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ldap/using-the-ldap-api-in-a-client-application">Using Lightweight Directory Access Protocol</a> The topics in this section describe the steps a typical Lightweight Directory Access Protocol (LDAP) client application follows to interact with an LDAP server.</li>
-<li><a href="https://zer1t0.gitlab.io/posts/attacking_ad/">Attacking Active Directory: 0 to 0.9</a> Nice description of many Windows topics, not necessarily related to attacks, including Active Directory, User Management, Access Rights and so on.</li>
+<li>
+<p><a href="https://learn.microsoft.com/en-us/windows-server/">Windows Server documentation</a></p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview">Active Directory Domain Services Overview</a></li>
+</ul>
+</li>
+</ul>
+<p>From other sources:</p>
+<ul>
+<li><a href="https://posts.specterops.io/an-introduction-to-manual-active-directory-querying-with-dsquery-and-ldapsearch-84943c13d7eb">An Introduction to Manual Active Directory Querying with Dsquery and Ldapsearch</a> SpecterOps.</li>
+<li><a href="https://www.redhat.com/en/topics/security/what-is-ldap-authentication">What is lightweight directory access protocol (LDAP) authentication?</a> RedHat.</li>
+</ul>
+<h2 id="access-control-in-general">Access Control in General</h2>
+<ul>
+<li>
+<p><a href="https://www.cybok.org/knowledgebase1_1/">Knowledgebase – CyBOK v1.1</a>.</p>
+<ul>
+<li>"<em>Authentication, Authorisation &amp; Accountability, Section 3 - Authorization</em>". A general, high-level discussion of the many flavors and facets of access control.</li>
+</ul>
+</li>
 </ul>
 
 
