@@ -520,9 +520,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#enumeration" class="md-nav__link">
-    Enumeration
+  <a href="#discovery" class="md-nav__link">
+    Discovery
   </a>
+  
+    <nav class="md-nav" aria-label="Discovery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reference-and-suggestions" class="md-nav__link">
+    Reference and suggestions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -535,6 +548,20 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exploit-injection" class="md-nav__link">
+    Exploit injection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#understand-process-structure" class="md-nav__link">
     Understand process structure
   </a>
@@ -542,8 +569,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#suggestions" class="md-nav__link">
-    Suggestions
+  <a href="#play-with-the-attacked-machine" class="md-nav__link">
+    Play with the attacked machine
   </a>
   
 </li>
@@ -1625,9 +1652,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#enumeration" class="md-nav__link">
-    Enumeration
+  <a href="#discovery" class="md-nav__link">
+    Discovery
   </a>
+  
+    <nav class="md-nav" aria-label="Discovery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reference-and-suggestions" class="md-nav__link">
+    Reference and suggestions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1640,6 +1680,20 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exploit-injection" class="md-nav__link">
+    Exploit injection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#understand-process-structure" class="md-nav__link">
     Understand process structure
   </a>
@@ -1647,8 +1701,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#suggestions" class="md-nav__link">
-    Suggestions
+  <a href="#play-with-the-attacked-machine" class="md-nav__link">
+    Play with the attacked machine
   </a>
   
 </li>
@@ -1747,23 +1801,17 @@
 
 <h1 id="metasploitable3-demo">Metasploitable3 Demo</h1>
 <h2 id="demo-1-exploit-injection-eternalblue">Demo 1: Exploit injection (EternalBlue)</h2>
-<p>MITRE ATT&amp;CK Techniques: <a href="https://attack.mitre.org/techniques/T1210/">Exploitation of Remote Services</a> or <a href="https://attack.mitre.org/techniques/T1190/">Exploit Public-Facing Application</a></p>
-<h3 id="enumeration">Enumeration</h3>
-<p>The very first steps are as follows:</p>
-<ol>
-<li>Finding the IP address of the target machine.</li>
-<li>Listing the servers (i.e., port numbers and protocols) that can be accessed and attacked. </li>
-</ol>
-<p>One of the ways these steps may be executed is with the <code>nmap</code> command. The information obtained with these steps is necessary for the attacks described in the next sections.</p>
-<p>These steps are often called "enumeration" (the MITRE ATT&amp;CK framework uses a different term for the corresponding tactic, i.e., "discovery").</p>
-<p>Suggestions:</p>
+<h3 id="discovery">Discovery</h3>
+<p>You are on your attacking machine. First of all you need to find the IP address and network number of your Kali machine (<code>ifconfig</code> command).</p>
+<p>At this point you need to execute the MITRE tactic called <a href="https://attack.mitre.org/tactics/TA0007/">Discovery</a>: 
+<em>The adversary is trying to figure out your environment. Discovery consists of techniques an adversary may use to gain knowledge about the system and internal network.</em> The technical jargon often uses a different term for these steps: <em>enumeration</em>.</p>
 <ul>
-<li>First of all you need to find the IP address and network number of your Kali machine (<code>ifconfig</code> command).</li>
-<li>Then you need to determine which other hosts are connected to your network. This can be done with <code>nmap network-number-of-your-interface</code> (with /24 syntax). You will probably find 3 IP addresses: one for your Kali machine; one for the target (metasploitable3 VM) and the third one for what?</li>
+<li>Determine which other hosts are connected to your network. This can be done with <code>nmap network-number-of-your-interface</code> (with /24 syntax). You will probably find 3 IP addresses: one for your Kali machine; one for the target (metasploitable3 VM) and the third one for what?</li>
 <li>How to determine which of the two addresses that do not belong to your Kali machine belongs to the target? (hints: which ports are open at those addresses?)</li>
 <li>Finally, execute a scan on IP-address-target by running <code>nmap</code>  with default options.</li>
 </ul>
-<p>Further suggestions: </p>
+<p>The above steps correspond to the <a href="https://attack.mitre.org/techniques/T1046/">Network Service Discovery</a> technique.</p>
+<h4 id="reference-and-suggestions">Reference and suggestions</h4>
 <ul>
 <li>Execute another scan with <code>nmap -sV -p- IP-address-target</code>. This command takes much longer and generates much more network traffic but provides a more detailed description. Try to understand the difference in depth and coverage of the scan between the two cases.</li>
 <li>Metasploitable3 has a vulnerable service listening on ports 9200/9300. Is that service detected by <code>nmap</code> in both executions? If yes, is it identified correctly (search on the web what is the typical usage for those ports)?</li>
@@ -1771,31 +1819,34 @@
 </ul>
 <p>Useful link: <a href="https://www.redhat.com/sysadmin/quick-nmap-inventory">Running a quick NMAP scan to inventory my network</a>.</p>
 <h3 id="smb-exploitation-eternalblue">SMB Exploitation (EternalBlue)</h3>
+<h4 id="overview">Overview</h4>
 <p><a href="https://en.wikipedia.org/wiki/Server_Message_Block">SMB </a>is a communication protocol for sharing files and printers. A service that can be accessed with this protocol runs on basically all Windows systems. It exposes functionalities for accessing files, navigating through directories and alike (e.g., search “<a href="https://www.google.com/search?client=opera&amp;q=smb+commands+window">smb commands windows</a>”). As such, this service does <em>not</em> expose any functionality for executing arbitrary commands, launching a shell, managing users or devices and alike.</p>
 <p>Vulnerability <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2017-0144">CVE-2017-0144</a> affects the Windows SMB server. This vulnerability can be exploited by an unauthenticated remote attacker for executing arbitrary code on the machine running the server (see also <a href="https://learn.microsoft.com/en-us/security-updates/securitybulletins/2017/ms17-010">Microsoft Security Bulletin MS17-010</a>).</p>
 <p>An exploit for this vulnerability, developed by the NSA and secretly used for their attacks, was publicly released on 17/4/2017 by "<a href="https://en.wikipedia.org/wiki/The_Shadow_Brokers">The Shadow Brokers</a>", a hacking group whose real identities are not known. This exploit is widely known as “EternalBlue'' and was used in several large scale ransomware attacks a few months later (<a href="https://en.wikipedia.org/wiki/WannaCry_ransomware_attack">WannaCry</a> / <a href="https://en.wikipedia.org/wiki/Petya_and_NotPetya">NotPetya</a>). Interestingly, a patch for this vulnerability had already been made available by Microsoft at the time of those disrupting attacks. One of the reasons for the large-scale impact of those attacks is that hundreds of thousands of machines around the world had not applied the patch (<a href="https://bartoli-alberto.blogspot.com/2017/05/osservazione-sul-worm-wannacry.html">a few notes</a> by myself on this fact).</p>
 <p>The metasploitable3 Windows VM has this vulnerability (no longer present in modern Windows platforms). Metasploit has a module containing an exploit for that vulnerability, where the default payload launches a Metepreter session with SYSTEM privilege (i.e., a shell with full control on the attacked system).</p>
-<h4 id="understand-process-structure">Understand process structure</h4>
-<p>The exploit payload is the meterpreter server. This payload is injected within the memory of the vulnerable program (SMB server). After injection, thus, the meterpreter client will be connected to the same process that runs the SMB server. No new process is created.</p>
-<p>The meterpreter commands issued by the client machine will be executed by the vulnerable process at the other side, i.e., on the attacked machine. The operating system on the attacked machine will execute only those commands for which the vulnerable process has sufficient access rights. Since that process is associated with the <code>SYSTEM</code> identity, that process has the highest privilege level possible and thus every command can be executed.</p>
-<p>One of the possible meterpreter commands is <code>shell</code>, which spawns a shell on the attacked machine. In this case a new process is created. The identity of that process is the same as the identity of its parent process (i.e., of the vulnerable process). Thus, the shell process will also have the SYSTEM identity.</p>
-<p>One of the possible meterpreter commands is <code>migrate</code>, which move the meterpreter server within the memory of another running process on the attacked machine. In this case, the identity of the meterpreter server after migration will be that of the "destination process".</p>
-<h4 id="suggestions">Suggestions</h4>
-<p>Suggestions: </p>
+<h4 id="exploit-injection">Exploit injection</h4>
+<p>MITRE ATT&amp;CK Techniques: <a href="https://attack.mitre.org/techniques/T1210/">Exploitation of Remote Services</a> or <a href="https://attack.mitre.org/techniques/T1190/">Exploit Public-Facing Application</a></p>
 <ul>
 <li>Execute the metasploit <code>search</code> command of metasploit to have a look at the exploits available and possibly focus on those available for Windows targets.</li>
-<li>Use the exploit <a href="https://www.infosecmatter.com/metasploit-module-library/?mm=exploit/windows/smb/ms17_010_eternalblue">exploit/windows/smb/ms17_010_eternalblue</a> for obtaining a meterpreter session on metasploitable3.</li>
-<li>Ascertain the user associated with that session (meterpreter <code>getuid</code> command).</li>
+<li>Use the exploit <a href="https://www.infosecmatter.com/metasploit-module-library/?mm=exploit/windows/smb/ms17_010_eternalblue">exploit/windows/smb/ms17_010_eternalblue</a> for obtaining a <code>meterpreter</code> session on metasploitable3. You just need to specify the <code>RHOST</code> option by setting it to the IP address of metasploitable3.</li>
+<li>Ascertain the user associated with that session (<code>meterpreter</code> <code>getuid</code> command).</li>
 <li>Take a moment to realize what has happened: by exploiting a mistake in a service for accessing files and printers, one has taken full control of the attacked machine.</li>
 </ul>
-<p>Then you can operate <em>on metasploitable3</em> by playing with meterpreter <em>from the attacker machine</em>. Some suggestions:</p>
+<p>Then you can operate <em>on metasploitable3</em> by playing with <code>meterpreter</code> <em>from the attacker machine</em>. Before doing that, make sure to read and understand the next section.</p>
+<h4 id="understand-process-structure">Understand process structure</h4>
+<p>The exploit payload is the <code>meterpreter</code> server. This payload is injected within the memory of the vulnerable program (SMB server). After injection, thus, the <code>meterpreter</code> client will be connected to the same process that runs the SMB server. No new process is created.</p>
+<p>The <code>meterpreter</code> commands issued by the client machine will be executed by the vulnerable process at the other side, i.e., on the attacked machine. The operating system on the attacked machine will execute only those commands for which the vulnerable process has sufficient access rights. Since that process is associated with the <code>SYSTEM</code> identity, that process has the highest privilege level possible and thus every command can be executed.</p>
+<p>One of the possible <code>meterpreter</code> commands is <code>shell</code>, which spawns a shell on the attacked machine. In this case a new process is created. The identity of that process is the same as the identity of its parent process (i.e., of the vulnerable process). Thus, the shell process will also have the <code>SYSTEM</code> identity.</p>
+<p>One of the possible <code>meterpreter</code> commands is <code>migrate</code>, which move the <code>meterpreter</code> server within the memory of another running process on the attacked machine. In this case, the identity of the <code>meterpreter</code> server after migration will be that of the "destination process".</p>
+<h4 id="play-with-the-attacked-machine">Play with the attacked machine</h4>
+<p>Some suggestions:</p>
 <ul>
 <li>Have a look at which files might have interesting content (<code>search -f *.pdf</code>  or <code>jpg</code> or whatever). Search may be rooted at a specified directory with the <code>-d</code> option.</li>
 <li>Grab a screen of the desktop. To do so, there must be a user logged on metasploitable3, otherwise the screenshot will be fully black (no desktop); you might want to logon some user on metasploitable3, e.g., user <code>vagrant</code> with password <code>vagrant</code>. Details for grabbing the screenshot are described <a href="https://www.offensive-security.com/metasploit-unleashed/screen-capture/">here</a>: try to understand what you are doing and why.</li>
 <li>Have a look at the event logs in metasploitable3. You need to logon on metasploitable3 as user <code>vagrant\vagrant</code> and then run the Windows “event viewer” (i.e., not from the attacker machine). Understanding the meaning of those "low-level" events and mapping them to "high-level" activities to them is very difficult (we will touch this topic very briefly near the end of this course). Just have a look and see that there are many events. Then execute the meterpreter <code>clearev</code> command and look at the event logs again. Try to imagine the implications.</li>
 <li>Launch a shell on metasploitable3 with the meterpreter <code>shell</code> command and then execute some commands.</li>
 </ul>
-<p>Interesting commands to run from a meterpreter shell (the following suggestions require some simple web searches, or ChatGPT interactions, for figuring out the necessary details):</p>
+<p>Interesting commands to run from a <code>meterpreter</code> shell (the following suggestions require some simple web searches, or ChatGPT interactions, for figuring out the necessary details):</p>
 <ul>
 <li>Create a new user (search in the web for “windows create user command line” or ask ChatGPT with a suitable prompt, as indicated in the <a href="../../ChatGPT/">page about LLMs (ChatGPT, Gemini, DeepSeek etc.)</a>)</li>
 <li>Assign administrator privilege to that user (search in the web for “windows modify user and account privileges command line” or ask ChatGPT)</li>
