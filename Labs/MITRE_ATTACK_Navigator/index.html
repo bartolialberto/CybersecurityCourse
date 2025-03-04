@@ -1408,13 +1408,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#attck-calculator" class="md-nav__link">
-    ATT&amp;CK CALCULATOR
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1685,13 +1678,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#attck-calculator" class="md-nav__link">
-    ATT&amp;CK CALCULATOR
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1759,6 +1745,7 @@
 <li>Create new layer from existing HIVE layer (<a href="../hivev14.json">HIVE json</a>)</li>
 <li>Create new layer from existing MFA layer (<a href="../mfav14.json">MFA json</a>)</li>
 </ul>
+<p><em>UPDATE March 2025</em>: These layers were created with version 14 of the framework, while the current version of the framework is 16; on loading, you will be asked whether you want to use version 14 or automatically convert to version 16; in the latter case, you will be asked to review several screens before you can use the layer, so you may want to use version 14. If anyone converts these layers to version 16, please send them to me so I can put them on this page for everyone to use :)</p>
 <p>Each layer consists of a set of techniques annotated with a background color and without any score.</p>
 <p>After loading a layer, click on the "expand annotated sub-techniques" button in the layer controls section. You will see that some layers use sub-techniques that would not be visible without such an expansion </p>
 <h3 id="define-scores-for-each-layer">Define scores for each layer</h3>
@@ -1813,20 +1800,6 @@
 <li>Create and save  a layer for describing the Uber breach (shown in the slides).</li>
 <li>Analyze effectiveness of MFA for this specific breach.</li>
 <li>Analyze effectiveness of MFA for this breach, CUBA and HIVE together.</li>
-</ol>
-<h2 id="attck-calculator">ATT&amp;CK CALCULATOR</h2>
-<p>Objective: Grasp an idea of which mitigations and detections could be most needed in our environment.</p>
-<p>We will use the <a href="https://top-attack-techniques.mitre-engenuity.org/calculator">hosted webapp</a>. The webapp sources are not public domain.</p>
-<ol>
-<li>Select the input combination that, in your opinion, is most relevant to our environment (or to your view of our environment).</li>
-<li>Generate results (results can be downloaded in json, but the format is not recognized by the Navigator).</li>
-<li>Consider the 3 detections and 3 mitigations that are suggested as being most relevant. Read their definitions carefully.</li>
-<li>For each of them:<ol>
-<li>Do you know it?</li>
-<li>Is it implemented in our environment?</li>
-<li>If yes, to which degree?</li>
-</ol>
-</li>
 </ol>
 
 
