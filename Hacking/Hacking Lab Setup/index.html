@@ -479,8 +479,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#attacked-machine" class="md-nav__link">
-    Attacked machine
+  <a href="#attacked-machine-target" class="md-nav__link">
+    Attacked machine (target)
   </a>
   
 </li>
@@ -1599,8 +1599,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#attacked-machine" class="md-nav__link">
-    Attacked machine
+  <a href="#attacked-machine-target" class="md-nav__link">
+    Attacked machine (target)
   </a>
   
 </li>
@@ -1714,10 +1714,10 @@
 <li><em>VM in WSL2 (Windows subsystem for Linux)</em>. This is similar to 2 except that some of the suggested attack tools (e.g., metasploit, hashcat) will have to be installed separately, because the Kali distribution available for WSL2 is a minimal distribution that does not include these tools.</li>
 </ol>
 <p><a href="https://www.parrotsec.org/">Parrot OS</a> is an alternative to Kali. It is a Linux distribution very similar to Kali that requires less memory and less secondary storage.</p>
-<h2 id="attacked-machine">Attacked machine</h2>
+<h2 id="attacked-machine-target">Attacked machine (target)</h2>
 <p><a href="https://github.com/rapid7/metasploitable3">Metasploitable3</a> is a freely available virtual machine (VM) that contains a number of security vulnerabilities and has been designed for learning purposes. It comes in two flavors: Linux Ubuntu and Windows Server 2008.</p>
 <p>This document assumes metasploitable3 Windows Server 2008, running on <a href="https://www.virtualbox.org/">VirtualBox</a>. In order to follow the exercises suggested in this document, there is no need to obtain the Linux Ubuntu version. </p>
-<p>In order to create a metasploitable3 VM, one can either download a prebuilt image already configured for VirtualBox or construct one. Instructions can be found in <a href="https://github.com/rapid7/metasploitable3">this Github repository</a>. Downloading a prebuilt image configured for VirtualBox is simpler and quicker (“quick start” in the Github repo); however, in this case the Windows Server VM will warn that the 30 days evaluation period has elapsed and the Windows copy is not genuine.</p>
+<p>In order to create a metasploitable3 VM, one can either download a prebuilt image already configured for VirtualBox or construct one. Instructions can be found in <a href="https://github.com/rapid7/metasploitable3">this Github repository</a> (<em><strong>IMPORTANT (March 2025)</strong>: the download link in the Github repo is obsolete; the correct download link is <a href="https://portal.cloud.hashicorp.com/vagrant/discover/rapid7/">this one</a></em>). Downloading a prebuilt image configured for VirtualBox is simpler and quicker (“quick start” in the Github repo); however, in this case the Windows Server VM will warn that the 30 days evaluation period has elapsed and the Windows copy is not genuine.</p>
 <h2 id="virtualbox-configuration">VirtualBox configuration</h2>
 <p>My suggested configuration is as follows:</p>
 <ul>

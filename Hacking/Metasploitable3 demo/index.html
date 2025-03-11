@@ -652,6 +652,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#demo-3-password-cracking" class="md-nav__link">
+    Demo 3: Password cracking
+  </a>
+  
+    <nav class="md-nav" aria-label="Demo 3: Password cracking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cracking-credentials-extracted-from-mysql" class="md-nav__link">
+    Cracking credentials extracted from MySQL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cracking-credentials-extracted-from-windows-sam" class="md-nav__link">
+    Cracking credentials extracted from Windows SAM
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1784,6 +1811,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#demo-3-password-cracking" class="md-nav__link">
+    Demo 3: Password cracking
+  </a>
+  
+    <nav class="md-nav" aria-label="Demo 3: Password cracking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cracking-credentials-extracted-from-mysql" class="md-nav__link">
+    Cracking credentials extracted from MySQL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cracking-credentials-extracted-from-windows-sam" class="md-nav__link">
+    Cracking credentials extracted from Windows SAM
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1896,20 +1950,19 @@ The mechanism is conceptually identical to TLS with mutual authentication (a top
 <p>MITRE ATT&amp;CK Techniques: <a href="https://attack.mitre.org/techniques/T1003/002/">OS Credential Dumping: Security Account Manager</a> and <a href="https://attack.mitre.org/techniques/T1555/">Credentials from Password Stores</a>.</p>
 <p>Passwords must <em>never</em> be stored in plaintext. They must be stored in some non-invertible form (e.g., hashed) so that they are not immediately useful to an adversary if they are stolen (this topic will be analyzed in much more detail later in this course).</p>
 <h4 id="windows">Windows</h4>
-<p>Credentials of all Windows users are stored in a portion of secondary storage called SAM (Security Account Manager). The SAM usually contains two different hashes for each password, one of them for compatibility reasons not discussed here. The SAM content may be read (i.e., password hashes may be stolen) by specialized programs executed on the target machine under an identity with SYSTEM privilege. Several such programs exist.</p>
-<p>Password hashes may be used for:</p>
+<p>Credentials of all Windows accounts are stored in a portion of secondary storage called SAM (Security Account Manager). The SAM usually contains two different hashes for each password, one of them for compatibility reasons not discussed here. The SAM content may be read (i.e., password hashes may be stolen) by specialized programs executed on the target machine with high privilege. Several such programs exist.</p>
+<p>Password hashes of Windows accounts may be used for:</p>
 <ul>
-<li>Trying to obtain the corresponding password (<em>offline guessing</em>, also improperly called “brute force”).</li>
-<li>Impersonating the corresponding users <em>even without figuring out the respective passwords</em> (the so-called <em>pass the hash</em> attack that can be executed on Windows machines).</li>
+<li>Trying to obtain the corresponding password (see section <a href="#demo-3--password-cracking">Password Cracking</a> below).</li>
+<li>Impersonating the corresponding users <em>even without figuring out the respective passwords</em> (this topic  is discussed in a later part of this course---MITRE ATT&amp;CK <a href="https://attack.mitre.org/techniques/T1550/002/">Pass the Hash</a>).</li>
 </ul>
-<p>These topics will be studied later in this course.</p>
 <p>Suggestions:</p>
 <ul>
-<li>Having obtained a meterpreter session as described in section <a href="#smb-exploitation-eternalblue">SMB Exploitation (EternalBlue)</a>, dump the SAM content with the meterpreter command <code>hashdump</code> and store its output in a text file on the attacking machine.</li>
+<li>Having obtained a <code>meterpreter</code> session as described in section <a href="#smb-exploitation-eternalblue">SMB Exploitation (EternalBlue)</a>, dump the SAM content with the <code>meterpreter</code> command <code>hashdump</code> and store its output in a text file on the attacking machine.</li>
 </ul>
 <h4 id="mysql_1">MySQL</h4>
 <p>Services often manage accounts and credentials independently of the underlying operating system, i.e., Windows. The corresponding information must be stored in some secondary storage, usually on a database. This is usually the case of web applications, for example. A MySQL database, thus, often contain credentials of some other services running on the same machine as the MySQL server.</p>
-<p>The target machine has a MySQL service running. This database could store such credentials (hint: it does store Wordpress credentials; Wordpress is an open source content management system widely used for building web sites).</p>
+<p>The target machine has a MySQL service running. This database could store credentials of some service running on that machine (hint: the MySQL database store Wordpress credentials; <a href="https://wordpress.org/download/">Wordpress</a> is an open source content management system widely used for building web sites).</p>
 <p>Suggestions:</p>
 <ul>
 <li>
@@ -1926,6 +1979,39 @@ The mechanism is conceptually identical to TLS with mutual authentication (a top
 <ul>
 <li><a href="https://infosecwriteups.com/pwning-wordpress-passwords-2caf12216956">Pwning WordPress Passwords</a> (see first part)</li>
 <li><a href="https://tremblinguterus.blogspot.com/2020/11/metasploitable-3-windows-walkthrough_87.html">Metasploitable 3 Windows Walkthrough: Part VI</a> (see second part).</li>
+</ul>
+<h2 id="demo-3-password-cracking">Demo 3: Password cracking</h2>
+<p>Password cracking is an attack that, given a password hash, attempts to obtain the corresponding password (MITRE ATT&amp;CK <a href="https://attack.mitre.org/techniques/T1110/002/">Brute Force: Password Cracking)</a>. Since hash functions are designed to be not invertible (an output value does not provide any information about the corresponding input), such attacks work by computing the hash of each password in an input dictionary (password list) until finding a value identical to the hash available. Of course, success of the attack depends on whether the password to be found is in the input dictionary and on the amount of computing resources available.</p>
+<p>This guessing attack is often called “<em>offline guessing</em>” because during its execution there is no communication at all with the service where the targeted credentials are used.</p>
+<p>The most widely used tools for password cracking are <code>hashcat</code> and john the ripper (command <code>john</code>). Keep in mind:</p>
+<ul>
+<li>The input file containing the hashes must be structured as required by the tool (<code>hashcat</code> expects to receive only the hashes, <code>john</code> can receive a SAM line with the suitable input option).</li>
+<li>The correct hash format is specified in input.</li>
+<li>Usage of both <code>hashcat</code> and <code>john</code> is quite complex (e.g., <code>john</code> maintains a hidden cache of recently cracked hashes, so in repeated executions those hashes are not cracked again; and, a VM might not have enough memory to run <code>hashcat</code>).</li>
+</ul>
+<h3 id="cracking-credentials-extracted-from-mysql">Cracking credentials extracted from MySQL</h3>
+<ul>
+<li>Take the credentials extracted from the MySQL database in the previous section.</li>
+<li>Execute the Kali command <code>hash-identifier</code> on one of the hashes in order to have an indication of the hash function used, i.e., of the program that could have originated that hash (we already have such information: <code>wordpress</code>).</li>
+<li>Use the password list constructed in the above section <a href="#online-password-guessing">Online password guessing</a> for executing an offline guessing (password cracking) on the Wordpress credentials.  In less than half an hour you should recover some password</li>
+</ul>
+<p>Of course, in a real environment, you would not know in advance whether the attack would be successful or how long it would take. Nor would you know in advance that the passwords stored in MySQL are for Wordpress authentication.</p>
+<p>Assuming you obtained some <code>wordpress</code> credentials:</p>
+<ul>
+<li>Launch a browser and point it to http://IP-address-target:8585/wordpress (a website created with wordpress is usually available on the standard ports, i.e., 80/443; in metasploitable3 it has instead been configured to be available on port 8585 at that URL).</li>
+<li>Try to find the login page.</li>
+<li>Try to use one of the recovered credentials for becoming <code>admin</code> of the web site.</li>
+</ul>
+<h3 id="cracking-credentials-extracted-from-windows-sam">Cracking credentials extracted from Windows SAM</h3>
+<ul>
+<li>Take the credentials extracted from the Windows SAM in the previous section.</li>
+<li>Execute the very same steps as those for cracking MySQL password hashes.</li>
+</ul>
+<p>Assuming you obtained some Windows credentials, use them for interactive logon on metasploitable3.</p>
+<p>You may use those credentials also for some action that requires a network logon (e.g., remote file access, remote command execution). In that case keep in mind:</p>
+<ul>
+<li>Command execution with network logon is possible only for accounts in the Administrator group.</li>
+<li>In practice, a password hash usually suffices for network logon on a Windows machine (this topic  is discussed in a later part of this course---MITRE ATT&amp;CK <a href="https://attack.mitre.org/techniques/T1550/002/">Pass the Hash</a>).</li>
 </ul>
 
 
