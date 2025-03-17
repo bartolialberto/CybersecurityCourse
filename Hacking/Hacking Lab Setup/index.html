@@ -489,6 +489,61 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#hacking-lab-setup-on-macos" class="md-nav__link">
+    Hacking Lab Setup on MacOS
+  </a>
+  
+    <nav class="md-nav" aria-label="Hacking Lab Setup on MacOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#download-and-prepare-the-iso" class="md-nav__link">
+    Download and Prepare the ISO
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-new-virtual-machine" class="md-nav__link">
+    Create a New Virtual Machine
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-optical-drive" class="md-nav__link">
+    Configure Optical Drive
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-the-virtual-machine" class="md-nav__link">
+    Start the Virtual Machine
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boot-from-uefi-interactive-shell" class="md-nav__link">
+    Boot from UEFI Interactive Shell
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automate-the-boot-process" class="md-nav__link">
+    Automate the Boot Process
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#references" class="md-nav__link">
     References
   </a>
@@ -1376,6 +1431,61 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#hacking-lab-setup-on-macos" class="md-nav__link">
+    Hacking Lab Setup on MacOS
+  </a>
+  
+    <nav class="md-nav" aria-label="Hacking Lab Setup on MacOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#download-and-prepare-the-iso" class="md-nav__link">
+    Download and Prepare the ISO
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-new-virtual-machine" class="md-nav__link">
+    Create a New Virtual Machine
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-optical-drive" class="md-nav__link">
+    Configure Optical Drive
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-the-virtual-machine" class="md-nav__link">
+    Start the Virtual Machine
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boot-from-uefi-interactive-shell" class="md-nav__link">
+    Boot from UEFI Interactive Shell
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automate-the-boot-process" class="md-nav__link">
+    Automate the Boot Process
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#references" class="md-nav__link">
     References
   </a>
@@ -1533,12 +1643,69 @@ The suggested configuration is:</p>
 <li>NAT Networks</li>
 <li>Create</li>
 </ol>
+<h2 id="hacking-lab-setup-on-macos">Hacking Lab Setup on MacOS</h2>
+<p>Installation instructions for Kali Linux on VirtualBox</p>
+<p><em>Courtesy of Anna Guccione</em></p>
+<h3 id="download-and-prepare-the-iso">Download and Prepare the ISO</h3>
+<ul>
+<li>Download the Kali Linux ISO (Apple Silicon ARM64) from the official website.</li>
+<li>Save it in the directory: <code>/Users/name/VirtualBox VMs/</code> (replace <code>name</code> with your actual username).</li>
+</ul>
+<h3 id="create-a-new-virtual-machine">Create a New Virtual Machine</h3>
+<ul>
+<li>Open VirtualBox and click &quot;New&quot; to create a new VM.</li>
+<li>Follow the setup process and configure the VM according to your needs.</li>
+</ul>
+<p><img alt="img.png" src="../img.png" /></p>
+<p><img alt="img_1.png" src="../img_1.png" /></p>
+<p><img alt="img_2.png" src="../img_2.png" /></p>
+<h3 id="configure-optical-drive">Configure Optical Drive</h3>
+<ul>
+<li>Go to Settings-Storage.</li>
+<li>Select the empty optical disk and import the downloaded Kali Linux ISO.</li>
+</ul>
+<p><img alt="img_3.png" src="../img_3.png" /></p>
+<h3 id="start-the-virtual-machine">Start the Virtual Machine</h3>
+<ul>
+<li>Launch the VM. The Kali Linux installation menu will appear.</li>
+<li>
+<p>Select Graphical Install and follow the installation steps:</p>
+<ul>
+<li>Enter the hostname, username, and password.</li>
+<li>Configure disk partitions as needed.</li>
+<li>Complete the installation process.</li>
+</ul>
+</li>
+</ul>
+<h3 id="boot-from-uefi-interactive-shell">Boot from UEFI Interactive Shell</h3>
+<ul>
+<li>After installation, the VM may boot into the UEFI Interactive Shell instead of Kali Linux.</li>
+<li>Enter the following command to boot manually:
+<code>FS0:\EFI\kali\grubaa64.efi</code></li>
+<li>If the file is not found, navigate through the directories to locate the correct .efi file and adjust the path accordingly.</li>
+</ul>
+<h3 id="automate-the-boot-process">Automate the Boot Process</h3>
+<p>To ensure Kali Linux boots automatically:</p>
+<ul>
+<li>In the UEFI Shell, type: <code>FS0:</code> and press Enter.</li>
+<li>Then create a startup script by typing:
+<code>edit startup.nsh</code></li>
+<li>In the editor, add the following line:
+<code>FS0:\EFI\kali\grubaa64.efi</code></li>
+<li>Save (ctrl + S and press Enter) and exit (ctrl + Q).</li>
+<li>Restart the VM, and it should now boot directly into Kali Linux.</li>
+</ul>
 <h2 id="references">References</h2>
 <ul>
 <li>VirtualBox network configuration <a href="https://www.virtualbox.org/manual/ch06.html">manual</a>.</li>
 <li>Guides and tutorials on VirtualBox network configuration: <a href="https://www.nakivo.com/blog/virtualbox-network-setting-guide/">one</a> and <a href="https://fabian-voith.de/2020/04/21/understanding-virtualbox-networking-schemes-to-set-up-a-good-and-safe-lab/">two</a>.</li>
 <li><a href="https://www.nakivo.com/blog/how-to-install-kali-linux-on-virtualbox/">Installing Kali Linux on a VM on VirtualBox</a>.</li>
 <li><a href="https://learn.microsoft.com/en-us/windows/wsl/setup/environment">WSL2 (Windows Linux Subsystem): best practice</a> and <a href="https://www.kali.org/docs/general-use/metapackages/">Kali Metapackages</a>.</li>
+</ul>
+<p>For Kali on MacOS:</p>
+<ul>
+<li><a href="https://youtu.be/mWPPmaOXnrI?si=1pMUkKIkfVjAvisW">Install Kali Linux on Mac (M1, M2, M3, M4) - Run Kali Linux on Apple Silicon Using VirtualBox</a> </li>
+<li><a href="https://www.youtube.com/watch?v=A3z64QUTJsM&amp;t=293s">Virtualbox UEFI Shell startup.nsh Error Fixed</a> </li>
 </ul>
 
 
