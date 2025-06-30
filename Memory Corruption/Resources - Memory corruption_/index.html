@@ -1744,6 +1744,10 @@ Need to Take Memory Safe Coding Seriously)</a> by CISA, NSA, FBI, Cybersecurity 
 </ul>
 <h2 id="mitigations">Mitigations</h2>
 <ul>
+<li><a href="https://best.openssf.org/Compiler-Hardening-Guides/Compiler-Options-Hardening-Guide-for-C-and-C++.html">Compiler Options Hardening Guide for C and C++</a>
+This document is a guide for compiler and linker options that contribute to delivering reliable and secure code using native (or cross) toolchains for C and C++.</li>
+<li><a href="https://github.com/airbus-seclab/c-compiler-security">Getting the maximum of your C compiler, for security</a> This guide is intended to help you determine which flags you should use to compile your C Code using GCC, Clang or MSVC, in order to:
+detect the maximum number of bugs or potential security problems; enable security mitigations in the produced binaries.</li>
 <li><a href="https://sp23.cs161.org/">Slides</a> and <a href="https://textbook.cs161.org/memory-safety/mitigations.html">textbook chapter</a> from <strong>Computer Security at Berkeley (CS161)</strong>. Discusses mitigations and corresponding circumventions (slightly) more in depth than in our lectures (heavily based on these slides, though).</li>
 <li><a href="https://www.cs.ru.nl/E.Poll/ss/">Slides</a> on memory corruption from <strong>Software Security at Radboud University</strong> (prof. Erik Poll). The final part of the slides mentions many more defenses than those in our lectures. Not in depth, but a broad coverage to have an idea.</li>
 <li><a href="https://developers.redhat.com/articles/2022/06/02/use-compiler-flags-stack-protection-gcc-and-clang#stack_canary">Use compiler flags for stack protection in GCC and Clang</a>. This article discusses the major stack protection mechanisms in the GNU Compiler Collection (GCC) and Clang, typical attack scenarios, and the compiler's attempts to prevent attacks.</li>
