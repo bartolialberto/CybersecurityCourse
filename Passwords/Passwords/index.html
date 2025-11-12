@@ -651,9 +651,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#password-policies" class="md-nav__link">
-    Password policies
+  <a href="#password-policy-how-to-choose-passwords" class="md-nav__link">
+    Password Policy - How to choose passwords
   </a>
+  
+    <nav class="md-nav" aria-label="Password Policy - How to choose passwords">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#password-reuse" class="md-nav__link">
+    Password reuse
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -763,13 +776,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#appendix-password-policy" class="md-nav__link">
-    Appendix - Password Policy
-  </a>
   
 </li>
       
@@ -1438,9 +1444,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#password-policies" class="md-nav__link">
-    Password policies
+  <a href="#password-policy-how-to-choose-passwords" class="md-nav__link">
+    Password Policy - How to choose passwords
   </a>
+  
+    <nav class="md-nav" aria-label="Password Policy - How to choose passwords">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#password-reuse" class="md-nav__link">
+    Password reuse
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1553,13 +1572,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#appendix-password-policy" class="md-nav__link">
-    Appendix - Password Policy
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1619,7 +1631,17 @@
 </li>
 <li>Search for <a href="https://www.google.com/search?q=milioni+password+email">milioni password email</a> Useful for finding dumps from data breaches and news about them.</li>
 </ul>
-<h2 id="password-policies">Password policies</h2>
+<h2 id="password-policy-how-to-choose-passwords">Password Policy - How to choose passwords</h2>
+<ul>
+<li><a href="https://www.schneier.com/blog/archives/2017/10/changes_in_pass.html">Password Best Practice - NIST</a> No complexity, no expiration, use password managers. The original NIST document is <a href="https://pages.nist.gov/800-63-3/sp800-63b.html#sec5">here</a>.</li>
+<li><a href="https://www.kylereddoch.me/blog/responding-to-nists-2025-password-standard-update-sp-800-63b-4/">NIST’s 2025 Password Standard Update (SP 800-63B-4)</a>. "Length and screening beat complexity rules, forced resets are out unless there is evidence of compromise...must support password managers and modern character sets. NIST also states clearly that passwords are not phishing-resistant, so they are a floor, not the ceiling, of your authentication strategy".</li>
+<li><a href="https://www.ncsc.gov.uk/collection/passwords/updating-your-approach">Password policy: updating your approach - NCSC UK</a>
+Advice for system owners responsible for determining password policies and identity management within their organisations. <em>"Don't enforce regular password expiry: Regular password changing harms rather than improves security. "</em> </li>
+<li><a href="https://learn.microsoft.com/en-us/microsoft-365/admin/misc/password-policy-recommendations?view=o365-worldwide">Password policy recommendations - Microsoft</a> <em>"Current research strongly indicates that mandated password changes do more harm than good."</em>.</li>
+</ul>
+<p>Interestingly, this is the suggestion I receive from a website that is crucial in my job (a suggestion in clear conflict with the above guidelines):</p>
+<p><img alt="img.png" src="../passwordimg.png" /></p>
+<h3 id="password-reuse">Password reuse</h3>
 <p>Modern password policies prohibit users from choosing passwords known to have been used in data breaches. For example, the NIST guidelines (see the Appendix of this page) state:</p>
 <p><code>When processing requests to establish and change memorized secrets, verifiers SHALL compare the prospective secrets against a list that contains values known to be commonly-used, expected, or compromised. For example, the list MAY include, but is not limited to: Passwords obtained from previous breach corpuses.</code></p>
 <p>This important requirement can be satisfied, for example, with the list or the API made available by Pwned Passwords:</p>
@@ -1716,15 +1738,6 @@ Proxies and Tor.</li>
 <li><a href="https://i.imgur.com/gfYw57t.png">Entropy vs Password length vs Cracking speed</a></li>
 <li><a href="https://www.grc.com/haystack.htm">Brute force calculator</a></li>
 </ul>
-<h2 id="appendix-password-policy">Appendix - Password Policy</h2>
-<ul>
-<li><a href="https://www.schneier.com/blog/archives/2017/10/changes_in_pass.html">Password Best Practice - NIST</a> No complexity, no expiration, use password managers. The original NIST document is <a href="https://pages.nist.gov/800-63-3/sp800-63b.html#sec5">here</a>.</li>
-<li><a href="https://www.ncsc.gov.uk/collection/passwords/updating-your-approach">Password policy: updating your approach - NCSC UK</a>
-Advice for system owners responsible for determining password policies and identity management within their organisations. <em>"Don't enforce regular password expiry: Regular password changing harms rather than improves security. "</em> </li>
-<li><a href="https://learn.microsoft.com/en-us/microsoft-365/admin/misc/password-policy-recommendations?view=o365-worldwide">Password policy recommendations - Microsoft</a> <em>"Current research strongly indicates that mandated password changes do more harm than good."</em>.</li>
-</ul>
-<p>Interestingly, this is the suggestion I receive from a website that is crucial in my job (a suggestion in clear conflict with the above guidelines):</p>
-<p><img alt="img.png" src="../passwordimg.png" /></p>
 
 
   
