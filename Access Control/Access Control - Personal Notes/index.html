@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/Malware/Detection/">
+        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/Access%20Control/Access%20Control%20-%20Personal%20Notes/">
       
       
-        <link rel="prev" href="../../Access%20Control/Saltzer%20and%20Schroeder/">
+        <link rel="prev" href="../../Hacking/Metasploitable3%20demo/">
       
       
-        <link rel="next" href="../Execution%20and%20other%20tactics/">
+        <link rel="next" href="../Resources%20-%20Access%20Control/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Detection - Cybersecurity Course - University of Trieste</title>
+        <title>Access Control - Personal Notes - Cybersecurity Course - University of Trieste</title>
       
     
     
@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#detection" class="md-skip">
+        <a href="#access-control-personal-notes" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Detection
+              Access Control - Personal Notes
             
           </span>
         </div>
@@ -408,17 +408,19 @@
       
   
   
+    
+  
   
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
@@ -431,7 +433,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             3 - Access Control
@@ -442,17 +444,91 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Access%20Control/Personal%20Notes/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Access Control - Personal Notes
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Personal Notes
+    Access Control - Personal Notes
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#access-control-in-cloud-services" class="md-nav__link">
+    Access Control in Cloud Services
+  </a>
+  
+    <nav class="md-nav" aria-label="Access Control in Cloud Services">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rbac" class="md-nav__link">
+    RBAC
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#policies" class="md-nav__link">
+    Policies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mandatory-access-control" class="md-nav__link">
+    Mandatory access control
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -464,7 +540,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Access%20Control/Resources%20-%20Access%20Control/" class="md-nav__link">
+      <a href="../Resources%20-%20Access%20Control/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -484,7 +560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Access%20Control/Saltzer%20and%20Schroeder/" class="md-nav__link">
+      <a href="../Saltzer%20and%20Schroeder/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -509,19 +585,17 @@
       
   
   
-    
-  
   
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
@@ -534,7 +608,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             4 - Malware
@@ -545,138 +619,9 @@
                 
   
   
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Detection
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    Detection
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#malware-analysis-platforms" class="md-nav__link">
-    Malware analysis platforms
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#threat-intelligence" class="md-nav__link">
-    Threat Intelligence
-  </a>
-  
-    <nav class="md-nav" aria-label="Threat Intelligence">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#indicators-of-compromise-ioc" class="md-nav__link">
-    Indicators of Compromise (IoC)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ioc-examples" class="md-nav__link">
-    IoC Examples
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#public-repositories-and-feeds" class="md-nav__link">
-    Public repositories and feeds
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#programmatic-tools" class="md-nav__link">
-    Programmatic tools
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#analyses-of-effectiveness" class="md-nav__link">
-    Analyses of Effectiveness
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#detection-rules-examples" class="md-nav__link">
-    Detection rules: Examples
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#av-edr-antivirus-endpoint-detection-and-response" class="md-nav__link">
-    AV / EDR (Antivirus / Endpoint Detection and Response)
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
   
     <li class="md-nav__item">
-      <a href="../Execution%20and%20other%20tactics/" class="md-nav__link">
+      <a href="../../Malware/Execution%20and%20other%20tactics/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -696,7 +641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Initial%20Access/" class="md-nav__link">
+      <a href="../../Malware/Initial%20Access/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -716,27 +661,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Malware%20Appendix/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Malware Appendix
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Malware_Case_Studies/" class="md-nav__link">
+      <a href="../../Malware/Malware_Case_Studies/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -777,7 +702,7 @@
             
   
   <span class="md-ellipsis">
-    5 - Passwords
+    5 - Detection
   </span>
   
 
@@ -787,7 +712,128 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
-            5 - Passwords
+            5 - Detection
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Detection/Detection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Detection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Detection/Evasion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Evasion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Detection/Malware%20-%20Personal%20Notes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Malware - Personal Notes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Detection/SIEM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SIEM / SOC / Log analysis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    6 - Passwords
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            6 - Passwords
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -832,23 +878,23 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
         
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    6 - MFA
+    7 - MFA
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
-            6 - MFA
+            7 - MFA
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -893,23 +939,23 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
         
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    7 - Authentication - NTLM Kerberos
+    8 - Authentication - NTLM Kerberos
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_9">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
-            7 - Authentication - NTLM Kerberos
+            8 - Authentication - NTLM Kerberos
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -954,23 +1000,23 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
         
-          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    8 - Lateral Movement
+    9 - Lateral Movement
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
             <span class="md-nav__icon md-icon"></span>
-            8 - Lateral Movement
+            9 - Lateral Movement
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1035,23 +1081,23 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
         
-          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    9 - Memory Corruption
+    10 - Memory Corruption
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_11">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
             <span class="md-nav__icon md-icon"></span>
-            9 - Memory Corruption
+            10 - Memory Corruption
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1116,23 +1162,23 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
         
-          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    10 - Vulnerabilities
+    11 - Vulnerabilities
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_12">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
             <span class="md-nav__icon md-icon"></span>
-            10 - Vulnerabilities
+            11 - Vulnerabilities
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1237,23 +1283,23 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
         
-          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    11 - Economics and Defense
+    12 - Economics and Defense
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_13">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_14">
             <span class="md-nav__icon md-icon"></span>
-            11 - Economics and Defense
+            12 - Economics and Defense
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1338,9 +1384,9 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15" >
         
-          <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1351,8 +1397,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_14">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_15">
             <span class="md-nav__icon md-icon"></span>
             Labs
           </label>
@@ -1479,9 +1525,9 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" >
         
-          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1492,8 +1538,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_15">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
             <span class="md-nav__icon md-icon"></span>
             Student Projects
           </label>
@@ -1580,9 +1626,9 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_17" >
         
-          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_17" id="__nav_17_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1593,8 +1639,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_16">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_17_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_17">
             <span class="md-nav__icon md-icon"></span>
             AI Publishing - Experiments
           </label>
@@ -1692,71 +1738,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#malware-analysis-platforms" class="md-nav__link">
-    Malware analysis platforms
+  <a href="#access-control-in-cloud-services" class="md-nav__link">
+    Access Control in Cloud Services
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#threat-intelligence" class="md-nav__link">
-    Threat Intelligence
-  </a>
-  
-    <nav class="md-nav" aria-label="Threat Intelligence">
+    <nav class="md-nav" aria-label="Access Control in Cloud Services">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#indicators-of-compromise-ioc" class="md-nav__link">
-    Indicators of Compromise (IoC)
+  <a href="#rbac" class="md-nav__link">
+    RBAC
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#ioc-examples" class="md-nav__link">
-    IoC Examples
+  <a href="#policies" class="md-nav__link">
+    Policies
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#public-repositories-and-feeds" class="md-nav__link">
-    Public repositories and feeds
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#programmatic-tools" class="md-nav__link">
-    Programmatic tools
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#analyses-of-effectiveness" class="md-nav__link">
-    Analyses of Effectiveness
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#detection-rules-examples" class="md-nav__link">
-    Detection rules: Examples
+  <a href="#mandatory-access-control" class="md-nav__link">
+    Mandatory access control
   </a>
   
 </li>
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#av-edr-antivirus-endpoint-detection-and-response" class="md-nav__link">
-    AV / EDR (Antivirus / Endpoint Detection and Response)
-  </a>
   
 </li>
       
@@ -1775,76 +1786,32 @@
                   
 
 
-<h1 id="detection">Detection</h1>
-<h2 id="malware-analysis-platforms">Malware analysis platforms</h2>
+<h1 id="access-control-personal-notes">Access Control - Personal Notes</h1>
+<h2 id="access-control-in-cloud-services">Access Control in Cloud Services</h2>
+<p>The following notes apply to the main cloud services: Amazon AWS, Microsoft Azure, Google GCP.</p>
+<h3 id="rbac">RBAC</h3>
+<p>They are based on <em>Role-Based Access Control (RBAC)</em>. RBAC roles resembles account groups in operating systems but there are subtle differences between these notions:</p>
 <ul>
-<li><a href="https://tria.ge/">Triage</a> Analyze malware samples free. A state-of-the–art malware analysis sandbox, with all the features you need. <a href="https://tria.ge/240122-wm8t9sbgfq">This</a> is an example analysis of cryptominer for Linux (see <a href="../../Labs/Automated%20Malware%20Analysis/">Automated Malware Analysis</a> for an introduction to the Triage platform).</li>
-<li><a href="https://any.run/">Any.run</a> Interactive malware analysis.</li>
-<li><a href="https://www.virustotal.com/gui/home/upload">Virustotal</a> Analyse suspicious files, domains, IPs and URLs.</li>
-<li><a href="https://mobsf.live/">MobSF</a> Specialized for mobile apps. Still in beta (<a href="https://github.com/MobSF/Mobile-Security-Framework-MobSF">Github repo</a>). </li>
-<li><a href="https://censys.com/a-beginners-guide-to-tracking-malware-infrastructure/">A Beginner’s Guide to Tracking Malware Infrastructure</a> A blog post describing how to use Censys for that purpose (<a href="https://censys.com/">Censys</a> is not a malware analysis platform; it is an "<a href="https://search.censys.io/">exposure search engine</a>" similar to <a href="https://www.shodan.io/">Shodan</a>; this blog post illustrates very basic Censys queries that can be useful for tracking malware infrastructure; I think similar techniques can be applied to Shodan as well). </li>
-<li><a href="https://www.malpulse.com/">Malpulse</a> A simple platform that keeps track of IP addresses associated with C&amp;C infrastructures.</li>
+<li>Groups are primarily about <em>identity aggregation</em>. A user can belong to multiple groups. Permissions (what a user can do) are typically cumulative. RBAC roles are primarily about <em>functional responsibilities</em>. A user typically assumes one primary role at a time. Each role defines what you can access and what you can do.</li>
+<li>Group membership is usually static and always active. RBAC roles may require explicit activation or switching.</li>
+<li>RBAC roles can enforce mutual exclusion</li>
 </ul>
-<h2 id="threat-intelligence">Threat Intelligence</h2>
-<h3 id="indicators-of-compromise-ioc">Indicators of Compromise (IoC)</h3>
+<p>In general, RBAC involves a more explicit separation between roles/groups and allowed actions.</p>
+<h3 id="policies">Policies</h3>
+<p>Access control rules are specified with Access Control Lists only for storage resources.</p>
+<p>Rules for all the other resources are specified with <em>policy documents</em>. Broadly speaking, a policy document specifies one or more of the following:</p>
 <ul>
-<li><a href="https://datatracker.ietf.org/doc/html/rfc9424">Indicators of Compromise (IoCs) and Their Role in Attack Defence (RFC 9424)</a> An excellent description of what IoCs are and how they can be used.</li>
-<li><a href="https://sc1.checkpoint.com/documents/R81/WebAdminGuides/EN/CP_R81_ThreatPrevention_AdminGuide/Topics-TPG/Importing-External-Custom-Intelligence-Feeds-in-SmartConsole.htm">Importing External Custom Intelligence Feeds in SmartConsole</a> Example of how to insert automatically IoC URLs in a certain firewall.</li>
-<li><a href="https://cert-agid.gov.it/scarica-il-modulo-accreditamento-feed-ioc/">Indicatori di compromissione per la protezione della Pubblica Amministrazione</a> Italian agencies can subscribe to a free service for receiving automatically a flow of IoC from the Italian Computer Emergency Response Team (CERT) of Agenzia per l'Italia Digitale (AGID). This page contains links to several firewall guides like the one in the previous item.</li>
-<li><a href="https://www.cisa.gov/news-events/cybersecurity-advisories?f%5B0%5D=advisory_type%3A65">Cybersecurity Alerts &amp; Advisories (CISA)</a> Those of type "Analysis Report" contain IoC associated with specific malware or attack campaigns, as well as YARA rules.</li>
+<li>A set of roles.</li>
+<li>A set of allowed actions.</li>
+<li>A set of denied actions.</li>
+<li>A set of resources.</li>
+<li>A set of conditions that must be met for allowing the request or that, if met, deny the request. These conditions may be attributes of the role, of the resource, of the request (e.g., time of day, IP address and alike).</li>
 </ul>
-<h3 id="ioc-examples">IoC Examples</h3>
-<p>Most reports about malware campaigns today include IoCs for the campaign (e.g., many of the references in <a href="../Malware_Case_Studies/">Malware_Case_Studies</a>). These two reports are relatively easy to read and have IoCs at the end:</p>
-<ul>
-<li><a href="https://malwr-analysis.com/2024/08/22/understanding-redline-stealer-the-trojan-targeting-your-data/">Understanding RedLine Stealer: The Trojan Targeting Your Data</a> </li>
-<li><a href="https://unit42.paloaltonetworks.com/medusa-ransomware-escalation-new-leak-site/">Medusa Ransomware Turning Your Files into Stone</a></li>
-</ul>
-<h3 id="public-repositories-and-feeds">Public repositories and feeds</h3>
-<ul>
-<li><a href="https://bazaar.abuse.ch/">MalwareBazaar</a> sharing malware samples with the infosec community, AV vendors and threat intelligence providers.</li>
-<li><a href="https://otx.alienvault.com/">Alienvault</a> The World’s First Truly Open Threat Intelligence Community (IoC, Malware families and other).</li>
-<li><a href="https://www.greynoise.io/">Greynoise</a> We collect, analyze, and label data on IPs that scan the internet and saturate security tools with noise. This unique perspective helps analysts spend less time on irrelevant or harmless activity, and more time on targeted and emerging threats.</li>
-<li><a href="https://docs.virustotal.com/docs/virustotal-intelligence-introduction">VirusTotal Intelligence</a> VirusTotal Intelligence allows you to search through our dataset in order to identify files that match certain criteria (hash, antivirus detections, metadata, submission file names, file format structural properties, file size, etc.). We could say that it is pretty much like the "Google" of malware.</li>
-<li>
-<p><a href="https://www.shadowserver.org/statistics/">The ShadowServer Foundation</a></p>
-<ul>
-<li>You can use the <em>Dashboard</em> to explore up to two years of aggregated country level data about many different types of cyber threat intelligence, including some data sets from Shadowserver’s unique vantage points. You can then visualize the data in various ways, which can be easily shared as URLs.</li>
-<li>Our <em>reports</em> will provide you a free daily potential attack surface report relevant to your organization’s network or constituency, as well as potential malware or other malicious activity seen originating from your network/constituency.</li>
-</ul>
-</li>
-</ul>
-<p>The following are interesting sources of attack campaigns in the form of technical reports and blog posts.</p>
-<ul>
-<li><a href="https://cloud.google.com/blog/topics/threat-intelligence">Mandiant (Google)</a></li>
-<li><a href="https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/">Microsoft Threat Intelligence</a></li>
-<li><a href="https://thedfirreport.com/">The DFIR Report</a></li>
-<li><a href="https://blog.talosintelligence.com/">Talos (CISCO)</a></li>
-</ul>
-<h3 id="programmatic-tools">Programmatic tools</h3>
-<ul>
-<li><a href="https://yara.readthedocs.io/en/stable/">YARA documentation</a></li>
-<li><a href="https://github.com/InQuest/awesome-yara">Awesome YARA</a> A curated list of awesome YARA rules, tools, and resources.</li>
-<li>Example of YARA rules can also be found in the Cybersecurity Alerts and Advisories (CISA) mentioned in a section above.</li>
-<li><a href="https://oasis-open.github.io/cti-documentation/">STIX and TAXII</a> Sharing threat intelligence</li>
-<li><a href="https://chat.openai.com/share/0dc3171d-c0fe-4007-a999-256b46d2b7a7">A conversation with ChatGPT</a> that may be useful as a broad overview.</li>
-</ul>
-<h3 id="analyses-of-effectiveness">Analyses of Effectiveness</h3>
-<p>Scientific papers that assess usage and effectiveness of threat intelligence services (with video of the conference presentations):</p>
-<ul>
-<li><a href="https://www.usenix.org/conference/usenixsecurity19/presentation/li">Reading the Tea leaves: A Comparative Analysis of Threat Intelligence</a> </li>
-<li><a href="https://www.usenix.org/conference/usenixsecurity20/presentation/bouwman">A different cup of TI? The added value of commercial threat intelligence</a> USENIX Security 2020</li>
-</ul>
-<h3 id="detection-rules-examples">Detection rules: Examples</h3>
-<ul>
-<li><a href="https://decalage.info/CVE-2026-21509/">How to detect CVE-2026-21509 exploits</a></li>
-<li><a href="https://blog.ecapuano.com/p/hunting-mongobleed-cve-2025-14847">Hunting MongoBleed (CVE-2025-14847)</a> Detecting Exploitation with Velociraptor</li>
-</ul>
-<h2 id="av-edr-antivirus-endpoint-detection-and-response">AV / EDR (Antivirus / Endpoint Detection and Response)</h2>
-<ul>
-<li><a href="https://www.sciencedirect.com/science/article/pii/S0167404821003242">AntiViruses under the microscope: A hands-on perspective</a> <em>Computers &amp; Security, January 2022</em>. Everything you wanted to know about antiviruses. An excellent analysis of commercial antiviruses (68 pages: quite complex). Available only from UniTS internal network.</li>
-<li><a href="https://www.youtube.com/watch?v=fnexx1Ek168&amp;list=PLmv8T5-GONwTibHQJImf1kCiQ5XGNFg-l">All You Always Wanted To Know About AntiViruses</a> A 35-minutes video by one of the authors of the above paper (<a href="https://conference.hitb.org/hitbsecconf2023ams/materials/D1%20COMMSEC%20-%20All%20You%20Always%20Wanted%20to%20Know%20About%20Antiviruses%20-%20Marcus%20Botacin.pdf">slides</a>). Very useful and interesting.</li>
-<li><a href="https://chat.openai.com/share/77919763-f798-41c8-80aa-f9fdd7fdac3e">A conversation with ChatGPT</a> that provides a general overview of two behavioral detections: <em>reflective DLL injection</em> and <em>process hollowing</em>.</li>
-</ul>
+<p>Syntax and semantics of policy documents depend on the specific cloud environment.</p>
+<p>Access requests are mediated by a centralized <em>policy evaluation service</em> that <em>enforces</em> the policies described in policy documents. </p>
+<p>Policy documents are managed in a centralized way. Such a centralized <em>Identity and Access Management (IAM)</em> framework simplifies compliance, auditing, automation and scales to thousands of identities and resources much better than ACLs.</p>
+<h3 id="mandatory-access-control">Mandatory access control</h3>
+<p>Policies can support forms of <em>Mandatory Access Control</em>, i.e, centralized mechanisms for defining and enforcing organization-wide rules.</p>
 
 
   

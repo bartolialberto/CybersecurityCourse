@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/Access%20Control/Personal%20Notes/">
+        <link rel="canonical" href="https://bartolialberto.github.io/CybersecurityCourse/Detection/SIEM/">
       
       
-        <link rel="prev" href="../../Hacking/Metasploitable3%20demo/">
+        <link rel="prev" href="../Malware%20-%20Personal%20Notes/">
       
       
-        <link rel="next" href="../Resources%20-%20Access%20Control/">
+        <link rel="next" href="../../Passwords/Passwords/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Personal Notes - Cybersecurity Course - University of Trieste</title>
+        <title>SIEM / SOC / Log analysis - Cybersecurity Course - University of Trieste</title>
       
     
     
@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#access-control-in-cloud-services" class="md-skip">
+        <a href="#siem-soc-log-analysis" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Personal Notes
+              SIEM / SOC / Log analysis
             
           </span>
         </div>
@@ -408,19 +408,17 @@
       
   
   
-    
-  
   
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
@@ -433,7 +431,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             3 - Access Control
@@ -444,87 +442,17 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Personal Notes
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Access%20Control/Access%20Control%20-%20Personal%20Notes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Personal Notes
+    Access Control - Personal Notes
   </span>
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#access-control-in-cloud-services" class="md-nav__link">
-    Access Control in Cloud Services
-  </a>
-  
-    <nav class="md-nav" aria-label="Access Control in Cloud Services">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#rbac" class="md-nav__link">
-    RBAC
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#policies" class="md-nav__link">
-    Policies
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#mandatory-access-control" class="md-nav__link">
-    Mandatory access control
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -536,7 +464,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Resources%20-%20Access%20Control/" class="md-nav__link">
+      <a href="../../Access%20Control/Resources%20-%20Access%20Control/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -556,7 +484,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Saltzer%20and%20Schroeder/" class="md-nav__link">
+      <a href="../../Access%20Control/Saltzer%20and%20Schroeder/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -617,26 +545,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Malware/Detection/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Detection
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../Malware/Execution%20and%20other%20tactics/" class="md-nav__link">
         
   
@@ -677,11 +585,74 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Malware/Malware%20Appendix/" class="md-nav__link">
+      <a href="../../Malware/Malware_Case_Studies/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Malware Appendix
+    Intrusions and Malware - Case studies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    5 - Detection
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            5 - Detection
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Detection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Detection
   </span>
   
 
@@ -697,15 +668,116 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Malware/Malware_Case_Studies/" class="md-nav__link">
+      <a href="../Evasion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Intrusions and Malware - Case studies
+    Evasion
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Malware%20-%20Personal%20Notes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Malware - Personal Notes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    SIEM / SOC / Log analysis
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    SIEM / SOC / Log analysis
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#siemsoc" class="md-nav__link">
+    SIEM/SOC
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#log-analysis" class="md-nav__link">
+    Log analysis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#machine-learning-and-ai" class="md-nav__link">
+    Machine Learning and AI
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -732,23 +804,23 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    5 - Passwords
+    6 - Passwords
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
-            5 - Passwords
+            6 - Passwords
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -793,23 +865,23 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
         
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    6 - MFA
+    7 - MFA
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
-            6 - MFA
+            7 - MFA
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -854,23 +926,23 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
         
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    7 - Authentication - NTLM Kerberos
+    8 - Authentication - NTLM Kerberos
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_9">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
-            7 - Authentication - NTLM Kerberos
+            8 - Authentication - NTLM Kerberos
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -915,23 +987,23 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
         
-          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    8 - Lateral Movement
+    9 - Lateral Movement
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
             <span class="md-nav__icon md-icon"></span>
-            8 - Lateral Movement
+            9 - Lateral Movement
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -996,23 +1068,23 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
         
-          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    9 - Memory Corruption
+    10 - Memory Corruption
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_11">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
             <span class="md-nav__icon md-icon"></span>
-            9 - Memory Corruption
+            10 - Memory Corruption
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1077,23 +1149,23 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
         
-          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    10 - Vulnerabilities
+    11 - Vulnerabilities
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_12">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
             <span class="md-nav__icon md-icon"></span>
-            10 - Vulnerabilities
+            11 - Vulnerabilities
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1198,23 +1270,23 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
         
-          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    11 - Economics and Defense
+    12 - Economics and Defense
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_13">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_14">
             <span class="md-nav__icon md-icon"></span>
-            11 - Economics and Defense
+            12 - Economics and Defense
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1299,9 +1371,9 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15" >
         
-          <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1312,8 +1384,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_14">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_15">
             <span class="md-nav__icon md-icon"></span>
             Labs
           </label>
@@ -1440,9 +1512,9 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" >
         
-          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1453,8 +1525,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_15">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
             <span class="md-nav__icon md-icon"></span>
             Student Projects
           </label>
@@ -1541,9 +1613,9 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_17" >
         
-          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_17" id="__nav_17_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1554,8 +1626,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_16">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_17_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_17">
             <span class="md-nav__icon md-icon"></span>
             AI Publishing - Experiments
           </label>
@@ -1643,6 +1715,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1651,36 +1725,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#access-control-in-cloud-services" class="md-nav__link">
-    Access Control in Cloud Services
-  </a>
-  
-    <nav class="md-nav" aria-label="Access Control in Cloud Services">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#rbac" class="md-nav__link">
-    RBAC
+  <a href="#siemsoc" class="md-nav__link">
+    SIEM/SOC
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#policies" class="md-nav__link">
-    Policies
+      
+        <li class="md-nav__item">
+  <a href="#log-analysis" class="md-nav__link">
+    Log analysis
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#mandatory-access-control" class="md-nav__link">
-    Mandatory access control
+      
+        <li class="md-nav__item">
+  <a href="#machine-learning-and-ai" class="md-nav__link">
+    Machine Learning and AI
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1699,33 +1760,46 @@
                   
 
 
-  <h1>Personal Notes</h1>
-
-<h2 id="access-control-in-cloud-services">Access Control in Cloud Services</h2>
-<p>The following notes apply to the main cloud services: Amazon AWS, Microsoft Azure, Google GCP.</p>
-<h3 id="rbac">RBAC</h3>
-<p>They are based on <em>Role-Based Access Control (RBAC)</em>. RBAC roles resembles account groups in operating systems but there are subtle differences between these notions:</p>
+<h1 id="siem-soc-log-analysis">SIEM / SOC / Log analysis</h1>
+<h2 id="siemsoc">SIEM/SOC</h2>
 <ul>
-<li>Groups are primarily about <em>identity aggregation</em>. A user can belong to multiple groups. Permissions (what a user can do) are typically cumulative. RBAC roles are primarily about <em>functional responsibilities</em>. A user typically assumes one primary role at a time. Each role defines what you can access and what you can do.</li>
-<li>Group membership is usually static and always active. RBAC roles may require explicit activation or switching.</li>
-<li>RBAC roles can enforce mutual exclusion</li>
+<li><a href="https://www.usenix.org/conference/usenixsecurity22/presentation/alahmadi">99% False Positives: A Qualitative Study of SOC Analysts' Perspectives on Security Alarms</a> A scientific work whose title says it all. With slides and presentation video. 31st USENIX Security Symposium 2022.</li>
+<li><a href="https://www.ibm.com/downloads/cas/5AEDAOJN">Global Security Operations Center Study Results</a> by IBM and Morning Consult (2023). A survey that involved 1000 SOC 
+Team Members from 10 different countries.</li>
 </ul>
-<p>In general, RBAC involves a more explicit separation between roles/groups and allowed actions.</p>
-<h3 id="policies">Policies</h3>
-<p>Access control rules are specified with Access Control Lists only for storage resources.</p>
-<p>Rules for all the other resources are specified with <em>policy documents</em>. Broadly speaking, a policy document specifies one or more of the following:</p>
+<h2 id="log-analysis">Log analysis</h2>
 <ul>
-<li>A set of roles.</li>
-<li>A set of allowed actions.</li>
-<li>A set of denied actions.</li>
-<li>A set of resources.</li>
-<li>A set of conditions that must be met for allowing the request or that, if met, deny the request. These conditions may be attributes of the role, of the resource, of the request (e.g., time of day, IP address and alike).</li>
+<li><a href="https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/appendix-l--events-to-monitor">Events to Monitor (Microsoft Active Directory)</a> A table of the events that should be monitored as signs of compromise. Some event types are such even one single instance should be investigated, other should be investigated only if they occur with frequencies significantly different from the expected baseline. Try to guess how many event types are in the table (spoiler: 381).</li>
+<li><a href="https://posts.specterops.io/domain-of-thrones-part-ii-45080d5dbfc8">Domain of Thrones: Part II</a> The final section "<em>Recommended Logging for Domain Compromises</em>" contains a much smaller list of very few events to monitor (of course this list focuses on only some specific kinds of compromise).</li>
+<li>
+<p><a href="https://posts.specterops.io/domain-of-thrones-part-i-c183ee4bf379">Domain of Thrones: Part I</a> is also very interesting: it describes several domain persistence techniques in great detail with many examples, but also from a detection perspective:</p>
+<ul>
+<li>Credential Theft on the Domain Controller (DC)</li>
+<li>NTDS Access </li>
+<li>DCSync </li>
+<li>Golden Ticket </li>
+<li>Diamond Ticket </li>
+<li>Active Directory Certificate Services (AD CS)</li>
 </ul>
-<p>Syntax and semantics of policy documents depend on the specific cloud environment.</p>
-<p>Access requests are mediated by a centralized <em>policy evaluation service</em> that <em>enforces</em> the policies described in policy documents. </p>
-<p>Policy documents are managed in a centralized way. Such a centralized <em>Identity and Access Management (IAM)</em> framework simplifies compliance, auditing, automation and scales to thousands of identities and resources much better than ACLs.</p>
-<h3 id="mandatory-access-control">Mandatory access control</h3>
-<p>Policies can support forms of <em>Mandatory Access Control</em>, i.e, centralized mechanisms for defining and enforcing organization-wide rules.</p>
+</li>
+<li>
+<p><a href="https://www.biblio.units.it/SebinaOpac/.do?locale=eng">Applied Incident Response</a>, a wonderful book by Steve Anson (full text available from UniTrieste network).</p>
+<ul>
+<li>Have a look at chapter 8 "<em>Event Log Analysis</em>" and chapter 12 "<em>Lateral Movement Analysis</em>" to grasp some idea of the complexity of Windows logs. In particular, have a look at how many different "low-level events" may be involved in such a seemingly simple "high-level event" as a logon.</li>
+<li>Chapter 7 "<em>Network Security Monitoring</em>" is also particularly interesting.</li>
+</ul>
+</li>
+</ul>
+<h2 id="machine-learning-and-ai">Machine Learning and AI</h2>
+<ul>
+<li>
+<p><a href="https://www.icir.org/robin/papers/oakland10-ml.pdf">Outside the Closed World:
+ On Using Machine Learning For Network Intrusion Detection</a> Everyone interested in "automatic detection of attacks" should read and understand this work before even starting. There is a lot of academic research and a lot of industrial products based on the idea of detecting attacks by merely detecting anomalies or deviations from "normal" behavior (all the supposedly magic AI-based stuff is based on variations of this basic idea). This 2010 paper (yes, 2010) illustrates why those approaches are unlikely to work or, more precisely, under which conditions they might work.  It has won the <a href="https://www.icsi.berkeley.edu/icsi/news/2020/05/test-of-time">IEEE Security and Privacy "Test of Time" award</a>, a very prestigious award given once a year "to 10-12 year old papers whose influence grew over time". Slides <a href="https://slideplayer.com/slide/17855551/">here</a>. </p>
+</li>
+<li>
+<p><a href="https://www.sentinelone.com/blog/the-many-faces-of-undetected-macos-infostealers-keysteal-atomic-cherrypie-continue-to-adapt/">The Many Faces of Undetected macOS InfoStealers | KeySteal, Atomic &amp; CherryPie Continue to Adapt</a> Every major vendor is now "AI-powered" and "AI can detect novel and previously unseen malware and attacks". This post illustrates that this is not the case: a <em>known</em> malware family changes <em>slightly</em>, which suffices to evade signatures (signatures? why signatures? everyone uses AI!). Interestingly, this post never mentions AI, not even once; maybe because it has been written by technicians, not by marketing people.</p>
+</li>
+</ul>
 
 
   
